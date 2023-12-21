@@ -1,0 +1,1990 @@
+Lambda ORM
+
+# Lambda ORM
+
+## Table of contents
+
+### Enumerations
+
+- [Dialect](enums/Dialect.md)
+- [ObservableAction](enums/ObservableAction.md)
+- [RelationType](enums/RelationType.md)
+- [SentenceAction](enums/SentenceAction.md)
+- [SentenceCrudAction](enums/SentenceCrudAction.md)
+
+### Classes
+
+- [BulkInsert](classes/BulkInsert.md)
+- [Clause](classes/Clause.md)
+- [CompleteSchema](classes/CompleteSchema.md)
+- [Constant](classes/Constant.md)
+- [CreateSchema](classes/CreateSchema.md)
+- [Data](classes/Data.md)
+- [DataSourceConfigService](classes/DataSourceConfigService.md)
+- [Delete](classes/Delete.md)
+- [DomainConfigService](classes/DomainConfigService.md)
+- [Field](classes/Field.md)
+- [Filter](classes/Filter.md)
+- [FilterAction](classes/FilterAction.md)
+- [FilterClauses](classes/FilterClauses.md)
+- [FilterIncludeClauses](classes/FilterIncludeClauses.md)
+- [From](classes/From.md)
+- [GetSchema](classes/GetSchema.md)
+- [GroupBy](classes/GroupBy.md)
+- [Having](classes/Having.md)
+- [HavingClauses](classes/HavingClauses.md)
+- [IncludeAction](classes/IncludeAction.md)
+- [IncludeClauses](classes/IncludeClauses.md)
+- [Insert](classes/Insert.md)
+- [Join](classes/Join.md)
+- [LoadSchema](classes/LoadSchema.md)
+- [Map](classes/Map.md)
+- [Map2Clauses](classes/Map2Clauses.md)
+- [MapClauses](classes/MapClauses.md)
+- [MappingConfigService](classes/MappingConfigService.md)
+- [MappingsConfigService](classes/MappingsConfigService.md)
+- [MethodNotImplemented](classes/MethodNotImplemented.md)
+- [ModificableClauses](classes/ModificableClauses.md)
+- [NotImplemented](classes/NotImplemented.md)
+- [Page](classes/Page.md)
+- [PageClauses](classes/PageClauses.md)
+- [QueryAction](classes/QueryAction.md)
+- [Queryable](classes/Queryable.md)
+- [RouteService](classes/RouteService.md)
+- [SchemaError](classes/SchemaError.md)
+- [SchemaExtender](classes/SchemaExtender.md)
+- [SchemaFacade](classes/SchemaFacade.md)
+- [SchemaService](classes/SchemaService.md)
+- [Sentence](classes/Sentence.md)
+- [SentenceInclude](classes/SentenceInclude.md)
+- [SintaxisError](classes/SintaxisError.md)
+- [Sort](classes/Sort.md)
+- [StageConfigService](classes/StageConfigService.md)
+- [Update](classes/Update.md)
+- [ViewConfigService](classes/ViewConfigService.md)
+- [ViewsConfigService](classes/ViewsConfigService.md)
+
+### Interfaces
+
+- [AppPathsConfig](interfaces/AppPathsConfig.md)
+- [ApplicationSchema](interfaces/ApplicationSchema.md)
+- [Behavior](interfaces/Behavior.md)
+- [ClauseInfo](interfaces/ClauseInfo.md)
+- [Constraint](interfaces/Constraint.md)
+- [ContextInfo](interfaces/ContextInfo.md)
+- [DataSourceRule](interfaces/DataSourceRule.md)
+- [Dependent](interfaces/Dependent.md)
+- [DomainSchema](interfaces/DomainSchema.md)
+- [Entity](interfaces/Entity.md)
+- [EntityMapping](interfaces/EntityMapping.md)
+- [EntityView](interfaces/EntityView.md)
+- [Enum](interfaces/Enum.md)
+- [EnumValue](interfaces/EnumValue.md)
+- [ExpressionActions](interfaces/ExpressionActions.md)
+- [FormatMapping](interfaces/FormatMapping.md)
+- [IFileSchemaReader](interfaces/IFileSchemaReader.md)
+- [IRelation](interfaces/IRelation.md)
+- [IRepository](interfaces/IRepository.md)
+- [IRouteService](interfaces/IRouteService.md)
+- [ISentenceBuilder](interfaces/ISentenceBuilder.md)
+- [ISentenceCompleteBuilder](interfaces/ISentenceCompleteBuilder.md)
+- [Index](interfaces/Index.md)
+- [InfrastructureSchema](interfaces/InfrastructureSchema.md)
+- [ListenerConfig](interfaces/ListenerConfig.md)
+- [Mapping](interfaces/Mapping.md)
+- [MappingConfig](interfaces/MappingConfig.md)
+- [Metadata](interfaces/Metadata.md)
+- [MetadataConstraint](interfaces/MetadataConstraint.md)
+- [MetadataModel](interfaces/MetadataModel.md)
+- [MetadataParameter](interfaces/MetadataParameter.md)
+- [ModelConfig](interfaces/ModelConfig.md)
+- [ModifyAllClauses](interfaces/ModifyAllClauses.md)
+- [ModifyClauses](interfaces/ModifyClauses.md)
+- [ModifyFilterClauses](interfaces/ModifyFilterClauses.md)
+- [ModifyIncludeClauses](interfaces/ModifyIncludeClauses.md)
+- [Property](interfaces/Property.md)
+- [PropertyMapping](interfaces/PropertyMapping.md)
+- [PropertyView](interfaces/PropertyView.md)
+- [QueryPlan](interfaces/QueryPlan.md)
+- [Relation](interfaces/Relation.md)
+- [RelationIncludeClauses](interfaces/RelationIncludeClauses.md)
+- [RelationInfo](interfaces/RelationInfo.md)
+- [RelationMapClauses](interfaces/RelationMapClauses.md)
+- [Schema](interfaces/Schema.md)
+- [SchemaConfig](interfaces/SchemaConfig.md)
+- [SchemaConfigEntity](interfaces/SchemaConfigEntity.md)
+- [SentenceSerializer](interfaces/SentenceSerializer.md)
+- [Source](interfaces/Source.md)
+- [Stage](interfaces/Stage.md)
+- [TaskConfig](interfaces/TaskConfig.md)
+- [View](interfaces/View.md)
+
+### Type Aliases
+
+- [ManyToOne](README.md#manytoone)
+- [OneToMany](README.md#onetomany)
+- [OneToOne](README.md#onetoone)
+
+### Variables
+
+- [DIALECT\_DEFAULT](README.md#dialect_default)
+
+### Functions
+
+- [abs](README.md#abs)
+- [acos](README.md#acos)
+- [addDay](README.md#addday)
+- [addHours](README.md#addhours)
+- [addMinutes](README.md#addminutes)
+- [addMonth](README.md#addmonth)
+- [addSeconds](README.md#addseconds)
+- [addTime](README.md#addtime)
+- [addYear](README.md#addyear)
+- [as](README.md#as)
+- [asc](README.md#asc)
+- [asin](README.md#asin)
+- [atan](README.md#atan)
+- [atan2](README.md#atan2)
+- [avg](README.md#avg)
+- [between](README.md#between)
+- [ceil](README.md#ceil)
+- [chr](README.md#chr)
+- [concat](README.md#concat)
+- [cos](README.md#cos)
+- [cosh](README.md#cosh)
+- [count](README.md#count)
+- [curTime](README.md#curtime)
+- [date](README.md#date)
+- [dateDiff](README.md#datediff)
+- [dateTime](README.md#datetime)
+- [day](README.md#day)
+- [desc](README.md#desc)
+- [distinct](README.md#distinct)
+- [exp](README.md#exp)
+- [first](README.md#first)
+- [floor](README.md#floor)
+- [hours](README.md#hours)
+- [includes](README.md#includes)
+- [isNotNull](README.md#isnotnull)
+- [isNull](README.md#isnull)
+- [last](README.md#last)
+- [like](README.md#like)
+- [ln](README.md#ln)
+- [log](README.md#log)
+- [lower](README.md#lower)
+- [lpad](README.md#lpad)
+- [ltrim](README.md#ltrim)
+- [max](README.md#max)
+- [min](README.md#min)
+- [minutes](README.md#minutes)
+- [month](README.md#month)
+- [now](README.md#now)
+- [nvl](README.md#nvl)
+- [nvl2](README.md#nvl2)
+- [remainder](README.md#remainder)
+- [replace](README.md#replace)
+- [round](README.md#round)
+- [rpad](README.md#rpad)
+- [rtrim](README.md#rtrim)
+- [seconds](README.md#seconds)
+- [sign](README.md#sign)
+- [sin](README.md#sin)
+- [sinh](README.md#sinh)
+- [source](README.md#source)
+- [startsWith](README.md#startswith)
+- [substr](README.md#substr)
+- [substring](README.md#substring)
+- [sum](README.md#sum)
+- [tan](README.md#tan)
+- [tanh](README.md#tanh)
+- [time](README.md#time)
+- [timeDiff](README.md#timediff)
+- [toDate](README.md#todate)
+- [toDateTime](README.md#todatetime)
+- [toJson](README.md#tojson)
+- [toNumber](README.md#tonumber)
+- [toString](README.md#tostring)
+- [toTime](README.md#totime)
+- [today](README.md#today)
+- [trim](README.md#trim)
+- [trunc](README.md#trunc)
+- [upper](README.md#upper)
+- [user](README.md#user)
+- [weekday](README.md#weekday)
+- [year](README.md#year)
+
+## Type Aliases
+
+### ManyToOne
+
+Ƭ **ManyToOne**\<`T`\>: [`IRelation`](interfaces/IRelation.md)\<`T`\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:253
+
+___
+
+### OneToMany
+
+Ƭ **OneToMany**\<`T`\>: [`IRelation`](interfaces/IRelation.md)\<`T`\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:251
+
+___
+
+### OneToOne
+
+Ƭ **OneToOne**\<`T`\>: [`IRelation`](interfaces/IRelation.md)\<`T`\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:252
+
+## Variables
+
+### DIALECT\_DEFAULT
+
+• `Const` **DIALECT\_DEFAULT**: [`MySQL`](enums/Dialect.md#mysql) = `Dialect.MySQL`
+
+#### Defined in
+
+src/lib/schema/domain/schema.ts:3
+
+## Functions
+
+### abs
+
+▸ **abs**(`value`): `number`
+
+Get the absolute value
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:270
+
+___
+
+### acos
+
+▸ **acos**(`value`): `number`
+
+Get the arc cosine
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:272
+
+___
+
+### addDay
+
+▸ **addDay**(`date`, `value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+| `value` | `number` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:380
+
+___
+
+### addHours
+
+▸ **addHours**(`date`, `value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+| `value` | `number` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:382
+
+___
+
+### addMinutes
+
+▸ **addMinutes**(`date`, `value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+| `value` | `number` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:384
+
+___
+
+### addMonth
+
+▸ **addMonth**(`date`, `value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+| `value` | `number` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:378
+
+___
+
+### addSeconds
+
+▸ **addSeconds**(`date`, `value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+| `value` | `number` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:386
+
+___
+
+### addTime
+
+▸ **addTime**(`date`, `value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+| `value` | `number` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:388
+
+___
+
+### addYear
+
+▸ **addYear**(`date`, `value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+| `value` | `number` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:376
+
+___
+
+### as
+
+▸ **as**(`value`, `name`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+| `name` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:257
+
+___
+
+### asc
+
+▸ **asc**(`value`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:261
+
+___
+
+### asin
+
+▸ **asin**(`value`): `number`
+
+Get the arc sine
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:274
+
+___
+
+### atan
+
+▸ **atan**(`value`): `number`
+
+Get the arc tangent
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:276
+
+___
+
+### atan2
+
+▸ **atan2**(`x`, `y`): `number`
+
+Get the arc tangent of x and y
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `x` | `number` |
+| `y` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:278
+
+___
+
+### avg
+
+▸ **avg**(`value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:422
+
+___
+
+### between
+
+▸ **between**(`value`, `from`, `to`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+| `from` | `any` |
+| `to` | `any` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:263
+
+___
+
+### ceil
+
+▸ **ceil**(`value`): `number`
+
+Get the smallest following integer
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:280
+
+___
+
+### chr
+
+▸ **chr**(`value`): `string`
+
+Get character from ASCII code
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:311
+
+___
+
+### concat
+
+▸ **concat**(`...values`): `string`
+
+String concatenation
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...values` | `string`[] |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:335
+
+___
+
+### cos
+
+▸ **cos**(`value`): `number`
+
+Get the cosine
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:282
+
+___
+
+### cosh
+
+▸ **cosh**(`value`): `number`
+
+Get hyperbolic cosine
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:284
+
+___
+
+### count
+
+▸ **count**(`value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:424
+
+___
+
+### curTime
+
+▸ **curTime**(): `Date`
+
+Get the current time
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:350
+
+___
+
+### date
+
+▸ **date**(`value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:358
+
+___
+
+### dateDiff
+
+▸ **dateDiff**(`date`, `date2`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+| `date2` | `Date` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:390
+
+___
+
+### dateTime
+
+▸ **dateTime**(`value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:360
+
+___
+
+### day
+
+▸ **day**(`value`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `Date` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:366
+
+___
+
+### desc
+
+▸ **desc**(`value`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:259
+
+___
+
+### distinct
+
+▸ **distinct**(`value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:267
+
+___
+
+### exp
+
+▸ **exp**(`value`): `number`
+
+Raise e to the nth power
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:286
+
+___
+
+### first
+
+▸ **first**(`value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:426
+
+___
+
+### floor
+
+▸ **floor**(`value`): `number`
+
+Get the largest preceding integer
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:288
+
+___
+
+### hours
+
+▸ **hours**(`value`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `Date` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:370
+
+___
+
+### includes
+
+▸ **includes**(`value`, `list`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+| `list` | `any`[] |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:265
+
+▸ **includes**(`field`, `searchString`): `string`
+
+Returns true if searchString appears as a substring of the result of converting this
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `field` | `string` |
+| `searchString` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:346
+
+___
+
+### isNotNull
+
+▸ **isNotNull**(`value`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:419
+
+___
+
+### isNull
+
+▸ **isNull**(`value`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:417
+
+___
+
+### last
+
+▸ **last**(`value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:428
+
+___
+
+### like
+
+▸ **like**(`field`, `searchString`): `string`
+
+Get the position of the first occurrence of substring
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `field` | `string` |
+| `searchString` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:338
+
+___
+
+### ln
+
+▸ **ln**(`value`): `number`
+
+Get natural logarithm of num
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:290
+
+___
+
+### log
+
+▸ **log**(`num1`, `num2`): `number`
+
+Get logarithm, base num1, of num2
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `num1` | `number` |
+| `num2` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:292
+
+___
+
+### lower
+
+▸ **lower**(`value`): `string`
+
+Lowercase string
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:315
+
+___
+
+### lpad
+
+▸ **lpad**(`value`, `len`, `pad`): `string`
+
+Pad the left-side of string
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+| `len` | `number` |
+| `pad` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:317
+
+___
+
+### ltrim
+
+▸ **ltrim**(`value`): `string`
+
+Remove leading chars
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:319
+
+___
+
+### max
+
+▸ **max**(`value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:430
+
+___
+
+### min
+
+▸ **min**(`value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:432
+
+___
+
+### minutes
+
+▸ **minutes**(`value`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `Date` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:372
+
+___
+
+### month
+
+▸ **month**(`value`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `Date` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:364
+
+___
+
+### now
+
+▸ **now**(): `Date`
+
+Get the current dateTime
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:354
+
+___
+
+### nvl
+
+▸ **nvl**(`value`, `_default`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+| `_default` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:413
+
+___
+
+### nvl2
+
+▸ **nvl2**(`value`, `a`, `b`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+| `a` | `any` |
+| `b` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:415
+
+___
+
+### remainder
+
+▸ **remainder**(`n1`, `n2`): `number`
+
+Get remainder
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `n1` | `number` |
+| `n2` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:294
+
+___
+
+### replace
+
+▸ **replace**(`value`, `source`, `target`): `string`
+
+The replace() method searches a string for a specified value and returns a new string where the specified values are replaced.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+| `source` | `string` |
+| `target` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:321
+
+___
+
+### round
+
+▸ **round**(`value`, `decimals`): `number`
+
+Get rounded value
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+| `decimals` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:296
+
+___
+
+### rpad
+
+▸ **rpad**(`value`, `len`, `pad`): `string`
+
+Pad the right-side of string
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+| `len` | `number` |
+| `pad` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:323
+
+___
+
+### rtrim
+
+▸ **rtrim**(`value`): `string`
+
+Remove trailing spaces
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:325
+
+___
+
+### seconds
+
+▸ **seconds**(`value`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `Date` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:374
+
+___
+
+### sign
+
+▸ **sign**(`value`): `number`
+
+Get sign of exp
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:298
+
+___
+
+### sin
+
+▸ **sin**(`value`): `number`
+
+Get sine
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:300
+
+___
+
+### sinh
+
+▸ **sinh**(`value`): `number`
+
+Get hyperbolic sine
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:302
+
+___
+
+### source
+
+▸ **source**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:410
+
+___
+
+### startsWith
+
+▸ **startsWith**(`field`, `searchString`): `string`
+
+Returns true if the sequence of elements of searchString converted to a String is the
+same as the corresponding elements of this object (converted to a String) starting at
+position. Otherwise returns false.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `field` | `string` |
+| `searchString` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:344
+
+___
+
+### substr
+
+▸ **substr**(`value`, `from`, `count`): `string`
+
+Get a substring of string
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+| `from` | `number` |
+| `count` | `number` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:327
+
+___
+
+### substring
+
+▸ **substring**(`value`, `from`, `count`): `string`
+
+Get a substring of string
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+| `from` | `number` |
+| `count` | `number` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:329
+
+___
+
+### sum
+
+▸ **sum**(`value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:434
+
+___
+
+### tan
+
+▸ **tan**(`value`): `number`
+
+Get tangent
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:304
+
+___
+
+### tanh
+
+▸ **tanh**(`value`): `number`
+
+Get hyperbolic tangent
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:306
+
+___
+
+### time
+
+▸ **time**(`value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:356
+
+___
+
+### timeDiff
+
+▸ **timeDiff**(`time`, `time2`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `time` | `Date` |
+| `time2` | `Date` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:392
+
+___
+
+### toDate
+
+▸ **toDate**(`value`): `Date`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:397
+
+___
+
+### toDateTime
+
+▸ **toDateTime**(`value`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:399
+
+___
+
+### toJson
+
+▸ **toJson**(`value`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:403
+
+___
+
+### toNumber
+
+▸ **toNumber**(`value`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:405
+
+___
+
+### toString
+
+▸ **toString**(`value`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:395
+
+___
+
+### toTime
+
+▸ **toTime**(`value`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `any` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:401
+
+___
+
+### today
+
+▸ **today**(): `Date`
+
+Get the current date
+
+#### Returns
+
+`Date`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:352
+
+___
+
+### trim
+
+▸ **trim**(`value`): `string`
+
+Remove characters
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:331
+
+___
+
+### trunc
+
+▸ **trunc**(`value`, `decimals`): `number`
+
+Truncate num
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+| `decimals` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:308
+
+___
+
+### upper
+
+▸ **upper**(`value`): `string`
+
+Uppercase string
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:333
+
+___
+
+### user
+
+▸ **user**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:408
+
+___
+
+### weekday
+
+▸ **weekday**(`value`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `Date` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:368
+
+___
+
+### year
+
+▸ **year**(`value`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `Date` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+src/lib/repository/domain/queryable.ts:362

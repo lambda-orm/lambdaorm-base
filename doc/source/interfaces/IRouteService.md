@@ -1,0 +1,56 @@
+[Lambda ORM](../README.md) / IRouteService
+
+# Interface: IRouteService
+
+## Implemented by
+
+- [`RouteService`](../classes/RouteService.md)
+
+## Table of contents
+
+### Methods
+
+- [eval](IRouteService.md#eval)
+- [getSource](IRouteService.md#getsource)
+
+## Methods
+
+### eval
+
+▸ **eval**(`source`, `clauseInfo`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `source` | [`DataSourceRule`](DataSourceRule.md) |
+| `clauseInfo` | [`ClauseInfo`](ClauseInfo.md) |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+src/lib/schema/domain/services.ts:5
+
+___
+
+### getSource
+
+▸ **getSource**(`clauseInfo`, `stage?`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `clauseInfo` | [`ClauseInfo`](ClauseInfo.md) |
+| `stage?` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+src/lib/schema/domain/services.ts:6

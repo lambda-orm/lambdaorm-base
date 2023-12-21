@@ -49,7 +49,7 @@ Error.constructor
 
 #### Defined in
 
-[src/lib/shared/domain/error.ts:9](https://github.com/FlavioLionelRita/lambdaorm-base/blob/293e2ec/src/lib/shared/domain/error.ts#L9)
+[src/lib/shared/domain/error.ts:9](https://github.com/FlavioLionelRita/lambdaorm-base/blob/d94e178/src/lib/shared/domain/error.ts#L9)
 
 ## Properties
 

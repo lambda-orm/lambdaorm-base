@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[src/lib/sentence/domain/services.ts:13](https://github.com/FlavioLionelRita/lambdaorm-base/blob/293e2ec/src/lib/sentence/domain/services.ts#L13)
+[src/lib/sentence/domain/services.ts:13](https://github.com/FlavioLionelRita/lambdaorm-base/blob/d94e178/src/lib/sentence/domain/services.ts#L13)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/services.ts:15](https://github.com/FlavioLionelRita/lambdaorm-base/blob/293e2ec/src/lib/sentence/domain/services.ts#L15)
+[src/lib/sentence/domain/services.ts:15](https://github.com/FlavioLionelRita/lambdaorm-base/blob/d94e178/src/lib/sentence/domain/services.ts#L15)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/services.ts:14](https://github.com/FlavioLionelRita/lambdaorm-base/blob/293e2ec/src/lib/sentence/domain/services.ts#L14)
+[src/lib/sentence/domain/services.ts:14](https://github.com/FlavioLionelRita/lambdaorm-base/blob/d94e178/src/lib/sentence/domain/services.ts#L14)

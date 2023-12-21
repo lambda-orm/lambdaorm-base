@@ -60,7 +60,7 @@
 
 #### Defined in
 
-src/lib/sentence/domain/sentence.ts:54
+[src/lib/sentence/domain/sentence.ts:54](https://github.com/FlavioLionelRita/lambdaorm-base/blob/f8b8e5e/src/lib/sentence/domain/sentence.ts#L54)
 
 ## Properties
 
@@ -74,7 +74,7 @@ src/lib/sentence/domain/sentence.ts:54
 
 #### Defined in
 
-src/lib/sentence/domain/sentence.ts:52
+[src/lib/sentence/domain/sentence.ts:52](https://github.com/FlavioLionelRita/lambdaorm-base/blob/f8b8e5e/src/lib/sentence/domain/sentence.ts#L52)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-src/lib/sentence/domain/sentence.ts:53
+[src/lib/sentence/domain/sentence.ts:53](https://github.com/FlavioLionelRita/lambdaorm-base/blob/f8b8e5e/src/lib/sentence/domain/sentence.ts#L53)
 
 ___
 

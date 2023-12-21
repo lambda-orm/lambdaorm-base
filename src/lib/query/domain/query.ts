@@ -5,3 +5,10 @@ export interface QueryPlan {
 	sentence: string
 	children?: QueryPlan[]
 }
+
+export interface QueryOptions {
+	stage?: string
+	view?: string
+	chunkSize?: number
+	tryAllCan?: boolean
+}

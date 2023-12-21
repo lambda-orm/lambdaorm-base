@@ -84,7 +84,7 @@ Operand.constructor
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:54](https://github.com/FlavioLionelRita/lambdaorm-base/blob/3e72724/src/lib/sentence/domain/sentence.ts#L54)
+[src/lib/sentence/domain/sentence.ts:54](https://github.com/FlavioLionelRita/lambdaorm-base/blob/c35c1e2/src/lib/sentence/domain/sentence.ts#L54)
 
 ## Properties
 
@@ -94,7 +94,7 @@ Operand.constructor
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:52](https://github.com/FlavioLionelRita/lambdaorm-base/blob/3e72724/src/lib/sentence/domain/sentence.ts#L52)
+[src/lib/sentence/domain/sentence.ts:52](https://github.com/FlavioLionelRita/lambdaorm-base/blob/c35c1e2/src/lib/sentence/domain/sentence.ts#L52)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:53](https://github.com/FlavioLionelRita/lambdaorm-base/blob/3e72724/src/lib/sentence/domain/sentence.ts#L53)
+[src/lib/sentence/domain/sentence.ts:53](https://github.com/FlavioLionelRita/lambdaorm-base/blob/c35c1e2/src/lib/sentence/domain/sentence.ts#L53)
 
 ___
 

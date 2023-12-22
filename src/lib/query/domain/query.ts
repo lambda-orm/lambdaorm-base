@@ -11,4 +11,5 @@ export interface QueryOptions {
 	view?: string
 	chunkSize?: number
 	tryAllCan?: boolean
+	headers?: [string, any][]
 }

@@ -17,14 +17,14 @@
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:136](https://github.com/FlavioLionelRita/lambdaorm-base/blob/c35c1e2/src/lib/schema/domain/schema.ts#L136)
+[src/lib/schema/domain/schema.ts:136](https://github.com/FlavioLionelRita/lambdaorm-base/blob/3e2ab91/src/lib/schema/domain/schema.ts#L136)
 
 ___
 
 ### sources
 
-• **sources**: [`DataSourceRule`](DataSourceRule.md)[]
+• **sources**: [`SourceRule`](SourceRule.md)[]
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:137](https://github.com/FlavioLionelRita/lambdaorm-base/blob/c35c1e2/src/lib/schema/domain/schema.ts#L137)
+[src/lib/schema/domain/schema.ts:137](https://github.com/FlavioLionelRita/lambdaorm-base/blob/3e2ab91/src/lib/schema/domain/schema.ts#L137)

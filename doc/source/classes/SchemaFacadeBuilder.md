@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:12](https://github.com/FlavioLionelRita/lambdaorm-base/blob/c35c1e2/src/lib/schema/infrastructure/facadeBuilder.ts#L12)
+[src/lib/schema/infrastructure/facadeBuilder.ts:12](https://github.com/FlavioLionelRita/lambdaorm-base/blob/3e2ab91/src/lib/schema/infrastructure/facadeBuilder.ts#L12)
 
 ## Methods
 
@@ -51,4 +51,4 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:17](https://github.com/FlavioLionelRita/lambdaorm-base/blob/c35c1e2/src/lib/schema/infrastructure/facadeBuilder.ts#L17)
+[src/lib/schema/infrastructure/facadeBuilder.ts:17](https://github.com/FlavioLionelRita/lambdaorm-base/blob/3e2ab91/src/lib/schema/infrastructure/facadeBuilder.ts#L17)

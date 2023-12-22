@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.9](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.8...v0.1.9) (2023-12-22)
 
-
-### Features
+**Features:**
 
 * adjust schema facade ([8dd385a](https://github.com/FlavioLionelRita/lambdaorm-base/commit/8dd385abfafc18d23995b0d44cf983877f5e9557)), closes [#224](https://github.com/FlavioLionelRita/lambdaorm-base/issues/224)
 

@@ -1,5 +1,5 @@
 import { Expressions } from '3xpr'
-import { ObservableAction, DataSourceRule, SchemaError, ClauseInfo, ContextInfo, IRouteService } from '../../domain'
+import { ObservableAction, SourceRule, SchemaError, ClauseInfo, ContextInfo, IRouteService } from '../../domain'
 import { StageConfigService } from './config/stageConfigService'
 
 export class RouteService implements IRouteService {
@@ -7,7 +7,7 @@ export class RouteService implements IRouteService {
 	constructor (private readonly stageConfigService: StageConfigService,
 		private readonly expressions:Expressions) {}
 
-	public eval (source:DataSourceRule, clauseInfo: ClauseInfo):boolean {
+	public eval (source:SourceRule, clauseInfo: ClauseInfo):boolean {
 		const contextInfo = this.getContextInfo(clauseInfo)
 		if (source.condition === undefined) return true
 		return this.expressions.eval(source.condition, contextInfo)

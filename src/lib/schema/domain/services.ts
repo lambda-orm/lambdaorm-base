@@ -1,7 +1,7 @@
-import { DataSourceRule } from '.'
+import { SourceRule } from '.'
 import { ClauseInfo } from './info'
 
 export interface IRouteService {
-	eval (source:DataSourceRule, clauseInfo: ClauseInfo):boolean
+	eval (source:SourceRule, clauseInfo: ClauseInfo):boolean
 	getSource (clauseInfo: ClauseInfo, stage?: string):string
 }

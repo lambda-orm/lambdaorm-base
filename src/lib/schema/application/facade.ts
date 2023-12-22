@@ -1,4 +1,4 @@
-import { ClauseInfo, DataSourceRule, Schema, SchemaError } from '../domain'
+import { ClauseInfo, SourceRule, Schema, SchemaError } from '../domain'
 import { DataSourceConfigService } from './services/config/dataSourceConfigService'
 import { MappingsConfigService } from './services/config/mappingsConfigService'
 import { DomainConfigService } from './services/config/domainConfigService'
@@ -31,7 +31,7 @@ export class SchemaFacade {
 		this.schema = this.schemaService.newSchema()
 	}
 
-	public evalDataSourceRule (rule:DataSourceRule, clauseInfo: ClauseInfo):boolean {
+	public evalDataSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {
 		return this.routeService.eval(rule, clauseInfo)
 	}
 

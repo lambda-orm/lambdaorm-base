@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [0.1.12](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.11...v0.1.12) (2023-12-22)
+
+
+### Features
+
+* add headers on queryOptions ([0abe516](https://github.com/FlavioLionelRita/lambdaorm-base/commit/0abe5164e77ca4236f2d9c2a0ef024331b085456)), closes [#224](https://github.com/FlavioLionelRita/lambdaorm-base/issues/224)
+
 ### [0.1.11](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.10...v0.1.11) (2023-12-22)
 
 ### [0.1.10](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.9...v0.1.10) (2023-12-22)

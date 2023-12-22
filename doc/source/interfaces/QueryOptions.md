@@ -7,6 +7,7 @@
 ### Properties
 
 - [chunkSize](QueryOptions.md#chunksize)
+- [headers](QueryOptions.md#headers)
 - [stage](QueryOptions.md#stage)
 - [tryAllCan](QueryOptions.md#tryallcan)
 - [view](QueryOptions.md#view)
@@ -19,7 +20,17 @@
 
 #### Defined in
 
-[src/lib/query/domain/query.ts:12](https://github.com/FlavioLionelRita/lambdaorm-base/blob/a8eba59/src/lib/query/domain/query.ts#L12)
+[src/lib/query/domain/query.ts:12](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0abe516/src/lib/query/domain/query.ts#L12)
+
+___
+
+### headers
+
+• `Optional` **headers**: [`string`, `any`][]
+
+#### Defined in
+
+[src/lib/query/domain/query.ts:14](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0abe516/src/lib/query/domain/query.ts#L14)
 
 ___
 
@@ -29,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/lib/query/domain/query.ts:10](https://github.com/FlavioLionelRita/lambdaorm-base/blob/a8eba59/src/lib/query/domain/query.ts#L10)
+[src/lib/query/domain/query.ts:10](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0abe516/src/lib/query/domain/query.ts#L10)
 
 ___
 
@@ -39,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/lib/query/domain/query.ts:13](https://github.com/FlavioLionelRita/lambdaorm-base/blob/a8eba59/src/lib/query/domain/query.ts#L13)
+[src/lib/query/domain/query.ts:13](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0abe516/src/lib/query/domain/query.ts#L13)
 
 ___
 
@@ -49,4 +60,4 @@ ___
 
 #### Defined in
 
-[src/lib/query/domain/query.ts:11](https://github.com/FlavioLionelRita/lambdaorm-base/blob/a8eba59/src/lib/query/domain/query.ts#L11)
+[src/lib/query/domain/query.ts:11](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0abe516/src/lib/query/domain/query.ts#L11)

@@ -31,7 +31,7 @@ export class SchemaFacade {
 		this.schema = this.schemaService.newSchema()
 	}
 
-	public evalDataSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {
+	public evalSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {
 		return this.routeService.eval(rule, clauseInfo)
 	}
 

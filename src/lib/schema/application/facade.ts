@@ -14,7 +14,7 @@ import { CreateSchema } from './useCases/create'
 
 export class SchemaFacade {
 	public schema: Schema
-	constructor (public workspace:string,
+	constructor (
 		public readonly source:DataSourceConfigService,
 		public readonly domain:DomainConfigService,
 		public readonly mapping:MappingsConfigService,

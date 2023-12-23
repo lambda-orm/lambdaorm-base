@@ -14,7 +14,7 @@ export class SchemaFacadeBuilder {
 		private readonly helper: H3lp
 	) {}
 
-	public build (workspace:string):SchemaFacade {
+	public build ():SchemaFacade {
 		const source = new DataSourceConfigService()
 		const model = new DomainConfigService()
 		const mapping = new MappingsConfigService()
@@ -27,6 +27,6 @@ export class SchemaFacadeBuilder {
 		const createSchema = new CreateSchema(schemaService)
 		const getSchema = new GetSchema(new FileSchemaReader(new SchemaFileHelper(this.helper), this.helper))
 		const completeSchema = new CompleteSchema(schemaService)
-		return new SchemaFacade(workspace, source, model, mapping, stage, view, schemaService, routeService, extender, createSchema, loadSchema, getSchema, completeSchema)
+		return new SchemaFacade(source, model, mapping, stage, view, schemaService, routeService, extender, createSchema, loadSchema, getSchema, completeSchema)
 	}
 }

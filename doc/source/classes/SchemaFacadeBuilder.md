@@ -31,19 +31,13 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:12](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0abe516/src/lib/schema/infrastructure/facadeBuilder.ts#L12)
+[src/lib/schema/infrastructure/facadeBuilder.ts:12](https://github.com/FlavioLionelRita/lambdaorm-base/blob/418b603/src/lib/schema/infrastructure/facadeBuilder.ts#L12)
 
 ## Methods
 
 ### build
 
-▸ **build**(`workspace`): [`SchemaFacade`](SchemaFacade.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `workspace` | `string` |
+▸ **build**(): [`SchemaFacade`](SchemaFacade.md)
 
 #### Returns
 
@@ -51,4 +45,4 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:17](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0abe516/src/lib/schema/infrastructure/facadeBuilder.ts#L17)
+[src/lib/schema/infrastructure/facadeBuilder.ts:17](https://github.com/FlavioLionelRita/lambdaorm-base/blob/418b603/src/lib/schema/infrastructure/facadeBuilder.ts#L17)

@@ -1,9 +1,9 @@
 import { Schema } from '../../domain'
-import { SchemaService } from '../services/schemaService'
+import { SchemaCreateService } from '../services/createService'
 
 export class CompleteSchema {
 	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly schemaService: SchemaService) {}
+	constructor (private readonly schemaService: SchemaCreateService) {}
 
 	public complete (schema: Schema) {
 		if (!schema.domain) {

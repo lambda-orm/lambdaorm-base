@@ -1,7 +1,7 @@
 import { Expressions } from '3xpr'
 import {
 	DataSourceConfigService, MappingsConfigService, DomainConfigService, SchemaFacade, StageConfigService, ViewsConfigService,
-	SchemaService, RouteService, SchemaExtender, LoadSchema, CreateSchema, GetSchema, CompleteSchema
+	SchemaCreateService, RouteService, SchemaExtender, LoadSchema, CreateSchema, GetSchema, CompleteSchema
 } from '../application'
 import { FileSchemaReader } from './fileSchemaReader'
 import { SchemaFileHelper } from './schemaFileHelper'
@@ -20,7 +20,7 @@ export class SchemaFacadeBuilder {
 		const mapping = new MappingsConfigService()
 		const stage = new StageConfigService()
 		const view = new ViewsConfigService()
-		const schemaService = new SchemaService()
+		const schemaService = new SchemaCreateService()
 		const routeService = new RouteService(stage, this.expressions)
 		const extender = new SchemaExtender(this.expressions, this.helper)
 		const loadSchema = new LoadSchema(source, model, mapping, stage, view, extender, this.helper)

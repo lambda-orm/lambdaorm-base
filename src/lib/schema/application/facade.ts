@@ -6,7 +6,7 @@ import { StageConfigService } from './services/config/stageConfigService'
 import { ViewsConfigService } from './services/config/viewsConfigService'
 import { RouteService } from './services/routeService'
 import { SchemaExtender } from './services/schemaExtender'
-import { SchemaService } from './services/schemaService'
+import { SchemaCreateService } from './services/createService'
 import { CompleteSchema } from './useCases/complete'
 import { GetSchema } from './useCases/get'
 import { LoadSchema } from './useCases/load'
@@ -20,7 +20,7 @@ export class SchemaFacade {
 		public readonly mapping:MappingsConfigService,
 		public readonly stage:StageConfigService,
 		public readonly view:ViewsConfigService,
-		private readonly schemaService:SchemaService,
+		private readonly schemaService:SchemaCreateService,
 		private readonly routeService:RouteService,
 		private readonly extender:SchemaExtender,
 		private readonly createSchema: CreateSchema,

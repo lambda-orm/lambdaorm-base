@@ -1,6 +1,6 @@
 import { AppPathsConfig, ApplicationSchema, InfrastructureSchema, DomainSchema, Schema } from '../../domain'
 
-export class SchemaService {
+export class SchemaCreateService {
 	public newSchema ():Schema {
 		return { version: '0.0.1', application: this.newApplication(), domain: this.newDomain(), infrastructure: this.newInfrastructure() }
 	}

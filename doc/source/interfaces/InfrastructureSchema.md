@@ -16,48 +16,48 @@
 
 ### mappings
 
-• **mappings**: [`Mapping`](Mapping.md)[]
+• `Optional` **mappings**: [`Mapping`](Mapping.md)[]
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:164](https://github.com/FlavioLionelRita/lambdaorm-base/blob/b5bb0fe/src/lib/schema/domain/schema.ts#L164)
+[src/lib/schema/domain/schema.ts:164](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0cede11/src/lib/schema/domain/schema.ts#L164)
 
 ___
 
 ### paths
 
-• **paths**: [`AppPathsConfig`](AppPathsConfig.md)
+• `Optional` **paths**: [`AppPathsConfig`](AppPathsConfig.md)
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:163](https://github.com/FlavioLionelRita/lambdaorm-base/blob/b5bb0fe/src/lib/schema/domain/schema.ts#L163)
+[src/lib/schema/domain/schema.ts:163](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0cede11/src/lib/schema/domain/schema.ts#L163)
 
 ___
 
 ### sources
 
-• **sources**: [`Source`](Source.md)[]
+• `Optional` **sources**: [`Source`](Source.md)[]
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:166](https://github.com/FlavioLionelRita/lambdaorm-base/blob/b5bb0fe/src/lib/schema/domain/schema.ts#L166)
+[src/lib/schema/domain/schema.ts:166](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0cede11/src/lib/schema/domain/schema.ts#L166)
 
 ___
 
 ### stages
 
-• **stages**: [`Stage`](Stage.md)[]
+• `Optional` **stages**: [`Stage`](Stage.md)[]
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:167](https://github.com/FlavioLionelRita/lambdaorm-base/blob/b5bb0fe/src/lib/schema/domain/schema.ts#L167)
+[src/lib/schema/domain/schema.ts:167](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0cede11/src/lib/schema/domain/schema.ts#L167)
 
 ___
 
 ### views
 
-• **views**: [`View`](View.md)[]
+• `Optional` **views**: [`View`](View.md)[]
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:165](https://github.com/FlavioLionelRita/lambdaorm-base/blob/b5bb0fe/src/lib/schema/domain/schema.ts#L165)
+[src/lib/schema/domain/schema.ts:165](https://github.com/FlavioLionelRita/lambdaorm-base/blob/0cede11/src/lib/schema/domain/schema.ts#L165)

@@ -160,11 +160,11 @@ export interface DomainSchema {
 	enums: Enum[]
 }
 export interface InfrastructureSchema {
-	paths: AppPathsConfig
-	mappings: Mapping[]
-	views: View[]
-	sources: Source[]
-	stages: Stage[]
+	paths?: AppPathsConfig
+	mappings?: Mapping[]
+	views?: View[]
+	sources?: Source[]
+	stages?: Stage[]
 }
 export interface ApplicationSchema {
 	start:TaskConfig[]

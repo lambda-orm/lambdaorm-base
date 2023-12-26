@@ -122,7 +122,7 @@ export class SchemaExtender {
 	}
 
 	private extendDataSources (schema: Schema) {
-		if (!schema.infrastructure) {
+		if (!schema.infrastructure || !schema.infrastructure.mappings) {
 			return
 		}
 		if (!schema.infrastructure.sources || !schema.infrastructure.sources.length || schema.infrastructure.sources.length === 0) {
@@ -138,7 +138,7 @@ export class SchemaExtender {
 	}
 
 	private extendDataStages (schema: Schema) {
-		if (!schema.infrastructure) {
+		if (!schema.infrastructure || !schema.infrastructure.mappings || !schema.infrastructure.sources) {
 			return
 		}
 		if (!schema.infrastructure.stages || !schema.infrastructure.stages.length || schema.infrastructure.stages.length === 0) {
@@ -158,7 +158,7 @@ export class SchemaExtender {
 				this.completeEnums(schema.domain.enums)
 			}
 			if (schema.domain.entities) {
-				if (schema.infrastructure) {
+				if (schema.infrastructure && schema.infrastructure.views) {
 					this.completeEntities(schema.domain.entities, schema.infrastructure.views)
 				}
 				if (schema.domain.entities && schema.domain.entities.length) {
@@ -455,7 +455,7 @@ export class SchemaExtender {
 	}
 
 	private existsInMapping (schema: Schema, mapping: string, entity: string): boolean {
-		if (!schema.infrastructure) {
+		if (!schema.infrastructure || !schema.infrastructure.sources || !schema.infrastructure.stages) {
 			return false
 		}
 		const context = { entity, action: ObservableAction.ddl, read: false, write: true, dml: false, ddl: true }

@@ -20,7 +20,7 @@ export class SchemaFacade {
 		public readonly mapping:MappingsConfigService,
 		public readonly stage:StageConfigService,
 		public readonly view:ViewsConfigService,
-		private readonly schemaService:SchemaCreateService,
+		public readonly createService:SchemaCreateService,
 		private readonly routeService:RouteService,
 		private readonly extender:SchemaExtender,
 		private readonly createSchema: CreateSchema,
@@ -28,7 +28,7 @@ export class SchemaFacade {
 		private readonly getSchema: GetSchema,
 		private readonly completeSchema:CompleteSchema
 	) {
-		this.schema = this.schemaService.newSchema()
+		this.schema = this.createService.newSchema()
 	}
 
 	public evalSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {

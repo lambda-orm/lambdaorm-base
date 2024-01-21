@@ -1,4 +1,4 @@
-import { ClauseInfo, SourceRule, Schema, SchemaError } from '../domain'
+import { ClauseInfo, SourceRule, Schema, SchemaError, EntityType } from '../domain'
 import { DataSourceConfigService } from './services/config/dataSourceConfigService'
 import { MappingsConfigService } from './services/config/mappingsConfigService'
 import { DomainConfigService } from './services/config/domainConfigService'
@@ -6,12 +6,12 @@ import { StageConfigService } from './services/config/stageConfigService'
 import { ViewsConfigService } from './services/config/viewsConfigService'
 import { RouteService } from './services/routeService'
 import { SchemaExtender } from './services/schemaExtender'
-import { SchemaCreateService } from './services/createService'
+import { SchemaService } from './services/schemaService'
 import { CompleteSchema } from './useCases/complete'
 import { GetSchema } from './useCases/get'
 import { LoadSchema } from './useCases/load'
 import { CreateSchema } from './useCases/create'
-
+import { UpdateSchema } from './useCases/update'
 export class SchemaFacade {
 	public schema: Schema
 	constructor (
@@ -20,15 +20,16 @@ export class SchemaFacade {
 		public readonly mapping:MappingsConfigService,
 		public readonly stage:StageConfigService,
 		public readonly view:ViewsConfigService,
-		public readonly createService:SchemaCreateService,
+		public readonly schemaService:SchemaService,
 		private readonly routeService:RouteService,
 		private readonly extender:SchemaExtender,
 		private readonly createSchema: CreateSchema,
+		private readonly updateSchema: UpdateSchema,
 		private readonly loadSchema: LoadSchema,
 		private readonly getSchema: GetSchema,
 		private readonly completeSchema:CompleteSchema
 	) {
-		this.schema = this.createService.newSchema()
+		this.schema = this.schemaService.newSchema()
 	}
 
 	public evalSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {
@@ -39,8 +40,12 @@ export class SchemaFacade {
 		return this.routeService.getSource(clauseInfo, stage)
 	}
 
-	public async create (): Promise<Schema> {
-		return this.createSchema.create()
+	public create (types?: EntityType[]): Schema {
+		return this.createSchema.create(types)
+	}
+
+	public update (schema:Schema, types: EntityType[]): void {
+		this.updateSchema.update(schema, types)
 	}
 
 	public async get (source: string): Promise<Schema|null> {

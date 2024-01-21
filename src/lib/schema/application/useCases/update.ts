@@ -1,15 +1,11 @@
 import { Schema, EntityType } from '../../domain'
 import { SchemaService } from '../services/schemaService'
 
-export class CreateSchema {
+export class UpdateSchema {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (private readonly schemaService:SchemaService) {}
 
-	public create (types?: EntityType[]):Schema {
-		const schema = this.schemaService.newSchema()
-		if (types && types.length > 0) {
-			this.schemaService.addEntityTypes(schema, types)
-		}
-		return schema
+	public update (schema: Schema, types: EntityType[]):void {
+		this.schemaService.addEntityTypes(schema, types)
 	}
 }

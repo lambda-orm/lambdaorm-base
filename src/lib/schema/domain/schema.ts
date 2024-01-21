@@ -1,3 +1,4 @@
+import { Type } from 'typ3s'
 import { SentenceAction } from './actions'
 import { Dialect } from './dialect'
 export const DIALECT_DEFAULT = Dialect.MySQL
@@ -198,4 +199,9 @@ export interface Behavior {
 	alias?: string
 	property: string
 	expression: string
+}
+
+export interface EntityType {
+	name: string
+	type: Type
 }

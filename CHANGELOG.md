@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### 0.1.17 (2024-02-17)
 
-
-### Features
+**Features:**
 
 * add headers on queryOptions ([0abe516](https://github.com/FlavioLionelRita/lambdaorm-base/commit/0abe5164e77ca4236f2d9c2a0ef024331b085456)), closes [#224](https://github.com/FlavioLionelRita/lambdaorm-base/issues/224)
 * adjust schema facade ([8dd385a](https://github.com/FlavioLionelRita/lambdaorm-base/commit/8dd385abfafc18d23995b0d44cf983877f5e9557)), closes [#224](https://github.com/FlavioLionelRita/lambdaorm-base/issues/224)

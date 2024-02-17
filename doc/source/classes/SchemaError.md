@@ -48,7 +48,7 @@ Error.constructor
 
 #### Defined in
 
-[src/lib/schema/domain/errors.ts:2](https://github.com/FlavioLionelRita/lambdaorm-base/blob/1e79c4c/src/lib/schema/domain/errors.ts#L2)
+[src/lib/schema/domain/errors.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/39d1395/src/lib/schema/domain/errors.ts#L2)
 
 ## Properties
 
@@ -97,6 +97,12 @@ ___
 ### prepareStackTrace
 
 ▪ `Static` `Optional` **prepareStackTrace**: (`err`: `Error`, `stackTraces`: `CallSite`[]) => `any`
+
+Optional override for formatting stack traces
+
+**`See`**
+
+https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 #### Type declaration
 

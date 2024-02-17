@@ -22,7 +22,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `schemaService` | [`SchemaCreateService`](SchemaCreateService.md) |
+| `schemaService` | [`SchemaService`](SchemaService.md) |
 
 #### Returns
 
@@ -30,18 +30,24 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:6](https://github.com/FlavioLionelRita/lambdaorm-base/blob/1e79c4c/src/lib/schema/application/useCases/create.ts#L6)
+[src/lib/schema/application/useCases/create.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/39d1395/src/lib/schema/application/useCases/create.ts#L6)
 
 ## Methods
 
 ### create
 
-▸ **create**(): `Promise`\<[`Schema`](../interfaces/Schema.md)\>
+▸ **create**(`types?`): [`Schema`](../interfaces/Schema.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `types?` | [`EntityType`](../interfaces/EntityType.md)[] |
 
 #### Returns
 
-`Promise`\<[`Schema`](../interfaces/Schema.md)\>
+[`Schema`](../interfaces/Schema.md)
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:8](https://github.com/FlavioLionelRita/lambdaorm-base/blob/1e79c4c/src/lib/schema/application/useCases/create.ts#L8)
+[src/lib/schema/application/useCases/create.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/39d1395/src/lib/schema/application/useCases/create.ts#L8)

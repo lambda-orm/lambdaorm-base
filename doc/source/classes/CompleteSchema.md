@@ -22,7 +22,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `schemaService` | [`SchemaCreateService`](SchemaCreateService.md) |
+| `schemaService` | [`SchemaService`](SchemaService.md) |
 
 #### Returns
 
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/complete.ts:6](https://github.com/FlavioLionelRita/lambdaorm-base/blob/1e79c4c/src/lib/schema/application/useCases/complete.ts#L6)
+[src/lib/schema/application/useCases/complete.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/39d1395/src/lib/schema/application/useCases/complete.ts#L6)
 
 ## Methods
 
@@ -50,4 +50,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/complete.ts:8](https://github.com/FlavioLionelRita/lambdaorm-base/blob/1e79c4c/src/lib/schema/application/useCases/complete.ts#L8)
+[src/lib/schema/application/useCases/complete.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/39d1395/src/lib/schema/application/useCases/complete.ts#L8)

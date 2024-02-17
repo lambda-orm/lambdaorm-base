@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### 0.1.17 (2024-02-17)
+
+
+### Features
+
+* add headers on queryOptions ([0abe516](https://github.com/FlavioLionelRita/lambdaorm-base/commit/0abe5164e77ca4236f2d9c2a0ef024331b085456)), closes [#224](https://github.com/FlavioLionelRita/lambdaorm-base/issues/224)
+* adjust schema facade ([8dd385a](https://github.com/FlavioLionelRita/lambdaorm-base/commit/8dd385abfafc18d23995b0d44cf983877f5e9557)), closes [#224](https://github.com/FlavioLionelRita/lambdaorm-base/issues/224)
+* remove workspace for schemaFacade ([418b603](https://github.com/FlavioLionelRita/lambdaorm-base/commit/418b603acf241cd43f1f9375beab0bf92fff1dcd)), closes [#223](https://github.com/FlavioLionelRita/lambdaorm-base/issues/223)
+* rename RuleDataSource for RuleSource ([3e2ab91](https://github.com/FlavioLionelRita/lambdaorm-base/commit/3e2ab910503926132ccd7ca0c4142b484ed2ce10)), closes [#224](https://github.com/FlavioLionelRita/lambdaorm-base/issues/224)
+
 ### [0.1.16](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.15...v0.1.16) (2023-12-26)
 
 ### [0.1.15](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.14...v0.1.15) (2023-12-26)

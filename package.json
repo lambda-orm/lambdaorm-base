@@ -1,6 +1,6 @@
 {
 	"name": "lambdaorm-base",
-	"version": "0.1.16",
+	"version": "0.1.17",
 	"description": "ORM",
 	"author": "Flavio Lionel Rita <flaviolrita@proton.me>",
 	"license": "MIT",
@@ -31,7 +31,7 @@
 		"h3lp": "^1.5.8",
 		"typ3s": "^0.1.15",
 		"3xpr": "^1.15.9",
-		"js-yaml": "^4.1.0",		
+		"js-yaml": "^4.1.0",
 		"sqlstring": "^2.3.3"
 	},
 	"devDependencies": {

@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/lib/sentence/domain/metadata.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/sentence/domain/metadata.ts#L7)
+[src/lib/sentence/domain/metadata.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ff21366/src/lib/sentence/domain/metadata.ts#L7)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/metadata.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/sentence/domain/metadata.ts#L5)
+[src/lib/sentence/domain/metadata.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/ff21366/src/lib/sentence/domain/metadata.ts#L5)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/metadata.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/sentence/domain/metadata.ts#L6)
+[src/lib/sentence/domain/metadata.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ff21366/src/lib/sentence/domain/metadata.ts#L6)

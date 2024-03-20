@@ -27,6 +27,7 @@
 - [hadWriteExps](EntityMapping.md#hadwriteexps)
 - [hadWriteValues](EntityMapping.md#hadwritevalues)
 - [indexes](EntityMapping.md#indexes)
+- [intermediate](EntityMapping.md#intermediate)
 - [mapping](EntityMapping.md#mapping)
 - [name](EntityMapping.md#name)
 - [primaryKey](EntityMapping.md#primarykey)
@@ -50,7 +51,7 @@
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L62)
+[src/lib/schema/domain/schema.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L62)
 
 ___
 
@@ -64,7 +65,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:79](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L79)
+[src/lib/schema/domain/schema.ts:79](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L79)
 
 ___
 
@@ -78,7 +79,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L72)
+[src/lib/schema/domain/schema.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L72)
 
 ___
 
@@ -92,7 +93,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L71)
+[src/lib/schema/domain/schema.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L71)
 
 ___
 
@@ -106,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:61](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L61)
+[src/lib/schema/domain/schema.ts:61](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L61)
 
 ___
 
@@ -116,7 +117,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:95](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L95)
+[src/lib/schema/domain/schema.ts:96](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L96)
 
 ___
 
@@ -130,7 +131,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:77](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L77)
+[src/lib/schema/domain/schema.ts:77](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L77)
 
 ___
 
@@ -140,7 +141,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:96](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L96)
+[src/lib/schema/domain/schema.ts:97](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L97)
 
 ___
 
@@ -154,7 +155,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:73](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L73)
+[src/lib/schema/domain/schema.ts:73](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L73)
 
 ___
 
@@ -164,7 +165,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:97](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L97)
+[src/lib/schema/domain/schema.ts:98](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L98)
 
 ___
 
@@ -178,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:75](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L75)
+[src/lib/schema/domain/schema.ts:75](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L75)
 
 ___
 
@@ -192,7 +193,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:78](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L78)
+[src/lib/schema/domain/schema.ts:78](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L78)
 
 ___
 
@@ -206,7 +207,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:74](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L74)
+[src/lib/schema/domain/schema.ts:74](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L74)
 
 ___
 
@@ -220,7 +221,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L76)
+[src/lib/schema/domain/schema.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L76)
 
 ___
 
@@ -234,7 +235,21 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L68)
+[src/lib/schema/domain/schema.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L68)
+
+___
+
+### intermediate
+
+• `Optional` **intermediate**: `boolean`
+
+#### Inherited from
+
+[Entity](Entity.md).[intermediate](Entity.md#intermediate)
+
+#### Defined in
+
+[src/lib/schema/domain/schema.ts:80](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L80)
 
 ___
 
@@ -244,7 +259,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:92](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L92)
+[src/lib/schema/domain/schema.ts:93](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L93)
 
 ___
 
@@ -258,7 +273,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:60](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L60)
+[src/lib/schema/domain/schema.ts:60](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L60)
 
 ___
 
@@ -272,7 +287,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L65)
+[src/lib/schema/domain/schema.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L65)
 
 ___
 
@@ -286,7 +301,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:94](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L94)
+[src/lib/schema/domain/schema.ts:95](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L95)
 
 ___
 
@@ -300,7 +315,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L70)
+[src/lib/schema/domain/schema.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L70)
 
 ___
 
@@ -314,7 +329,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L67)
+[src/lib/schema/domain/schema.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L67)
 
 ___
 
@@ -324,7 +339,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:93](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L93)
+[src/lib/schema/domain/schema.ts:94](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L94)
 
 ___
 
@@ -338,7 +353,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L63)
+[src/lib/schema/domain/schema.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L63)
 
 ___
 
@@ -352,7 +367,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L66)
+[src/lib/schema/domain/schema.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L66)
 
 ___
 
@@ -366,4 +381,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/76260f9/src/lib/schema/domain/schema.ts#L64)
+[src/lib/schema/domain/schema.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/054ed7d/src/lib/schema/domain/schema.ts#L64)

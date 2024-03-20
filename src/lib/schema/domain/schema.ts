@@ -77,6 +77,7 @@ export interface Entity {
 	hadDefaults?: boolean
 	hadViewReadExp?: boolean
 	composite?: boolean
+	intermediate?: boolean
 }
 export interface RelationInfo {
 	previousRelation: string

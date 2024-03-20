@@ -1,10 +1,9 @@
 import { expressions } from '3xpr'
 import { h3lp } from 'h3lp'
-import { Type } from 'typ3s'
 import { SchemaFacadeBuilder } from '../lib'
 
 (async () => {
-	const data = [
+	const array = [
 		{
 			name: 'Spain',
 			region: { name: 'Europe', code: 'EU' },
@@ -106,10 +105,19 @@ import { SchemaFacadeBuilder } from '../lib'
 			phoneCode: 54
 		}
 	]
+
+	const obj = {
+		languages: [{ code: 'SP', name: 'Spanish' }, { code: 'CAT', name: 'Catalan' }, { code: 'GAL', name: 'Galician' }, { code: 'BSQ', name: 'Basque' }],
+		timezones: [
+			{ name: 'Madrid', offset: 1, pos: { lat: 40.4165, log: -3.70256 } },
+			{ name: 'Ceuta', pos: { lat: 35.8883, log: -5.3162 } },
+			{ name: 'Canary', offset: 0, pos: { lat: 28.1248, log: -15.43 } }
+		]
+	}
+
 	const schemaFacade = new SchemaFacadeBuilder(expressions, h3lp).build()
-	const type = Type.type(data, { info: true })
-	const stringified = Type.stringify(type)
-	console.log(stringified)
-	const schema = schemaFacade.create([{ name: 'Country', type }])
+	const schema = schemaFacade.create(array, 'Country')
 	console.log(JSON.stringify(schema.domain.entities, null, 2))
+	const schema2 = schemaFacade.create(obj)
+	console.log(JSON.stringify(schema2.domain.entities, null, 2))
 })()

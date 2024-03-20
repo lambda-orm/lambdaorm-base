@@ -40,8 +40,10 @@ export class SchemaFacade {
 		return this.routeService.getSource(clauseInfo, stage)
 	}
 
-	public create (types?: EntityType[]): Schema {
-		return this.createSchema.create(types)
+	public create (data: any):Schema
+	public create (data: any[], name:string):Schema
+	public create (data: any | any[], name?:string):Schema {
+		return this.createSchema.create(data, name)
 	}
 
 	public update (schema:Schema, types: EntityType[]): void {

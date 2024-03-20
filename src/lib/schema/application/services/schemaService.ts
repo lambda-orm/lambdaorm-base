@@ -112,7 +112,7 @@ export class SchemaService {
 								const childProperty: Property = { name: childPropertyName, type: rpk.type.primitive, required: true }
 								const intermediaEntityName = entity.name + this.helper.str.capitalize(prop.name)
 								const intermediaPropertyPk: Property = { name: 'id', type: 'integer', required: true, autoIncrement: true }
-								const intermediaEntity:Entity = { name: intermediaEntityName, primaryKey: ['id'], properties: [intermediaPropertyPk, childProperty, parentProperty], uniqueKey: [parentProperty.name, childProperty.name], required: [], indexes: [], relations: [], dependents: [] }
+								const intermediaEntity:Entity = { intermediate: true, name: intermediaEntityName, primaryKey: ['id'], properties: [intermediaPropertyPk, childProperty, parentProperty], uniqueKey: [parentProperty.name, childProperty.name], required: [], indexes: [], relations: [], dependents: [] }
 								const parentRelation:Relation = {
 									name: this.helper.str.notation(entity.name, 'camel'),
 									type: RelationType.oneToMany,

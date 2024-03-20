@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [0.1.19](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.18...v0.1.19) (2024-03-20)
+
+
+### Features
+
+* complete obj type to entities ([01fed8d](https://github.com/FlavioLionelRita/lambdaorm-base/commit/01fed8d7fafc7289a13978a495e0ad56188080db)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+* **schema:** add create schema form data ([3d0f887](https://github.com/FlavioLionelRita/lambdaorm-base/commit/3d0f8871f6fc80c4c08a709cec2b9d719ddc9515)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [0.1.18](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.17...v0.1.18) (2024-02-17)
 
 ### 0.1.17 (2024-02-17)

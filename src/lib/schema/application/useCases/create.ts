@@ -13,12 +13,12 @@ export class CreateSchema {
 			if (typeof name !== 'string') {
 				throw new Error('Argument name undefined')
 			}
-			const type = Type.type(data, { info: true })
+			const type = Type.type(data, { info: true, describe: true })
 			return this._create([{ name, type }])
 		} else if (typeof data === 'object') {
 			const types: EntityType[] = []
 			for (const key in data) {
-				const type = Type.type(data[key], { info: true })
+				const type = Type.type(data[key], { info: true, describe: true })
 				types.push({ name: key, type })
 			}
 			return this._create(types)

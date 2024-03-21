@@ -67,7 +67,10 @@ export class SchemaService {
 		const entity:Entity = { name, primaryKey, properties: [], uniqueKey: [], required: [], indexes: [], relations: [], dependents: [] }
 		for (const prop of objType.properties) {
 			if (prop.type && Type.isPrimitive(prop.type)) {
-				const property: Property = { name: prop.name, type: prop.type.primitive, required: (prop.type.nullable === false && prop.type.undefinable === false) }
+				const required = (prop.type.nullable === false && prop.type.undefinable === false)
+				const length = this.getLength(prop.type)
+				const type = prop.type.primitive === 'string' && length === undefined ? 'text' : prop.type.primitive
+				const property: Property = { name: prop.name, type, required, length }
 				entity.properties.push(property)
 				if (prop.type.unique && (pk === undefined || pk.name !== prop.name)) {
 					entity.uniqueKey.push(prop.name)
@@ -77,7 +80,10 @@ export class SchemaService {
 				if (fk && fk.type) {
 					const propertyName = prop.name + this.helper.str.capitalize(fk.name)
 					const entityName = this.helper.str.capitalize(prop.name)
-					const property: Property = { name: propertyName, type: fk.type.primitive, required: (prop.type.nullable === false && prop.type.undefinable === false) }
+					const required = (prop.type.nullable === false && prop.type.undefinable === false)
+					const length = this.getLength(fk.type)
+					const type = fk.type.primitive === 'string' && length === undefined ? 'text' : fk.type.primitive
+					const property: Property = { name: propertyName, type, required, length }
 					const relation:Relation = {
 						name: prop.name,
 						type: RelationType.oneToMany,
@@ -156,6 +162,43 @@ export class SchemaService {
 		}
 		entities.push(entity)
 		return entities
+	}
+
+	private getLength (type:Type): number | undefined {
+		if (type.primitive !== 'string') {
+			return undefined
+		}
+		if (!type.maxLen) {
+			return 80
+		}
+		if (type.maxLen < 8) {
+			if (type.maxLen === type.minLen) {
+				return type.maxLen
+			}
+			return Math.round(type.maxLen * 1.3)
+		}
+		const length = Math.round(type.maxLen * 1.3)
+		if (length < 16) {
+			return 16
+		} else if (length < 32) {
+			return 32
+		} else if (length < 64) {
+			return 64
+		} else if (length < 128) {
+			return 128
+		} else if (length < 256) {
+			return 256
+		} else if (length < 512) {
+			return 512
+		} else if (length < 1024) {
+			return 1024
+		} else if (length < 2048) {
+			return 2048
+		} else if (length < 4096) {
+			return 4096
+		} else {
+			return undefined
+		}
 	}
 
 	private getPk (objType:ObjType): PropertyType | undefined {

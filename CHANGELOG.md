@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.21](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.20...v0.1.21) (2024-03-21)
 
-
-### Features
+**Features:**
 
 * **schema:** solve length in create ([9d93c9d](https://github.com/FlavioLionelRita/lambdaorm-base/commit/9d93c9dcd5349d8330c7c1525bdb2776ee1f7fa2)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

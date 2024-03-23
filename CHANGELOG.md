@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.23](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.22...v0.1.23) (2024-03-23)
 
-
-### Bug Fixes
+**Bug Fixes:**
 
 * **schema:** bugfix on define pk in create schema ([eca2d8e](https://github.com/FlavioLionelRita/lambdaorm-base/commit/eca2d8eaeef4b920bcdff0da6430a4d7d22f9697)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

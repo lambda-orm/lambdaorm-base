@@ -58,7 +58,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L17)
+[src/lib/schema/application/facade.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L17)
 
 ## Properties
 
@@ -68,7 +68,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L19)
+[src/lib/schema/application/facade.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L19)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L20)
+[src/lib/schema/application/facade.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L20)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L16)
+[src/lib/schema/application/facade.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L16)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L23)
+[src/lib/schema/application/facade.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L23)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L18)
+[src/lib/schema/application/facade.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L18)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L21)
+[src/lib/schema/application/facade.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L21)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L22)
+[src/lib/schema/application/facade.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L22)
 
 ## Methods
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L67)
+[src/lib/schema/application/facade.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L67)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:43](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L43)
+[src/lib/schema/application/facade.ts:43](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L43)
 
 ▸ **create**(`data`, `name`): [`Schema`](../interfaces/Schema.md)
 
@@ -185,7 +185,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L44)
+[src/lib/schema/application/facade.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L44)
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L35)
+[src/lib/schema/application/facade.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L35)
 
 ___
 
@@ -226,7 +226,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L53)
+[src/lib/schema/application/facade.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L53)
 
 ___
 
@@ -247,7 +247,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L39)
+[src/lib/schema/application/facade.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L39)
 
 ___
 
@@ -267,7 +267,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L57)
+[src/lib/schema/application/facade.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L57)
 
 ___
 
@@ -288,4 +288,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:49](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/application/facade.ts#L49)
+[src/lib/schema/application/facade.ts:49](https://github.com/lambda-orm/lambdaorm-base/blob/eca2d8e/src/lib/schema/application/facade.ts#L49)

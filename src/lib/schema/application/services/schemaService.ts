@@ -113,9 +113,13 @@ export class SchemaService {
 							if (rpk && rpk.type) {
 								// hay que crear una tabla intermediaria con el id de la entidad y el id de la entidad relacionada
 								const parentPropertyName = this.helper.str.notation(entity.name, 'camel') + this.helper.str.capitalize(pk.name)
-								const parentProperty: Property = { name: parentPropertyName, type: pk.type.primitive, required: true }
+								const parentPropertyLength = this.getLength(pk.type)
+								const parentPropertyType = pk.type.primitive === 'string' && parentPropertyLength === undefined ? 'text' : pk.type.primitive
+								const parentProperty: Property = { name: parentPropertyName, type: parentPropertyType, length: parentPropertyLength, required: true }
 								const childPropertyName = this.helper.str.singular(this.helper.str.notation(relatedEntity.name, 'camel')) + this.helper.str.capitalize(rpk.name)
-								const childProperty: Property = { name: childPropertyName, type: rpk.type.primitive, required: true }
+								const childPropertyLength = this.getLength(rpk.type)
+								const childPropertyType = rpk.type.primitive === 'string' && childPropertyLength === undefined ? 'text' : rpk.type.primitive
+								const childProperty: Property = { name: childPropertyName, type: childPropertyType, length: childPropertyLength, required: true }
 								const intermediaEntityName = entity.name + this.helper.str.capitalize(prop.name)
 								const intermediaPropertyPk: Property = { name: 'id', type: 'integer', required: true, autoIncrement: true }
 								const intermediaEntity:Entity = { intermediate: true, name: intermediaEntityName, primaryKey: ['id'], properties: [intermediaPropertyPk, childProperty, parentProperty], uniqueKey: [parentProperty.name, childProperty.name], required: [], indexes: [], relations: [], dependents: [] }

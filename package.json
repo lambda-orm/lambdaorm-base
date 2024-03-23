@@ -28,7 +28,7 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"h3lp": "^1.6.1",
+		"h3lp": "^1.6.3",
 		"typ3s": "^0.1.16",
 		"3xpr": "^1.15.10",
 		"js-yaml": "^4.1.0",

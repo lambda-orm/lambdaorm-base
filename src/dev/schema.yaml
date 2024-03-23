@@ -18,9 +18,11 @@ domain:
           autoIncrement: true
         - name: languageCode
           type: string
+          length: 4
           required: true
         - name: countryName
           type: string
+          length: 32
           required: true
       uniqueKey:
         - countryName

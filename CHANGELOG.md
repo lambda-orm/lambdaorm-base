@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [0.1.22](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.21...v0.1.22) (2024-03-23)
+
+
+### Bug Fixes
+
+* **schema:** bugfix on create schema, define length on intermediate properties ([241a856](https://github.com/FlavioLionelRita/lambdaorm-base/commit/241a856632a17ed105386e7764daf826afaddd32)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [0.1.21](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.20...v0.1.21) (2024-03-21)
 
 **Features:**

@@ -122,7 +122,7 @@ export class SchemaService {
 								const childProperty: Property = { name: childPropertyName, type: childPropertyType, length: childPropertyLength, required: true }
 								const intermediaEntityName = entity.name + this.helper.str.capitalize(prop.name)
 								const intermediaPropertyPk: Property = { name: 'id', type: 'integer', required: true, autoIncrement: true }
-								const intermediaEntity:Entity = { intermediate: true, name: intermediaEntityName, primaryKey: ['id'], properties: [intermediaPropertyPk, childProperty, parentProperty], uniqueKey: [parentProperty.name, childProperty.name], required: [], indexes: [], relations: [], dependents: [] }
+								const intermediaEntity:Entity = { name: intermediaEntityName, intermediate: true, primaryKey: ['id'], properties: [intermediaPropertyPk, childProperty, parentProperty], uniqueKey: [parentProperty.name, childProperty.name], required: [], indexes: [], relations: [], dependents: [] }
 								const parentRelation:Relation = {
 									name: this.helper.str.notation(entity.name, 'camel'),
 									type: RelationType.oneToMany,
@@ -206,7 +206,7 @@ export class SchemaService {
 	}
 
 	private getPk (objType:ObjType): PropertyType | undefined {
-		const uniques = objType.properties.filter(p => p.type?.unique === true)
+		const uniques = objType.properties.filter(p => p.type?.unique === true || p.type?.onParentDistinctUnique === true)
 		return this.getKey(uniques)
 	}
 
@@ -220,11 +220,9 @@ export class SchemaService {
 		if (uniques.length === 1) {
 			return uniques[0]
 		} else if (uniques.length > 1) {
-			for (const keyName of ['id', 'code', 'key', 'name']) {
-				const id = uniques.find(p => p.name.toLowerCase() === keyName)
-				if (id) {
-					return id
-				}
+			const id = uniques.find(p => ['id', 'code', 'key', 'name'].includes(p.name.toLowerCase()))
+			if (id) {
+				return id
 			}
 			const idNumber = uniques.find(p => p.type?.primitive === 'number' || p.type?.primitive === 'integer')
 			if (idNumber) {

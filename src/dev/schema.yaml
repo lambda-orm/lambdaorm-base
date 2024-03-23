@@ -7,8 +7,8 @@ domain:
   version: 0.0.1
   enums: []
   entities:
-    - intermediate: true
-      name: CountryLanguages
+    - name: CountryLanguages
+      intermediate: true
       primaryKey:
         - id
       properties:
@@ -44,7 +44,8 @@ domain:
           target: countryLanguages
       dependents: []
     - name: Languages
-      primaryKey: []
+      primaryKey:
+        - code
       properties:
         - name: code
           type: string

@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[src/lib/query/domain/query.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/9d93c9d/src/lib/query/domain/query.ts#L12)
+[src/lib/query/domain/query.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/query/domain/query.ts#L12)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/lib/query/domain/query.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/9d93c9d/src/lib/query/domain/query.ts#L14)
+[src/lib/query/domain/query.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/query/domain/query.ts#L14)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/lib/query/domain/query.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/9d93c9d/src/lib/query/domain/query.ts#L10)
+[src/lib/query/domain/query.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/query/domain/query.ts#L10)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/lib/query/domain/query.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/9d93c9d/src/lib/query/domain/query.ts#L13)
+[src/lib/query/domain/query.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/query/domain/query.ts#L13)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[src/lib/query/domain/query.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/9d93c9d/src/lib/query/domain/query.ts#L11)
+[src/lib/query/domain/query.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/query/domain/query.ts#L11)

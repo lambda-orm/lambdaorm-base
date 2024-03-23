@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:174](https://github.com/lambda-orm/lambdaorm-base/blob/9d93c9d/src/lib/schema/domain/schema.ts#L174)
+[src/lib/schema/domain/schema.ts:174](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/domain/schema.ts#L174)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:173](https://github.com/lambda-orm/lambdaorm-base/blob/9d93c9d/src/lib/schema/domain/schema.ts#L173)
+[src/lib/schema/domain/schema.ts:173](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/domain/schema.ts#L173)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/9d93c9d/src/lib/schema/domain/schema.ts#L172)
+[src/lib/schema/domain/schema.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/241a856/src/lib/schema/domain/schema.ts#L172)

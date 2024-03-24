@@ -10,9 +10,14 @@
         "classtype",
         "Flavio",
         "github",
+        "initcap",
         "lambdaorm",
+        "lpad",
+        "ltrim",
         "Manaus",
         "npmjs",
+        "rpad",
+        "rtrim",
         "sqlstring"
     ]
 }

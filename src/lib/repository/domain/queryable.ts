@@ -174,6 +174,19 @@ export class Queryable<T> extends HavingClauses<T> {
 		return new IncludeAction(this.actions, `${this.expression}.updateAll(${predicate.toString()})`)
 	}
 
+	merge (predicate?:(value:T) => unknown | T): ModificableClauses<T> {
+		if (predicate) {
+			return new ModificableClauses(this.actions, `${this.expression}.merge(${predicate !== undefined ? JSON.stringify(predicate) : ''})`)
+		} else {
+			return new ModificableClauses(this.actions, `${this.expression}.merge()`)
+		}
+	}
+
+	/**  */
+	bulkMerge (value?: T): ModificableClauses<T> {
+		return new ModificableClauses(this.actions, `${this.expression}.bulkMerge(${value !== undefined ? JSON.stringify(value) : ''})`)
+	}
+
 	/**  */
 	delete (predicate?:(value:T) => unknown): ModificableClauses<T> {
 		if (predicate) {

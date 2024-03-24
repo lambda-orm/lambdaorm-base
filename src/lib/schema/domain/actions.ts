@@ -12,7 +12,8 @@ export enum SentenceCrudAction {
 	select = 'select',
 	insert = 'insert',
 	update = 'update',
-	delete = 'delete'
+	delete = 'delete',
+	merge = 'merge'
 }
 export enum SentenceAction {
 	select = 'select',
@@ -20,6 +21,8 @@ export enum SentenceAction {
 	bulkInsert = 'bulkInsert',
 	update = 'update',
 	delete = 'delete',
+	merge = 'merge',
+	bulkMerge = 'bulkMerge',
 	truncateEntity = 'truncateEntity',
 	createEntity = 'createEntity',
 	createSequence = 'createSequence',

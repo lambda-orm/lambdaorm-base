@@ -117,7 +117,7 @@ domain:
         - name: position
           type: oneToMany
           from: positionLat
-          entity: Position
+          entity: Positions
           to: lat
         - name: countries
           type: oneToMany
@@ -152,7 +152,7 @@ domain:
         - name: region
           type: oneToMany
           from: regionCode
-          entity: Region
+          entity: Regions
           to: code
       dependents: []
 infrastructure:

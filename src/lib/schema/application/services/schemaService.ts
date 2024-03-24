@@ -85,7 +85,7 @@ export class SchemaService {
 				const fk = this.getFk(prop.type.obj)
 				if (fk && fk.type) {
 					const propertyName = prop.name + this.helper.str.capitalize(fk.name)
-					const entityName = this.helper.str.capitalize(prop.name)
+					const entityName = this.getEntityName(prop.name)
 					const required = (prop.type.nullable === false && prop.type.undefinable === false)
 					const length = this.getLength(fk.type)
 					const type = fk.type.primitive === 'string' && length === undefined ? 'text' : fk.type.primitive
@@ -110,7 +110,7 @@ export class SchemaService {
 				}
 			} else if (prop.type && Type.isList(prop.type) && prop.type.list?.items.obj) {
 				if (pk && pk.type) {
-					const entityName = this.helper.str.capitalize(prop.name)
+					const entityName = this.getEntityName(prop.name)
 					const relatedEntities = this.typeToEntities(entityName, prop.type)
 					const relatedEntity = relatedEntities.find(p => p.name === entityName)
 					if (relatedEntity) {

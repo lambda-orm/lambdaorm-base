@@ -7,7 +7,7 @@ domain:
   version: 0.0.1
   enums: []
   entities:
-    - name: CountryLanguages
+    - name: CountriesLanguages
       intermediate: true
       primaryKey:
         - id
@@ -20,28 +20,28 @@ domain:
           type: string
           length: 4
           required: true
-        - name: countryName
+        - name: countriesName
           type: string
           length: 32
           required: true
       uniqueKey:
-        - countryName
+        - countriesName
         - languageCode
       required: []
       indexes: []
       relations:
-        - name: country
+        - name: countries
           type: oneToMany
-          from: countryName
-          entity: Country
+          from: countriesName
+          entity: Countries
           to: name
-          target: countryLanguages
+          target: countriesLanguages
         - name: languages
           type: oneToMany
           from: languageCode
           entity: Languages
           to: code
-          target: countryLanguages
+          target: countriesLanguages
       dependents: []
     - name: Languages
       primaryKey:
@@ -60,7 +60,7 @@ domain:
       indexes: []
       relations: []
       dependents: []
-    - name: Region
+    - name: Regions
       primaryKey:
         - code
       properties:
@@ -77,18 +77,18 @@ domain:
       indexes: []
       relations: []
       dependents: []
-    - name: Pos
+    - name: Positions
       primaryKey:
         - lat
       properties:
         - name: lat
           type: decimal
           required: true
-        - name: log
+        - name: long
           type: decimal
           required: true
       uniqueKey:
-        - log
+        - long
       required: []
       indexes: []
       relations: []
@@ -104,29 +104,29 @@ domain:
         - name: offset
           type: integer
           required: false
-        - name: posLat
+        - name: positionLat
           type: decimal
           required: true
-        - name: countryName
+        - name: countriesName
           type: string
           required: true
       uniqueKey: []
       required: []
       indexes: []
       relations:
-        - name: pos
+        - name: position
           type: oneToMany
-          from: posLat
-          entity: Pos
+          from: positionLat
+          entity: Position
           to: lat
-        - name: country
+        - name: countries
           type: oneToMany
-          from: countryName
-          entity: Country
+          from: countriesName
+          entity: Countries
           to: name
           target: timezones
       dependents: []
-    - name: Country
+    - name: Countries
       primaryKey:
         - name
       properties:

@@ -60,11 +60,17 @@ export class SchemaService {
 		}
 	}
 
+	private getEntityName (name:string): string {
+		const plural = this.helper.str.plural(name)
+		return this.helper.str.capitalize(plural)
+	}
+
 	private objTypeToEntities (name:string, objType:ObjType): Entity[] {
 		const entities:Entity[] = []
 		const pk = this.getPk(objType)
 		const primaryKey = pk ? [pk.name] : []
-		const entity:Entity = { name, primaryKey, properties: [], uniqueKey: [], required: [], indexes: [], relations: [], dependents: [] }
+		const entityName = this.getEntityName(name)
+		const entity:Entity = { name: entityName, primaryKey, properties: [], uniqueKey: [], required: [], indexes: [], relations: [], dependents: [] }
 		for (const prop of objType.properties) {
 			if (prop.type && Type.isPrimitive(prop.type)) {
 				const required = (prop.type.nullable === false && prop.type.undefinable === false)

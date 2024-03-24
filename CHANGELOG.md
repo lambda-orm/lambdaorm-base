@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.24](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.23...v0.1.24) (2024-03-24)
 
-
-### Features
+**Features:**
 
 * **schema:** ensures the plural name of entities when creating the schema from a type ([4165360](https://github.com/FlavioLionelRita/lambdaorm-base/commit/41653608ad1749dab5f4b98ca1d42f60dc5bf23c)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

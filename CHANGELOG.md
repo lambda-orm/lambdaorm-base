@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.25](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.24...v0.1.25) (2024-03-24)
 
-
-### Bug Fixes
+**Bug Fixes:**
 
 * **schema:** bugfix entiriy name in create schema from type ([5c54d87](https://github.com/FlavioLionelRita/lambdaorm-base/commit/5c54d8764fcbe37e26611ba6ded3b003170137e3)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

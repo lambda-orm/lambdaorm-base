@@ -32,6 +32,10 @@
 
   ↳↳ [`Delete`](Delete.md)
 
+  ↳↳ [`Merge`](Merge.md)
+
+  ↳↳ [`BulkMerge`](BulkMerge.md)
+
 ## Table of contents
 
 ### Constructors
@@ -84,7 +88,7 @@ Operand.constructor
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/5c54d87/src/lib/sentence/domain/sentence.ts#L54)
+[src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/sentence/domain/sentence.ts#L54)
 
 ## Properties
 
@@ -94,7 +98,7 @@ Operand.constructor
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/5c54d87/src/lib/sentence/domain/sentence.ts#L52)
+[src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/sentence/domain/sentence.ts#L52)
 
 ___
 
@@ -118,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/5c54d87/src/lib/sentence/domain/sentence.ts#L53)
+[src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/sentence/domain/sentence.ts#L53)
 
 ___
 

@@ -1,44 +1,44 @@
-[Lambda ORM](../README.md) / BulkInsert
+[Lambda ORM](../README.md) / BulkMerge
 
-# Class: BulkInsert
+# Class: BulkMerge
 
 ## Hierarchy
 
 - [`Clause`](Clause.md)
 
-  ↳ **`BulkInsert`**
+  ↳ **`BulkMerge`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](BulkInsert.md#constructor)
+- [constructor](BulkMerge.md#constructor)
 
 ### Properties
 
-- [alias](BulkInsert.md#alias)
-- [children](BulkInsert.md#children)
-- [entity](BulkInsert.md#entity)
-- [evaluator](BulkInsert.md#evaluator)
-- [id](BulkInsert.md#id)
-- [name](BulkInsert.md#name)
-- [number](BulkInsert.md#number)
-- [pos](BulkInsert.md#pos)
-- [returnType](BulkInsert.md#returntype)
-- [type](BulkInsert.md#type)
+- [alias](BulkMerge.md#alias)
+- [children](BulkMerge.md#children)
+- [entity](BulkMerge.md#entity)
+- [evaluator](BulkMerge.md#evaluator)
+- [id](BulkMerge.md#id)
+- [name](BulkMerge.md#name)
+- [number](BulkMerge.md#number)
+- [pos](BulkMerge.md#pos)
+- [returnType](BulkMerge.md#returntype)
+- [type](BulkMerge.md#type)
 
 ### Methods
 
-- [eval](BulkInsert.md#eval)
-- [evalAsync](BulkInsert.md#evalasync)
-- [isAsync](BulkInsert.md#isasync)
-- [solve](BulkInsert.md#solve)
+- [eval](BulkMerge.md#eval)
+- [evalAsync](BulkMerge.md#evalasync)
+- [isAsync](BulkMerge.md#isasync)
+- [solve](BulkMerge.md#solve)
 
 ## Constructors
 
 ### constructor
 
-• **new BulkInsert**(`pos`, `name`, `children`, `entity`, `alias`): [`BulkInsert`](BulkInsert.md)
+• **new BulkMerge**(`pos`, `name`, `children`, `entity`, `alias`): [`BulkMerge`](BulkMerge.md)
 
 #### Parameters
 
@@ -52,7 +52,7 @@
 
 #### Returns
 
-[`BulkInsert`](BulkInsert.md)
+[`BulkMerge`](BulkMerge.md)
 
 #### Inherited from
 

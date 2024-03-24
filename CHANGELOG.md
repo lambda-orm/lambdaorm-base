@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.26](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.25...v0.1.26) (2024-03-24)
 
-
-### Features
+**Features:**
 
 * **language:** add merge and bulk merge ([3925a87](https://github.com/FlavioLionelRita/lambdaorm-base/commit/3925a87531d3b113a3abb50d11e3f8214f2cb3a3)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

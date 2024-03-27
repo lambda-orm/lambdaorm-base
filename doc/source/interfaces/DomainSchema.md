@@ -18,17 +18,17 @@
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:161](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/schema/domain/schema.ts#L161)
+[src/lib/schema/domain/schema.ts:160](https://github.com/lambda-orm/lambdaorm-base/blob/8749c37/src/lib/schema/domain/schema.ts#L160)
 
 ___
 
 ### enums
 
-• **enums**: [`Enum`](Enum.md)[]
+• `Optional` **enums**: [`Enum`](Enum.md)[]
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:162](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/schema/domain/schema.ts#L162)
+[src/lib/schema/domain/schema.ts:161](https://github.com/lambda-orm/lambdaorm-base/blob/8749c37/src/lib/schema/domain/schema.ts#L161)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:160](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/schema/domain/schema.ts#L160)
+[src/lib/schema/domain/schema.ts:159](https://github.com/lambda-orm/lambdaorm-base/blob/8749c37/src/lib/schema/domain/schema.ts#L159)

@@ -16,13 +16,13 @@
 
 ### constructor
 
-• **new UpdateSchema**(`schemaService`): [`UpdateSchema`](UpdateSchema.md)
+• **new UpdateSchema**(`createSchemaService`): [`UpdateSchema`](UpdateSchema.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `schemaService` | [`SchemaService`](SchemaService.md) |
+| `createSchemaService` | [`CreateSchemaService`](CreateSchemaService.md) |
 
 #### Returns
 
@@ -30,20 +30,21 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/update.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/schema/application/useCases/update.ts#L6)
+[src/lib/schema/application/useCases/update.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/8749c37/src/lib/schema/application/useCases/update.ts#L7)
 
 ## Methods
 
 ### update
 
-▸ **update**(`schema`, `types`): `void`
+▸ **update**(`schema`, `name`, `type`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `schema` | [`Schema`](../interfaces/Schema.md) |
-| `types` | [`EntityType`](../interfaces/EntityType.md)[] |
+| `name` | `string` |
+| `type` | `Type` |
 
 #### Returns
 
@@ -51,4 +52,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/update.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/schema/application/useCases/update.ts#L8)
+[src/lib/schema/application/useCases/update.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/8749c37/src/lib/schema/application/useCases/update.ts#L9)

@@ -16,13 +16,14 @@
 
 ### constructor
 
-• **new CreateSchema**(`schemaService`): [`CreateSchema`](CreateSchema.md)
+• **new CreateSchema**(`schemaService`, `createSchemaService`): [`CreateSchema`](CreateSchema.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `schemaService` | [`SchemaService`](SchemaService.md) |
+| `schemaService` | `SchemaService` |
+| `createSchemaService` | [`CreateSchemaService`](CreateSchemaService.md) |
 
 #### Returns
 
@@ -30,41 +31,25 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/schema/application/useCases/create.ts#L7)
+[src/lib/schema/application/useCases/create.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/8749c37/src/lib/schema/application/useCases/create.ts#L8)
 
 ## Methods
 
 ### create
 
-▸ **create**(`data`): [`Schema`](../interfaces/Schema.md)
+▸ **create**(`data`, `name`): [[`Schema`](../interfaces/Schema.md), `Type`]
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `data` | `any` |
+| `name` | `string` |
 
 #### Returns
 
-[`Schema`](../interfaces/Schema.md)
+[[`Schema`](../interfaces/Schema.md), `Type`]
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/schema/application/useCases/create.ts#L9)
-
-▸ **create**(`data`, `name?`): [`Schema`](../interfaces/Schema.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `any`[] |
-| `name?` | `string` |
-
-#### Returns
-
-[`Schema`](../interfaces/Schema.md)
-
-#### Defined in
-
-[src/lib/schema/application/useCases/create.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/3925a87/src/lib/schema/application/useCases/create.ts#L10)
+[src/lib/schema/application/useCases/create.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/8749c37/src/lib/schema/application/useCases/create.ts#L13)

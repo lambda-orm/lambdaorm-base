@@ -1,0 +1,439 @@
+{
+  "entities": [
+    {
+      "entity": "Countries",
+      "rows": [
+        {
+          "name": "Spain",
+          "phoneCode": 34,
+          "priority": 1,
+          "regionCode": "EU",
+          "timezones": [
+            {
+              "name": "Madrid",
+              "offset": 1,
+              "position": {
+                "lat": 40.4165,
+                "long": -3.70256
+              }
+            },
+            {
+              "name": "Ceuta",
+              "position": {
+                "lat": 35.8883,
+                "long": -5.3162
+              }
+            },
+            {
+              "name": "Canary",
+              "offset": 0,
+              "position": {
+                "lat": 28.1248,
+                "long": -15.43
+              }
+            }
+          ]
+        },
+        {
+          "name": "France",
+          "phoneCode": 33,
+          "priority": 1,
+          "regionCode": "EU",
+          "timezones": [
+            {
+              "name": "Paris",
+              "offset": 1,
+              "position": {
+                "lat": 48.8566,
+                "long": 2.3522
+              }
+            },
+            {
+              "name": "Reunion",
+              "offset": 4,
+              "position": {
+                "lat": -20.8823,
+                "long": 55.4504
+              }
+            },
+            {
+              "name": "Guadeloupe",
+              "offset": -4,
+              "position": {
+                "lat": 16.265,
+                "long": -61.551
+              }
+            }
+          ]
+        },
+        {
+          "name": "Germany",
+          "phoneCode": 49,
+          "priority": 1,
+          "regionCode": "EU",
+          "timezones": [
+            {
+              "name": "Berlin",
+              "offset": 1,
+              "position": {
+                "lat": 52.52,
+                "long": 13.405
+              }
+            },
+            {
+              "name": "Busingen",
+              "offset": 1,
+              "position": {
+                "lat": 47.6963,
+                "long": 8.6927
+              }
+            }
+          ]
+        },
+        {
+          "name": "Portugal",
+          "phoneCode": 351,
+          "priority": 1,
+          "regionCode": "EU",
+          "timezones": [
+            {
+              "name": "Lisbon",
+              "offset": 0,
+              "position": {
+                "lat": 38.7223,
+                "long": -9.1393
+              }
+            },
+            {
+              "name": "Madeira",
+              "offset": 0,
+              "position": {
+                "lat": 32.7607,
+                "long": -16.9595
+              }
+            },
+            {
+              "name": "Azores",
+              "offset": -1,
+              "position": {
+                "lat": 37.7412,
+                "long": -25.6756
+              }
+            }
+          ]
+        },
+        {
+          "name": "United States",
+          "phoneCode": 1,
+          "priority": 1,
+          "regionCode": "NA",
+          "timezones": [
+            {
+              "name": "New York",
+              "offset": -5,
+              "position": {
+                "lat": 40.7128,
+                "long": -74.006
+              }
+            },
+            {
+              "name": "Los Angeles",
+              "offset": -8,
+              "position": {
+                "lat": 34.0522,
+                "long": -118.2437
+              }
+            },
+            {
+              "name": "Chicago",
+              "offset": -6,
+              "position": {
+                "lat": 41.8781,
+                "long": -87.6298
+              }
+            },
+            {
+              "name": "Denver",
+              "offset": -7,
+              "position": {
+                "lat": 39.7392,
+                "long": -104.9903
+              }
+            },
+            {
+              "name": "Anchorage",
+              "offset": -9,
+              "position": {
+                "lat": 61.2181,
+                "long": -149.9003
+              }
+            },
+            {
+              "name": "Honolulu",
+              "offset": -10,
+              "position": {
+                "lat": 21.3069,
+                "long": -157.8583
+              }
+            }
+          ]
+        },
+        {
+          "name": "Canada",
+          "phoneCode": 2,
+          "priority": 1,
+          "regionCode": "NA",
+          "timezones": [
+            {
+              "name": "Toronto",
+              "offset": -5,
+              "position": {
+                "lat": 43.6532,
+                "long": -79.3832
+              }
+            },
+            {
+              "name": "Vancouver",
+              "offset": -8,
+              "position": {
+                "lat": 49.2827,
+                "long": -123.1207
+              }
+            },
+            {
+              "name": "Edmonton",
+              "offset": -7,
+              "position": {
+                "lat": 53.5461,
+                "long": -113.4938
+              }
+            },
+            {
+              "name": "Winnipeg",
+              "offset": -6,
+              "position": {
+                "lat": 49.8951,
+                "long": -97.1384
+              }
+            },
+            {
+              "name": "Yellowknife",
+              "offset": -7,
+              "position": {
+                "lat": 62.454,
+                "long": -114.3718
+              }
+            },
+            {
+              "name": "Iqaluit",
+              "offset": -5,
+              "position": {
+                "lat": 63.7467,
+                "long": -68.517
+              }
+            }
+          ]
+        },
+        {
+          "name": "Brasil",
+          "phoneCode": 55,
+          "priority": 1,
+          "regionCode": "SA",
+          "timezones": [
+            {
+              "name": "Sao Paulo",
+              "offset": -3,
+              "position": {
+                "lat": -23.5505,
+                "long": -46.6333
+              }
+            },
+            {
+              "name": "Rio de Janeiro",
+              "offset": -3,
+              "position": {
+                "lat": -22.9068,
+                "long": -43.1729
+              }
+            },
+            {
+              "name": "Manaus",
+              "offset": -4,
+              "position": {
+                "lat": -3.119,
+                "long": -60.0217
+              }
+            },
+            {
+              "name": "Porto Alegre",
+              "offset": -3,
+              "position": {
+                "lat": -30.0346,
+                "long": -51.2177
+              }
+            },
+            {
+              "name": "Fortaleza",
+              "offset": -3,
+              "position": {
+                "lat": -3.7319,
+                "long": -38.5267
+              }
+            },
+            {
+              "name": "Belem",
+              "offset": -3,
+              "position": {
+                "lat": -1.4558,
+                "long": -48.4902
+              }
+            }
+          ]
+        },
+        {
+          "name": "Argentina",
+          "phoneCode": 54,
+          "priority": 1,
+          "regionCode": "SA",
+          "timezones": [
+            {
+              "name": "Buenos Aires",
+              "offset": -3,
+              "position": {
+                "lat": -34.6037,
+                "long": -58.3816
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "CountriesLanguages",
+      "rows": [
+        {
+          "languageCode": "SP",
+          "countriesName": "Spain"
+        },
+        {
+          "languageCode": "CAT",
+          "countriesName": "Spain"
+        },
+        {
+          "languageCode": "GAL",
+          "countriesName": "Spain"
+        },
+        {
+          "languageCode": "BSQ",
+          "countriesName": "Spain"
+        },
+        {
+          "languageCode": "FR",
+          "countriesName": "France"
+        },
+        {
+          "languageCode": "GER",
+          "countriesName": "Germany"
+        },
+        {
+          "languageCode": "PT",
+          "countriesName": "Portugal"
+        },
+        {
+          "languageCode": "EN",
+          "countriesName": "United States"
+        },
+        {
+          "languageCode": "EN",
+          "countriesName": "Canada"
+        },
+        {
+          "languageCode": "FR",
+          "countriesName": "Canada"
+        },
+        {
+          "languageCode": "PT",
+          "countriesName": "Brasil"
+        },
+        {
+          "languageCode": "SP",
+          "countriesName": "Argentina"
+        }
+      ]
+    },
+    {
+      "entity": "Languages",
+      "rows": [
+        {
+          "code": "SP",
+          "name": "Spanish"
+        },
+        {
+          "code": "CAT",
+          "name": "Catalan"
+        },
+        {
+          "code": "GAL",
+          "name": "Galician"
+        },
+        {
+          "code": "BSQ",
+          "name": "Basque"
+        },
+        {
+          "code": "FR",
+          "name": "French"
+        },
+        {
+          "code": "GER",
+          "name": "German"
+        },
+        {
+          "code": "PT",
+          "name": "Portuguese"
+        },
+        {
+          "code": "EN",
+          "name": "English"
+        }
+      ]
+    },
+    {
+      "entity": "Regions",
+      "rows": [
+        {
+          "code": "EU",
+          "name": "Europe"
+        },
+        {
+          "code": "EU",
+          "name": "Europe"
+        },
+        {
+          "code": "EU",
+          "name": "Europe"
+        },
+        {
+          "code": "EU",
+          "name": "Europe"
+        },
+        {
+          "code": "NA",
+          "name": "North America"
+        },
+        {
+          "code": "NA",
+          "name": "North America"
+        },
+        {
+          "code": "SA",
+          "name": "South America"
+        },
+        {
+          "code": "SA",
+          "name": "South America"
+        }
+      ]
+    }
+  ]
+}

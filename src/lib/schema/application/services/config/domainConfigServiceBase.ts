@@ -67,7 +67,10 @@ export abstract class DomainConfigServiceBase<TEntity extends Entity, TProperty 
 		if (!entity) {
 			throw new SchemaError('Not exists entity:' + entityName)
 		}
-		return entity.properties.filter(p => entity.primaryKey.includes(p.name)) as TProperty[]
+		if (!entity.primaryKey) {
+			return undefined
+		}
+		return entity.properties.filter(p => entity.primaryKey && entity.primaryKey.includes(p.name)) as TProperty[]
 	}
 
 	public listEntities (): string[] {
@@ -111,7 +114,7 @@ export abstract class DomainConfigServiceBase<TEntity extends Entity, TProperty 
 					throw new SchemaError('Not exists entity:' + entityName)
 				}
 				info.push(`{ ${entity.name} relations: `)
-				if (entity.dependents && entity.dependents.length > 0) {
+				if (entity.dependents && entity.dependents.length > 0 && entity.relations) {
 					for (const relation of entity.relations) {
 						if (relation.entity !== entity.name && mainEntities.includes(relation.entity)) {
 							for (const relation of entity.relations) {

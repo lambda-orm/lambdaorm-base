@@ -249,7 +249,7 @@ export class SchemaExtender {
 				if (property.autoIncrement) {
 					property.required = false
 				} else if (property.required === undefined) {
-					property.required = (entity.required.includes(property.name) || entity.primaryKey.includes(property.name) || entity.uniqueKey.includes(property.name))
+					property.required = ((entity.required && entity.required.includes(property.name)) || (entity.primaryKey && entity.primaryKey.includes(property.name)) || (entity.uniqueKey && entity.uniqueKey.includes(property.name)))
 				}
 				if (property.type === undefined) property.type = Primitive.string
 				if (property.type === Primitive.string && property.length === undefined) property.length = 80
@@ -287,7 +287,7 @@ export class SchemaExtender {
 
 	private completeRelation (source:Entity, sourceRelation: Relation, entities: Entity[]) {
 		const targetEntity = entities.find(p => p.name === sourceRelation.entity)
-		if (targetEntity) {
+		if (targetEntity && targetEntity.relations) {
 			const exists = targetEntity.relations.find(p => p.name === sourceRelation.target) !== undefined
 			if (!exists) {
 				targetEntity.relations.push({
@@ -308,6 +308,9 @@ export class SchemaExtender {
 		for (const entity of entities) {
 			entity.dependents = []
 			for (const related of entities) {
+				if (!related.relations) {
+					continue
+				}
 				for (const relation of related.relations) {
 					if (relation.entity === entity.name && !relation.weak) {
 						const dependent = { entity: related.name, relation }
@@ -355,7 +358,7 @@ export class SchemaExtender {
 			entity.properties = this.helper.obj.extends(entity.properties, base.properties)
 		}
 		// extend relations
-		if (base.relations.length > 0) {
+		if (base.relations && base.relations.length > 0) {
 			entity.relations = this.helper.obj.extends(entity.relations, base.relations)
 		}
 		// elimina dado que ya fue extendido

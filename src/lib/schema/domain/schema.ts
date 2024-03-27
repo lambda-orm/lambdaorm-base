@@ -1,4 +1,3 @@
-import { Type } from 'typ3s'
 import { SentenceAction } from './actions'
 import { Dialect } from './dialect'
 export const DIALECT_DEFAULT = Dialect.MySQL
@@ -62,13 +61,13 @@ export interface Entity {
 	abstract?: boolean
 	singular?: string
 	view?: boolean
-	primaryKey: string[]
-	uniqueKey: string[]
-	required: string[]
-	indexes: Index[]
+	primaryKey?: string[]
+	uniqueKey?: string[]
 	properties: Property[]
-	relations: Relation[]
-	dependents: Dependent[]
+	relations?: Relation[]
+	required?: string[]
+	indexes?: Index[]
+	dependents?: Dependent[]
 	constraints?: Constraint[]
 	hadReadExps?: boolean
 	hadWriteExps?: boolean
@@ -159,7 +158,7 @@ export interface AppPathsConfig {
 export interface DomainSchema {
 	version: string
 	entities: Entity[]
-	enums: Enum[]
+	enums?: Enum[]
 }
 export interface InfrastructureSchema {
 	paths?: AppPathsConfig
@@ -169,9 +168,9 @@ export interface InfrastructureSchema {
 	stages?: Stage[]
 }
 export interface ApplicationSchema {
-	start:TaskConfig[]
-	listeners: ListenerConfig[]
-	end:TaskConfig[]
+	start?:TaskConfig[]
+	listeners?: ListenerConfig[]
+	end?:TaskConfig[]
 }
 export interface Schema {
 	version: string
@@ -187,22 +186,17 @@ export interface MappingConfig {
 	pending: any[]
 	inconsistency: any[]
 }
-export interface SchemaConfigEntity
-{
-	entity:string
-	rows:any[]
-}
-export interface SchemaConfig
-{
-	entities:SchemaConfigEntity[]
-}
 export interface Behavior {
 	alias?: string
 	property: string
 	expression: string
 }
-
-export interface EntityType {
-	name: string
-	type: Type
+export interface SchemaEntityData
+{
+	entity:string
+	rows:any[]
+}
+export interface SchemaData
+{
+	entities:SchemaEntityData[]
 }

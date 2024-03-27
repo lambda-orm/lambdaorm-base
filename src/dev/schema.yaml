@@ -1,11 +1,6 @@
 version: 0.0.1
-application:
-  start: []
-  end: []
-  listeners: []
 domain:
   version: 0.0.1
-  enums: []
   entities:
     - name: CountriesLanguages
       intermediate: true
@@ -27,8 +22,6 @@ domain:
       uniqueKey:
         - countriesName
         - languageCode
-      required: []
-      indexes: []
       relations:
         - name: countries
           type: oneToMany
@@ -42,7 +35,6 @@ domain:
           entity: Languages
           to: code
           target: countriesLanguages
-      dependents: []
     - name: Languages
       primaryKey:
         - code
@@ -55,11 +47,6 @@ domain:
           type: string
           required: true
           length: 16
-      uniqueKey: []
-      required: []
-      indexes: []
-      relations: []
-      dependents: []
     - name: Regions
       primaryKey:
         - code
@@ -72,11 +59,6 @@ domain:
           type: string
           required: true
           length: 32
-      uniqueKey: []
-      required: []
-      indexes: []
-      relations: []
-      dependents: []
     - name: Positions
       primaryKey:
         - lat
@@ -89,10 +71,6 @@ domain:
           required: true
       uniqueKey:
         - long
-      required: []
-      indexes: []
-      relations: []
-      dependents: []
     - name: Timezones
       primaryKey:
         - name
@@ -110,22 +88,18 @@ domain:
         - name: countriesName
           type: string
           required: true
-      uniqueKey: []
-      required: []
-      indexes: []
       relations:
         - name: position
           type: oneToMany
           from: positionLat
           entity: Positions
           to: lat
+          composite: true
         - name: countries
           type: oneToMany
           from: countriesName
           entity: Countries
           to: name
-          target: timezones
-      dependents: []
     - name: Countries
       primaryKey:
         - name
@@ -146,15 +120,18 @@ domain:
           length: 2
       uniqueKey:
         - phoneCode
-      required: []
-      indexes: []
       relations:
         - name: region
           type: oneToMany
           from: regionCode
           entity: Regions
           to: code
-      dependents: []
+        - name: timezones
+          type: manyToOne
+          from: name
+          entity: Timezones
+          to: countriesName
+          composite: true
 infrastructure:
   paths:
     src: src
@@ -163,4 +140,3 @@ infrastructure:
   mappings: []
   sources: []
   stages: []
-  views: []

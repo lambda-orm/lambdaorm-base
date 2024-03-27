@@ -18,6 +18,7 @@
         "npmjs",
         "rpad",
         "rtrim",
-        "sqlstring"
+        "sqlstring",
+        "uuidv"
     ]
 }

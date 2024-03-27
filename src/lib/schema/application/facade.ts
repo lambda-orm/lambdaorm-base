@@ -1,4 +1,4 @@
-import { ClauseInfo, SourceRule, Schema, SchemaError, EntityType } from '../domain'
+import { ClauseInfo, SourceRule, Schema, SchemaError, SchemaData } from '../domain'
 import { DataSourceConfigService } from './services/config/dataSourceConfigService'
 import { MappingsConfigService } from './services/config/mappingsConfigService'
 import { DomainConfigService } from './services/config/domainConfigService'
@@ -6,12 +6,15 @@ import { StageConfigService } from './services/config/stageConfigService'
 import { ViewsConfigService } from './services/config/viewsConfigService'
 import { RouteService } from './services/routeService'
 import { SchemaExtender } from './services/schemaExtender'
-import { SchemaService } from './services/schemaService'
+import { CreateSchemaService } from './services/createSchemaService'
 import { CompleteSchema } from './useCases/complete'
 import { GetSchema } from './useCases/get'
 import { LoadSchema } from './useCases/load'
 import { CreateSchema } from './useCases/create'
 import { UpdateSchema } from './useCases/update'
+import { SchemaService } from './services/schemaService'
+import { GetSchemaSchema } from './useCases/getSchemaData'
+import { Type } from 'typ3s'
 export class SchemaFacade {
 	public schema: Schema
 	constructor (
@@ -21,6 +24,8 @@ export class SchemaFacade {
 		public readonly stage:StageConfigService,
 		public readonly view:ViewsConfigService,
 		public readonly schemaService:SchemaService,
+		private readonly createSchemaService:CreateSchemaService,
+		private readonly getSchemaData: GetSchemaSchema,
 		private readonly routeService:RouteService,
 		private readonly extender:SchemaExtender,
 		private readonly createSchema: CreateSchema,
@@ -40,14 +45,22 @@ export class SchemaFacade {
 		return this.routeService.getSource(clauseInfo, stage)
 	}
 
-	public create (data: any):Schema
-	public create (data: any[], name:string):Schema
-	public create (data: any | any[], name?:string):Schema {
+	public create (data: any | any[], name:string):[Schema, Type] {
 		return this.createSchema.create(data, name)
 	}
 
-	public update (schema:Schema, types: EntityType[]): void {
-		this.updateSchema.update(schema, types)
+	public update (schema: Schema, name:string, type: Type): void {
+		this.updateSchema.update(schema, name, type)
+	}
+
+	public schemaData (source:any, name:string, type: Type): SchemaData {
+		return this.getSchemaData.getData(source, name, type)
+	}
+
+	public createAndSchemaData (data: any | any[], name: string):[Schema, SchemaData] {
+		const [schema, type] = this.create(data, name)
+		const schemaData = this.schemaData(data, name, type)
+		return [schema, schemaData]
 	}
 
 	public async get (source: string): Promise<Schema|null> {

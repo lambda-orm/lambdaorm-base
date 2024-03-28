@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.34](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.33...v0.1.34) (2024-03-28)
 
-
-### Features
+**Features:**
 
 * **schema:** update write on schema facade ([40dedb1](https://github.com/FlavioLionelRita/lambdaorm-base/commit/40dedb1dc75f172b889fbd0f4924c9ea9d7cb9c5)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

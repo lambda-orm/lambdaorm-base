@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.30](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.29...v0.1.30) (2024-03-28)
 
-
-### Features
+**Features:**
 
 * **schema:** add update and updateAndSchemaData methods ([1348d1f](https://github.com/FlavioLionelRita/lambdaorm-base/commit/1348d1f136198c8d3758134025b344089a6bd5c0)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

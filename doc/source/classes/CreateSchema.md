@@ -16,14 +16,14 @@
 
 ### constructor
 
-• **new CreateSchema**(`schemaService`, `createSchemaService`): [`CreateSchema`](CreateSchema.md)
+• **new CreateSchema**(`schemaService`, `createEntitiesService`): [`CreateSchema`](CreateSchema.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `schemaService` | `SchemaService` |
-| `createSchemaService` | [`CreateSchemaService`](CreateSchemaService.md) |
+| `createEntitiesService` | [`CreateEntitiesService`](CreateEntitiesService.md) |
 
 #### Returns
 
@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/schema/application/useCases/create.ts#L8)
+[src/lib/schema/application/useCases/create.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/1348d1f/src/lib/schema/application/useCases/create.ts#L8)
 
 ## Methods
 
@@ -52,4 +52,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/schema/application/useCases/create.ts#L13)
+[src/lib/schema/application/useCases/create.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/1348d1f/src/lib/schema/application/useCases/create.ts#L13)

@@ -1,27 +1,14 @@
-import { Schema, Entity, Property, Relation, RelationType } from '../../domain'
+import { Entity, Property, Relation, RelationType } from '../../domain'
 import { ObjType, Type } from 'typ3s'
 import { H3lp } from 'h3lp'
 import { SchemaService } from './schemaService'
 
-export class CreateSchemaService {
+export class CreateEntitiesService {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (private readonly schemaService:SchemaService, private readonly helper: H3lp) {}
 
-	public addEntityType (schema: Schema, name:string, type: Type):void {
-		const entities = this.typeToEntities(name, type)
-		for (const entity of entities) {
-			const currentEntity = schema.domain.entities.find(p => p.name === entity.name)
-			if (currentEntity) {
-				for (const prop of entity.properties) {
-					const currentProp = currentEntity.properties.find(p => p.name === prop.name)
-					if (!currentProp) {
-						currentEntity.properties.push(prop)
-					}
-				}
-			} else {
-				schema.domain.entities.push(entity)
-			}
-		}
+	public getEntities (name:string, type: Type):Entity[] {
+		return this.typeToEntities(name, type)
 	}
 
 	private typeToEntities (name:string, type:Type): Entity[] {

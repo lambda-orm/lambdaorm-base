@@ -107,8 +107,9 @@ const lab = async () => {
 		}
 	]
 	const workspace = __dirname.replace('build/', 'src/')
+	const schema = yaml.load(await h3lp.fs.read(workspace + '/schema.yaml'))
 	const schemaFacade = new SchemaFacadeBuilder(expressions, h3lp).build()
-	const [schema, schemaData] = schemaFacade.createAndSchemaData(array, 'Country')
+	const schemaData = schemaFacade.updateAndSchemaData(schema, array, 'Country')
 	await h3lp.fs.write(workspace + '/schema.yaml', yaml.dump(schema))
 	await h3lp.fs.write(workspace + '/schemaData.json', JSON.stringify(schemaData, null, 2))
 }

@@ -1,7 +1,7 @@
 import { Expressions } from '3xpr'
 import {
 	DataSourceConfigService, MappingsConfigService, DomainConfigService, SchemaFacade, StageConfigService, ViewsConfigService,
-	CreateSchemaService, RouteService, SchemaExtender, LoadSchema, CreateSchema, GetSchema, CompleteSchema, UpdateSchema, GetSchemaSchema
+	CreateEntitiesService, RouteService, SchemaExtender, LoadSchema, CreateSchema, GetSchema, CompleteSchema, UpdateSchema, GetSchemaSchema
 } from '../application'
 import { FileSchemaReader } from './fileSchemaReader'
 import { SchemaFileHelper } from './schemaFileHelper'
@@ -22,16 +22,16 @@ export class SchemaFacadeBuilder {
 		const stage = new StageConfigService()
 		const view = new ViewsConfigService()
 		const schemaService = new SchemaService(this.helper)
-		const createSchemaService = new CreateSchemaService(schemaService, this.helper)
+		const createEntitiesService = new CreateEntitiesService(schemaService, this.helper)
 		const interpretSchemaDataService = new InterpretSchemaDataService(schemaService, this.helper)
 		const routeService = new RouteService(stage, this.expressions)
 		const extender = new SchemaExtender(this.expressions, this.helper)
 		const loadSchema = new LoadSchema(source, model, mapping, stage, view, extender, this.helper)
-		const createSchema = new CreateSchema(schemaService, createSchemaService)
-		const updateSchema = new UpdateSchema(createSchemaService)
+		const createSchema = new CreateSchema(schemaService, createEntitiesService)
+		const updateSchema = new UpdateSchema(schemaService, createEntitiesService)
 		const getSchema = new GetSchema(new FileSchemaReader(new SchemaFileHelper(this.helper), this.helper))
 		const completeSchema = new CompleteSchema(schemaService)
 		const getSchemaData = new GetSchemaSchema(interpretSchemaDataService)
-		return new SchemaFacade(source, model, mapping, stage, view, schemaService, createSchemaService, getSchemaData, routeService, extender, createSchema, updateSchema, loadSchema, getSchema, completeSchema)
+		return new SchemaFacade(source, model, mapping, stage, view, schemaService, getSchemaData, routeService, extender, createSchema, updateSchema, loadSchema, getSchema, completeSchema)
 	}
 }

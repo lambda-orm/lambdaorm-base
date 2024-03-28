@@ -6,7 +6,6 @@ import { StageConfigService } from './services/config/stageConfigService'
 import { ViewsConfigService } from './services/config/viewsConfigService'
 import { RouteService } from './services/routeService'
 import { SchemaExtender } from './services/schemaExtender'
-import { CreateSchemaService } from './services/createSchemaService'
 import { CompleteSchema } from './useCases/complete'
 import { GetSchema } from './useCases/get'
 import { LoadSchema } from './useCases/load'
@@ -24,7 +23,6 @@ export class SchemaFacade {
 		public readonly stage:StageConfigService,
 		public readonly view:ViewsConfigService,
 		public readonly schemaService:SchemaService,
-		private readonly createSchemaService:CreateSchemaService,
 		private readonly getSchemaData: GetSchemaSchema,
 		private readonly routeService:RouteService,
 		private readonly extender:SchemaExtender,
@@ -49,8 +47,8 @@ export class SchemaFacade {
 		return this.createSchema.create(data, name)
 	}
 
-	public update (schema: Schema, name:string, type: Type): void {
-		this.updateSchema.update(schema, name, type)
+	public update (schema: Schema, data: any | any[], name:string): Type {
+		return this.updateSchema.update(schema, data, name)
 	}
 
 	public schemaData (source:any, name:string, type: Type): SchemaData {
@@ -61,6 +59,12 @@ export class SchemaFacade {
 		const [schema, type] = this.create(data, name)
 		const schemaData = this.schemaData(data, name, type)
 		return [schema, schemaData]
+	}
+
+	public updateAndSchemaData (schema: Schema, data: any | any[], name: string):SchemaData {
+		const type = this.updateSchema.update(schema, data, name)
+		const schemaData = this.schemaData(data, name, type)
+		return schemaData
 	}
 
 	public async get (source: string): Promise<Schema|null> {

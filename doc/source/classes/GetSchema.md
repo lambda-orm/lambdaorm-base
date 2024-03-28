@@ -30,13 +30,13 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/get.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/746ef4f/src/lib/schema/application/useCases/get.ts#L6)
+[src/lib/schema/application/useCases/get.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/8fe7e5a/src/lib/schema/application/useCases/get.ts#L6)
 
 ## Methods
 
 ### get
 
-▸ **get**(`source?`): `Promise`\<``null`` \| [`Schema`](../interfaces/Schema.md)\>
+▸ **get**(`source?`): `Promise`\<``null`` \| [`SchemaInfo`](../interfaces/SchemaInfo.md)\>
 
 #### Parameters
 
@@ -46,8 +46,8 @@
 
 #### Returns
 
-`Promise`\<``null`` \| [`Schema`](../interfaces/Schema.md)\>
+`Promise`\<``null`` \| [`SchemaInfo`](../interfaces/SchemaInfo.md)\>
 
 #### Defined in
 
-[src/lib/schema/application/useCases/get.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/746ef4f/src/lib/schema/application/useCases/get.ts#L8)
+[src/lib/schema/application/useCases/get.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/8fe7e5a/src/lib/schema/application/useCases/get.ts#L8)

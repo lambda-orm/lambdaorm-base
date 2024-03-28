@@ -12,7 +12,7 @@
 
 ### read
 
-▸ **read**(`source`): `Promise`\<``null`` \| [`Schema`](Schema.md)\>
+▸ **read**(`source`): `Promise`\<``null`` \| [`SchemaInfo`](SchemaInfo.md)\>
 
 #### Parameters
 
@@ -22,8 +22,8 @@
 
 #### Returns
 
-`Promise`\<``null`` \| [`Schema`](Schema.md)\>
+`Promise`\<``null`` \| [`SchemaInfo`](SchemaInfo.md)\>
 
 #### Defined in
 
-[src/lib/schema/application/ports/fileSchemaReader.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/746ef4f/src/lib/schema/application/ports/fileSchemaReader.ts#L4)
+[src/lib/schema/application/ports/fileSchemaReader.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/8fe7e5a/src/lib/schema/application/ports/fileSchemaReader.ts#L4)

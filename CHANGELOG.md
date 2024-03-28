@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.32](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.31...v0.1.32) (2024-03-28)
 
-
-### Features
+**Features:**
 
 * **schema:** add schema path on facade ([8fe7e5a](https://github.com/FlavioLionelRita/lambdaorm-base/commit/8fe7e5a46b1c9e1113e250f26e0ce61bbddf3307)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

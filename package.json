@@ -1,6 +1,6 @@
 {
 	"name": "lambdaorm-base",
-	"version": "0.1.27",
+	"version": "0.1.28",
 	"description": "ORM",
 	"author": "Flavio Lionel Rita <flaviolrita@proton.me>",
 	"license": "MIT",

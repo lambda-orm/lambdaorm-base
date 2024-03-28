@@ -71,7 +71,7 @@ export class InterpretSchemaDataService {
 						const schemaEntityData = this.getSchemaEntityData(schemaData, relatedEntityName)
 						if (relatedPkName === '_id') {
 							row[relatedPkName] = uuidv4()
-						} else if (schemaEntityData.rows.some(p => p[pkName] === value[relatedPkName])) {
+						} else if (schemaEntityData.rows.some(p => p[relatedPkName] === value[relatedPkName])) {
 							// En el caso de que el id ya exista, no se añade la fila
 							continue
 						}

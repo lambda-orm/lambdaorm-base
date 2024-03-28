@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:182](https://github.com/lambda-orm/lambdaorm-base/blob/1348d1f/src/lib/schema/domain/schema.ts#L182)
+[src/lib/schema/domain/schema.ts:182](https://github.com/lambda-orm/lambdaorm-base/blob/746ef4f/src/lib/schema/domain/schema.ts#L182)

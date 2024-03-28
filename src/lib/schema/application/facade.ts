@@ -87,8 +87,13 @@ export class SchemaFacade {
 		return schemaInfo.schema
 	}
 
-	public async write (schema:Schema, fullPath:string):Promise<void> {
-		await this.fileService.write(schema, fullPath)
+	public async write (schema?:Schema, fullPath?:string):Promise<void> {
+		const schemaToWrite = schema || this.schema
+		const fullPathToWrite = fullPath || this.schemaPath
+		if (!fullPathToWrite) {
+			throw new SchemaError('No path to write schema')
+		}
+		await this.fileService.write(schemaToWrite, fullPathToWrite)
 	}
 
 	public async initialize (source: string | Schema): Promise<Schema> {

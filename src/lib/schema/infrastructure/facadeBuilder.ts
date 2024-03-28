@@ -1,9 +1,9 @@
 import { Expressions } from '3xpr'
 import {
 	DataSourceConfigService, MappingsConfigService, DomainConfigService, SchemaFacade, StageConfigService, ViewsConfigService,
-	CreateEntitiesService, RouteService, SchemaExtender, LoadSchema, CreateSchema, GetSchema, CompleteSchema, UpdateSchema, GetSchemaSchema
+	CreateEntitiesService, RouteService, SchemaExtender, LoadSchema, CreateSchema, CompleteSchema, UpdateSchema, GetSchemaSchema
 } from '../application'
-import { FileSchemaReader } from './fileSchemaReader'
+import { FileSchemaService } from './fileSchemaService'
 import { SchemaFileHelper } from './schemaFileHelper'
 import { H3lp } from 'h3lp'
 import { SchemaService } from '../application/services/schemaService'
@@ -29,9 +29,9 @@ export class SchemaFacadeBuilder {
 		const loadSchema = new LoadSchema(source, model, mapping, stage, view, extender, this.helper)
 		const createSchema = new CreateSchema(schemaService, createEntitiesService)
 		const updateSchema = new UpdateSchema(schemaService, createEntitiesService)
-		const getSchema = new GetSchema(new FileSchemaReader(new SchemaFileHelper(this.helper), this.helper))
+		const fileSchemaService = new FileSchemaService(new SchemaFileHelper(this.helper), this.helper)
 		const completeSchema = new CompleteSchema(schemaService)
 		const getSchemaData = new GetSchemaSchema(interpretSchemaDataService)
-		return new SchemaFacade(source, model, mapping, stage, view, schemaService, getSchemaData, routeService, extender, createSchema, updateSchema, loadSchema, getSchema, completeSchema)
+		return new SchemaFacade(source, model, mapping, stage, view, schemaService, getSchemaData, routeService, extender, createSchema, updateSchema, loadSchema, fileSchemaService, completeSchema)
 	}
 }

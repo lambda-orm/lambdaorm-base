@@ -1,4 +1,4 @@
-import { ClauseInfo, SourceRule, Schema, SchemaError, SchemaData, Dialect } from '../domain'
+import { ClauseInfo, SourceRule, Schema, SchemaError, SchemaData, Dialect, SchemaInfo } from '../domain'
 import { DataSourceConfigService } from './services/config/dataSourceConfigService'
 import { MappingsConfigService } from './services/config/mappingsConfigService'
 import { DomainConfigService } from './services/config/domainConfigService'
@@ -7,13 +7,13 @@ import { ViewsConfigService } from './services/config/viewsConfigService'
 import { RouteService } from './services/routeService'
 import { SchemaExtender } from './services/schemaExtender'
 import { CompleteSchema } from './useCases/complete'
-import { GetSchema } from './useCases/get'
 import { LoadSchema } from './useCases/load'
 import { CreateSchema } from './useCases/create'
 import { UpdateSchema } from './useCases/update'
 import { SchemaService } from './services/schemaService'
 import { GetSchemaSchema } from './useCases/getSchemaData'
 import { Type } from 'typ3s'
+import { IFileSchemaService } from './ports/fileSchemaService'
 export class SchemaFacade {
 	public schema: Schema
 	public schemaPath?: string
@@ -30,7 +30,7 @@ export class SchemaFacade {
 		private readonly createSchema: CreateSchema,
 		private readonly updateSchema: UpdateSchema,
 		private readonly loadSchema: LoadSchema,
-		private readonly getSchema: GetSchema,
+		private readonly fileService:IFileSchemaService,
 		private readonly completeSchema:CompleteSchema
 	) {
 		this.schema = this.schemaService.newSchema()
@@ -80,15 +80,19 @@ export class SchemaFacade {
 	}
 
 	public async get (source: string): Promise<Schema|null> {
-		const schemaInfo = await this.getSchema.get(source)
+		const schemaInfo = await this._get(source)
 		if (schemaInfo === null) {
 			return null
 		}
 		return schemaInfo.schema
 	}
 
+	public async write (schema:Schema, fullPath:string):Promise<void> {
+		await this.fileService.write(schema, fullPath)
+	}
+
 	public async initialize (source: string | Schema): Promise<Schema> {
-		const schemaInfo = await this.getSchema.get(source)
+		const schemaInfo = await this._get(source)
 		if (schemaInfo === null) {
 			throw new SchemaError(`Schema: ${source} not supported`)
 		}
@@ -101,5 +105,14 @@ export class SchemaFacade {
 
 	public complete (schema: Schema): void {
 		this.extender.complete(schema)
+	}
+
+	private async _get (source?: string | Schema):Promise<SchemaInfo|null> {
+		if (source && typeof source === 'string') {
+			return await this.fileService.read(source)
+		} else if (source) {
+			return { schema: source as Schema }
+		}
+		return null
 	}
 }

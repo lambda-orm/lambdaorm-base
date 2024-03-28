@@ -1,11 +1,11 @@
-import { SchemaError, SchemaInfo } from '../domain'
+import { Schema, SchemaError, SchemaInfo } from '../domain'
 import path from 'path'
 import { H3lp } from 'h3lp'
-import { IFileSchemaReader } from '../application'
+import { IFileSchemaService } from '../application'
 import { SchemaFileHelper } from './schemaFileHelper'
 const yaml = require('js-yaml')
 
-export class FileSchemaReader implements IFileSchemaReader {
+export class FileSchemaService implements IFileSchemaService {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
 		private schemaFileHelper: SchemaFileHelper,
@@ -26,6 +26,16 @@ export class FileSchemaReader implements IFileSchemaReader {
 			return { schema: JSON.parse(content), path: configPath }
 		} else {
 			throw new SchemaError(`Schema file: ${configPath} not supported`)
+		}
+	}
+
+	public async write (schema:Schema, fullPath:string): Promise<void> {
+		if (path.extname(fullPath) === '.yaml' || path.extname(fullPath) === '.yml') {
+			await this.helper.fs.write(fullPath, yaml.dump(schema))
+		} else if (path.extname(fullPath) === '.json') {
+			await this.helper.fs.write(fullPath, JSON.stringify(schema, null, 2))
+		} else {
+			throw new SchemaError(`Schema file: ${fullPath} not supported`)
 		}
 	}
 

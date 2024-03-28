@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L10)
+[src/lib/repository/application/repository.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L10)
 
 ▸ **bulkInsert**(`entities`, `include`): `Promise`\<`any`[]\>
 
@@ -63,7 +63,7 @@
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L11)
+[src/lib/repository/application/repository.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L11)
 
 ▸ **bulkInsert**(`entities`, `include?`): `Promise`\<`any`[]\>
 
@@ -80,7 +80,7 @@
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L12)
+[src/lib/repository/application/repository.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L12)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L28)
+[src/lib/repository/application/repository.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L28)
 
 ▸ **bulkMerge**(`entities`, `include`): `Promise`\<`any`[]\>
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L29)
+[src/lib/repository/application/repository.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L29)
 
 ▸ **bulkMerge**(`entities`, `include?`): `Promise`\<`any`[]\>
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L30)
+[src/lib/repository/application/repository.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L30)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L32)
+[src/lib/repository/application/repository.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L32)
 
 ▸ **delete**(`entity`, `include`): `Promise`\<`number`\>
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L33)
+[src/lib/repository/application/repository.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L33)
 
 ▸ **delete**(`entity`, `include?`): `Promise`\<`number`\>
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L34)
+[src/lib/repository/application/repository.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L34)
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L36)
+[src/lib/repository/application/repository.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L36)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L46)
+[src/lib/repository/application/repository.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L46)
 
 ___
 
@@ -253,7 +253,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L5)
+[src/lib/repository/application/repository.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L5)
 
 ___
 
@@ -275,7 +275,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:51](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L51)
+[src/lib/repository/application/repository.ts:51](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L51)
 
 ___
 
@@ -295,7 +295,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L6)
+[src/lib/repository/application/repository.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L6)
 
 ▸ **insert**(`entity`, `include`): `Promise`\<`any`\>
 
@@ -312,7 +312,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L7)
+[src/lib/repository/application/repository.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L7)
 
 ▸ **insert**(`entity`, `include?`): `Promise`\<`any`\>
 
@@ -329,7 +329,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L8)
+[src/lib/repository/application/repository.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L8)
 
 ___
 
@@ -351,7 +351,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:56](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L56)
+[src/lib/repository/application/repository.ts:56](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L56)
 
 ___
 
@@ -373,7 +373,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:41](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L41)
+[src/lib/repository/application/repository.ts:41](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L41)
 
 ___
 
@@ -393,7 +393,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L24)
+[src/lib/repository/application/repository.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L24)
 
 ▸ **merge**(`entity`, `include`): `Promise`\<`number`\>
 
@@ -410,7 +410,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L25)
+[src/lib/repository/application/repository.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L25)
 
 ▸ **merge**(`entity`, `include?`): `Promise`\<`number`\>
 
@@ -427,7 +427,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L26)
+[src/lib/repository/application/repository.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L26)
 
 ___
 
@@ -441,7 +441,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:61](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L61)
+[src/lib/repository/application/repository.ts:61](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L61)
 
 ___
 
@@ -461,7 +461,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L14)
+[src/lib/repository/application/repository.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L14)
 
 ▸ **update**(`entity`, `include`): `Promise`\<`number`\>
 
@@ -478,7 +478,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L15)
+[src/lib/repository/application/repository.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L15)
 
 ▸ **update**(`entity`, `include?`): `Promise`\<`number`\>
 
@@ -495,7 +495,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L16)
+[src/lib/repository/application/repository.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L16)
 
 ___
 
@@ -518,4 +518,4 @@ ___
 
 #### Defined in
 
-[src/lib/repository/application/repository.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/repository/application/repository.ts#L18)
+[src/lib/repository/application/repository.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/repository/application/repository.ts#L18)

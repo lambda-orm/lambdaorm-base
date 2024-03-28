@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.29](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.28...v0.1.29) (2024-03-28)
 
-
-### Bug Fixes
+**Bug Fixes:**
 
 * **schema:** bugfix on get schemaData ([ba4a653](https://github.com/FlavioLionelRita/lambdaorm-base/commit/ba4a65343274b1d438a58821c6de96258304092e)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

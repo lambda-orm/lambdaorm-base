@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/createSchemaService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/schema/application/services/createSchemaService.ts#L8)
+[src/lib/schema/application/services/createSchemaService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/schema/application/services/createSchemaService.ts#L8)
 
 ## Methods
 
@@ -53,4 +53,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/createSchemaService.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/schema/application/services/createSchemaService.ts#L10)
+[src/lib/schema/application/services/createSchemaService.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/ba4a653/src/lib/schema/application/services/createSchemaService.ts#L10)

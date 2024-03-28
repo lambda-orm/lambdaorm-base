@@ -1,4 +1,4 @@
-import { Schema, SchemaError } from '../domain'
+import { SchemaError, SchemaInfo } from '../domain'
 import path from 'path'
 import { H3lp } from 'h3lp'
 import { IFileSchemaReader } from '../application'
@@ -12,7 +12,7 @@ export class FileSchemaReader implements IFileSchemaReader {
 		private helper: H3lp
 	) {}
 
-	public async read (source:string): Promise<Schema|null> {
+	public async read (source:string): Promise<SchemaInfo|null> {
 		const configPath = await this.schemaFileHelper.getConfigPath(source)
 		if (!configPath) {
 			return null
@@ -21,9 +21,9 @@ export class FileSchemaReader implements IFileSchemaReader {
 		if (content === undefined || content === null) {
 			throw new SchemaError(`Schema file: ${configPath} empty`)
 		} else if (path.extname(configPath) === '.yaml' || path.extname(configPath) === '.yml') {
-			return yaml.load(content)
+			return { schema: yaml.load(content), path: configPath }
 		} else if (path.extname(configPath) === '.json') {
-			return JSON.parse(content)
+			return { schema: JSON.parse(content), path: configPath }
 		} else {
 			throw new SchemaError(`Schema file: ${configPath} not supported`)
 		}

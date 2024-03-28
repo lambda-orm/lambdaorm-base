@@ -178,6 +178,11 @@ export interface Schema {
 	infrastructure?:InfrastructureSchema
 	application?: ApplicationSchema
 }
+
+export interface SchemaInfo {
+	schema: Schema
+	path?: string
+}
 export interface ModelConfig {
 	mappings: Mapping[]
 }

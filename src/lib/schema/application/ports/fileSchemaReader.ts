@@ -1,5 +1,5 @@
-import { Schema } from '../../domain'
+import { SchemaInfo } from '../../domain'
 
 export interface IFileSchemaReader {
-	read (source: string): Promise<Schema|null>
+	read (source: string): Promise<SchemaInfo|null>
 }

@@ -16,6 +16,7 @@ import { GetSchemaSchema } from './useCases/getSchemaData'
 import { Type } from 'typ3s'
 export class SchemaFacade {
 	public schema: Schema
+	public schemaPath?: string
 	constructor (
 		public readonly source:DataSourceConfigService,
 		public readonly domain:DomainConfigService,
@@ -79,16 +80,22 @@ export class SchemaFacade {
 	}
 
 	public async get (source: string): Promise<Schema|null> {
-		return this.getSchema.get(source)
+		const schemaInfo = await this.getSchema.get(source)
+		if (schemaInfo === null) {
+			return null
+		}
+		return schemaInfo.schema
 	}
 
 	public async initialize (source: string | Schema): Promise<Schema> {
-		const schema = await this.getSchema.get(source)
-		if (schema === null) {
+		const schemaInfo = await this.getSchema.get(source)
+		if (schemaInfo === null) {
 			throw new SchemaError(`Schema: ${source} not supported`)
 		}
-		this.completeSchema.complete(schema)
-		this.schema = this.loadSchema.load(schema)
+		this.schema = schemaInfo.schema
+		this.schemaPath = schemaInfo.path
+		this.completeSchema.complete(this.schema)
+		this.schema = this.loadSchema.load(this.schema)
 		return this.schema
 	}
 

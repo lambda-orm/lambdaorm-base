@@ -1,4 +1,4 @@
-import { ClauseInfo, SourceRule, Schema, SchemaError, SchemaData } from '../domain'
+import { ClauseInfo, SourceRule, Schema, SchemaError, SchemaData, Dialect } from '../domain'
 import { DataSourceConfigService } from './services/config/dataSourceConfigService'
 import { MappingsConfigService } from './services/config/mappingsConfigService'
 import { DomainConfigService } from './services/config/domainConfigService'
@@ -33,6 +33,17 @@ export class SchemaFacade {
 		private readonly completeSchema:CompleteSchema
 	) {
 		this.schema = this.schemaService.newSchema()
+	}
+
+	public new (dialect?: Dialect, connection?: any): Schema {
+		const schema = this.schemaService.newSchema()
+		if (dialect && connection) {
+			schema.infrastructure = this.schemaService.newInfrastructure()
+			schema.infrastructure.sources = []
+			schema.infrastructure.sources.push({ name: 'default', mapping: 'default', dialect, connection })
+			schema.infrastructure.mappings = [{ name: 'default', entities: [] }]
+		}
+		return schema
 	}
 
 	public evalSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {

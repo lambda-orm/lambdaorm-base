@@ -188,7 +188,7 @@ Operand.eval
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/da77d0e/src/lib/sentence/domain/sentence.ts#L8)
+[src/lib/sentence/domain/sentence.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/1bef8e4/src/lib/sentence/domain/sentence.ts#L8)
 
 ___
 

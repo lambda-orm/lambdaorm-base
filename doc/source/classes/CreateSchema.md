@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/8749c37/src/lib/schema/application/useCases/create.ts#L8)
+[src/lib/schema/application/useCases/create.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/schema/application/useCases/create.ts#L8)
 
 ## Methods
 
@@ -52,4 +52,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/8749c37/src/lib/schema/application/useCases/create.ts#L13)
+[src/lib/schema/application/useCases/create.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/43bf031/src/lib/schema/application/useCases/create.ts#L13)

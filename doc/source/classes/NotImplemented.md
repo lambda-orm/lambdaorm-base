@@ -48,7 +48,7 @@ Error.constructor
 
 #### Defined in
 
-[src/lib/shared/domain/error.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/8fe7e5a/src/lib/shared/domain/error.ts#L16)
+[src/lib/shared/domain/error.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/15d4f72/src/lib/shared/domain/error.ts#L16)
 
 ## Properties
 

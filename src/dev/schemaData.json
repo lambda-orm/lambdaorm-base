@@ -38,6 +38,7 @@
           "name": "France",
           "phoneCode": 33,
           "priority": 1,
+          "regionCode": "EU",
           "timezones": [
             {
               "name": "Paris",
@@ -69,6 +70,7 @@
           "name": "Germany",
           "phoneCode": 49,
           "priority": 1,
+          "regionCode": "EU",
           "timezones": [
             {
               "name": "Berlin",
@@ -92,6 +94,7 @@
           "name": "Portugal",
           "phoneCode": 351,
           "priority": 1,
+          "regionCode": "EU",
           "timezones": [
             {
               "name": "Lisbon",
@@ -179,6 +182,7 @@
           "name": "Canada",
           "phoneCode": 2,
           "priority": 1,
+          "regionCode": "NA",
           "timezones": [
             {
               "name": "Toronto",
@@ -290,6 +294,7 @@
           "name": "Argentina",
           "phoneCode": 54,
           "priority": 1,
+          "regionCode": "SA",
           "timezones": [
             {
               "name": "Buenos Aires",

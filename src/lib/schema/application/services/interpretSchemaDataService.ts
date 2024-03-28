@@ -68,19 +68,18 @@ export class InterpretSchemaDataService {
 						const childRow = this.objectToRow(schemaData, prop.type.obj, value, relatedEntityName, relatedPkName)
 						row[prop.name] = childRow
 					} else {
-						const schemaEntityData = this.getSchemaEntityData(schemaData, relatedEntityName)
-						if (relatedPkName === '_id') {
-							row[relatedPkName] = uuidv4()
-						} else if (schemaEntityData.rows.some(p => p[relatedPkName] === value[relatedPkName])) {
-							// En el caso de que el id ya exista, no se añade la fila
-							continue
-						}
-						const childRow = this.objectToRow(schemaData, prop.type.obj, value, relatedEntityName, relatedPkName)
 						const fkValue = value[fk.name]
 						if (fkValue !== undefined) {
 							row[propertyName] = fkValue
 						}
-						schemaEntityData.rows.push(childRow)
+						const schemaEntityData = this.getSchemaEntityData(schemaData, relatedEntityName)
+						if (relatedPkName === '_id') {
+							row[relatedPkName] = uuidv4()
+						} else if (!schemaEntityData.rows.some(p => p[relatedPkName] === value[relatedPkName])) {
+							// En el caso que el registro no exista, se añade
+							const childRow = this.objectToRow(schemaData, prop.type.obj, value, relatedEntityName, relatedPkName)
+							schemaEntityData.rows.push(childRow)
+						}
 					}
 				}
 			} else if (prop.type && Type.isList(prop.type) && prop.type.list?.items.obj) {

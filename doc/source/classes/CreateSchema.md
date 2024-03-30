@@ -16,14 +16,13 @@
 
 ### constructor
 
-• **new CreateSchema**(`schemaService`, `createEntitiesService`): [`CreateSchema`](CreateSchema.md)
+• **new CreateSchema**(`schemaService`): [`CreateSchema`](CreateSchema.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `schemaService` | `SchemaService` |
-| `createEntitiesService` | [`CreateEntitiesService`](CreateEntitiesService.md) |
 
 #### Returns
 
@@ -31,25 +30,25 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/1bef8e4/src/lib/schema/application/useCases/create.ts#L8)
+[src/lib/schema/application/useCases/create.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/useCases/create.ts#L6)
 
 ## Methods
 
 ### create
 
-▸ **create**(`data`, `name`): [[`Schema`](../interfaces/Schema.md), `Type`]
+▸ **create**(`dialect?`, `connection?`): [`Schema`](../interfaces/Schema.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data` | `any` |
-| `name` | `string` |
+| `dialect?` | [`Dialect`](../enums/Dialect.md) |
+| `connection?` | `any` |
 
 #### Returns
 
-[[`Schema`](../interfaces/Schema.md), `Type`]
+[`Schema`](../interfaces/Schema.md)
 
 #### Defined in
 
-[src/lib/schema/application/useCases/create.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/1bef8e4/src/lib/schema/application/useCases/create.ts#L13)
+[src/lib/schema/application/useCases/create.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/useCases/create.ts#L10)

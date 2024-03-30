@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/lib/schema/domain/services.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/1bef8e4/src/lib/schema/domain/services.ts#L5)
+[src/lib/schema/domain/services.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/domain/services.ts#L5)
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/services.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/1bef8e4/src/lib/schema/domain/services.ts#L6)
+[src/lib/schema/domain/services.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/domain/services.ts#L6)

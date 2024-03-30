@@ -26,7 +26,7 @@ export class SchemaService {
 		return { src: 'src', data: 'data', domain: 'domain' }
 	}
 
-	public updateSchema (schema: Schema, entities:Entity[]):void {
+	public updateEntities (schema: Schema, entities:Entity[]):void {
 		for (const entity of entities) {
 			const currentEntity = schema.domain.entities.find(p => p.name === entity.name)
 			if (currentEntity) {

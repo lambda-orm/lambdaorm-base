@@ -1,26 +1,20 @@
-import { Schema } from '../../domain'
-import { CreateEntitiesService } from '../services/createEntitiesService'
-import { Type } from 'typ3s'
+import { Dialect, Schema } from '../../domain'
 import { SchemaService } from '../services/schemaService'
 
 export class CreateSchema {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
-		private readonly schemaService:SchemaService,
-		private readonly createEntitiesService:CreateEntitiesService
+		private readonly schemaService:SchemaService
 	) {}
 
-	public create (data: any | any[], name:string):[Schema, Type] {
-		if (!data || typeof data !== 'object') {
-			throw new Error('Invalid argument data')
-		}
-		if (typeof name !== 'string') {
-			throw new Error('Argument name undefined')
-		}
-		const type = Type.type(data, { info: true, describe: true })
-		const entities = this.createEntitiesService.getEntities(name, type)
+	public create (dialect?: Dialect, connection?: any):Schema {
 		const schema = this.schemaService.newSchema()
-		this.schemaService.updateSchema(schema, entities)
-		return [schema, type]
+		if (dialect && connection) {
+			schema.infrastructure = this.schemaService.newInfrastructure()
+			schema.infrastructure.sources = []
+			schema.infrastructure.sources.push({ name: 'default', mapping: 'default', dialect, connection })
+			schema.infrastructure.mappings = [{ name: 'default', entities: [] }]
+		}
+		return schema
 	}
 }

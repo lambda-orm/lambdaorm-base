@@ -89,8 +89,8 @@ export interface PropertyMapping extends Property {
 	readMappingExp?: string
 }
 export interface EntityMapping extends Entity {
-	mapping: string
-	sequence: string
+	mapping?: string
+	sequence?: string
 	properties: PropertyMapping[]
 	filter?: string
 	hadKeys?: boolean
@@ -105,7 +105,7 @@ export interface Mapping {
 	extends?: string
 	mapping?: string
 	name: string
-	entities: EntityMapping[]
+	entities?: EntityMapping[]
 	format?: FormatMapping
 }
 
@@ -151,9 +151,9 @@ export interface TaskConfig {
 	expression: string
 }
 export interface AppPathsConfig {
-	src: string
-	data: string
-	domain: string
+	src?: string
+	data?: string
+	domain?: string
 }
 export interface DomainSchema {
 	version: string

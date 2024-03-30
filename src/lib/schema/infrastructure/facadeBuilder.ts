@@ -3,8 +3,6 @@ import {
 	DataSourceConfigService, MappingsConfigService, DomainConfigService, SchemaFacade, StageConfigService, ViewsConfigService,
 	CreateEntitiesService, RouteService, SchemaExtender, LoadSchema, CreateSchema, CompleteSchema, UpdateSchema, GetSchemaSchema
 } from '../application'
-import { FileSchemaService } from './fileSchemaService'
-import { SchemaFileHelper } from './schemaFileHelper'
 import { H3lp } from 'h3lp'
 import { SchemaService } from '../application/services/schemaService'
 import { InterpretSchemaDataService } from '../application/services/interpretSchemaDataService'
@@ -27,11 +25,10 @@ export class SchemaFacadeBuilder {
 		const routeService = new RouteService(stage, this.expressions)
 		const extender = new SchemaExtender(this.expressions, this.helper)
 		const loadSchema = new LoadSchema(source, model, mapping, stage, view, extender, this.helper)
-		const createSchema = new CreateSchema(schemaService, createEntitiesService)
+		const createSchema = new CreateSchema(schemaService)
 		const updateSchema = new UpdateSchema(schemaService, createEntitiesService)
-		const fileSchemaService = new FileSchemaService(new SchemaFileHelper(this.helper), this.helper)
 		const completeSchema = new CompleteSchema(schemaService)
 		const getSchemaData = new GetSchemaSchema(interpretSchemaDataService)
-		return new SchemaFacade(source, model, mapping, stage, view, schemaService, getSchemaData, routeService, extender, createSchema, updateSchema, loadSchema, fileSchemaService, completeSchema)
+		return new SchemaFacade(source, model, mapping, stage, view, schemaService, getSchemaData, routeService, extender, createSchema, updateSchema, loadSchema, completeSchema)
 	}
 }

@@ -1,4 +1,4 @@
-import { ClauseInfo, SourceRule, Schema, SchemaError, SchemaData, Dialect, SchemaInfo } from '../domain'
+import { ClauseInfo, SourceRule, Schema, SchemaData, Dialect } from '../domain'
 import { DataSourceConfigService } from './services/config/dataSourceConfigService'
 import { MappingsConfigService } from './services/config/mappingsConfigService'
 import { DomainConfigService } from './services/config/domainConfigService'
@@ -13,10 +13,8 @@ import { UpdateSchema } from './useCases/update'
 import { SchemaService } from './services/schemaService'
 import { GetSchemaSchema } from './useCases/getSchemaData'
 import { Type } from 'typ3s'
-import { IFileSchemaService } from './ports/fileSchemaService'
 export class SchemaFacade {
-	public schema: Schema
-	public schemaPath?: string
+	// eslint-disable-next-line no-useless-constructor
 	constructor (
 		public readonly source:DataSourceConfigService,
 		public readonly domain:DomainConfigService,
@@ -30,21 +28,30 @@ export class SchemaFacade {
 		private readonly createSchema: CreateSchema,
 		private readonly updateSchema: UpdateSchema,
 		private readonly loadSchema: LoadSchema,
-		private readonly fileService:IFileSchemaService,
 		private readonly completeSchema:CompleteSchema
-	) {
-		this.schema = this.schemaService.newSchema()
+	) {}
+
+	public create (dialect?: Dialect, connection?: any): Schema {
+		return this.createSchema.create(dialect, connection)
 	}
 
-	public new (dialect?: Dialect, connection?: any): Schema {
-		const schema = this.schemaService.newSchema()
-		if (dialect && connection) {
-			schema.infrastructure = this.schemaService.newInfrastructure()
-			schema.infrastructure.sources = []
-			schema.infrastructure.sources.push({ name: 'default', mapping: 'default', dialect, connection })
-			schema.infrastructure.mappings = [{ name: 'default', entities: [] }]
-		}
-		return schema
+	public updateFromData (schema: Schema, data: any | any[], name:string): SchemaData {
+		const type = this.updateSchema.update(schema, data, name)
+		const schemaData = this.schemaData(data, name, type)
+		return schemaData
+	}
+
+	public schemaData (source:any, name:string, type: Type): SchemaData {
+		return this.getSchemaData.getData(source, name, type)
+	}
+
+	public solve (schema: Schema): Schema {
+		this.completeSchema.complete(schema)
+		return this.loadSchema.load(schema)
+	}
+
+	public complete (schema: Schema): void {
+		this.extender.complete(schema)
 	}
 
 	public evalSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {
@@ -53,71 +60,5 @@ export class SchemaFacade {
 
 	public getSource (clauseInfo: ClauseInfo, stage?: string):string {
 		return this.routeService.getSource(clauseInfo, stage)
-	}
-
-	public create (data: any | any[], name:string):[Schema, Type] {
-		return this.createSchema.create(data, name)
-	}
-
-	public update (schema: Schema, data: any | any[], name:string): Type {
-		return this.updateSchema.update(schema, data, name)
-	}
-
-	public schemaData (source:any, name:string, type: Type): SchemaData {
-		return this.getSchemaData.getData(source, name, type)
-	}
-
-	public createAndSchemaData (data: any | any[], name: string):[Schema, SchemaData] {
-		const [schema, type] = this.create(data, name)
-		const schemaData = this.schemaData(data, name, type)
-		return [schema, schemaData]
-	}
-
-	public updateAndSchemaData (schema: Schema, data: any | any[], name: string):SchemaData {
-		const type = this.updateSchema.update(schema, data, name)
-		const schemaData = this.schemaData(data, name, type)
-		return schemaData
-	}
-
-	public async get (source: string): Promise<Schema|null> {
-		const schemaInfo = await this._get(source)
-		if (schemaInfo === null) {
-			return null
-		}
-		return schemaInfo.schema
-	}
-
-	public async write (schema?:Schema, fullPath?:string):Promise<void> {
-		const schemaToWrite = schema || this.schema
-		const fullPathToWrite = fullPath || this.schemaPath
-		if (!fullPathToWrite) {
-			throw new SchemaError('No path to write schema')
-		}
-		await this.fileService.write(schemaToWrite, fullPathToWrite)
-	}
-
-	public async initialize (source: string | Schema): Promise<Schema> {
-		const schemaInfo = await this._get(source)
-		if (schemaInfo === null) {
-			throw new SchemaError(`Schema: ${source} not supported`)
-		}
-		this.schema = schemaInfo.schema
-		this.schemaPath = schemaInfo.path
-		this.completeSchema.complete(this.schema)
-		this.schema = this.loadSchema.load(this.schema)
-		return this.schema
-	}
-
-	public complete (schema: Schema): void {
-		this.extender.complete(schema)
-	}
-
-	private async _get (source?: string | Schema):Promise<SchemaInfo|null> {
-		if (source && typeof source === 'string') {
-			return await this.fileService.read(source)
-		} else if (source) {
-			return { schema: source as Schema }
-		}
-		return null
 	}
 }

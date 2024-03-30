@@ -18,7 +18,7 @@ export class UpdateSchema {
 		}
 		const type = Type.type(data, { info: true, describe: true })
 		const entities = this.createEntitiesService.getEntities(name, type)
-		this.schemaService.updateSchema(schema, entities)
+		this.schemaService.updateEntities(schema, entities)
 		return type
 	}
 }

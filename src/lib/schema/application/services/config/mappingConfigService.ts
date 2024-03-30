@@ -27,7 +27,7 @@ export class MappingConfigService extends DomainConfigServiceBase<EntityMapping,
 	}
 
 	public get entities (): EntityMapping[] {
-		return this.mapping.entities
+		return this.mapping.entities || []
 	}
 
 	public entityMapping (entityName: string): string | undefined {

@@ -1,6 +1,7 @@
 import { expressions } from '3xpr'
 import { h3lp } from 'h3lp'
-import { SchemaFacadeBuilder } from '../lib'
+import { SchemaFacadeBuilder, SchemaStateBuilder } from '../lib'
+const yaml = require('js-yaml')
 
 const lab = async () => {
 	const array = [
@@ -105,12 +106,14 @@ const lab = async () => {
 			phoneCode: 54
 		}
 	]
+	const schemaFacade = new SchemaFacadeBuilder(expressions, h3lp).build()
+	const schemaState = new SchemaStateBuilder(schemaFacade, h3lp).build()
 	const workspace = __dirname.replace('build/', 'src/')
 	const schemaPath = workspace + '/schema.yaml'
-	const schemaFacade = new SchemaFacadeBuilder(expressions, h3lp).build()
-	const schema = await schemaFacade.initialize(schemaPath)
-	const schemaData = schemaFacade.updateAndSchemaData(schema, array, 'Country')
-	await schemaFacade.write(schema)
+	const schema = schemaFacade.create()
+	await h3lp.fs.write(schemaPath, yaml.dump(schema))
+	await schemaState.load(schemaPath)
+	const schemaData = await schemaState.updateFromData(array, 'Country')
 	await h3lp.fs.write(workspace + '/schemaData.json', JSON.stringify(schemaData, null, 2))
 }
 

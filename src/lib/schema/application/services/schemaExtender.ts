@@ -417,6 +417,9 @@ export class SchemaExtender {
 	}
 
 	private completeMapping (mapping: Mapping): void {
+		if (mapping.entities === undefined) {
+			return
+		}
 		for (const entity of mapping.entities) {
 			if (this.helper.val.isEmpty(entity.mapping)) {
 				entity.mapping = entity.name
@@ -439,6 +442,7 @@ export class SchemaExtender {
 		if (source && source.entities) {
 			for (const sourceEntity of source.entities) {
 				if (sourceEntity.abstract === true) continue
+				if (target.entities === undefined) target.entities = []
 				target.entities.push(sourceEntity)
 			}
 		}
@@ -451,6 +455,7 @@ export class SchemaExtender {
 		if (source && source.entities) {
 			for (const sourceEntity of source.entities) {
 				if (!this.existsInMapping(schema, source.name, sourceEntity.name)) continue
+				if (target.entities === undefined) target.entities = []
 				target.entities.push(sourceEntity)
 			}
 		}

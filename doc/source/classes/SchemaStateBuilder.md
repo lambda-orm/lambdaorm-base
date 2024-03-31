@@ -16,12 +16,13 @@
 
 ### constructor
 
-• **new SchemaStateBuilder**(`facade`, `helper`): [`SchemaStateBuilder`](SchemaStateBuilder.md)
+• **new SchemaStateBuilder**(`expressions`, `facade`, `helper`): [`SchemaStateBuilder`](SchemaStateBuilder.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `expressions` | `Expressions` |
 | `facade` | [`SchemaFacade`](SchemaFacade.md) |
 | `helper` | `H3lp` |
 
@@ -31,7 +32,7 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/stateBuilder.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/infrastructure/stateBuilder.ts#L7)
+[src/lib/schema/infrastructure/stateBuilder.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/infrastructure/stateBuilder.ts#L12)
 
 ## Methods
 
@@ -45,4 +46,4 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/stateBuilder.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/infrastructure/stateBuilder.ts#L12)
+[src/lib/schema/infrastructure/stateBuilder.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/infrastructure/stateBuilder.ts#L18)

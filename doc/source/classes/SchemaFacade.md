@@ -10,46 +10,30 @@
 
 ### Properties
 
-- [domain](SchemaFacade.md#domain)
-- [mapping](SchemaFacade.md#mapping)
 - [schemaService](SchemaFacade.md#schemaservice)
-- [source](SchemaFacade.md#source)
-- [stage](SchemaFacade.md#stage)
-- [view](SchemaFacade.md#view)
 
 ### Methods
 
 - [complete](SchemaFacade.md#complete)
 - [create](SchemaFacade.md#create)
-- [evalSourceRule](SchemaFacade.md#evalsourcerule)
-- [getSource](SchemaFacade.md#getsource)
 - [schemaData](SchemaFacade.md#schemadata)
-- [solve](SchemaFacade.md#solve)
 - [updateFromData](SchemaFacade.md#updatefromdata)
 
 ## Constructors
 
 ### constructor
 
-• **new SchemaFacade**(`source`, `domain`, `mapping`, `stage`, `view`, `schemaService`, `getSchemaData`, `routeService`, `extender`, `createSchema`, `updateSchema`, `loadSchema`, `completeSchema`): [`SchemaFacade`](SchemaFacade.md)
+• **new SchemaFacade**(`schemaService`, `getSchemaData`, `extender`, `createSchema`, `updateSchema`): [`SchemaFacade`](SchemaFacade.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `source` | [`DataSourceConfigService`](DataSourceConfigService.md) |
-| `domain` | [`DomainConfigService`](DomainConfigService.md) |
-| `mapping` | [`MappingsConfigService`](MappingsConfigService.md) |
-| `stage` | [`StageConfigService`](StageConfigService.md) |
-| `view` | [`ViewsConfigService`](ViewsConfigService.md) |
 | `schemaService` | `SchemaService` |
 | `getSchemaData` | [`GetSchemaSchema`](GetSchemaSchema.md) |
-| `routeService` | [`RouteService`](RouteService.md) |
 | `extender` | [`SchemaExtender`](SchemaExtender.md) |
 | `createSchema` | [`CreateSchema`](CreateSchema.md) |
 | `updateSchema` | [`UpdateSchema`](UpdateSchema.md) |
-| `loadSchema` | [`LoadSchema`](LoadSchema.md) |
-| `completeSchema` | [`CompleteSchema`](CompleteSchema.md) |
 
 #### Returns
 
@@ -57,29 +41,9 @@
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L18)
+[src/lib/schema/application/facade.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/facade.ts#L10)
 
 ## Properties
-
-### domain
-
-• `Readonly` **domain**: [`DomainConfigService`](DomainConfigService.md)
-
-#### Defined in
-
-[src/lib/schema/application/facade.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L20)
-
-___
-
-### mapping
-
-• `Readonly` **mapping**: [`MappingsConfigService`](MappingsConfigService.md)
-
-#### Defined in
-
-[src/lib/schema/application/facade.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L21)
-
-___
 
 ### schemaService
 
@@ -87,37 +51,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L24)
-
-___
-
-### source
-
-• `Readonly` **source**: [`DataSourceConfigService`](DataSourceConfigService.md)
-
-#### Defined in
-
-[src/lib/schema/application/facade.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L19)
-
-___
-
-### stage
-
-• `Readonly` **stage**: [`StageConfigService`](StageConfigService.md)
-
-#### Defined in
-
-[src/lib/schema/application/facade.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L22)
-
-___
-
-### view
-
-• `Readonly` **view**: [`ViewsConfigService`](ViewsConfigService.md)
-
-#### Defined in
-
-[src/lib/schema/application/facade.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L23)
+[src/lib/schema/application/facade.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/facade.ts#L11)
 
 ## Methods
 
@@ -137,7 +71,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L53)
+[src/lib/schema/application/facade.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/facade.ts#L32)
 
 ___
 
@@ -158,49 +92,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L34)
-
-___
-
-### evalSourceRule
-
-▸ **evalSourceRule**(`rule`, `clauseInfo`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `rule` | [`SourceRule`](../interfaces/SourceRule.md) |
-| `clauseInfo` | [`ClauseInfo`](../interfaces/ClauseInfo.md) |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-[src/lib/schema/application/facade.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L57)
-
-___
-
-### getSource
-
-▸ **getSource**(`clauseInfo`, `stage?`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `clauseInfo` | [`ClauseInfo`](../interfaces/ClauseInfo.md) |
-| `stage?` | `string` |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[src/lib/schema/application/facade.ts:61](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L61)
+[src/lib/schema/application/facade.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/facade.ts#L18)
 
 ___
 
@@ -222,27 +114,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L44)
-
-___
-
-### solve
-
-▸ **solve**(`schema`): [`Schema`](../interfaces/Schema.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`Schema`](../interfaces/Schema.md) |
-
-#### Returns
-
-[`Schema`](../interfaces/Schema.md)
-
-#### Defined in
-
-[src/lib/schema/application/facade.ts:48](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L48)
+[src/lib/schema/application/facade.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/facade.ts#L28)
 
 ___
 
@@ -264,4 +136,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/facade.ts#L38)
+[src/lib/schema/application/facade.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/facade.ts#L22)

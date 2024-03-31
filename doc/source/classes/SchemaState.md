@@ -10,13 +10,19 @@
 
 ### Properties
 
-- [facade](SchemaState.md#facade)
+- [domain](SchemaState.md#domain)
+- [mapping](SchemaState.md#mapping)
 - [originalSchema](SchemaState.md#originalschema)
 - [schema](SchemaState.md#schema)
 - [schemaPath](SchemaState.md#schemapath)
+- [source](SchemaState.md#source)
+- [stage](SchemaState.md#stage)
+- [view](SchemaState.md#view)
 
 ### Methods
 
+- [evalSourceRule](SchemaState.md#evalsourcerule)
+- [getSource](SchemaState.md#getsource)
 - [load](SchemaState.md#load)
 - [updateFromData](SchemaState.md#updatefromdata)
 
@@ -24,13 +30,21 @@
 
 ### constructor
 
-• **new SchemaState**(`facade`, `fileService`, `helper`): [`SchemaState`](SchemaState.md)
+• **new SchemaState**(`source`, `domain`, `mapping`, `stage`, `view`, `routeService`, `loadSchema`, `facade`, `schemaService`, `fileService`, `helper`): [`SchemaState`](SchemaState.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `source` | [`DataSourceConfigService`](DataSourceConfigService.md) |
+| `domain` | [`DomainConfigService`](DomainConfigService.md) |
+| `mapping` | [`MappingsConfigService`](MappingsConfigService.md) |
+| `stage` | [`StageConfigService`](StageConfigService.md) |
+| `view` | [`ViewsConfigService`](ViewsConfigService.md) |
+| `routeService` | [`RouteService`](RouteService.md) |
+| `loadSchema` | [`LoadSchema`](LoadSchema.md) |
 | `facade` | [`SchemaFacade`](SchemaFacade.md) |
+| `schemaService` | `SchemaService` |
 | `fileService` | [`IFileSchemaService`](../interfaces/IFileSchemaService.md) |
 | `helper` | `H3lp` |
 
@@ -40,17 +54,27 @@
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/state.ts#L10)
+[src/lib/schema/application/state.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L18)
 
 ## Properties
 
-### facade
+### domain
 
-• `Readonly` **facade**: [`SchemaFacade`](SchemaFacade.md)
+• `Readonly` **domain**: [`DomainConfigService`](DomainConfigService.md)
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/state.ts#L10)
+[src/lib/schema/application/state.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L20)
+
+___
+
+### mapping
+
+• `Readonly` **mapping**: [`MappingsConfigService`](MappingsConfigService.md)
+
+#### Defined in
+
+[src/lib/schema/application/state.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L21)
 
 ___
 
@@ -60,7 +84,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/state.ts#L8)
+[src/lib/schema/application/state.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L16)
 
 ___
 
@@ -70,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/state.ts#L7)
+[src/lib/schema/application/state.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L15)
 
 ___
 
@@ -80,9 +104,81 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/state.ts#L9)
+[src/lib/schema/application/state.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L17)
+
+___
+
+### source
+
+• `Readonly` **source**: [`DataSourceConfigService`](DataSourceConfigService.md)
+
+#### Defined in
+
+[src/lib/schema/application/state.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L19)
+
+___
+
+### stage
+
+• `Readonly` **stage**: [`StageConfigService`](StageConfigService.md)
+
+#### Defined in
+
+[src/lib/schema/application/state.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L22)
+
+___
+
+### view
+
+• `Readonly` **view**: [`ViewsConfigService`](ViewsConfigService.md)
+
+#### Defined in
+
+[src/lib/schema/application/state.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L23)
 
 ## Methods
+
+### evalSourceRule
+
+▸ **evalSourceRule**(`rule`, `clauseInfo`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `rule` | [`SourceRule`](../interfaces/SourceRule.md) |
+| `clauseInfo` | [`ClauseInfo`](../interfaces/ClauseInfo.md) |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[src/lib/schema/application/state.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L63)
+
+___
+
+### getSource
+
+▸ **getSource**(`clauseInfo`, `stage?`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `clauseInfo` | [`ClauseInfo`](../interfaces/ClauseInfo.md) |
+| `stage?` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[src/lib/schema/application/state.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L67)
+
+___
 
 ### load
 
@@ -100,7 +196,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/state.ts#L18)
+[src/lib/schema/application/state.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L35)
 
 ___
 
@@ -121,4 +217,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/76aa344/src/lib/schema/application/state.ts#L36)
+[src/lib/schema/application/state.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/8900f48/src/lib/schema/application/state.ts#L53)

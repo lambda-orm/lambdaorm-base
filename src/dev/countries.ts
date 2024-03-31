@@ -107,7 +107,7 @@ const lab = async () => {
 		}
 	]
 	const schemaFacade = new SchemaFacadeBuilder(expressions, h3lp).build()
-	const schemaState = new SchemaStateBuilder(schemaFacade, h3lp).build()
+	const schemaState = new SchemaStateBuilder(expressions, schemaFacade, h3lp).build()
 	const workspace = __dirname.replace('build/', 'src/')
 	const schemaPath = workspace + '/schema.yaml'
 	const schema = schemaFacade.create()

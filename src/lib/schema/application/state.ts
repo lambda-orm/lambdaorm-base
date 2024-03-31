@@ -1,4 +1,12 @@
-import { Schema, SchemaError, SchemaData } from '../domain'
+import { Schema, SchemaError, SchemaData, ClauseInfo, SourceRule } from '../domain'
+import { DataSourceConfigService } from './services/config/dataSourceConfigService'
+import { MappingsConfigService } from './services/config/mappingsConfigService'
+import { DomainConfigService } from './services/config/domainConfigService'
+import { StageConfigService } from './services/config/stageConfigService'
+import { ViewsConfigService } from './services/config/viewsConfigService'
+import { RouteService } from './services/routeService'
+import { LoadSchema } from './useCases/load'
+import { SchemaService } from './services/schemaService'
 import { SchemaFacade } from './facade'
 import { IFileSchemaService } from './ports/fileSchemaService'
 import { H3lp } from 'h3lp'
@@ -7,7 +15,16 @@ export class SchemaState {
 	public schema: Schema
 	public originalSchema: Schema
 	public schemaPath?: string
-	constructor (public readonly facade:SchemaFacade,
+	constructor (
+		public readonly source:DataSourceConfigService,
+		public readonly domain:DomainConfigService,
+		public readonly mapping:MappingsConfigService,
+		public readonly stage:StageConfigService,
+		public readonly view:ViewsConfigService,
+		private readonly routeService:RouteService,
+		private readonly loadSchema: LoadSchema,
+		private readonly facade:SchemaFacade,
+		private readonly schemaService:SchemaService,
 		private readonly fileService:IFileSchemaService,
 		private readonly helper: H3lp
 	) {
@@ -29,7 +46,7 @@ export class SchemaState {
 			throw new SchemaError(`Schema: ${source} not supported`)
 		}
 		this.schema = this.helper.obj.clone(this.originalSchema)
-		this.schema = this.facade.solve(this.schema)
+		this.schema = this.solve(this.schema)
 		return this.schema
 	}
 
@@ -39,7 +56,20 @@ export class SchemaState {
 			await this.fileService.write(this.originalSchema, this.schemaPath)
 		}
 		this.schema = this.helper.obj.clone(this.originalSchema)
-		this.schema = this.facade.solve(this.schema)
+		this.schema = this.solve(this.schema)
 		return schemaData
+	}
+
+	public evalSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {
+		return this.routeService.eval(rule, clauseInfo)
+	}
+
+	public getSource (clauseInfo: ClauseInfo, stage?: string):string {
+		return this.routeService.getSource(clauseInfo, stage)
+	}
+
+	private solve (schema: Schema): Schema {
+		this.schemaService.complete(schema)
+		return this.loadSchema.load(schema)
 	}
 }

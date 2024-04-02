@@ -50,5 +50,4 @@ export enum SentenceAction {
 	uniqueKeys = 'uniqueKeys',
 	foreignKeys = 'foreignKeys',
 	partitions = 'partitions'
-
 }

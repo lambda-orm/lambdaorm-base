@@ -40,5 +40,15 @@ export enum SentenceAction {
 	dropUk = 'dropUk',
 	dropFk = 'dropFk',
 	dropIndex = 'dropIndex',
-	ddl = 'ddl'
+	ddl = 'ddl',
+	objects = 'objects',
+	tables = 'tables',
+	views = 'views',
+	sequences = 'sequences',
+	indexes = 'indexes',
+	primaryKeys = 'primaryKeys',
+	uniqueKeys = 'uniqueKeys',
+	foreignKeys = 'foreignKeys',
+	partitions = 'partitions'
+
 }

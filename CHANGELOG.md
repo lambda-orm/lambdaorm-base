@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.40](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.39...v0.1.40) (2024-04-02)
 
-
-### Features
+**Features:**
 
 * **schema:** add match method in schema service ([02888e2](https://github.com/FlavioLionelRita/lambdaorm-base/commit/02888e2c3dd4f0697a85499bd4527d8242be024f)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

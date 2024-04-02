@@ -6,7 +6,7 @@ export interface IRouteService {
 	getSource (clauseInfo: ClauseInfo, stage?: string):string
 }
 
-export interface MergeOptions {
+export interface MatchOptions {
 	removeEntities?: boolean
 	removeProperties?: boolean
 }

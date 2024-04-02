@@ -1,4 +1,4 @@
-import { Schema, SchemaError, SchemaData, ClauseInfo, SourceRule } from '../domain'
+import { Schema, SchemaError, SchemaData, ClauseInfo, SourceRule, Mapping, MatchOptions } from '../domain'
 import { DataSourceConfigService } from './services/config/dataSourceConfigService'
 import { MappingsConfigService } from './services/config/mappingsConfigService'
 import { DomainConfigService } from './services/config/domainConfigService'
@@ -58,6 +58,16 @@ export class SchemaState {
 		this.schema = this.helper.obj.clone(this.originalSchema)
 		this.schema = this.solve(this.schema)
 		return schemaData
+	}
+
+	public async updateFromMapping (mappings:Mapping[]): Promise<void> {
+		const options:MatchOptions = { removeEntities: true, removeProperties: true }
+		this.facade.updateFromMapping(this.originalSchema, mappings, options)
+		if (this.schemaPath) {
+			await this.fileService.write(this.originalSchema, this.schemaPath)
+		}
+		this.schema = this.helper.obj.clone(this.originalSchema)
+		this.schema = this.solve(this.schema)
 	}
 
 	public evalSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {

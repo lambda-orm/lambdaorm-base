@@ -1,5 +1,5 @@
 import { Expressions } from '3xpr'
-import { SchemaFacade, CreateEntitiesService, SchemaExtender, CreateSchema, UpdateSchema, GetSchemaSchema } from '../application'
+import { SchemaFacade, CreateEntitiesService, SchemaExtender, CreateSchema, UpdateSchema, GetSchemaSchema, MatchSchema } from '../application'
 import { H3lp } from 'h3lp'
 import { SchemaService } from '../application/services/schemaService'
 import { InterpretSchemaDataService } from '../application/services/interpretSchemaDataService'
@@ -16,8 +16,9 @@ export class SchemaFacadeBuilder {
 		const interpretSchemaDataService = new InterpretSchemaDataService(schemaService, this.helper)
 		const extender = new SchemaExtender(this.expressions, this.helper)
 		const createSchema = new CreateSchema(schemaService)
-		const updateSchema = new UpdateSchema(schemaService, createEntitiesService)
+		const updateSchema = new UpdateSchema(createEntitiesService)
+		const matchSchema = new MatchSchema(schemaService, this.helper)
 		const getSchemaData = new GetSchemaSchema(interpretSchemaDataService)
-		return new SchemaFacade(schemaService, getSchemaData, extender, createSchema, updateSchema)
+		return new SchemaFacade(schemaService, getSchemaData, extender, createSchema, updateSchema, matchSchema)
 	}
 }

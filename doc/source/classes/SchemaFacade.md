@@ -18,12 +18,13 @@
 - [create](SchemaFacade.md#create)
 - [schemaData](SchemaFacade.md#schemadata)
 - [updateFromData](SchemaFacade.md#updatefromdata)
+- [updateFromMapping](SchemaFacade.md#updatefrommapping)
 
 ## Constructors
 
 ### constructor
 
-• **new SchemaFacade**(`schemaService`, `getSchemaData`, `extender`, `createSchema`, `updateSchema`): [`SchemaFacade`](SchemaFacade.md)
+• **new SchemaFacade**(`schemaService`, `getSchemaData`, `extender`, `createSchema`, `updateSchema`, `matchSchema`): [`SchemaFacade`](SchemaFacade.md)
 
 #### Parameters
 
@@ -34,6 +35,7 @@
 | `extender` | [`SchemaExtender`](SchemaExtender.md) |
 | `createSchema` | [`CreateSchema`](CreateSchema.md) |
 | `updateSchema` | [`UpdateSchema`](UpdateSchema.md) |
+| `matchSchema` | [`MatchSchema`](MatchSchema.md) |
 
 #### Returns
 
@@ -41,7 +43,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/facade.ts#L10)
+[src/lib/schema/application/facade.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/facade.ts#L11)
 
 ## Properties
 
@@ -51,7 +53,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/facade.ts#L11)
+[src/lib/schema/application/facade.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/facade.ts#L12)
 
 ## Methods
 
@@ -71,7 +73,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/facade.ts#L32)
+[src/lib/schema/application/facade.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/facade.ts#L38)
 
 ___
 
@@ -92,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/facade.ts#L18)
+[src/lib/schema/application/facade.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/facade.ts#L20)
 
 ___
 
@@ -114,7 +116,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/facade.ts#L28)
+[src/lib/schema/application/facade.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/facade.ts#L34)
 
 ___
 
@@ -136,4 +138,26 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/facade.ts#L22)
+[src/lib/schema/application/facade.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/facade.ts#L24)
+
+___
+
+### updateFromMapping
+
+▸ **updateFromMapping**(`schema`, `mappings`, `options?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `schema` | [`Schema`](../interfaces/Schema.md) |
+| `mappings` | [`Mapping`](../interfaces/Mapping.md)[] |
+| `options` | [`MatchOptions`](../interfaces/MatchOptions.md) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[src/lib/schema/application/facade.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/facade.ts#L30)

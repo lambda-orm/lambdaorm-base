@@ -16,13 +16,12 @@
 
 ### constructor
 
-• **new UpdateSchema**(`schemaService`, `createEntitiesService`): [`UpdateSchema`](UpdateSchema.md)
+• **new UpdateSchema**(`createEntitiesService`): [`UpdateSchema`](UpdateSchema.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `schemaService` | `SchemaService` |
 | `createEntitiesService` | [`CreateEntitiesService`](CreateEntitiesService.md) |
 
 #### Returns
@@ -31,7 +30,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/update.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/useCases/update.ts#L8)
+[src/lib/schema/application/useCases/update.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/useCases/update.ts#L7)
 
 ## Methods
 
@@ -53,4 +52,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/update.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/useCases/update.ts#L12)
+[src/lib/schema/application/useCases/update.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/useCases/update.ts#L9)

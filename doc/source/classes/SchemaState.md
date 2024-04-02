@@ -25,6 +25,7 @@
 - [getSource](SchemaState.md#getsource)
 - [load](SchemaState.md#load)
 - [updateFromData](SchemaState.md#updatefromdata)
+- [updateFromMapping](SchemaState.md#updatefrommapping)
 
 ## Constructors
 
@@ -54,7 +55,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L18)
+[src/lib/schema/application/state.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L18)
 
 ## Properties
 
@@ -64,7 +65,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L20)
+[src/lib/schema/application/state.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L20)
 
 ___
 
@@ -74,7 +75,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L21)
+[src/lib/schema/application/state.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L21)
 
 ___
 
@@ -84,7 +85,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L16)
+[src/lib/schema/application/state.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L16)
 
 ___
 
@@ -94,7 +95,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L15)
+[src/lib/schema/application/state.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L15)
 
 ___
 
@@ -104,7 +105,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L17)
+[src/lib/schema/application/state.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L17)
 
 ___
 
@@ -114,7 +115,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L19)
+[src/lib/schema/application/state.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L19)
 
 ___
 
@@ -124,7 +125,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L22)
+[src/lib/schema/application/state.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L22)
 
 ___
 
@@ -134,7 +135,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L23)
+[src/lib/schema/application/state.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L23)
 
 ## Methods
 
@@ -155,7 +156,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L63)
+[src/lib/schema/application/state.ts:73](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L73)
 
 ___
 
@@ -176,7 +177,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L67)
+[src/lib/schema/application/state.ts:77](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L77)
 
 ___
 
@@ -196,7 +197,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L35)
+[src/lib/schema/application/state.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L35)
 
 ___
 
@@ -217,4 +218,24 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/5677862/src/lib/schema/application/state.ts#L53)
+[src/lib/schema/application/state.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L53)
+
+___
+
+### updateFromMapping
+
+▸ **updateFromMapping**(`mappings`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `mappings` | [`Mapping`](../interfaces/Mapping.md)[] |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Defined in
+
+[src/lib/schema/application/state.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/state.ts#L63)

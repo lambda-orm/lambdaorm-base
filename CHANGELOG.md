@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [0.1.39](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.38...v0.1.39) (2024-04-02)
+
+
+### Features
+
+* **schema:** add options in  sentence action enum ([caa3f8e](https://github.com/FlavioLionelRita/lambdaorm-base/commit/caa3f8ed004b648fa7f7d76ac34187b715aa6157)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [0.1.38](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.37...v0.1.38) (2024-03-31)
 
 ### [0.1.37](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.36...v0.1.37) (2024-03-30)

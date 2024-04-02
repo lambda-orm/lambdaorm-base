@@ -1,6 +1,6 @@
 {
 	"name": "lambdaorm-base",
-	"version": "0.1.38",
+	"version": "0.1.40",
 	"description": "ORM",
 	"author": "Flavio Lionel Rita <flaviolrita@proton.me>",
 	"license": "MIT",
@@ -41,7 +41,7 @@
 		"@types/mysql": "^2.15.21",
 		"@types/node": "^20.10.0",
 		"@typescript-eslint/eslint-plugin": "^7.4.0",
-		"@typescript-eslint/parser": "^7.3.1",
+		"@typescript-eslint/parser": "^7.4.0",
 		"concurrently": "^8.2.2",
 		"dotenv": "^16.4.5",
 		"eslint": "^8.57.0",

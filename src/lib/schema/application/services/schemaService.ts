@@ -1,4 +1,4 @@
-import { AppPathsConfig, ApplicationSchema, InfrastructureSchema, DomainSchema, Schema, Entity } from '../../domain'
+import { AppPathsConfig, ApplicationSchema, InfrastructureSchema, DomainSchema, Schema, Entity, Mapping, MergeOptions } from '../../domain'
 import { ObjType, PropertyType, Type } from 'typ3s'
 import { H3lp } from 'h3lp'
 
@@ -76,6 +76,96 @@ export class SchemaService {
 			}
 			if (!schema.application.listeners) {
 				schema.application.listeners = []
+			}
+		}
+	}
+
+	public match (schema: Schema, mapping:Mapping, options:MergeOptions = {}):void {
+		if (mapping.entities === undefined) {
+			return
+		}
+		if (!schema.infrastructure) {
+			schema.infrastructure = this.newInfrastructure()
+		}
+		if (!schema.infrastructure.mappings) {
+			schema.infrastructure.mappings = []
+		}
+		let currentMapping = schema.infrastructure.mappings.find(p => p.name === mapping.name)
+		if (currentMapping === undefined) {
+			currentMapping = { name: mapping.name, entities: [] }
+		} else if (!currentMapping.entities) {
+			currentMapping.entities = []
+		}
+		// create and update entities and properties
+		for (const entityMapping of mapping.entities) {
+			const currentEntity = schema.domain.entities.find(p => p.name === entityMapping.name)
+			if (currentEntity) {
+				currentEntity.primaryKey = entityMapping.primaryKey
+				currentEntity.uniqueKey = entityMapping.uniqueKey
+				currentEntity.view = entityMapping.view
+				for (const property of entityMapping.properties) {
+					const currentProperty = currentEntity.properties.find(p => p.name === property.name)
+					if (!currentProperty) {
+						currentEntity.properties.push(property)
+					} else {
+						currentProperty.type = property.type
+						currentProperty.length = property.length
+						currentProperty.required = property.required
+						currentProperty.primaryKey = property.primaryKey
+						currentProperty.autoIncrement = property.autoIncrement
+						currentProperty.view = property.view
+					}
+				}
+				if (entityMapping.indexes) {
+					for (const index of entityMapping.indexes) {
+						if (!currentEntity.indexes)currentEntity.indexes = []
+						const currentIndex = currentEntity.indexes.find(p => p.name === index.name)
+						if (!currentIndex) {
+							currentEntity.indexes.push(index)
+						} else {
+							currentIndex.fields = index.fields
+						}
+					}
+				}
+			} else {
+				if (entityMapping.name !== entityMapping.mapping) {
+					const currentEntityMapping = currentMapping.entities?.find(p => p.name === entityMapping.name)
+					if (currentEntityMapping) {
+						currentEntityMapping.mapping = entityMapping.mapping
+						currentEntityMapping.sequence = entityMapping.sequence
+					} else {
+						currentMapping.entities?.push(entityMapping)
+					}
+				}
+				const newEntity = this.helper.obj.clone(entityMapping)
+				delete newEntity.mapping
+				delete newEntity.sequence
+				schema.domain.entities.push(newEntity)
+			}
+		}
+		// remove entities and properties
+		if (currentMapping.entities && (options.removeEntities || options.removeProperties)) {
+			const entitiesToRemove:string[] = []
+			for (const currentEntity of currentMapping.entities) {
+				const entityMapping = mapping.entities.find(p => p.name === currentEntity.name)
+				if (!entityMapping) {
+					if (options.removeEntities) {
+						entitiesToRemove.push(currentEntity.name)
+					}
+				} else if (options.removeProperties) {
+					currentEntity.properties = currentEntity.properties.filter(p => entityMapping.properties.find(q => q.name === p.name))
+				}
+			}
+			currentMapping.entities = currentMapping.entities.filter(p => !entitiesToRemove.includes(p.name))
+			// remove entities from domain
+			for (const entityToRemove of entitiesToRemove) {
+				const entity = schema.domain.entities.find(p => p.name === entityToRemove)
+				if (entity) {
+					// remove entity if not used in other mappings
+					if (schema.infrastructure.mappings.some(p => p.entities?.some(q => q.name === entityToRemove)) === false) {
+						schema.domain.entities = schema.domain.entities.filter(p => p.name !== entityToRemove)
+					}
+				}
 			}
 		}
 	}

@@ -60,8 +60,7 @@ export class SchemaState {
 		return schemaData
 	}
 
-	public async updateFromMapping (mappings:Mapping[]): Promise<void> {
-		const options:MatchOptions = { removeEntities: true, removeProperties: true }
+	public async updateFromMapping (mappings:Mapping[], options:MatchOptions = { removeEntities: true, removeProperties: true }): Promise<void> {
 		this.facade.updateFromMapping(this.originalSchema, mappings, options)
 		if (this.schemaPath) {
 			await this.fileService.write(this.originalSchema, this.schemaPath)

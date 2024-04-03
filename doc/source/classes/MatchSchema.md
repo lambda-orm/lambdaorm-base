@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/match.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/useCases/match.ts#L7)
+[src/lib/schema/application/useCases/match.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/b124412/src/lib/schema/application/useCases/match.ts#L7)
 
 ## Methods
 
@@ -53,4 +53,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/match.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/useCases/match.ts#L11)
+[src/lib/schema/application/useCases/match.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/b124412/src/lib/schema/application/useCases/match.ts#L11)

@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/createEntitiesService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/services/createEntitiesService.ts#L8)
+[src/lib/schema/application/services/createEntitiesService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/b124412/src/lib/schema/application/services/createEntitiesService.ts#L8)
 
 ## Methods
 
@@ -52,4 +52,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/createEntitiesService.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/8617cc5/src/lib/schema/application/services/createEntitiesService.ts#L10)
+[src/lib/schema/application/services/createEntitiesService.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/b124412/src/lib/schema/application/services/createEntitiesService.ts#L10)

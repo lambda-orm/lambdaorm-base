@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/update.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/b124412/src/lib/schema/application/useCases/update.ts#L7)
+[src/lib/schema/application/useCases/update.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/020636e/src/lib/schema/application/useCases/update.ts#L7)
 
 ## Methods
 
@@ -52,4 +52,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/update.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/b124412/src/lib/schema/application/useCases/update.ts#L9)
+[src/lib/schema/application/useCases/update.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/020636e/src/lib/schema/application/useCases/update.ts#L9)

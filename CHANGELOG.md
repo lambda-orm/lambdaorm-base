@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.45](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.44...v0.1.45) (2024-04-04)
 
-
-### Features
+**Features:**
 
 * **match:** adjust match entities ([4ecf84b](https://github.com/FlavioLionelRita/lambdaorm-base/commit/4ecf84b87c4a9347ebeff7ef2d65fc73238207cb)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

@@ -8,6 +8,7 @@
 
 - [removeEntities](MatchOptions.md#removeentities)
 - [removeProperties](MatchOptions.md#removeproperties)
+- [removeRelations](MatchOptions.md#removerelations)
 
 ## Properties
 
@@ -17,7 +18,7 @@
 
 #### Defined in
 
-[src/lib/schema/domain/services.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/020636e/src/lib/schema/domain/services.ts#L10)
+[src/lib/schema/domain/services.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/4ecf84b/src/lib/schema/domain/services.ts#L10)
 
 ___
 
@@ -27,4 +28,14 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/services.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/020636e/src/lib/schema/domain/services.ts#L11)
+[src/lib/schema/domain/services.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/4ecf84b/src/lib/schema/domain/services.ts#L11)
+
+___
+
+### removeRelations
+
+• `Optional` **removeRelations**: `boolean`
+
+#### Defined in
+
+[src/lib/schema/domain/services.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/4ecf84b/src/lib/schema/domain/services.ts#L12)

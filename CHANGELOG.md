@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [0.1.46](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.45...v0.1.46) (2024-04-04)
+
+
+### Features
+
+* **helper:** add schema helper ([880bc7e](https://github.com/FlavioLionelRita/lambdaorm-base/commit/880bc7ef53ad76af79d58cebd3bf7455f8bc3c5f)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [0.1.45](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.44...v0.1.45) (2024-04-04)
 
 **Features:**

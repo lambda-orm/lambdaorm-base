@@ -9,4 +9,5 @@ export interface IRouteService {
 export interface MatchOptions {
 	removeEntities?: boolean
 	removeProperties?: boolean
+	removeRelations?: boolean
 }

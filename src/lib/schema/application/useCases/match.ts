@@ -1,5 +1,5 @@
 import { H3lp } from 'h3lp'
-import { Entity, EntityMapping, Mapping, MatchOptions, Schema } from '../../domain'
+import { Entity, EntityMapping, Mapping, MatchOptions, RelationType, Schema } from '../../domain'
 import { SchemaService } from '../services/schemaService'
 
 export class MatchSchema {
@@ -50,6 +50,7 @@ export class MatchSchema {
 				currentEntity.view = entityMapping.view
 				this.upsertProperties(entityMapping, currentEntity, currentEntityMapping)
 				this.mergeIndexes(entityMapping, currentEntity)
+				this.mergeRelations(entityMapping, currentEntity, options)
 			}
 			if (currentEntityMapping) {
 				this.updateEntityMapping(currentEntityMapping, entityMapping)
@@ -58,6 +59,7 @@ export class MatchSchema {
 			}
 			// if not exists create entity
 			if (!currentEntity) {
+				entityMapping.name = this.entityName(entityMapping.name)
 				this.addEntity(entities, entityMapping)
 			}
 		}
@@ -79,36 +81,82 @@ export class MatchSchema {
 					name: propertyMapping.name,
 					type: propertyMapping.type,
 					length: propertyMapping.length,
-					required: propertyMapping.required,
-					primaryKey: propertyMapping.primaryKey,
-					autoIncrement: propertyMapping.autoIncrement,
+					required: propertyMapping.required ? true : undefined,
+					autoIncrement: propertyMapping.autoIncrement ? true : undefined,
 					view: propertyMapping.view
 				}
 				currentEntity.properties.push(newProperty)
 			} else {
 				currentProperty.type = propertyMapping.type
 				currentProperty.length = propertyMapping.length
-				currentProperty.required = propertyMapping.required
-				currentProperty.primaryKey = propertyMapping.primaryKey
-				currentProperty.autoIncrement = propertyMapping.autoIncrement
+				currentProperty.required = propertyMapping.required ? true : undefined
+				currentProperty.autoIncrement = propertyMapping.autoIncrement ? true : undefined
 				currentProperty.view = propertyMapping.view
 			}
 		}
 	}
 
 	private mergeIndexes (entityMapping:EntityMapping, currentEntity:Entity):void {
-		// TODO: falta eliminar los indices que no existen en el mapeo
-		// hay que ver como definir un equalIndexName
+		// Upsert indexes
 		if (entityMapping.indexes) {
 			for (const index of entityMapping.indexes) {
 				if (!currentEntity.indexes)currentEntity.indexes = []
-				const currentIndex = currentEntity.indexes.find(p => this.equalIndexName(p.name, index.name))
+				const currentIndex = currentEntity.indexes.find(p => this.equalName(p.name, index.name))
 				if (!currentIndex) {
 					currentEntity.indexes.push(index)
 				} else {
 					this.mergeValues(currentIndex.fields, index.fields)
 				}
 			}
+		}
+		// Remove indexes
+		if (currentEntity.indexes) {
+			const indexesToRemove:string[] = []
+			for (const index of currentEntity.indexes) {
+				const currentIndex = entityMapping.indexes?.find(p => this.equalName(p.name, index.name))
+				if (!currentIndex) {
+					indexesToRemove.push(index.name)
+				}
+			}
+			currentEntity.indexes = currentEntity.indexes.filter(p => !indexesToRemove.includes(p.name))
+		}
+	}
+
+	private mergeRelations (entityMapping:EntityMapping, currentEntity:Entity, options:MatchOptions):void {
+		// Upsert relations
+		if (entityMapping.relations) {
+			for (const relation of entityMapping.relations) {
+				if (!currentEntity.relations)currentEntity.relations = []
+				const currentRelation = currentEntity.relations.find(p => this.equalName(p.name, relation.name))
+				if (!currentRelation) {
+					relation.entity = this.entityName(relation.entity)
+					currentEntity.relations.push(relation)
+				} else {
+					if (!this.equalName(currentRelation.type, relation.type)) {
+						currentRelation.type = relation.type
+					}
+					if (!this.equalName(currentRelation.from, relation.from)) {
+						currentRelation.from = relation.from
+					}
+					if (!this.equalName(currentRelation.entity, relation.entity)) {
+						currentRelation.entity = this.entityName(relation.entity)
+					}
+					if (!this.equalName(currentRelation.to, relation.to)) {
+						currentRelation.to = relation.to
+					}
+				}
+			}
+		}
+		// Remove relations
+		if (options.removeRelations && currentEntity.relations) {
+			const relationsToRemove:string[] = []
+			for (const relation of currentEntity.relations.filter(p => p.type === RelationType.oneToMany)) {
+				const currentRelation = entityMapping.relations?.find(p => this.equalName(p.name, relation.name))
+				if (!currentRelation) {
+					relationsToRemove.push(relation.name)
+				}
+			}
+			currentEntity.relations = currentEntity.relations.filter(p => !relationsToRemove.includes(p.name))
 		}
 	}
 
@@ -189,8 +237,10 @@ export class MatchSchema {
 	}
 
 	private mergeValues (current:string[], change:string[]):void {
-		const newValues = change.filter(p => !current.includes(p))
-		const removeValues = current.filter(p => !change.includes(p))
+		const currentLowerCase = current.map(p => p.toLowerCase())
+		const changeLowerCase = change.map(p => p.toLowerCase())
+		const newValues = change.filter(p => !currentLowerCase.includes(p.toLowerCase()))
+		const removeValues = current.filter(p => !changeLowerCase.includes(p.toLowerCase()))
 		current.push(...newValues)
 		current = current.filter(p => !removeValues.includes(p))
 	}
@@ -201,13 +251,7 @@ export class MatchSchema {
 		return name1.toLowerCase() === name2.toLowerCase()
 	}
 
-	private equalIndexName (name1?:string, name2?:string):boolean {
-		// TODO: falta definir como comparar los nombres de los indices
-		return this.equalName(name1, name2)
-	}
-
-	private equalRelationName (name1?:string, name2?:string):boolean {
-		// TODO: falta definir como comparar los nombres de las relaciones
-		return this.equalName(name1, name2)
+	private entityName (name:string):string {
+		return this.helper.str.capitalize(name)
 	}
 }

@@ -11,13 +11,13 @@ export class SchemaFacadeBuilder {
 	) {}
 
 	public build ():SchemaFacade {
-		const schemaService = new SchemaService(this.helper)
-		const createEntitiesService = new CreateEntitiesService(this.helper)
-		const interpretSchemaDataService = new InterpretSchemaDataService(this.helper)
+		const schemaService = new SchemaService()
+		const createEntitiesService = new CreateEntitiesService(this.helper.schema)
+		const interpretSchemaDataService = new InterpretSchemaDataService(this.helper.schema)
 		const extender = new SchemaExtender(this.expressions, this.helper)
 		const createSchema = new CreateSchema(schemaService)
 		const updateSchema = new UpdateSchema(createEntitiesService)
-		const matchSchema = new MatchSchema(schemaService, this.helper)
+		const matchSchema = new MatchSchema(schemaService, this.helper.schema)
 		const getSchemaData = new GetSchemaSchema(interpretSchemaDataService)
 		return new SchemaFacade(schemaService, getSchemaData, extender, createSchema, updateSchema, matchSchema)
 	}

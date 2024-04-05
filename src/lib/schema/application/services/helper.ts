@@ -17,12 +17,28 @@ export class SchemaHelper {
 	}
 
 	public entityName (name:string):string {
+		const plural = this.str.plural(name)
+		return this.str.notation(plural, 'pascal')
+	}
+
+	public propertyName (name:string):string {
+		return this.str.notation(name, 'camel')
+	}
+
+	public refPropertyName (entityName:string, propertyName:string):string {
+		return this.str.singular(this.str.notation(entityName, 'camel')) + this.str.capitalize(propertyName)
+	}
+
+	public capitalize (name:string):string {
 		return this.str.capitalize(name)
 	}
 
-	public getEntityName (name:string): string {
-		const plural = this.str.plural(name)
-		return this.str.capitalize(plural)
+	public indexName (name:string):string {
+		return this.str.notation(name, 'camel')
+	}
+
+	public relationName (name:string):string {
+		return this.str.notation(name, 'camel')
 	}
 
 	public getPk (objType:ObjType): PropertyType | undefined {
@@ -57,10 +73,6 @@ export class SchemaHelper {
 		} else {
 			return undefined
 		}
-	}
-
-	public refPropertyName (entityName:string, propertyName:string):string {
-		return this.str.singular(this.str.notation(entityName, 'camel')) + this.str.capitalize(propertyName)
 	}
 
 	public type (type?:string, length?:number) :string | undefined {

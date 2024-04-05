@@ -57,13 +57,13 @@ export interface Index {
 }
 export interface Entity {
 	name: string
+	properties?: Property[]
 	extends?: string
 	abstract?: boolean
 	singular?: string
 	view?: boolean
 	primaryKey?: string[]
 	uniqueKey?: string[]
-	properties: Property[]
 	relations?: Relation[]
 	required?: string[]
 	indexes?: Index[]
@@ -91,7 +91,7 @@ export interface PropertyMapping extends Property {
 export interface EntityMapping extends Entity {
 	mapping?: string
 	sequence?: string
-	properties: PropertyMapping[]
+	properties?: PropertyMapping[]
 	filter?: string
 	hadKeys?: boolean
 	hadReadMappingExp?: boolean

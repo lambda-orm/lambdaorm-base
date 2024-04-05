@@ -38,7 +38,7 @@ export abstract class DomainConfigServiceBase<TEntity extends Entity, TProperty 
 	public existsProperty (entityName: string, name: string): boolean {
 		const entity = this.getEntity(entityName)
 		if (!entity) { throw new SchemaError('Not exists entity:' + entityName) }
-		const property = entity.properties.find(p => p.name === name)
+		const property = entity.properties?.find(p => p.name === name)
 		return property !== undefined
 	}
 
@@ -47,7 +47,7 @@ export abstract class DomainConfigServiceBase<TEntity extends Entity, TProperty 
 		if (!entity) {
 			throw new SchemaError('Not exists entity:' + entityName)
 		}
-		const property = entity.properties.find(p => p.name === name)
+		const property = entity.properties?.find(p => p.name === name)
 		if (!property) {
 			throw new SchemaError('Not exists property: ' + name + ' in entity: ' + entityName)
 		}
@@ -59,7 +59,7 @@ export abstract class DomainConfigServiceBase<TEntity extends Entity, TProperty 
 		if (!entity) {
 			throw new SchemaError('Not exists entity:' + entityName)
 		}
-		return entity.properties.find(p => p.autoIncrement === true) as TProperty
+		return entity.properties?.find(p => p.autoIncrement === true) as TProperty
 	}
 
 	public getFieldIds (entityName: string): TProperty[] | undefined {
@@ -70,7 +70,7 @@ export abstract class DomainConfigServiceBase<TEntity extends Entity, TProperty 
 		if (!entity.primaryKey) {
 			return undefined
 		}
-		return entity.properties.filter(p => entity.primaryKey && entity.primaryKey.includes(p.name)) as TProperty[]
+		return entity.properties?.filter(p => entity.primaryKey && entity.primaryKey.includes(p.name)) as TProperty[]
 	}
 
 	public listEntities (): string[] {
@@ -264,7 +264,7 @@ export abstract class DomainConfigServiceBase<TEntity extends Entity, TProperty 
 			if (dependentEntity === undefined) {
 				throw new SchemaError('Not exists entity:' + dependent.entity)
 			}
-			const dependentProperty = dependentEntity.properties.find(p => p.name === dependent.relation.from)
+			const dependentProperty = dependentEntity.properties?.find(p => p.name === dependent.relation.from)
 			if (dependentProperty === undefined) {
 				throw new SchemaError(`property ${dependent.relation.from} not found in ${entity.name} `)
 			}

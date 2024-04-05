@@ -25,7 +25,7 @@ export class SchemaStateBuilder {
 		const routeService = new RouteService(stage, this.expressions)
 		const loadSchema = new LoadSchema(source, model, mapping, stage, view, extender, this.helper)
 		const fileSchemaService = new FileSchemaService(new SchemaFileHelper(this.helper), this.helper)
-		const schemaService = new SchemaService(this.helper)
+		const schemaService = new SchemaService()
 		return new SchemaState(source, model, mapping, stage, view, routeService, loadSchema, this.facade, schemaService, fileSchemaService, this.helper)
 	}
 }

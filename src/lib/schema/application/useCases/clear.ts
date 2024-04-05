@@ -65,7 +65,7 @@ export class ClearSchema {
 		}
 		if (entity.constraints && entity.constraints.length === 0) entity.constraints = undefined
 		if (entity.dependents && entity.dependents.length === 0) entity.dependents = undefined
-		for (const property of entity.properties) {
+		for (const property of entity.properties || []) {
 			if (property.length === 0 || (property.type === 'string' && property.length === 80)) property.length = undefined
 			if (property.required === false) property.required = undefined
 			if (property.primaryKey === false) property.primaryKey = undefined

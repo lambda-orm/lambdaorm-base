@@ -1,20 +1,20 @@
 import { SchemaData, SchemaEntityData } from '../../domain'
 import { ObjType, Type } from 'typ3s'
-import { SchemaH3lp } from '../../../shared'
+import { SchemaHelper } from './helper'
 
 export class InterpretSchemaDataService {
 	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly helper: SchemaH3lp) {}
+	constructor (private readonly helper: SchemaHelper) {}
 
 	public completeSchemaData (source:any, name:string, type: Type, schemaData: SchemaData):void {
-		const entityName = this.helper.schema.getEntityName(name)
+		const entityName = this.helper.entityName(name)
 		if (Type.isList(type) && type.list && Type.isObj(type.list.items) && type.list.items.obj) {
-			const children = this.objectsToRows(schemaData, type.list.items.obj, source, entityName, this.helper.schema.getPkName(type.list.items.obj))
+			const children = this.objectsToRows(schemaData, type.list.items.obj, source, entityName, this.helper.getPkName(type.list.items.obj))
 			this.addRows(schemaData, entityName, children)
 		} else if (Type.isObj(type) && type.obj) {
-			const pkName = this.helper.schema.getPkName(type.obj)
+			const pkName = this.helper.getPkName(type.obj)
 			if (pkName === '_id') {
-				source[pkName] = this.helper.schema.uuid()
+				source[pkName] = this.helper.uuid()
 			}
 			this.objectToRow(schemaData, type.obj, source, entityName, pkName)
 		}
@@ -26,7 +26,7 @@ export class InterpretSchemaDataService {
 			const schemaEntityData = this.getSchemaEntityData(schemaData, entityName)
 			for (const item of source) {
 				if (pkName === '_id') {
-					item[pkName] = this.helper.schema.uuid()
+					item[pkName] = this.helper.uuid()
 				} else if (schemaEntityData.rows.some(p => p[pkName] === item[pkName])) {
 				// En el caso de que el id ya exista, no se añade la fila
 					continue
@@ -37,7 +37,7 @@ export class InterpretSchemaDataService {
 		} else {
 			for (const item of source) {
 				if (pkName === '_id') {
-					item[pkName] = this.helper.schema.uuid()
+					item[pkName] = this.helper.uuid()
 				}
 				const row = this.objectToRow(schemaData, objType, item, entityName, pkName)
 				rows.push(row)
@@ -57,11 +57,11 @@ export class InterpretSchemaDataService {
 			if (prop.type && Type.isPrimitive(prop.type)) {
 				row[prop.name] = value
 			} else if (prop.type && Type.isObj(prop.type) && prop.type.obj) {
-				const fk = this.helper.schema.getFk(prop.type.obj)
+				const fk = this.helper.getFk(prop.type.obj)
 				if (fk && fk.type) {
-					const propertyName = prop.name + this.helper.str.capitalize(fk.name)
-					const relatedEntityName = this.helper.schema.getEntityName(prop.name)
-					const relatedPkName = this.helper.schema.getPkName(prop.type.obj)
+					const propertyName = prop.name + this.helper.capitalize(fk.name)
+					const relatedEntityName = this.helper.entityName(prop.name)
+					const relatedPkName = this.helper.getPkName(prop.type.obj)
 					if (prop.type && prop.type.repeated !== undefined && prop.type.repeated === 0) {
 						const childRow = this.objectToRow(schemaData, prop.type.obj, value, relatedEntityName, relatedPkName)
 						row[prop.name] = childRow
@@ -72,7 +72,7 @@ export class InterpretSchemaDataService {
 						}
 						const schemaEntityData = this.getSchemaEntityData(schemaData, relatedEntityName)
 						if (relatedPkName === '_id') {
-							row[relatedPkName] = this.helper.schema.uuid()
+							row[relatedPkName] = this.helper.uuid()
 						} else if (!schemaEntityData.rows.some(p => p[relatedPkName] === value[relatedPkName])) {
 							// En el caso que el registro no exista, se añade
 							const childRow = this.objectToRow(schemaData, prop.type.obj, value, relatedEntityName, relatedPkName)
@@ -81,15 +81,15 @@ export class InterpretSchemaDataService {
 					}
 				}
 			} else if (prop.type && Type.isList(prop.type) && prop.type.list?.items.obj) {
-				const relatedEntityName = this.helper.schema.getEntityName(prop.name)
-				const relatedPkName = this.helper.schema.getPkName(prop.type.list.items.obj)
+				const relatedEntityName = this.helper.entityName(prop.name)
+				const relatedPkName = this.helper.getPkName(prop.type.list.items.obj)
 				if (prop.type && prop.type.repeatRate && prop.type.repeatRate > 0.02) {
-					const rpk = this.helper.schema.getFk(prop.type.list?.items.obj)
+					const rpk = this.helper.getFk(prop.type.list?.items.obj)
 					if (rpk && rpk.type) {
 						// Crea una tabla intermediaria con el id de la entidad y el id de la entidad relacionada
-						const parentPropertyName = this.helper.schema.refPropertyName(entityName, pkName)
-						const childPropertyName = this.helper.schema.refPropertyName(relatedEntityName, rpk.name)
-						const intermediaEntityName = entityName + this.helper.str.capitalize(prop.name)
+						const parentPropertyName = this.helper.refPropertyName(entityName, pkName)
+						const childPropertyName = this.helper.refPropertyName(relatedEntityName, rpk.name)
+						const intermediaEntityName = entityName + this.helper.capitalize(prop.name)
 						const parentValue = source[pkName]
 						const intermediateObjects: any[] = []
 						for (const item of value) {
@@ -107,7 +107,7 @@ export class InterpretSchemaDataService {
 					row[prop.name] = children
 				} else {
 					const children = this.objectsToRows(schemaData, prop.type.list.items.obj, value, relatedEntityName, relatedPkName)
-					const propertyName = this.helper.str.notation(this.helper.str.singular(entityName), 'camel') + this.helper.str.capitalize(pkName)
+					const propertyName = this.helper.refPropertyName(entityName, pkName)
 					for (const child of children) {
 						child[propertyName] = source[pkName]
 					}

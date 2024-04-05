@@ -1,10 +1,6 @@
 import { AppPathsConfig, ApplicationSchema, InfrastructureSchema, DomainSchema, Schema } from '../../domain'
-import { H3lp } from 'h3lp'
 
 export class SchemaService {
-	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly helper: H3lp) {}
-
 	public newSchema ():Schema {
 		return { version: '0.0.1', domain: this.newDomain() }
 	}

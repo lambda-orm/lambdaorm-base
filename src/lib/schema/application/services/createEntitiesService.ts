@@ -1,10 +1,10 @@
 import { Entity, Property, Relation, RelationType } from '../../domain'
 import { ObjType, Type } from 'typ3s'
-import { SchemaH3lp } from '../../../shared'
+import { SchemaHelper } from './helper'
 
 export class CreateEntitiesService {
 	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly helper: SchemaH3lp) {}
+	constructor (private readonly helper: SchemaHelper) {}
 
 	public getEntities (name:string, type: Type):Entity[] {
 		return this.typeToEntities(name, type)
@@ -22,29 +22,29 @@ export class CreateEntitiesService {
 
 	private objTypeToEntities (name:string, objType:ObjType): Entity[] {
 		const entities:Entity[] = []
-		const pk = this.helper.schema.getPk(objType)
+		const pk = this.helper.getPk(objType)
 		const primaryKey = pk ? [pk.name] : []
-		const entityName = this.helper.schema.getEntityName(name)
+		const entityName = this.helper.entityName(name)
 		const entity:Entity = { name: entityName, primaryKey, properties: [] }
 		for (const prop of objType.properties) {
 			if (prop.type && Type.isPrimitive(prop.type)) {
 				const required = (prop.type.nullable === false && prop.type.undefinable === false)
-				const length = this.helper.schema.lengthFromType(prop.type)
-				const type = this.helper.schema.type(prop.type.primitive, length)
+				const length = this.helper.lengthFromType(prop.type)
+				const type = this.helper.type(prop.type.primitive, length)
 				const property: Property = { name: prop.name, type, required, length }
-				entity.properties.push(property)
+				entity.properties?.push(property)
 				if (prop.type.unique && (pk === undefined || pk.name !== prop.name)) {
 					if (!entity.uniqueKey) entity.uniqueKey = []
 					entity.uniqueKey.push(prop.name)
 				}
 			} else if (prop.type && Type.isObj(prop.type) && prop.type.obj) {
-				const fk = this.helper.schema.getFk(prop.type.obj)
+				const fk = this.helper.getFk(prop.type.obj)
 				if (fk && fk.type) {
-					const propertyName = prop.name + this.helper.str.capitalize(fk.name)
-					const entityName = this.helper.schema.getEntityName(prop.name)
+					const propertyName = prop.name + this.helper.capitalize(fk.name)
+					const entityName = this.helper.entityName(prop.name)
 					const required = (prop.type.nullable === false && prop.type.undefinable === false)
-					const length = this.helper.schema.lengthFromType(fk.type)
-					const type = this.helper.schema.type(fk.type.primitive, length)
+					const length = this.helper.lengthFromType(fk.type)
+					const type = this.helper.type(fk.type.primitive, length)
 					const property: Property = { name: propertyName, type, required, length }
 					const composite = prop.type && prop.type.repeated !== undefined && prop.type.repeated === 0 ? true : undefined
 					const relation:Relation = {
@@ -55,7 +55,7 @@ export class CreateEntitiesService {
 						to: fk.name,
 						composite
 					}
-					entity.properties.push(property)
+					entity.properties?.push(property)
 					if (!entity.relations) entity.relations = []
 					entity.relations.push(relation)
 					const relatedEntities = this.typeToEntities(entityName, prop.type)
@@ -69,40 +69,40 @@ export class CreateEntitiesService {
 				}
 			} else if (prop.type && Type.isList(prop.type) && prop.type.list?.items.obj) {
 				if (pk && pk.type) {
-					const entityName = this.helper.schema.getEntityName(prop.name)
+					const entityName = this.helper.entityName(prop.name)
 					const relatedEntities = this.typeToEntities(entityName, prop.type)
 					const relatedEntity = relatedEntities.find(p => p.name === entityName)
 					if (relatedEntity) {
 						if (prop.type && prop.type.repeatRate && prop.type.repeatRate > 0.02) {
-							const rpk = this.helper.schema.getFk(prop.type.list?.items.obj)
+							const rpk = this.helper.getFk(prop.type.list?.items.obj)
 							if (rpk && rpk.type) {
 								// hay que crear una tabla intermediaria con el id de la entidad y el id de la entidad relacionada
-								const parentPropertyName = this.helper.schema.refPropertyName(entity.name, pk.name)
-								const parentPropertyLength = this.helper.schema.lengthFromType(pk.type)
-								const parentPropertyType = this.helper.schema.type(pk.type.primitive, parentPropertyLength)
+								const parentPropertyName = this.helper.refPropertyName(entity.name, pk.name)
+								const parentPropertyLength = this.helper.lengthFromType(pk.type)
+								const parentPropertyType = this.helper.type(pk.type.primitive, parentPropertyLength)
 								const parentProperty: Property = { name: parentPropertyName, type: parentPropertyType, length: parentPropertyLength, required: true }
-								const childPropertyName = this.helper.schema.refPropertyName(relatedEntity.name, rpk.name)
-								const childPropertyLength = this.helper.schema.lengthFromType(rpk.type)
-								const childPropertyType = this.helper.schema.type(rpk.type.primitive, childPropertyLength)
+								const childPropertyName = this.helper.refPropertyName(relatedEntity.name, rpk.name)
+								const childPropertyLength = this.helper.lengthFromType(rpk.type)
+								const childPropertyType = this.helper.type(rpk.type.primitive, childPropertyLength)
 								const childProperty: Property = { name: childPropertyName, type: childPropertyType, length: childPropertyLength, required: true }
-								const intermediaEntityName = entity.name + this.helper.str.capitalize(prop.name)
+								const intermediaEntityName = entity.name + this.helper.capitalize(prop.name)
 								const intermediaPropertyPk: Property = { name: 'id', type: 'integer', required: true, autoIncrement: true }
 								const intermediaEntity:Entity = { name: intermediaEntityName, intermediate: true, primaryKey: ['id'], properties: [intermediaPropertyPk, childProperty, parentProperty], uniqueKey: [parentProperty.name, childProperty.name] }
 								const parentRelation:Relation = {
-									name: this.helper.str.notation(entity.name, 'camel'),
+									name: this.helper.relationName(entity.name),
 									type: RelationType.oneToMany,
 									from: parentPropertyName,
 									entity: entity.name,
 									to: pk.name,
-									target: this.helper.str.notation(intermediaEntityName, 'camel')
+									target: this.helper.relationName(intermediaEntityName)
 								}
 								const childRelation:Relation = {
-									name: this.helper.str.notation(relatedEntity.name, 'camel'),
+									name: this.helper.relationName(relatedEntity.name),
 									type: RelationType.oneToMany,
 									from: childPropertyName,
 									entity: relatedEntity.name,
 									to: rpk.name,
-									target: this.helper.str.notation(intermediaEntityName, 'camel')
+									target: this.helper.relationName(intermediaEntityName)
 								}
 								if (!intermediaEntity.relations) intermediaEntity.relations = []
 								intermediaEntity.relations.push(parentRelation)
@@ -110,18 +110,21 @@ export class CreateEntitiesService {
 								entities.push(intermediaEntity)
 							}
 						} else {
-							const propertyName = this.helper.schema.refPropertyName(entity.name, pk.name)
-							const relatedPropertyLength = this.helper.schema.lengthFromType(pk.type)
-							const relatedPropertyType = this.helper.schema.type(pk.type.primitive, relatedPropertyLength)
+							const propertyName = this.helper.refPropertyName(entity.name, pk.name)
+							const relatedPropertyLength = this.helper.lengthFromType(pk.type)
+							const relatedPropertyType = this.helper.type(pk.type.primitive, relatedPropertyLength)
 							const relatedProperty: Property = { name: propertyName, type: relatedPropertyType, length: relatedPropertyLength, required: true }
 							const composite = prop.type && prop.type.repeated !== undefined && prop.type.repeated === 0
 							const relation:Relation = {
-								name: this.helper.str.notation(entity.name, 'camel'),
+								name: this.helper.relationName(entity.name),
 								type: RelationType.oneToMany,
 								from: propertyName,
 								entity: entity.name,
 								to: pk.name,
 								target: composite ? undefined : prop.name
+							}
+							if (relatedEntity.properties === undefined) {
+								relatedEntity.properties = []
 							}
 							relatedEntity.properties.push(relatedProperty)
 							if (!relatedEntity.relations)relatedEntity.relations = []

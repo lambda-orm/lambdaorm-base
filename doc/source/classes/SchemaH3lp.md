@@ -48,7 +48,7 @@ H3lp.constructor
 
 #### Defined in
 
-[src/lib/shared/application/helper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/2344cdd/src/lib/shared/application/helper.ts#L6)
+[src/lib/shared/application/helper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/shared/application/helper.ts#L6)
 
 ## Properties
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/application/helper.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/2344cdd/src/lib/shared/application/helper.ts#L5)
+[src/lib/shared/application/helper.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/shared/application/helper.ts#L5)
 
 ___
 

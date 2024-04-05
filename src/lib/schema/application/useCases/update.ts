@@ -29,10 +29,10 @@ export class UpdateSchema {
 				currentEntity.composite = entity.composite
 				currentEntity.intermediate = entity.intermediate
 
-				for (const property of entity.properties) {
-					const currentProperty = currentEntity.properties.find(p => p.name === property.name)
+				for (const property of entity.properties || []) {
+					const currentProperty = currentEntity.properties?.find(p => p.name === property.name)
 					if (!currentProperty) {
-						currentEntity.properties.push(property)
+						currentEntity.properties?.push(property)
 					} else {
 						currentProperty.type = property.type
 						currentProperty.length = property.length

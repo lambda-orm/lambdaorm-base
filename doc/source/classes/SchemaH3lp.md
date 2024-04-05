@@ -1,36 +1,36 @@
-[Lambda ORM](../README.md) / Helper
+[Lambda ORM](../README.md) / SchemaH3lp
 
-# Class: Helper
+# Class: SchemaH3lp
 
 ## Hierarchy
 
 - `H3lp`
 
-  ↳ **`Helper`**
+  ↳ **`SchemaH3lp`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Helper.md#constructor)
+- [constructor](SchemaH3lp.md#constructor)
 
 ### Properties
 
-- [array](Helper.md#array)
-- [fs](Helper.md#fs)
-- [http](Helper.md#http)
-- [obj](Helper.md#obj)
-- [schema](Helper.md#schema)
-- [str](Helper.md#str)
-- [test](Helper.md#test)
-- [utils](Helper.md#utils)
-- [val](Helper.md#val)
+- [array](SchemaH3lp.md#array)
+- [fs](SchemaH3lp.md#fs)
+- [http](SchemaH3lp.md#http)
+- [obj](SchemaH3lp.md#obj)
+- [schema](SchemaH3lp.md#schema)
+- [str](SchemaH3lp.md#str)
+- [test](SchemaH3lp.md#test)
+- [utils](SchemaH3lp.md#utils)
+- [val](SchemaH3lp.md#val)
 
 ## Constructors
 
 ### constructor
 
-• **new Helper**(`h3lp`): [`Helper`](Helper.md)
+• **new SchemaH3lp**(`h3lp`): [`SchemaH3lp`](SchemaH3lp.md)
 
 #### Parameters
 
@@ -40,7 +40,7 @@
 
 #### Returns
 
-[`Helper`](Helper.md)
+[`SchemaH3lp`](SchemaH3lp.md)
 
 #### Overrides
 
@@ -48,7 +48,7 @@ H3lp.constructor
 
 #### Defined in
 
-[src/lib/shared/application/helper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/70de11b/src/lib/shared/application/helper.ts#L6)
+[src/lib/shared/application/helper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/2344cdd/src/lib/shared/application/helper.ts#L6)
 
 ## Properties
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/application/helper.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/70de11b/src/lib/shared/application/helper.ts#L5)
+[src/lib/shared/application/helper.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/2344cdd/src/lib/shared/application/helper.ts#L5)
 
 ___
 

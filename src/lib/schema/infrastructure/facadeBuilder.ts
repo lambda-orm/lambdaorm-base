@@ -12,8 +12,8 @@ export class SchemaFacadeBuilder {
 
 	public build ():SchemaFacade {
 		const schemaService = new SchemaService(this.helper)
-		const createEntitiesService = new CreateEntitiesService(schemaService, this.helper)
-		const interpretSchemaDataService = new InterpretSchemaDataService(schemaService, this.helper)
+		const createEntitiesService = new CreateEntitiesService(this.helper)
+		const interpretSchemaDataService = new InterpretSchemaDataService(this.helper)
 		const extender = new SchemaExtender(this.expressions, this.helper)
 		const createSchema = new CreateSchema(schemaService)
 		const updateSchema = new UpdateSchema(createEntitiesService)

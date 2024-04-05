@@ -1,11 +1,10 @@
 import { Entity, Property, Relation, RelationType } from '../../domain'
 import { ObjType, Type } from 'typ3s'
-import { H3lp } from 'h3lp'
-import { SchemaService } from './schemaService'
+import { Helper } from '../../../shared'
 
 export class CreateEntitiesService {
 	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly schemaService:SchemaService, private readonly helper: H3lp) {}
+	constructor (private readonly helper: Helper) {}
 
 	public getEntities (name:string, type: Type):Entity[] {
 		return this.typeToEntities(name, type)
@@ -23,15 +22,15 @@ export class CreateEntitiesService {
 
 	private objTypeToEntities (name:string, objType:ObjType): Entity[] {
 		const entities:Entity[] = []
-		const pk = this.schemaService.getPk(objType)
+		const pk = this.helper.schema.getPk(objType)
 		const primaryKey = pk ? [pk.name] : []
-		const entityName = this.schemaService.getEntityName(name)
+		const entityName = this.helper.schema.getEntityName(name)
 		const entity:Entity = { name: entityName, primaryKey, properties: [] }
 		for (const prop of objType.properties) {
 			if (prop.type && Type.isPrimitive(prop.type)) {
 				const required = (prop.type.nullable === false && prop.type.undefinable === false)
-				const length = this.schemaService.getLength(prop.type)
-				const type = prop.type.primitive === 'string' && length === undefined ? 'text' : prop.type.primitive
+				const length = this.helper.schema.lengthFromType(prop.type)
+				const type = this.helper.schema.type(prop.type.primitive, length)
 				const property: Property = { name: prop.name, type, required, length }
 				entity.properties.push(property)
 				if (prop.type.unique && (pk === undefined || pk.name !== prop.name)) {
@@ -39,13 +38,13 @@ export class CreateEntitiesService {
 					entity.uniqueKey.push(prop.name)
 				}
 			} else if (prop.type && Type.isObj(prop.type) && prop.type.obj) {
-				const fk = this.schemaService.getFk(prop.type.obj)
+				const fk = this.helper.schema.getFk(prop.type.obj)
 				if (fk && fk.type) {
 					const propertyName = prop.name + this.helper.str.capitalize(fk.name)
-					const entityName = this.schemaService.getEntityName(prop.name)
+					const entityName = this.helper.schema.getEntityName(prop.name)
 					const required = (prop.type.nullable === false && prop.type.undefinable === false)
-					const length = this.schemaService.getLength(fk.type)
-					const type = fk.type.primitive === 'string' && length === undefined ? 'text' : fk.type.primitive
+					const length = this.helper.schema.lengthFromType(fk.type)
+					const type = this.helper.schema.type(fk.type.primitive, length)
 					const property: Property = { name: propertyName, type, required, length }
 					const composite = prop.type && prop.type.repeated !== undefined && prop.type.repeated === 0 ? true : undefined
 					const relation:Relation = {
@@ -70,21 +69,21 @@ export class CreateEntitiesService {
 				}
 			} else if (prop.type && Type.isList(prop.type) && prop.type.list?.items.obj) {
 				if (pk && pk.type) {
-					const entityName = this.schemaService.getEntityName(prop.name)
+					const entityName = this.helper.schema.getEntityName(prop.name)
 					const relatedEntities = this.typeToEntities(entityName, prop.type)
 					const relatedEntity = relatedEntities.find(p => p.name === entityName)
 					if (relatedEntity) {
 						if (prop.type && prop.type.repeatRate && prop.type.repeatRate > 0.02) {
-							const rpk = this.schemaService.getFk(prop.type.list?.items.obj)
+							const rpk = this.helper.schema.getFk(prop.type.list?.items.obj)
 							if (rpk && rpk.type) {
 								// hay que crear una tabla intermediaria con el id de la entidad y el id de la entidad relacionada
-								const parentPropertyName = this.helper.str.notation(entity.name, 'camel') + this.helper.str.capitalize(pk.name)
-								const parentPropertyLength = this.schemaService.getLength(pk.type)
-								const parentPropertyType = pk.type.primitive === 'string' && parentPropertyLength === undefined ? 'text' : pk.type.primitive
+								const parentPropertyName = this.helper.schema.refPropertyName(entity.name, pk.name)
+								const parentPropertyLength = this.helper.schema.lengthFromType(pk.type)
+								const parentPropertyType = this.helper.schema.type(pk.type.primitive, parentPropertyLength)
 								const parentProperty: Property = { name: parentPropertyName, type: parentPropertyType, length: parentPropertyLength, required: true }
-								const childPropertyName = this.helper.str.singular(this.helper.str.notation(relatedEntity.name, 'camel')) + this.helper.str.capitalize(rpk.name)
-								const childPropertyLength = this.schemaService.getLength(rpk.type)
-								const childPropertyType = rpk.type.primitive === 'string' && childPropertyLength === undefined ? 'text' : rpk.type.primitive
+								const childPropertyName = this.helper.schema.refPropertyName(relatedEntity.name, rpk.name)
+								const childPropertyLength = this.helper.schema.lengthFromType(rpk.type)
+								const childPropertyType = this.helper.schema.type(rpk.type.primitive, childPropertyLength)
 								const childProperty: Property = { name: childPropertyName, type: childPropertyType, length: childPropertyLength, required: true }
 								const intermediaEntityName = entity.name + this.helper.str.capitalize(prop.name)
 								const intermediaPropertyPk: Property = { name: 'id', type: 'integer', required: true, autoIncrement: true }
@@ -111,8 +110,10 @@ export class CreateEntitiesService {
 								entities.push(intermediaEntity)
 							}
 						} else {
-							const propertyName = this.helper.str.notation(entity.name, 'camel') + this.helper.str.capitalize(pk.name)
-							const relatedProperty: Property = { name: propertyName, type: pk.type.primitive, required: true }
+							const propertyName = this.helper.schema.refPropertyName(entity.name, pk.name)
+							const relatedPropertyLength = this.helper.schema.lengthFromType(pk.type)
+							const relatedPropertyType = this.helper.schema.type(pk.type.primitive, relatedPropertyLength)
+							const relatedProperty: Property = { name: propertyName, type: relatedPropertyType, length: relatedPropertyLength, required: true }
 							const composite = prop.type && prop.type.repeated !== undefined && prop.type.repeated === 0
 							const relation:Relation = {
 								name: this.helper.str.notation(entity.name, 'camel'),

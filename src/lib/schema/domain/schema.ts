@@ -23,7 +23,7 @@ export interface Constraint {
 }
 export interface Property {
 	name: string
-	type: string
+	type?: string
 	length?: number
 	required?: boolean
 	primaryKey?: boolean

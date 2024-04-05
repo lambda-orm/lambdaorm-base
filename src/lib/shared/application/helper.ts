@@ -1,19 +1,5 @@
-import { H3lp, IStringHelper } from 'h3lp'
-
-export class SchemaHelper {
-	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly str:IStringHelper) {}
-
-	public equalName (name1?:string, name2?:string):boolean {
-		if (name1 === undefined && name2 === undefined) return true
-		if (name1 === undefined || name2 === undefined) return false
-		return name1.toLowerCase() === name2.toLowerCase()
-	}
-
-	public entityName (name:string):string {
-		return this.str.capitalize(name)
-	}
-}
+import { H3lp } from 'h3lp'
+import { SchemaHelper } from '../../schema/application'
 
 export class Helper extends H3lp {
 	public schema:SchemaHelper

@@ -79,16 +79,16 @@ export class MatchSchema {
 			if (!currentProperty) {
 				const newProperty = {
 					name: propertyMapping.name,
-					type: propertyMapping.type,
-					length: propertyMapping.length,
+					type: this.helper.schema.type(propertyMapping.type),
+					length: this.helper.schema.length(propertyMapping.length),
 					required: propertyMapping.required ? true : undefined,
 					autoIncrement: propertyMapping.autoIncrement ? true : undefined,
 					view: propertyMapping.view
 				}
 				currentEntity.properties.push(newProperty)
 			} else {
-				currentProperty.type = propertyMapping.type
-				currentProperty.length = propertyMapping.length
+				currentProperty.type = this.helper.schema.type(propertyMapping.type)
+				currentProperty.length = this.helper.schema.length(propertyMapping.length)
 				currentProperty.required = propertyMapping.required ? true : undefined
 				currentProperty.autoIncrement = propertyMapping.autoIncrement ? true : undefined
 				currentProperty.view = propertyMapping.view

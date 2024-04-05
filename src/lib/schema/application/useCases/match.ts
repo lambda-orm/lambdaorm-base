@@ -1,4 +1,4 @@
-import { Helper } from '../../../shared'
+import { SchemaH3lp } from '../../../shared'
 import { Entity, EntityMapping, Mapping, MatchOptions, RelationType, Schema } from '../../domain'
 import { SchemaService } from '../services/schemaService'
 
@@ -6,7 +6,7 @@ export class MatchSchema {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
 		private readonly schemaService:SchemaService,
-		private readonly helper:Helper) {}
+		private readonly helper:SchemaH3lp) {}
 
 	public match (schema: Schema, mappings:Mapping[], options:MatchOptions):void {
 		if (!schema.infrastructure) {

@@ -1,10 +1,10 @@
 import { Entity, Property, Relation, RelationType } from '../../domain'
 import { ObjType, Type } from 'typ3s'
-import { Helper } from '../../../shared'
+import { SchemaH3lp } from '../../../shared'
 
 export class CreateEntitiesService {
 	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly helper: Helper) {}
+	constructor (private readonly helper: SchemaH3lp) {}
 
 	public getEntities (name:string, type: Type):Entity[] {
 		return this.typeToEntities(name, type)

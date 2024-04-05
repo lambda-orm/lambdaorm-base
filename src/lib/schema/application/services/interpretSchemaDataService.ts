@@ -1,10 +1,10 @@
 import { SchemaData, SchemaEntityData } from '../../domain'
 import { ObjType, Type } from 'typ3s'
-import { Helper } from '../../../shared'
+import { SchemaH3lp } from '../../../shared'
 
 export class InterpretSchemaDataService {
 	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly helper: Helper) {}
+	constructor (private readonly helper: SchemaH3lp) {}
 
 	public completeSchemaData (source:any, name:string, type: Type, schemaData: SchemaData):void {
 		const entityName = this.helper.schema.getEntityName(name)

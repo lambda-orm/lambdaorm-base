@@ -2,12 +2,12 @@ import { Expressions } from '3xpr'
 import { SchemaFacade, CreateEntitiesService, SchemaExtender, CreateSchema, UpdateSchema, GetSchemaSchema, MatchSchema } from '../application'
 import { SchemaService } from '../application/services/schemaService'
 import { InterpretSchemaDataService } from '../application/services/interpretSchemaDataService'
-import { Helper } from '../../shared'
+import { SchemaH3lp } from '../../shared'
 export class SchemaFacadeBuilder {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
 		private readonly expressions: Expressions,
-		private readonly helper: Helper
+		private readonly helper: SchemaH3lp
 	) {}
 
 	public build ():SchemaFacade {

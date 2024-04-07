@@ -36,6 +36,8 @@ export class SchemaFacade {
 	}
 
 	public complete (schema: Schema): void {
+		this.schemaService.complete(schema)
 		this.extender.complete(schema)
+		this.extender.extend(schema)
 	}
 }

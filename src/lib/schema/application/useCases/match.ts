@@ -1,4 +1,4 @@
-import { Entity, EntityMapping, Mapping, MatchOptions, Property, RelationType, Schema } from '../../domain'
+import { Entity, EntityMapping, Mapping, MatchOptions, Property, RelationType, Schema, SchemaError } from '../../domain'
 import { SchemaHelper } from '../services/helper'
 import { SchemaService } from '../services/schemaService'
 
@@ -20,6 +20,7 @@ export class MatchSchema {
 			let currentMapping = schema.infrastructure.mappings.find(p => this.helper.equalName(p.name, mapping.name))
 			if (currentMapping === undefined) {
 				currentMapping = { name: mapping.name, entities: [] }
+				schema.infrastructure.mappings.push(currentMapping)
 			} else if (!currentMapping.entities) {
 				currentMapping.entities = []
 			}
@@ -56,7 +57,7 @@ export class MatchSchema {
 				if (currentEntityMapping) {
 					this.updateEntityMapping(currentEntityMapping, entityMapping)
 				} else {
-					this.createEntityMapping(currentMapping, entityMapping)
+					this.createEntityMapping(currentMapping, currentEntity, entityMapping)
 				}
 			}
 		}
@@ -66,38 +67,47 @@ export class MatchSchema {
 	}
 
 	private createEntity (entities:Entity[], currentMapping:Mapping, entityMapping:EntityMapping):void {
-		const entityName = this.helper.entityName(entityMapping.name)
-		const newEntityMapping:EntityMapping = { name: entityName, properties: [] }
-		if (entityName !== entityMapping.name) {
-			newEntityMapping.mapping = entityMapping.name
-		}
-		entityMapping.name = entityName
+		const newEntity:Entity = { name: entityMapping.name, properties: [], relations: [], primaryKey: entityMapping.primaryKey, uniqueKey: entityMapping.uniqueKey }
+		const newEntityMapping:EntityMapping = { name: entityMapping.name, mapping: entityMapping.mapping, properties: [] }
 		for (const propertyMapping of entityMapping.properties || []) {
-			const propertyMappingName = this.helper.propertyName(propertyMapping.name)
-			if (propertyMappingName !== propertyMapping.name) {
-				newEntityMapping.properties?.push({ name: propertyMappingName, mapping: propertyMapping.name })
+			if (propertyMapping.name !== propertyMapping.mapping) {
+				newEntityMapping.properties?.push({ name: propertyMapping.name, mapping: propertyMapping.mapping })
 			}
-			propertyMapping.name = propertyMappingName
+			newEntity.properties?.push(this.propertyFromPropertyMapping(propertyMapping))
 		}
 		if (entityMapping.relations) {
 			for (const relation of entityMapping.relations) {
-				relation.entity = this.helper.entityName(relation.entity)
+				const newRelation = {
+					name: relation.name,
+					type: relation.type,
+					from: relation.from,
+					entity: this.helper.entityName(relation.entity),
+					to: relation.to
+				}
+				newEntity.relations?.push(newRelation)
 			}
 		}
-		this.addEntity(entities, entityMapping)
+		entities.push(newEntity)
 		if (newEntityMapping.mapping || (newEntityMapping.properties?.length || 0) > 0) {
 			currentMapping.entities?.push(newEntityMapping)
 		}
 	}
 
-	private createEntityMapping (currentMapping: Mapping, entityMapping:EntityMapping) {
-		const newEntityMapping:EntityMapping = { name: entityMapping.name, mapping: entityMapping.mapping, sequence: entityMapping.sequence, properties: [] }
+	private createEntityMapping (currentMapping: Mapping, currentEntity:Entity, entityMapping:EntityMapping) {
+		const newEntityMapping:EntityMapping = { name: currentEntity.name, mapping: entityMapping.mapping, sequence: entityMapping.sequence, properties: [] }
 		for (const propertyMapping of entityMapping.properties || []) {
-			if (propertyMapping.name !== propertyMapping.mapping) {
-				newEntityMapping.properties?.push({ name: propertyMapping.name, mapping: propertyMapping.mapping })
+			const currentProperty = currentEntity.properties?.find(p => this.helper.equalName(p.name, propertyMapping.name))
+			if (!currentProperty) {
+				throw new SchemaError(`Property ${propertyMapping.name} not found in entity ${currentEntity.name}`)
+			}
+			if (currentProperty.name !== propertyMapping.mapping) {
+				newEntityMapping.properties?.push({ name: currentProperty.name, mapping: propertyMapping.mapping })
 			}
 		}
-		if (newEntityMapping.mapping || newEntityMapping.sequence || (newEntityMapping.properties?.length || 0) > 0) {
+		if ((newEntityMapping.name !== newEntityMapping.mapping) || newEntityMapping.sequence || (newEntityMapping.properties?.length || 0) > 0) {
+			if (newEntityMapping.properties?.length === 0) {
+				newEntityMapping.properties = undefined
+			}
 			currentMapping.entities?.push(newEntityMapping)
 		}
 	}
@@ -111,15 +121,7 @@ export class MatchSchema {
 				: currentEntity.properties?.find(p => this.helper.equalName(p.name, propertyMapping.name))
 			// si no existe la propiedad la agrega , sino actualiza los valores
 			if (!currentProperty) {
-				const newProperty = {
-					name: this.helper.propertyName(propertyMapping.name),
-					type: this.helper.type(propertyMapping.type),
-					length: this.helper.length(propertyMapping.length),
-					required: propertyMapping.required ? true : undefined,
-					autoIncrement: propertyMapping.autoIncrement ? true : undefined,
-					view: propertyMapping.view
-				}
-				currentEntity.properties?.push(newProperty)
+				currentEntity.properties?.push(this.propertyFromPropertyMapping(propertyMapping))
 			} else {
 				currentProperty.type = this.helper.type(propertyMapping.type)
 				currentProperty.length = this.helper.length(propertyMapping.length)
@@ -127,6 +129,17 @@ export class MatchSchema {
 				currentProperty.autoIncrement = propertyMapping.autoIncrement ? true : undefined
 				currentProperty.view = propertyMapping.view
 			}
+		}
+	}
+
+	private propertyFromPropertyMapping (propertyMapping:Property):Property {
+		return {
+			name: this.helper.propertyName(propertyMapping.name),
+			type: this.helper.type(propertyMapping.type),
+			length: this.helper.length(propertyMapping.length),
+			required: propertyMapping.required ? true : undefined,
+			autoIncrement: propertyMapping.autoIncrement ? true : undefined,
+			view: propertyMapping.view
 		}
 	}
 
@@ -207,22 +220,6 @@ export class MatchSchema {
 		}
 	}
 
-	private addEntity (entities:Entity[], entityMapping:EntityMapping):void {
-		const newEntity:Entity = { name: entityMapping.name, properties: [] }
-		for (const propertyMapping of entityMapping.properties || []) {
-			const newProperty:Property = {
-				name: this.helper.propertyName(propertyMapping.name),
-				type: this.helper.type(propertyMapping.type),
-				length: this.helper.length(propertyMapping.length),
-				required: propertyMapping.required ? true : undefined,
-				autoIncrement: propertyMapping.autoIncrement ? true : undefined,
-				view: propertyMapping.view
-			}
-			newEntity.properties?.push(newProperty)
-		}
-		entities.push(newEntity)
-	}
-
 	private removeEntitiesAndProperties (schema:Schema, mappings:Mapping[], entitiesToRemove:string [], options:MatchOptions) {
 		if (options.removeEntities) {
 			// remove entities from domain
@@ -272,7 +269,7 @@ export class MatchSchema {
 					propertiesToRemove.push(currentProperty.name)
 				}
 			// si no existe la propiedad en el mapeo actual , busca la propiedad en la entidad de dominio, si no existe la setea para eliminar
-			} else if (!entityMapping.properties?.some(p => this.helper.equalName(p.name, currentEntity.name))) {
+			} else if (!entityMapping.properties?.some(p => this.helper.equalName(p.name, currentProperty.name))) {
 				propertiesToRemove.push(currentProperty.name)
 			}
 		}

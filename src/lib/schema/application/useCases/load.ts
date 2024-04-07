@@ -5,7 +5,6 @@ import { DomainConfigService } from '../services/config/domainConfigService'
 import { MappingsConfigService } from '../services/config/mappingsConfigService'
 import { StageConfigService } from '../services/config/stageConfigService'
 import { ViewsConfigService } from '../services/config/viewsConfigService'
-import { SchemaExtender } from '../services/schemaExtender'
 
 export class LoadSchema {
 	// eslint-disable-next-line no-useless-constructor
@@ -14,12 +13,10 @@ export class LoadSchema {
 		private readonly mapping:MappingsConfigService,
 		private readonly stage:StageConfigService,
 		private readonly view:ViewsConfigService,
-		private readonly extender:SchemaExtender,
 		private readonly helper:H3lp) {}
 
-	public load (_schema: Schema): Schema {
-		let schema = this.helper.utils.solveEnvironmentVars(_schema) as Schema
-		schema = this.extender.extend(schema)
+	public load (source: Schema): Schema {
+		const schema = this.helper.utils.solveEnvironmentVars(source) as Schema
 		this.domain.entities = schema.domain.entities || []
 		this.domain.enums = schema.domain.enums || []
 

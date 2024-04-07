@@ -5,13 +5,33 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "countries",
+			"name": "update from data",
 			"type": "node",
 			"request": "launch",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/src/dev/countries.ts"
-		}		
+			"program": "${workspaceFolder}/src/dev/updateFromData/index.ts"
+		},
+		{
+			"name": "update from mapping",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/src/dev/updateFromMapping/index.ts",
+			"envFile": "${workspaceFolder}/src/dev/updateFromMapping/.env"
+		},
+		{
+			"name": "complete",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/src/dev/complete/index.ts",
+			"envFile": "${workspaceFolder}/src/dev/complete/.env"
+		}			
 	]
 }

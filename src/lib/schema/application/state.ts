@@ -5,11 +5,10 @@ import { DomainConfigService } from './services/config/domainConfigService'
 import { StageConfigService } from './services/config/stageConfigService'
 import { ViewsConfigService } from './services/config/viewsConfigService'
 import { RouteService } from './services/routeService'
-import { LoadSchema } from './useCases/load'
-import { SchemaService } from './services/schemaService'
 import { SchemaFacade } from './facade'
 import { IFileSchemaService } from './ports/fileSchemaService'
 import { H3lp } from 'h3lp'
+import { LoadSchema } from './useCases/load'
 
 export class SchemaState {
 	public schema: Schema
@@ -22,9 +21,8 @@ export class SchemaState {
 		public readonly stage:StageConfigService,
 		public readonly view:ViewsConfigService,
 		private readonly routeService:RouteService,
-		private readonly loadSchema: LoadSchema,
 		private readonly facade:SchemaFacade,
-		private readonly schemaService:SchemaService,
+		private readonly loadSchema:LoadSchema,
 		private readonly fileService:IFileSchemaService,
 		private readonly helper: H3lp
 	) {
@@ -45,8 +43,7 @@ export class SchemaState {
 		} else {
 			throw new SchemaError(`Schema: ${source} not supported`)
 		}
-		this.schema = this.helper.obj.clone(this.originalSchema)
-		this.schema = this.solve(this.schema)
+		this.schema = this.toSchema(this.originalSchema)
 		return this.schema
 	}
 
@@ -55,18 +52,16 @@ export class SchemaState {
 		if (this.schemaPath) {
 			await this.fileService.write(this.originalSchema, this.schemaPath)
 		}
-		this.schema = this.helper.obj.clone(this.originalSchema)
-		this.schema = this.solve(this.schema)
+		this.schema = this.toSchema(this.originalSchema)
 		return schemaData
 	}
 
-	public async updateFromMapping (mappings:Mapping[], options:MatchOptions = { removeEntities: true, removeProperties: true }): Promise<void> {
+	public async updateFromMapping (mappings:Mapping[], options:MatchOptions = { removeEntities: true, removeProperties: true, removeRelations: true }): Promise<void> {
 		this.facade.updateFromMapping(this.originalSchema, mappings, options)
 		if (this.schemaPath) {
 			await this.fileService.write(this.originalSchema, this.schemaPath)
 		}
-		this.schema = this.helper.obj.clone(this.originalSchema)
-		this.schema = this.solve(this.schema)
+		this.schema = this.toSchema(this.originalSchema)
 	}
 
 	public evalSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {
@@ -77,8 +72,9 @@ export class SchemaState {
 		return this.routeService.getSource(clauseInfo, stage)
 	}
 
-	private solve (schema: Schema): Schema {
-		this.schemaService.complete(schema)
-		return this.loadSchema.load(schema)
+	private toSchema (originalSchema: Schema): Schema {
+		const _schema = this.helper.obj.clone(originalSchema)
+		this.facade.complete(_schema)
+		return this.loadSchema.load(_schema)
 	}
 }

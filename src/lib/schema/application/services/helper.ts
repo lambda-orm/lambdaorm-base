@@ -3,6 +3,9 @@ import { ObjType, PropertyType, Type } from 'typ3s'
 const { v4: uuidv4 } = require('uuid')
 
 export class SchemaHelper {
+	public readonly DEFAULT_TYPE = 'string'
+	public readonly DEFAULT_LENGTH = 80
+
 	// eslint-disable-next-line no-useless-constructor
 	constructor (private readonly str:IStringHelper) {}
 
@@ -77,11 +80,11 @@ export class SchemaHelper {
 
 	public type (type?:string, length?:number) :string | undefined {
 		if (type === undefined) return undefined
-		return type === 'string' && length === Number.MAX_SAFE_INTEGER ? 'text' : type === 'string' ? undefined : type
+		return type === 'string' && length === Number.MAX_SAFE_INTEGER ? 'text' : type === this.DEFAULT_TYPE ? undefined : type
 	}
 
 	public length (length?:number): number | undefined {
-		return length ? length === 80 ? undefined : length : undefined
+		return length ? length === this.DEFAULT_LENGTH ? undefined : length : undefined
 	}
 
 	public lengthFromType (type:Type): number | undefined {
@@ -89,7 +92,7 @@ export class SchemaHelper {
 			return undefined
 		}
 		if (!type.maxLen) {
-			return 80
+			return this.DEFAULT_LENGTH
 		}
 		if (type.maxLen < 8) {
 			if (type.maxLen === type.minLen) {
@@ -104,7 +107,7 @@ export class SchemaHelper {
 			return 32
 		} else if (length < 50) {
 			return 50
-		} else if (length < 80) {
+		} else if (length < this.DEFAULT_LENGTH) {
 			return undefined
 		} else if (length < 128) {
 			return 128

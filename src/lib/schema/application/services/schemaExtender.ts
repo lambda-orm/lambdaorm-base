@@ -3,19 +3,19 @@ import {
 	Schema, Mapping, RelationType, View,
 	DIALECT_DEFAULT, ObservableAction, SchemaError
 } from '../../domain'
-import { H3lp } from 'h3lp'
 import { Primitive } from 'typ3s'
 import { Expressions } from '3xpr'
+import { SchemaH3lp } from '../../../shared'
 
 export class SchemaExtender {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
 		private readonly expressions: Expressions,
-		private readonly helper: H3lp
+		private readonly helper: SchemaH3lp
 	) {}
 
-	public extend (source: Schema): Schema {
-		const schema = this.helper.obj.clone(source) as Schema
+	public extend (schema: Schema): void {
+		// const schema = this.helper.obj.clone(source) as Schema
 		this.extendEnums(schema)
 		this.extendEntities(schema)
 		this.complete(schema)
@@ -27,10 +27,11 @@ export class SchemaExtender {
 			schema.infrastructure.views = [{ name: 'default', entities: [] }]
 		}
 		// exclude entities not used in mapping
-		for (const k in schema.infrastructure?.mappings) {
-			schema.infrastructure.mappings[k] = this.clearMapping2(schema, schema.infrastructure.mappings[k])
+		if (schema.infrastructure && schema.infrastructure.mappings) {
+			for (let i = 0, length = schema.infrastructure.mappings.length; i < length; i++) {
+				schema.infrastructure.mappings[i] = this.clearMapping2(schema, schema.infrastructure.mappings[i])
+			}
 		}
-		return schema
 	}
 
 	private extendEnums (schema: Schema) {
@@ -111,12 +112,12 @@ export class SchemaExtender {
 			}
 		}
 		// extend mapping for model
-		for (const k in schema.infrastructure.mappings) {
-			schema.infrastructure.mappings[k].entities = this.helper.obj.extends(schema.infrastructure.mappings[k].entities, schema.domain.entities)
-			schema.infrastructure.mappings[k] = this.clearMapping(schema.infrastructure.mappings[k])
-			const mapping = schema.infrastructure.mappings[k]
+		for (let i = 0, length = schema.infrastructure.mappings.length; i < length; i++) {
+			schema.infrastructure.mappings[i].entities = this.helper.obj.extends(schema.infrastructure.mappings[i].entities, schema.domain.entities)
+			schema.infrastructure.mappings[i] = this.clearMapping(schema.infrastructure.mappings[i])
+			const mapping = schema.infrastructure.mappings[i]
 			if (mapping && mapping.entities) {
-				this.completeMapping(schema.infrastructure.mappings[k])
+				this.completeMapping(schema.infrastructure.mappings[i])
 			}
 		}
 	}
@@ -129,8 +130,7 @@ export class SchemaExtender {
 			console.log('sources not defined')
 			schema.infrastructure.sources = [{ name: 'default', dialect: DIALECT_DEFAULT, mapping: schema.infrastructure.mappings[0].name, connection: null }]
 		}
-		for (const k in schema.infrastructure.sources) {
-			const source = schema.infrastructure.sources[k]
+		for (const source of schema.infrastructure.sources) {
 			if (source.mapping === undefined) {
 				source.mapping = schema.infrastructure.mappings[0].name
 			}
@@ -144,8 +144,7 @@ export class SchemaExtender {
 		if (!schema.infrastructure.stages || !schema.infrastructure.stages.length || schema.infrastructure.stages.length === 0) {
 			schema.infrastructure.stages = [{ name: 'default', sources: [{ name: schema.infrastructure.sources[0].name }] }]
 		}
-		for (const k in schema.infrastructure.stages) {
-			const stage = schema.infrastructure.stages[k]
+		for (const stage of schema.infrastructure.stages) {
 			if (stage.sources === undefined) {
 				stage.sources = [{ name: schema.infrastructure.sources[0].name }]
 			}
@@ -252,7 +251,7 @@ export class SchemaExtender {
 					property.required = ((entity.required && entity.required.includes(property.name)) || (entity.primaryKey && entity.primaryKey.includes(property.name)) || (entity.uniqueKey && entity.uniqueKey.includes(property.name)))
 				}
 				if (property.type === undefined) property.type = Primitive.string
-				if (property.type === Primitive.string && property.length === undefined) property.length = 80
+				if (property.type === Primitive.string && property.length === undefined) property.length = this.helper.schema.DEFAULT_LENGTH
 				if (property.length !== undefined && isNaN(property.length)) {
 					throw new SchemaError(`Invalid length in ${entity.name}.${property.name}`)
 				}

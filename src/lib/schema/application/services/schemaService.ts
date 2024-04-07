@@ -21,7 +21,7 @@ export class SchemaService {
 		return { src: 'src', data: 'data', domain: 'domain' }
 	}
 
-	public complete (schema: Schema) {
+	public complete (schema: Schema):void {
 		if (!schema.domain) {
 			schema.domain = this.newDomain()
 		} else {

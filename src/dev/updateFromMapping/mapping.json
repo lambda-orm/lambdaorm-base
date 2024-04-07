@@ -1,0 +1,207 @@
+[
+  {
+    "name": "default",
+    "entities": [
+      {
+        "name": "Languages",
+        "mapping": "languages",
+        "properties": [
+          {
+            "name": "code",
+            "mapping": "code",
+            "type": "string",
+            "required": true,
+            "length": 4,
+            "primaryKey": true
+          },
+          {
+            "name": "name",
+            "mapping": "name",
+            "type": "string",
+            "required": true,
+            "length": 16
+          }
+        ],
+        "primaryKey": ["code"]
+      },
+      {
+        "name": "Countrieslanguages",
+        "mapping": "countrieslanguages",
+        "properties": [
+          {
+            "name": "id",
+            "mapping": "id",
+            "type": "integer",
+            "required": true,
+            "autoIncrement": true,
+            "primaryKey": true
+          },
+          {
+            "name": "languagecode",
+            "mapping": "languagecode",
+            "type": "string",
+            "required": true,
+            "length": 4
+          },
+          {
+            "name": "countryname",
+            "mapping": "countryname",
+            "type": "string",
+            "required": true,
+            "length": 32
+          }
+        ],
+        "primaryKey": ["id"],
+        "uniqueKey": ["countryname", "languagecode"],
+        "relations": [
+          {
+            "name": "languages",
+            "from": "languagecode",
+            "entity": "Languages",
+            "to": "code",
+            "type": "oneToMany"
+          },
+          {
+            "name": "countries",
+            "from": "countryname",
+            "entity": "Countries",
+            "to": "name",
+            "type": "oneToMany"
+          }
+        ]
+      },
+      {
+        "name": "Positions",
+        "mapping": "positions",
+        "properties": [
+          {
+            "name": "lat",
+            "mapping": "lat",
+            "type": "decimal",
+            "required": true,
+            "primaryKey": true
+          },
+          {
+            "name": "long",
+            "mapping": "long",
+            "type": "decimal",
+            "required": true
+          }
+        ],
+        "primaryKey": ["lat"],
+        "uniqueKey": ["long"]
+      },
+      {
+        "name": "Timezones",
+        "mapping": "timezones",
+        "properties": [
+          { "name": "gmtoffset", "mapping": "gmtoffset", "type": "integer" },
+          {
+            "name": "name",
+            "mapping": "name",
+            "type": "string",
+            "required": true,
+            "length": 32,
+            "primaryKey": true
+          },
+          {
+            "name": "positionlat",
+            "mapping": "positionlat",
+            "type": "decimal",
+            "required": true
+          },
+          {
+            "name": "countryname",
+            "mapping": "countryname",
+            "type": "string",
+            "required": true,
+            "length": 32
+          }
+        ],
+        "primaryKey": ["name"],
+        "relations": [
+          {
+            "name": "countries",
+            "from": "countryname",
+            "entity": "Countries",
+            "to": "name",
+            "type": "oneToMany"
+          },
+          {
+            "name": "position",
+            "from": "positionlat",
+            "entity": "Positions",
+            "to": "lat",
+            "type": "oneToMany"
+          }
+        ]
+      },
+      {
+        "name": "Regions",
+        "mapping": "regions",
+        "properties": [
+          {
+            "name": "code",
+            "mapping": "code",
+            "type": "string",
+            "required": true,
+            "length": 2,
+            "primaryKey": true
+          },
+          {
+            "name": "name",
+            "mapping": "name",
+            "type": "string",
+            "required": true,
+            "length": 32
+          }
+        ],
+        "primaryKey": ["code"]
+      },
+      {
+        "name": "Countries",
+        "mapping": "countries",
+        "properties": [
+          {
+            "name": "name",
+            "mapping": "name",
+            "type": "string",
+            "required": true,
+            "length": 32,
+            "primaryKey": true
+          },
+          {
+            "name": "phonecode",
+            "mapping": "phonecode",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "name": "priority",
+            "mapping": "priority",
+            "type": "integer",
+            "required": true
+          },
+          {
+            "name": "regioncode",
+            "mapping": "regioncode",
+            "type": "string",
+            "required": true,
+            "length": 2
+          }
+        ],
+        "primaryKey": ["name"],
+        "uniqueKey": ["phonecode"],
+        "relations": [
+          {
+            "name": "region",
+            "from": "regioncode",
+            "entity": "Regions",
+            "to": "code",
+            "type": "oneToMany"
+          }
+        ]
+      }
+    ]
+  }
+]

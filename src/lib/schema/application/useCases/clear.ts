@@ -1,6 +1,10 @@
 import { Entity, EntityMapping, Schema } from '../../domain'
+import { SchemaHelper } from '../services/helper'
 
 export class ClearSchema {
+	// eslint-disable-next-line no-useless-constructor
+	constructor (private readonly helper: SchemaHelper) {}
+
 	public clear (schema: Schema) {
 		for (const entity of schema.domain.entities) {
 			this.clearEntity(entity)
@@ -66,7 +70,7 @@ export class ClearSchema {
 		if (entity.constraints && entity.constraints.length === 0) entity.constraints = undefined
 		if (entity.dependents && entity.dependents.length === 0) entity.dependents = undefined
 		for (const property of entity.properties || []) {
-			if (property.length === 0 || (property.type === 'string' && property.length === 80)) property.length = undefined
+			if (property.length === 0 || (property.type === 'string' && property.length === this.helper.DEFAULT_LENGTH)) property.length = undefined
 			if (property.required === false) property.required = undefined
 			if (property.primaryKey === false) property.primaryKey = undefined
 			if (property.autoIncrement === false) property.autoIncrement = undefined

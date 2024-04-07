@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [0.1.50](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.49...v0.1.50) (2024-04-07)
+
+
+### Bug Fixes
+
+* **schema:** solve sync from mapping ([03bdf7d](https://github.com/FlavioLionelRita/lambdaorm-base/commit/03bdf7d7086ddca951ef5ba4f5cb84808913e549)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [0.1.49](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.48...v0.1.49) (2024-04-05)
 
 ### [0.1.48](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.47...v0.1.48) (2024-04-05)

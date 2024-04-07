@@ -16,7 +16,7 @@
 
 ### constructor
 
-• **new LoadSchema**(`source`, `domain`, `mapping`, `stage`, `view`, `extender`, `helper`): [`LoadSchema`](LoadSchema.md)
+• **new LoadSchema**(`source`, `domain`, `mapping`, `stage`, `view`, `helper`): [`LoadSchema`](LoadSchema.md)
 
 #### Parameters
 
@@ -27,7 +27,6 @@
 | `mapping` | [`MappingsConfigService`](MappingsConfigService.md) |
 | `stage` | [`StageConfigService`](StageConfigService.md) |
 | `view` | [`ViewsConfigService`](ViewsConfigService.md) |
-| `extender` | [`SchemaExtender`](SchemaExtender.md) |
 | `helper` | `H3lp` |
 
 #### Returns
@@ -36,19 +35,19 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/load.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/useCases/load.ts#L12)
+[src/lib/schema/application/useCases/load.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/useCases/load.ts#L11)
 
 ## Methods
 
 ### load
 
-▸ **load**(`_schema`): [`Schema`](../interfaces/Schema.md)
+▸ **load**(`source`): [`Schema`](../interfaces/Schema.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `_schema` | [`Schema`](../interfaces/Schema.md) |
+| `source` | [`Schema`](../interfaces/Schema.md) |
 
 #### Returns
 
@@ -56,4 +55,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/load.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/useCases/load.ts#L20)
+[src/lib/schema/application/useCases/load.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/useCases/load.ts#L18)

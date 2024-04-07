@@ -31,7 +31,7 @@
 
 ### constructor
 
-• **new SchemaState**(`source`, `domain`, `mapping`, `stage`, `view`, `routeService`, `loadSchema`, `facade`, `schemaService`, `fileService`, `helper`): [`SchemaState`](SchemaState.md)
+• **new SchemaState**(`source`, `domain`, `mapping`, `stage`, `view`, `routeService`, `facade`, `loadSchema`, `fileService`, `helper`): [`SchemaState`](SchemaState.md)
 
 #### Parameters
 
@@ -43,9 +43,8 @@
 | `stage` | [`StageConfigService`](StageConfigService.md) |
 | `view` | [`ViewsConfigService`](ViewsConfigService.md) |
 | `routeService` | [`RouteService`](RouteService.md) |
-| `loadSchema` | [`LoadSchema`](LoadSchema.md) |
 | `facade` | [`SchemaFacade`](SchemaFacade.md) |
-| `schemaService` | `SchemaService` |
+| `loadSchema` | [`LoadSchema`](LoadSchema.md) |
 | `fileService` | [`IFileSchemaService`](../interfaces/IFileSchemaService.md) |
 | `helper` | `H3lp` |
 
@@ -55,7 +54,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L18)
+[src/lib/schema/application/state.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L17)
 
 ## Properties
 
@@ -65,7 +64,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L20)
+[src/lib/schema/application/state.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L19)
 
 ___
 
@@ -75,7 +74,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L21)
+[src/lib/schema/application/state.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L20)
 
 ___
 
@@ -85,7 +84,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L16)
+[src/lib/schema/application/state.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L15)
 
 ___
 
@@ -95,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L15)
+[src/lib/schema/application/state.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L14)
 
 ___
 
@@ -105,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L17)
+[src/lib/schema/application/state.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L16)
 
 ___
 
@@ -115,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L19)
+[src/lib/schema/application/state.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L18)
 
 ___
 
@@ -125,7 +124,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L22)
+[src/lib/schema/application/state.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L21)
 
 ___
 
@@ -135,7 +134,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L23)
+[src/lib/schema/application/state.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L22)
 
 ## Methods
 
@@ -156,7 +155,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L72)
+[src/lib/schema/application/state.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L67)
 
 ___
 
@@ -177,7 +176,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L76)
+[src/lib/schema/application/state.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L71)
 
 ___
 
@@ -197,7 +196,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L35)
+[src/lib/schema/application/state.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L33)
 
 ___
 
@@ -218,7 +217,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L53)
+[src/lib/schema/application/state.ts:50](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L50)
 
 ___
 
@@ -239,4 +238,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/state.ts#L63)
+[src/lib/schema/application/state.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/state.ts#L59)

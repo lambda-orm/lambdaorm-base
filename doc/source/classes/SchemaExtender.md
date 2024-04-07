@@ -25,7 +25,7 @@
 | Name | Type |
 | :------ | :------ |
 | `expressions` | `Expressions` |
-| `helper` | `H3lp` |
+| `helper` | [`SchemaH3lp`](SchemaH3lp.md) |
 
 #### Returns
 
@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/schemaExtender.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/schemaExtender.ts#L12)
+[src/lib/schema/application/services/schemaExtender.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/schemaExtender.ts#L12)
 
 ## Methods
 
@@ -53,27 +53,27 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/schemaExtender.ts:155](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/schemaExtender.ts#L155)
+[src/lib/schema/application/services/schemaExtender.ts:154](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/schemaExtender.ts#L154)
 
 ___
 
 ### extend
 
-▸ **extend**(`source`): [`Schema`](../interfaces/Schema.md)
+▸ **extend**(`schema`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `source` | [`Schema`](../interfaces/Schema.md) |
+| `schema` | [`Schema`](../interfaces/Schema.md) |
 
 #### Returns
 
-[`Schema`](../interfaces/Schema.md)
+`void`
 
 #### Defined in
 
-[src/lib/schema/application/services/schemaExtender.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/schemaExtender.ts#L17)
+[src/lib/schema/application/services/schemaExtender.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/schemaExtender.ts#L17)
 
 ___
 
@@ -94,4 +94,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/schemaExtender.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/schemaExtender.ts#L172)
+[src/lib/schema/application/services/schemaExtender.ts:171](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/schemaExtender.ts#L171)

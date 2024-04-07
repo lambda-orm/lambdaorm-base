@@ -24,7 +24,7 @@
 | :------ | :------ |
 | `expressions` | `Expressions` |
 | `facade` | [`SchemaFacade`](SchemaFacade.md) |
-| `helper` | `H3lp` |
+| `helper` | [`SchemaH3lp`](SchemaH3lp.md) |
 
 #### Returns
 
@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/stateBuilder.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/infrastructure/stateBuilder.ts#L12)
+[src/lib/schema/infrastructure/stateBuilder.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/infrastructure/stateBuilder.ts#L11)
 
 ## Methods
 
@@ -46,4 +46,4 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/stateBuilder.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/infrastructure/stateBuilder.ts#L18)
+[src/lib/schema/infrastructure/stateBuilder.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/infrastructure/stateBuilder.ts#L17)

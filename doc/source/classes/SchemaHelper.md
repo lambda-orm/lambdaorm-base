@@ -8,6 +8,11 @@
 
 - [constructor](SchemaHelper.md#constructor)
 
+### Properties
+
+- [DEFAULT\_LENGTH](SchemaHelper.md#default_length)
+- [DEFAULT\_TYPE](SchemaHelper.md#default_type)
+
 ### Methods
 
 - [capitalize](SchemaHelper.md#capitalize)
@@ -44,7 +49,27 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L7)
+[src/lib/schema/application/services/helper.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L10)
+
+## Properties
+
+### DEFAULT\_LENGTH
+
+• `Readonly` **DEFAULT\_LENGTH**: ``80``
+
+#### Defined in
+
+[src/lib/schema/application/services/helper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L7)
+
+___
+
+### DEFAULT\_TYPE
+
+• `Readonly` **DEFAULT\_TYPE**: ``"string"``
+
+#### Defined in
+
+[src/lib/schema/application/services/helper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L6)
 
 ## Methods
 
@@ -64,7 +89,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L32)
+[src/lib/schema/application/services/helper.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L35)
 
 ___
 
@@ -84,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L19)
+[src/lib/schema/application/services/helper.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L22)
 
 ___
 
@@ -105,7 +130,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L13)
+[src/lib/schema/application/services/helper.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L16)
 
 ___
 
@@ -125,7 +150,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L54)
+[src/lib/schema/application/services/helper.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L57)
 
 ___
 
@@ -145,7 +170,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:60](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L60)
+[src/lib/schema/application/services/helper.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L63)
 
 ___
 
@@ -165,7 +190,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L44)
+[src/lib/schema/application/services/helper.ts:47](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L47)
 
 ___
 
@@ -185,7 +210,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:49](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L49)
+[src/lib/schema/application/services/helper.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L52)
 
 ___
 
@@ -205,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L36)
+[src/lib/schema/application/services/helper.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L39)
 
 ___
 
@@ -225,7 +250,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:83](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L83)
+[src/lib/schema/application/services/helper.ts:86](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L86)
 
 ___
 
@@ -245,7 +270,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:87](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L87)
+[src/lib/schema/application/services/helper.ts:90](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L90)
 
 ___
 
@@ -265,7 +290,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L24)
+[src/lib/schema/application/services/helper.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L27)
 
 ___
 
@@ -286,7 +311,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L28)
+[src/lib/schema/application/services/helper.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L31)
 
 ___
 
@@ -306,7 +331,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:40](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L40)
+[src/lib/schema/application/services/helper.ts:43](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L43)
 
 ___
 
@@ -327,7 +352,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:78](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L78)
+[src/lib/schema/application/services/helper.ts:81](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L81)
 
 ___
 
@@ -341,4 +366,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/33bcc08/src/lib/schema/application/services/helper.ts#L9)
+[src/lib/schema/application/services/helper.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/schema/application/services/helper.ts#L12)

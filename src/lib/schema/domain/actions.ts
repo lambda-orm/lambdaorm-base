@@ -20,6 +20,7 @@ export enum SentenceAction {
 	insert = 'insert',
 	insertConditional = 'insertConditional',
 	bulkInsert = 'bulkInsert',
+	bulkDelete = 'bulkDelete',
 	update = 'update',
 	upsert = 'upsert',
 	delete = 'delete',

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [0.1.55](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.54...v0.1.55) (2024-04-10)
+
+
+### Features
+
+* **sentences:** add upsert, bulkmerge  and bulkdelete clausules ([18a48bd](https://github.com/FlavioLionelRita/lambdaorm-base/commit/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd)), closes [#167](https://github.com/FlavioLionelRita/lambdaorm-base/issues/167)
+
 ### [0.1.54](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.53...v0.1.54) (2024-04-10)
 
 **Features:**

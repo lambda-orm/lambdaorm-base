@@ -1,10 +1,10 @@
-import { H3lp } from 'h3lp'
 import { Schema, SchemaError } from '../../domain'
 import { DataSourceConfigService } from '../services/config/dataSourceConfigService'
 import { DomainConfigService } from '../services/config/domainConfigService'
 import { MappingsConfigService } from '../services/config/mappingsConfigService'
 import { StageConfigService } from '../services/config/stageConfigService'
 import { ViewsConfigService } from '../services/config/viewsConfigService'
+import { SchemaH3lp } from '../../../shared'
 
 export class LoadSchema {
 	// eslint-disable-next-line no-useless-constructor
@@ -13,7 +13,7 @@ export class LoadSchema {
 		private readonly mapping:MappingsConfigService,
 		private readonly stage:StageConfigService,
 		private readonly view:ViewsConfigService,
-		private readonly helper:H3lp) {}
+		private readonly helper:SchemaH3lp) {}
 
 	public load (source: Schema): Schema {
 		const schema = this.helper.utils.solveEnvironmentVars(source) as Schema
@@ -37,12 +37,12 @@ export class LoadSchema {
 		if (schema.infrastructure.sources) {
 			for (const source of schema.infrastructure.sources) {
 				if (this.helper.val.isEmpty(source.connection)) {
-					console.log(`WARNING|source:"${source.name}"|connection is empty`)
+					this.helper.logger.log(`WARNING|source:"${source.name}"|connection is empty`)
 					continue
 				}
 				if (typeof source.connection === 'string') {
 					if (source.connection.includes('${')) {
-						console.log(`WARNING|source:"${source.name}"|had environment variables unsolved`)
+						this.helper.logger.log(`WARNING|source:"${source.name}"|had environment variables unsolved`)
 					} else {
 						const connection = this.helper.utils.tryParse(source.connection)
 						if (connection) {

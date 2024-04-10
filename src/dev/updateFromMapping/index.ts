@@ -1,6 +1,6 @@
 import { expressions } from '3xpr'
 import { h3lp } from 'h3lp'
-import { SchemaFacadeBuilder, SchemaStateBuilder, SchemaH3lp } from '../../lib'
+import { SchemaFacadeBuilder, SchemaStateBuilder, SchemaH3lp, LoggerBuilder } from '../../lib'
 const yaml = require('js-yaml')
 
 const lab = async () => {
@@ -9,7 +9,8 @@ const lab = async () => {
 	const schemaResultPath = workspace + '/result.yaml'
 	const mappingPath = workspace + '/mapping.json'
 	const mapping = JSON.parse(await h3lp.fs.read(mappingPath) as string)
-	const helper = new SchemaH3lp(h3lp)
+	const logger = new LoggerBuilder().build('winston')
+	const helper = new SchemaH3lp(h3lp, logger)
 	const schemaFacade = new SchemaFacadeBuilder(expressions, helper).build()
 	const schemaState = new SchemaStateBuilder(expressions, schemaFacade, helper).build()
 	const originalSchema = yaml.load(await h3lp.fs.read(schemaPath))

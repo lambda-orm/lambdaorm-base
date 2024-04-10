@@ -1,6 +1,6 @@
 import { expressions } from '3xpr'
 import { h3lp } from 'h3lp'
-import { SchemaFacadeBuilder, SchemaStateBuilder, SchemaH3lp } from '../../lib'
+import { SchemaFacadeBuilder, SchemaStateBuilder, SchemaH3lp, LoggerBuilder } from '../../lib'
 const yaml = require('js-yaml')
 
 const lab = async () => {
@@ -106,7 +106,8 @@ const lab = async () => {
 			phoneCode: 54
 		}
 	]
-	const helper = new SchemaH3lp(h3lp)
+	const logger = new LoggerBuilder().build()
+	const helper = new SchemaH3lp(h3lp, logger)
 	const schemaFacade = new SchemaFacadeBuilder(expressions, helper).build()
 	const schemaState = new SchemaStateBuilder(expressions, schemaFacade, helper).build()
 	const workspace = __dirname.replace('build/', 'src/')

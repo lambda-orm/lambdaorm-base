@@ -1,9 +1,9 @@
 import path from 'path'
-import { H3lp } from 'h3lp'
+import { SchemaH3lp } from '../../shared'
 
 export class SchemaFileHelper {
 	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly helper:H3lp) {}
+	constructor (private readonly helper:SchemaH3lp) {}
 
 	public async getConfigPath (source?: string):Promise<string|undefined> {
 		let workspace: string
@@ -25,11 +25,11 @@ export class SchemaFileHelper {
 					configFile = await this.getConfigFileName(workspace)
 				}
 			} else {
-				console.log(`Not exists path ${source}`)
+				await this.helper.logger.log(`Not exists path ${source}`)
 			}
 		} else {
-			console.log('Schema: not supported:')
-			console.log(source)
+			await this.helper.logger.log('Schema: not supported:')
+			await this.helper.logger.log(source)
 		}
 		if (configFile) {
 			return path.join(workspace, configFile)

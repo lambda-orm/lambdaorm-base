@@ -15,7 +15,6 @@ export class SchemaExtender {
 	) {}
 
 	public extend (schema: Schema): void {
-		// const schema = this.helper.obj.clone(source) as Schema
 		this.extendEnums(schema)
 		this.extendEntities(schema)
 		this.complete(schema)
@@ -127,7 +126,7 @@ export class SchemaExtender {
 			return
 		}
 		if (!schema.infrastructure.sources || !schema.infrastructure.sources.length || schema.infrastructure.sources.length === 0) {
-			console.log('sources not defined')
+			this.helper.logger.log('sources not defined')
 			schema.infrastructure.sources = [{ name: 'default', dialect: DIALECT_DEFAULT, mapping: schema.infrastructure.mappings[0].name, connection: null }]
 		}
 		for (const source of schema.infrastructure.sources) {

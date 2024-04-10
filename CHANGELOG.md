@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [0.1.51](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.50...v0.1.51) (2024-04-10)
 
-
-### Features
+**Features:**
 
 * **log:** add logger ([e68e4e1](https://github.com/FlavioLionelRita/lambdaorm-base/commit/e68e4e1efb6c54e45fc366bec8f1361aa3cb9b3d)), closes [#164](https://github.com/FlavioLionelRita/lambdaorm-base/issues/164)
 

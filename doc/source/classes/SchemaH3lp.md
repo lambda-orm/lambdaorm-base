@@ -19,6 +19,7 @@
 - [array](SchemaH3lp.md#array)
 - [fs](SchemaH3lp.md#fs)
 - [http](SchemaH3lp.md#http)
+- [logger](SchemaH3lp.md#logger)
 - [obj](SchemaH3lp.md#obj)
 - [schema](SchemaH3lp.md#schema)
 - [str](SchemaH3lp.md#str)
@@ -30,13 +31,14 @@
 
 ### constructor
 
-• **new SchemaH3lp**(`h3lp`): [`SchemaH3lp`](SchemaH3lp.md)
+• **new SchemaH3lp**(`h3lp`, `logger`): [`SchemaH3lp`](SchemaH3lp.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `h3lp` | `H3lp` |
+| `logger` | [`Logger`](Logger.md) |
 
 #### Returns
 
@@ -48,7 +50,7 @@ H3lp.constructor
 
 #### Defined in
 
-[src/lib/shared/application/helper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/shared/application/helper.ts#L6)
+[src/lib/shared/application/helper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/e8b9826/src/lib/shared/application/helper.ts#L7)
 
 ## Properties
 
@@ -94,6 +96,16 @@ node_modules/h3lp/application/h3lp.d.ts:6
 
 ___
 
+### logger
+
+• `Readonly` **logger**: [`Logger`](Logger.md)
+
+#### Defined in
+
+[src/lib/shared/application/helper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/e8b9826/src/lib/shared/application/helper.ts#L7)
+
+___
+
 ### obj
 
 • `Readonly` **obj**: `IObjectHelper`
@@ -114,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/application/helper.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/03bdf7d/src/lib/shared/application/helper.ts#L5)
+[src/lib/shared/application/helper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/e8b9826/src/lib/shared/application/helper.ts#L6)
 
 ___
 

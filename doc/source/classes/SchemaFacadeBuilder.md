@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/e359b56ef95224260d7f0fa055fdb7feaf3e4b05/src/lib/schema/infrastructure/facadeBuilder.ts#L8)
+[src/lib/schema/infrastructure/facadeBuilder.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/0f6b5691a1cb35a0927d51b018626bd89b56d470/src/lib/schema/infrastructure/facadeBuilder.ts#L8)
 
 ## Methods
 
@@ -45,4 +45,4 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/e359b56ef95224260d7f0fa055fdb7feaf3e4b05/src/lib/schema/infrastructure/facadeBuilder.ts#L13)
+[src/lib/schema/infrastructure/facadeBuilder.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/0f6b5691a1cb35a0927d51b018626bd89b56d470/src/lib/schema/infrastructure/facadeBuilder.ts#L13)

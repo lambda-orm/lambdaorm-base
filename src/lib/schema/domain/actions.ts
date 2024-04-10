@@ -18,8 +18,10 @@ export enum SentenceCrudAction {
 export enum SentenceAction {
 	select = 'select',
 	insert = 'insert',
+	insertConditional = 'insertConditional',
 	bulkInsert = 'bulkInsert',
 	update = 'update',
+	upsert = 'upsert',
 	delete = 'delete',
 	merge = 'merge',
 	bulkMerge = 'bulkMerge',

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [0.1.54](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.53...v0.1.54) (2024-04-10)
+
+
+### Features
+
+* **sentences:** add SentenceActions ([12a29e7](https://github.com/FlavioLionelRita/lambdaorm-base/commit/12a29e75fed6aa775b32f4c546f90ce347d15140)), closes [#167](https://github.com/FlavioLionelRita/lambdaorm-base/issues/167)
+
 ### [0.1.53](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.52...v0.1.53) (2024-04-10)
 
 ### [0.1.52](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.51...v0.1.52) (2024-04-10)

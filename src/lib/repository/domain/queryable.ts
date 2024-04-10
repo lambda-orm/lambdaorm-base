@@ -155,6 +155,14 @@ export class Queryable<T> extends HavingClauses<T> {
 		}
 	}
 
+	upsert (predicate?:(value:T) => unknown | T): ModificableClauses<T> {
+		if (predicate) {
+			return new ModificableClauses(this.actions, `${this.expression}.upsert(${predicate !== undefined ? JSON.stringify(predicate) : ''})`)
+		} else {
+			return new ModificableClauses(this.actions, `${this.expression}.upsert()`)
+		}
+	}
+
 	/**  */
 	bulkInsert (value?: T): ModificableClauses<T> {
 		return new ModificableClauses(this.actions, `${this.expression}.bulkInsert(${value !== undefined ? JSON.stringify(value) : ''})`)
@@ -185,6 +193,11 @@ export class Queryable<T> extends HavingClauses<T> {
 	/**  */
 	bulkMerge (value?: T): ModificableClauses<T> {
 		return new ModificableClauses(this.actions, `${this.expression}.bulkMerge(${value !== undefined ? JSON.stringify(value) : ''})`)
+	}
+
+	/**  */
+	bulkDelete (value?: T): ModificableClauses<T> {
+		return new ModificableClauses(this.actions, `${this.expression}.bulkDelete(${value !== undefined ? JSON.stringify(value) : ''})`)
 	}
 
 	/**  */
@@ -256,6 +269,8 @@ export interface IRelation<T> {
 	// update(predicate: (value: T, item: T, index: number, array: T[]) => T|Object, hisArg?:T|Object):void
 	/**  */
 	insert(predicate?:(value:T) => unknown): void
+	/**  */
+	upsert(predicate?:(value:T) => unknown): void
 	// insert(predicate: (value: T, item: T, index: number, array: T[]) => T|Object, hisArg?:T|Object):void
 	// update(value:T|Object):void
 	filter(predicate: (value: T, index: number, array: T[]) => unknown, thisArg?: any): FilterClauses<T>

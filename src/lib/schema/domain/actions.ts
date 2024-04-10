@@ -1,7 +1,8 @@
 export enum ObservableAction {
 	select = 'select',
 	insert = 'insert',
-	bulkInsert = 'bulkInsert',
+	// bulkInsert = 'bulkInsert',
+	merge = 'merge',
 	update = 'update',
 	delete = 'delete',
 	ddl = 'ddl'

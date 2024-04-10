@@ -69,8 +69,9 @@ export class Join extends Clause {}
 export class Insert extends Clause { }
 export class BulkInsert extends Clause { }
 export class Update extends Clause { }
+export class Upsert extends Clause { }
 export class Delete extends Clause { }
-export class Merge extends Clause { }
+export class BulkDelete extends Clause { }
 export class BulkMerge extends Clause { }
 
 export class Sentence extends Operand {
@@ -113,7 +114,8 @@ export class Sentence extends Operand {
 		const bulkInsert = this.children.find(p => p instanceof BulkInsert) as BulkInsert | undefined
 		const update = this.children.find(p => p instanceof Update) as Update | undefined
 		const _delete = this.children.find(p => p instanceof Delete) as Delete | undefined
-		const merge = this.children.find(p => p instanceof Merge) as Merge | undefined
+		const bulkDelete = this.children.find(p => p instanceof BulkDelete) as BulkDelete | undefined
+		const upsert = this.children.find(p => p instanceof Upsert) as Upsert | undefined
 		const bulkMerge = this.children.find(p => p instanceof BulkMerge) as BulkMerge | undefined
 
 		if (map) {
@@ -126,7 +128,9 @@ export class Sentence extends Operand {
 			this.crudAction = SentenceCrudAction.update
 		} else if (_delete) {
 			this.crudAction = SentenceCrudAction.delete
-		} else if (merge) {
+		} else if (bulkDelete) {
+			this.crudAction = SentenceCrudAction.delete
+		} else if (upsert) {
 			this.crudAction = SentenceCrudAction.merge
 		} else if (bulkMerge) {
 			this.crudAction = SentenceCrudAction.merge

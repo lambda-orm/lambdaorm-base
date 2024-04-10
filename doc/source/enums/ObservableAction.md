@@ -6,24 +6,14 @@
 
 ### Enumeration Members
 
-- [bulkInsert](ObservableAction.md#bulkinsert)
 - [ddl](ObservableAction.md#ddl)
 - [delete](ObservableAction.md#delete)
 - [insert](ObservableAction.md#insert)
+- [merge](ObservableAction.md#merge)
 - [select](ObservableAction.md#select)
 - [update](ObservableAction.md#update)
 
 ## Enumeration Members
-
-### bulkInsert
-
-• **bulkInsert** = ``"bulkInsert"``
-
-#### Defined in
-
-[src/lib/schema/domain/actions.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/12a29e75fed6aa775b32f4c546f90ce347d15140/src/lib/schema/domain/actions.ts#L4)
-
-___
 
 ### ddl
 
@@ -31,7 +21,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/actions.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/12a29e75fed6aa775b32f4c546f90ce347d15140/src/lib/schema/domain/actions.ts#L7)
+[src/lib/schema/domain/actions.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/schema/domain/actions.ts#L8)
 
 ___
 
@@ -41,7 +31,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/actions.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/12a29e75fed6aa775b32f4c546f90ce347d15140/src/lib/schema/domain/actions.ts#L6)
+[src/lib/schema/domain/actions.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/schema/domain/actions.ts#L7)
 
 ___
 
@@ -51,7 +41,17 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/actions.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/12a29e75fed6aa775b32f4c546f90ce347d15140/src/lib/schema/domain/actions.ts#L3)
+[src/lib/schema/domain/actions.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/schema/domain/actions.ts#L3)
+
+___
+
+### merge
+
+• **merge** = ``"merge"``
+
+#### Defined in
+
+[src/lib/schema/domain/actions.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/schema/domain/actions.ts#L5)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/actions.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/12a29e75fed6aa775b32f4c546f90ce347d15140/src/lib/schema/domain/actions.ts#L2)
+[src/lib/schema/domain/actions.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/schema/domain/actions.ts#L2)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/actions.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/12a29e75fed6aa775b32f4c546f90ce347d15140/src/lib/schema/domain/actions.ts#L5)
+[src/lib/schema/domain/actions.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/schema/domain/actions.ts#L6)

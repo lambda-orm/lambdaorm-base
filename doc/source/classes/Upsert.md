@@ -1,44 +1,44 @@
-[Lambda ORM](../README.md) / Insert
+[Lambda ORM](../README.md) / Upsert
 
-# Class: Insert
+# Class: Upsert
 
 ## Hierarchy
 
 - [`Clause`](Clause.md)
 
-  ↳ **`Insert`**
+  ↳ **`Upsert`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Insert.md#constructor)
+- [constructor](Upsert.md#constructor)
 
 ### Properties
 
-- [alias](Insert.md#alias)
-- [children](Insert.md#children)
-- [entity](Insert.md#entity)
-- [evaluator](Insert.md#evaluator)
-- [id](Insert.md#id)
-- [name](Insert.md#name)
-- [number](Insert.md#number)
-- [pos](Insert.md#pos)
-- [returnType](Insert.md#returntype)
-- [type](Insert.md#type)
+- [alias](Upsert.md#alias)
+- [children](Upsert.md#children)
+- [entity](Upsert.md#entity)
+- [evaluator](Upsert.md#evaluator)
+- [id](Upsert.md#id)
+- [name](Upsert.md#name)
+- [number](Upsert.md#number)
+- [pos](Upsert.md#pos)
+- [returnType](Upsert.md#returntype)
+- [type](Upsert.md#type)
 
 ### Methods
 
-- [eval](Insert.md#eval)
-- [evalAsync](Insert.md#evalasync)
-- [isAsync](Insert.md#isasync)
-- [solve](Insert.md#solve)
+- [eval](Upsert.md#eval)
+- [evalAsync](Upsert.md#evalasync)
+- [isAsync](Upsert.md#isasync)
+- [solve](Upsert.md#solve)
 
 ## Constructors
 
 ### constructor
 
-• **new Insert**(`pos`, `name`, `children`, `entity`, `alias`): [`Insert`](Insert.md)
+• **new Upsert**(`pos`, `name`, `children`, `entity`, `alias`): [`Upsert`](Upsert.md)
 
 #### Parameters
 
@@ -52,7 +52,7 @@
 
 #### Returns
 
-[`Insert`](Insert.md)
+[`Upsert`](Upsert.md)
 
 #### Inherited from
 

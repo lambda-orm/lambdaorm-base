@@ -1,44 +1,44 @@
-[Lambda ORM](../README.md) / Merge
+[Lambda ORM](../README.md) / BulkDelete
 
-# Class: Merge
+# Class: BulkDelete
 
 ## Hierarchy
 
 - [`Clause`](Clause.md)
 
-  ↳ **`Merge`**
+  ↳ **`BulkDelete`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Merge.md#constructor)
+- [constructor](BulkDelete.md#constructor)
 
 ### Properties
 
-- [alias](Merge.md#alias)
-- [children](Merge.md#children)
-- [entity](Merge.md#entity)
-- [evaluator](Merge.md#evaluator)
-- [id](Merge.md#id)
-- [name](Merge.md#name)
-- [number](Merge.md#number)
-- [pos](Merge.md#pos)
-- [returnType](Merge.md#returntype)
-- [type](Merge.md#type)
+- [alias](BulkDelete.md#alias)
+- [children](BulkDelete.md#children)
+- [entity](BulkDelete.md#entity)
+- [evaluator](BulkDelete.md#evaluator)
+- [id](BulkDelete.md#id)
+- [name](BulkDelete.md#name)
+- [number](BulkDelete.md#number)
+- [pos](BulkDelete.md#pos)
+- [returnType](BulkDelete.md#returntype)
+- [type](BulkDelete.md#type)
 
 ### Methods
 
-- [eval](Merge.md#eval)
-- [evalAsync](Merge.md#evalasync)
-- [isAsync](Merge.md#isasync)
-- [solve](Merge.md#solve)
+- [eval](BulkDelete.md#eval)
+- [evalAsync](BulkDelete.md#evalasync)
+- [isAsync](BulkDelete.md#isasync)
+- [solve](BulkDelete.md#solve)
 
 ## Constructors
 
 ### constructor
 
-• **new Merge**(`pos`, `name`, `children`, `entity`, `alias`): [`Merge`](Merge.md)
+• **new BulkDelete**(`pos`, `name`, `children`, `entity`, `alias`): [`BulkDelete`](BulkDelete.md)
 
 #### Parameters
 
@@ -52,7 +52,7 @@
 
 #### Returns
 
-[`Merge`](Merge.md)
+[`BulkDelete`](BulkDelete.md)
 
 #### Inherited from
 
@@ -60,7 +60,7 @@
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/12a29e75fed6aa775b32f4c546f90ce347d15140/src/lib/sentence/domain/sentence.ts#L54)
+[src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/sentence/domain/sentence.ts#L54)
 
 ## Properties
 
@@ -74,7 +74,7 @@
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/12a29e75fed6aa775b32f4c546f90ce347d15140/src/lib/sentence/domain/sentence.ts#L52)
+[src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/sentence/domain/sentence.ts#L52)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/12a29e75fed6aa775b32f4c546f90ce347d15140/src/lib/sentence/domain/sentence.ts#L53)
+[src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/sentence/domain/sentence.ts#L53)
 
 ___
 

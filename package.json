@@ -1,6 +1,6 @@
 {
 	"name": "lambdaorm-base",
-	"version": "0.1.51",
+	"version": "0.1.52",
 	"description": "ORM",
 	"author": "Flavio Lionel Rita <flaviolrita@proton.me>",
 	"license": "MIT",
@@ -47,7 +47,7 @@
 		"dotenv": "^16.4.5",
 		"eslint": "^8.57.0",
 		"eslint-config-standard": "^17.1.0",
-		"eslint-plugin-import": "^2.27.5",		
+		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^6.1.1",
 		"grunt": "^1.5.3",

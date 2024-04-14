@@ -40,4 +40,4 @@
 
 #### Defined in
 
-[src/lib/shared/infrastructure/loggerBuilder.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/18a48bdf05b264fa0e5a92f5c2fa8abbd9587acd/src/lib/shared/infrastructure/loggerBuilder.ts#L6)
+[src/lib/shared/infrastructure/loggerBuilder.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/shared/infrastructure/loggerBuilder.ts#L6)

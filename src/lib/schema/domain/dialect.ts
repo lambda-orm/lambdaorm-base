@@ -6,4 +6,5 @@ SqlServer = 'SqlServer',
 SQLjs = 'SQLjs',
 Oracle = 'Oracle',
 MongoDB = 'MongoDB',
+SqlLite = 'SqlLite'
 }

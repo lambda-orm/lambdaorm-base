@@ -7,7 +7,7 @@ export class CreateSchema {
 		private readonly schemaService:SchemaService
 	) {}
 
-	public create (dialect?: Dialect, connection?: any):Schema {
+	public create (dialect?:Dialect, connection?:any):Schema {
 		const schema = this.schemaService.newSchema()
 		if (dialect && connection) {
 			schema.infrastructure = this.schemaService.newInfrastructure()

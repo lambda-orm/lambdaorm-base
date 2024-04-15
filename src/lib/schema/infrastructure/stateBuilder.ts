@@ -3,8 +3,6 @@ import {
 	DataSourceConfigService, SchemaState, MappingsConfigService, DomainConfigService, SchemaFacade, StageConfigService, ViewsConfigService,
 	RouteService, LoadSchema
 } from '../application'
-import { FileSchemaService } from './fileSchemaService'
-import { SchemaFileHelper } from './schemaFileHelper'
 import { SchemaH3lp } from '../../shared'
 export class SchemaStateBuilder {
 	// eslint-disable-next-line no-useless-constructor
@@ -22,7 +20,6 @@ export class SchemaStateBuilder {
 		const view = new ViewsConfigService()
 		const routeService = new RouteService(stage, this.expressions)
 		const loadSchema = new LoadSchema(source, model, mapping, stage, view, this.helper)
-		const fileSchemaService = new FileSchemaService(new SchemaFileHelper(this.helper), this.helper)
-		return new SchemaState(source, model, mapping, stage, view, routeService, this.facade, loadSchema, fileSchemaService, this.helper)
+		return new SchemaState(source, model, mapping, stage, view, routeService, this.facade, loadSchema, this.helper)
 	}
 }

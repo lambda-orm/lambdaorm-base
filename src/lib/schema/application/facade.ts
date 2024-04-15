@@ -1,4 +1,4 @@
-import { Schema, SchemaData, Dialect, Mapping, MatchOptions } from '../domain'
+import { Schema, SchemaData, Dialect, Mapping, MatchOptions, InitializeSchemaArgs, SchemaInfo } from '../domain'
 import { SchemaExtender } from './services/schemaExtender'
 import { CreateSchema } from './useCases/create'
 import { UpdateSchema } from './useCases/update'
@@ -6,6 +6,8 @@ import { SchemaService } from './services/schemaService'
 import { GetSchemaSchema } from './useCases/getSchemaData'
 import { Type } from 'typ3s'
 import { MatchSchema } from './useCases/match'
+import { InitializeSchema } from './useCases/initialize'
+import { IFileSchemaService } from './ports/fileSchemaService'
 export class SchemaFacade {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
@@ -13,12 +15,18 @@ export class SchemaFacade {
 		private readonly getSchemaData: GetSchemaSchema,
 		private readonly extender:SchemaExtender,
 		private readonly createSchema: CreateSchema,
+		private readonly initializeSchema: InitializeSchema,
 		private readonly updateSchema: UpdateSchema,
-		private readonly matchSchema: MatchSchema
+		private readonly matchSchema: MatchSchema,
+		private readonly fileService:IFileSchemaService
 	) {}
 
 	public create (dialect?: Dialect, connection?: any): Schema {
 		return this.createSchema.create(dialect, connection)
+	}
+
+	public initialize (schema: Schema, args: InitializeSchemaArgs): Schema {
+		return this.initializeSchema.initialize(schema, args)
 	}
 
 	public updateFromData (schema: Schema, data: any | any[], name:string): SchemaData {
@@ -39,5 +47,13 @@ export class SchemaFacade {
 		this.schemaService.complete(schema)
 		this.extender.complete(schema)
 		this.extender.extend(schema)
+	}
+
+	public async read (workspace:string) : Promise<SchemaInfo|null> {
+		return await this.fileService.read(workspace)
+	}
+
+	public async write (schema:Schema, path:string) : Promise<void> {
+		await this.fileService.write(schema, path)
 	}
 }

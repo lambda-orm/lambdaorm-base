@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+## [1.1.0](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.0.1...v1.1.0) (2024-04-15)
+
+
+### Features
+
+* add initialize schema on state schema ([5e1abd0](https://github.com/FlavioLionelRita/lambdaorm-base/commit/5e1abd015335d4a3ec9228dba79c190930c6d0f1)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [1.0.1](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.55...v1.0.1) (2024-04-14)
 
 ### [0.1.55](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v0.1.54...v0.1.55) (2024-04-10)

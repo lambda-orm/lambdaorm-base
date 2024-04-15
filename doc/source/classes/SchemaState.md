@@ -23,6 +23,7 @@
 
 - [evalSourceRule](SchemaState.md#evalsourcerule)
 - [getSource](SchemaState.md#getsource)
+- [initialize](SchemaState.md#initialize)
 - [load](SchemaState.md#load)
 - [updateFromData](SchemaState.md#updatefromdata)
 - [updateFromMapping](SchemaState.md#updatefrommapping)
@@ -31,7 +32,7 @@
 
 ### constructor
 
-• **new SchemaState**(`source`, `domain`, `mapping`, `stage`, `view`, `routeService`, `facade`, `loadSchema`, `fileService`, `helper`): [`SchemaState`](SchemaState.md)
+• **new SchemaState**(`source`, `domain`, `mapping`, `stage`, `view`, `routeService`, `facade`, `loadSchema`, `helper`): [`SchemaState`](SchemaState.md)
 
 #### Parameters
 
@@ -45,8 +46,7 @@
 | `routeService` | [`RouteService`](RouteService.md) |
 | `facade` | [`SchemaFacade`](SchemaFacade.md) |
 | `loadSchema` | [`LoadSchema`](LoadSchema.md) |
-| `fileService` | [`IFileSchemaService`](../interfaces/IFileSchemaService.md) |
-| `helper` | `H3lp` |
+| `helper` | [`SchemaH3lp`](SchemaH3lp.md) |
 
 #### Returns
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L17)
+[src/lib/schema/application/state.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L17)
 
 ## Properties
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L19)
+[src/lib/schema/application/state.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L19)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L20)
+[src/lib/schema/application/state.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L20)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L15)
+[src/lib/schema/application/state.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L15)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L14)
+[src/lib/schema/application/state.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L14)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L16)
+[src/lib/schema/application/state.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L16)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L18)
+[src/lib/schema/application/state.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L18)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L21)
+[src/lib/schema/application/state.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L21)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L22)
+[src/lib/schema/application/state.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L22)
 
 ## Methods
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L67)
+[src/lib/schema/application/state.ts:87](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L87)
 
 ___
 
@@ -176,7 +176,27 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L71)
+[src/lib/schema/application/state.ts:91](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L91)
+
+___
+
+### initialize
+
+▸ **initialize**(`args`): `Promise`\<[`Schema`](../interfaces/Schema.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `args` | [`InitializeSchemaArgs`](../interfaces/InitializeSchemaArgs.md) |
+
+#### Returns
+
+`Promise`\<[`Schema`](../interfaces/Schema.md)\>
+
+#### Defined in
+
+[src/lib/schema/application/state.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L32)
 
 ___
 
@@ -196,7 +216,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L33)
+[src/lib/schema/application/state.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L53)
 
 ___
 
@@ -217,7 +237,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:50](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L50)
+[src/lib/schema/application/state.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L70)
 
 ___
 
@@ -238,4 +258,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/state.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/state.ts#L59)
+[src/lib/schema/application/state.ts:79](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/state.ts#L79)

@@ -16,15 +16,18 @@
 
 - [complete](SchemaFacade.md#complete)
 - [create](SchemaFacade.md#create)
+- [initialize](SchemaFacade.md#initialize)
+- [read](SchemaFacade.md#read)
 - [schemaData](SchemaFacade.md#schemadata)
 - [updateFromData](SchemaFacade.md#updatefromdata)
 - [updateFromMapping](SchemaFacade.md#updatefrommapping)
+- [write](SchemaFacade.md#write)
 
 ## Constructors
 
 ### constructor
 
-• **new SchemaFacade**(`schemaService`, `getSchemaData`, `extender`, `createSchema`, `updateSchema`, `matchSchema`): [`SchemaFacade`](SchemaFacade.md)
+• **new SchemaFacade**(`schemaService`, `getSchemaData`, `extender`, `createSchema`, `initializeSchema`, `updateSchema`, `matchSchema`, `fileService`): [`SchemaFacade`](SchemaFacade.md)
 
 #### Parameters
 
@@ -34,8 +37,10 @@
 | `getSchemaData` | [`GetSchemaSchema`](GetSchemaSchema.md) |
 | `extender` | [`SchemaExtender`](SchemaExtender.md) |
 | `createSchema` | [`CreateSchema`](CreateSchema.md) |
+| `initializeSchema` | [`InitializeSchema`](InitializeSchema.md) |
 | `updateSchema` | [`UpdateSchema`](UpdateSchema.md) |
 | `matchSchema` | [`MatchSchema`](MatchSchema.md) |
+| `fileService` | [`IFileSchemaService`](../interfaces/IFileSchemaService.md) |
 
 #### Returns
 
@@ -43,7 +48,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/facade.ts#L11)
+[src/lib/schema/application/facade.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L13)
 
 ## Properties
 
@@ -53,7 +58,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/facade.ts#L12)
+[src/lib/schema/application/facade.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L14)
 
 ## Methods
 
@@ -73,7 +78,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/facade.ts#L38)
+[src/lib/schema/application/facade.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L46)
 
 ___
 
@@ -94,7 +99,48 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/facade.ts#L20)
+[src/lib/schema/application/facade.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L24)
+
+___
+
+### initialize
+
+▸ **initialize**(`schema`, `args`): [`Schema`](../interfaces/Schema.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `schema` | [`Schema`](../interfaces/Schema.md) |
+| `args` | [`InitializeSchemaArgs`](../interfaces/InitializeSchemaArgs.md) |
+
+#### Returns
+
+[`Schema`](../interfaces/Schema.md)
+
+#### Defined in
+
+[src/lib/schema/application/facade.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L28)
+
+___
+
+### read
+
+▸ **read**(`workspace`): `Promise`\<``null`` \| [`SchemaInfo`](../interfaces/SchemaInfo.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `workspace` | `string` |
+
+#### Returns
+
+`Promise`\<``null`` \| [`SchemaInfo`](../interfaces/SchemaInfo.md)\>
+
+#### Defined in
+
+[src/lib/schema/application/facade.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L52)
 
 ___
 
@@ -116,7 +162,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/facade.ts#L34)
+[src/lib/schema/application/facade.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L42)
 
 ___
 
@@ -138,7 +184,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/facade.ts#L24)
+[src/lib/schema/application/facade.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L32)
 
 ___
 
@@ -160,4 +206,25 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/facade.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/1df657ddfa345e9e384f1a14b6894625eee30a9e/src/lib/schema/application/facade.ts#L30)
+[src/lib/schema/application/facade.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L38)
+
+___
+
+### write
+
+▸ **write**(`schema`, `path`): `Promise`\<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `schema` | [`Schema`](../interfaces/Schema.md) |
+| `path` | `string` |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Defined in
+
+[src/lib/schema/application/facade.ts:56](https://github.com/lambda-orm/lambdaorm-base/blob/5e1abd015335d4a3ec9228dba79c190930c6d0f1/src/lib/schema/application/facade.ts#L56)

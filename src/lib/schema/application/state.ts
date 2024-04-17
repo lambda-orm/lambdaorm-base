@@ -109,7 +109,7 @@ export class SchemaState {
 		return { version: this.schema.version || undefined }
 	}
 
-	public getSchemaSDomain (): DomainSchema {
+	public getSchemaDomain (): DomainSchema {
 		return this.schema.domain
 	}
 

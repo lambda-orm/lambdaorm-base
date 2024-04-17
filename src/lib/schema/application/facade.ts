@@ -35,7 +35,7 @@ export class SchemaFacade {
 		return schemaData
 	}
 
-	public updateFromMapping (schema: Schema, mappings:Mapping[], options:MatchOptions = {}): void {
+	public match (schema: Schema, mappings:Mapping[], options:MatchOptions = {}): void {
 		this.matchSchema.match(schema, mappings, options)
 	}
 

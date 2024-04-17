@@ -16,7 +16,7 @@ const lab = async () => {
 	const originalSchema = yaml.load(await h3lp.fs.read(schemaPath))
 	const schema = h3lp.obj.clone(originalSchema)
 	await schemaState.load(schema)
-	await schemaState.updateFromMapping(mapping)
+	await schemaState.match(mapping)
 	await h3lp.fs.write(schemaResultPath, yaml.dump(schema))
 }
 

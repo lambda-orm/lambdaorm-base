@@ -5,23 +5,23 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "update from data",
+			"name": "introspect",
 			"type": "node",
 			"request": "launch",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/src/dev/updateFromData/index.ts"
+			"program": "${workspaceFolder}/src/dev/introspect/index.ts"
 		},
 		{
-			"name": "update from mapping",
+			"name": "match",
 			"type": "node",
 			"request": "launch",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/src/dev/updateFromMapping/index.ts",
-			"envFile": "${workspaceFolder}/src/dev/updateFromMapping/.env"
+			"program": "${workspaceFolder}/src/dev/match/index.ts",
+			"envFile": "${workspaceFolder}/src/dev/match/.env"
 		},
 		{
 			"name": "complete",

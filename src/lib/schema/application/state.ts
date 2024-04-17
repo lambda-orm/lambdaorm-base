@@ -76,8 +76,8 @@ export class SchemaState {
 		return schemaData
 	}
 
-	public async updateFromMapping (mappings:Mapping[], options:MatchOptions = { removeEntities: true, removeProperties: true, removeRelations: true }): Promise<void> {
-		this.facade.updateFromMapping(this.originalSchema, mappings, options)
+	public async match (mappings:Mapping[], options:MatchOptions = { removeEntities: true, removeProperties: true, removeRelations: true }): Promise<void> {
+		this.facade.match(this.originalSchema, mappings, options)
 		if (this.schemaPath) {
 			await this.facade.write(this.originalSchema, this.schemaPath)
 		}

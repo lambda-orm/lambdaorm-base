@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+## [1.2.0](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.1.1...v1.2.0) (2024-04-17)
+
+
+### Features
+
+* add getShemaInfo in schema state ([607e1fa](https://github.com/FlavioLionelRita/lambdaorm-base/commit/607e1fafed50a330f31ab43c22ecec31e40b455d)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [1.1.1](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.1.0...v1.1.1) (2024-04-15)
 
 ## [1.1.0](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.0.1...v1.1.0) (2024-04-15)

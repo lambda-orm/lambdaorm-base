@@ -8,6 +8,7 @@
 
 - [mappings](InfrastructureSchema.md#mappings)
 - [paths](InfrastructureSchema.md#paths)
+- [server](InfrastructureSchema.md#server)
 - [sources](InfrastructureSchema.md#sources)
 - [stages](InfrastructureSchema.md#stages)
 - [views](InfrastructureSchema.md#views)
@@ -20,7 +21,7 @@
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:165](https://github.com/lambda-orm/lambdaorm-base/blob/fe2f43e578a7a5b6b421dae2d71341dfb5a9738e/src/lib/schema/domain/schema.ts#L165)
+[src/lib/schema/domain/schema.ts:170](https://github.com/lambda-orm/lambdaorm-base/blob/607e1fafed50a330f31ab43c22ecec31e40b455d/src/lib/schema/domain/schema.ts#L170)
 
 ___
 
@@ -30,7 +31,17 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:164](https://github.com/lambda-orm/lambdaorm-base/blob/fe2f43e578a7a5b6b421dae2d71341dfb5a9738e/src/lib/schema/domain/schema.ts#L164)
+[src/lib/schema/domain/schema.ts:169](https://github.com/lambda-orm/lambdaorm-base/blob/607e1fafed50a330f31ab43c22ecec31e40b455d/src/lib/schema/domain/schema.ts#L169)
+
+___
+
+### server
+
+• `Optional` **server**: [`ServerConfig`](ServerConfig.md)
+
+#### Defined in
+
+[src/lib/schema/domain/schema.ts:174](https://github.com/lambda-orm/lambdaorm-base/blob/607e1fafed50a330f31ab43c22ecec31e40b455d/src/lib/schema/domain/schema.ts#L174)
 
 ___
 
@@ -40,7 +51,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:167](https://github.com/lambda-orm/lambdaorm-base/blob/fe2f43e578a7a5b6b421dae2d71341dfb5a9738e/src/lib/schema/domain/schema.ts#L167)
+[src/lib/schema/domain/schema.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/607e1fafed50a330f31ab43c22ecec31e40b455d/src/lib/schema/domain/schema.ts#L172)
 
 ___
 
@@ -50,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:168](https://github.com/lambda-orm/lambdaorm-base/blob/fe2f43e578a7a5b6b421dae2d71341dfb5a9738e/src/lib/schema/domain/schema.ts#L168)
+[src/lib/schema/domain/schema.ts:173](https://github.com/lambda-orm/lambdaorm-base/blob/607e1fafed50a330f31ab43c22ecec31e40b455d/src/lib/schema/domain/schema.ts#L173)
 
 ___
 
@@ -60,4 +71,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:166](https://github.com/lambda-orm/lambdaorm-base/blob/fe2f43e578a7a5b6b421dae2d71341dfb5a9738e/src/lib/schema/domain/schema.ts#L166)
+[src/lib/schema/domain/schema.ts:171](https://github.com/lambda-orm/lambdaorm-base/blob/607e1fafed50a330f31ab43c22ecec31e40b455d/src/lib/schema/domain/schema.ts#L171)

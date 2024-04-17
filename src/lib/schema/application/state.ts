@@ -67,8 +67,8 @@ export class SchemaState {
 		return this.schema
 	}
 
-	public async updateFromData (data: any | any[], name:string): Promise<SchemaData> {
-		const schemaData = this.facade.updateFromData(this.originalSchema, data, name)
+	public async introspect (data: any | any[], name:string): Promise<SchemaData> {
+		const schemaData = this.facade.introspect(this.originalSchema, data, name)
 		if (this.schemaPath) {
 			await this.facade.write(this.originalSchema, this.schemaPath)
 		}

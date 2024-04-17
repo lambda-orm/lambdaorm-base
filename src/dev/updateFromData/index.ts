@@ -115,7 +115,7 @@ const lab = async () => {
 	const schema = schemaFacade.create()
 	await h3lp.fs.write(schemaPath, yaml.dump(schema))
 	await schemaState.load(schemaPath)
-	const schemaData = await schemaState.updateFromData(array, 'Country')
+	const schemaData = await schemaState.introspect(array, 'Country')
 	await h3lp.fs.write(workspace + '/schemaData.json', JSON.stringify(schemaData, null, 2))
 }
 

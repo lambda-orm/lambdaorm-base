@@ -29,7 +29,7 @@ export class SchemaFacade {
 		return this.initializeSchema.initialize(schema, args)
 	}
 
-	public updateFromData (schema: Schema, data: any | any[], name:string): SchemaData {
+	public introspect (schema: Schema, data: any | any[], name:string): SchemaData {
 		const type = this.updateSchema.update(schema, data, name)
 		const schemaData = this.schemaData(data, name, type)
 		return schemaData

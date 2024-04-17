@@ -46,7 +46,7 @@ export class InitializeSchema {
 		}
 		// update the connection if applicable
 		if (source) {
-			if (!args.connection) {
+			if (args.connection) {
 				source.connection = args.connection
 			} else if (!source.connection) {
 				source.connection = this.defaultConnection(source.dialect)

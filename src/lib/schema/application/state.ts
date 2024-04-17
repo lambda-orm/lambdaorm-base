@@ -1,4 +1,4 @@
-import { Schema, SchemaError, SchemaData, ClauseInfo, SourceRule, Mapping, MatchOptions, InitializeSchemaArgs } from '../domain'
+import { Schema, SchemaError, SchemaData, ClauseInfo, SourceRule, Mapping, MatchOptions, InitializeSchemaArgs, DomainSchema, Entity, Enum, EntityMapping, Stage } from '../domain'
 import { DataSourceConfigService } from './services/config/dataSourceConfigService'
 import { MappingsConfigService } from './services/config/mappingsConfigService'
 import { DomainConfigService } from './services/config/domainConfigService'
@@ -90,6 +90,76 @@ export class SchemaState {
 
 	public getSource (clauseInfo: ClauseInfo, stage?: string):string {
 		return this.routeService.getSource(clauseInfo, stage)
+	}
+
+	public getSchemaSources (): { name: string; dialect: string }[] {
+		return this.schema.infrastructure?.sources?.map(s => ({ name: s.name, dialect: s.dialect })) || []
+	}
+
+	public getSchemaSource (source:string): { name: string; dialect: string } {
+		const sources = this.getSchemaSources()
+		if (sources !== undefined) {
+			return sources.find(s => s.name === source) || { name: source, dialect: 'unknown' }
+		} else {
+			return { name: source, dialect: 'unknown' }
+		}
+	}
+
+	public getSchemaVersion (): { version: string| undefined } {
+		return { version: this.schema.version || undefined }
+	}
+
+	public getSchemaSDomain (): DomainSchema {
+		return this.schema.domain
+	}
+
+	public getSchemaEntities (): Entity[] {
+		return this.schema.domain.entities || []
+	}
+
+	public getSchemaEntity (entity: string): Entity | undefined {
+		return this.schema.domain.entities.find(e => e.name === entity)
+	}
+
+	public getSchemaEnums (): Enum[] {
+		return this.schema.domain.enums || []
+	}
+
+	public getSchemaEnum (_enum: string): Enum | undefined {
+		return this.schema.domain.enums?.find(e => e.name === _enum)
+	}
+
+	public getSchemaMappings (): Mapping[] {
+		return this.schema.infrastructure?.mappings || []
+	}
+
+	public getSchemaMapping (mapping: string): Mapping | undefined {
+		if (this.schema.infrastructure === undefined || this.schema.infrastructure.mappings === undefined) {
+			return undefined
+		}
+		return this.schema.infrastructure.mappings.find(m => m.name === mapping)
+	}
+
+	public getSchemaEntityMapping (mapping: string, entity: string): EntityMapping | undefined {
+		if (this.schema.infrastructure === undefined || this.schema.infrastructure.mappings === undefined) {
+			return undefined
+		}
+		return this.schema.infrastructure.mappings.find(m => m.name === mapping)?.entities?.find(e => e.name === entity)
+	}
+
+	public getSchemaStages (): Stage[] {
+		return this.schema.infrastructure?.stages || []
+	}
+
+	public getSchemaStage (stage: string): Stage | undefined {
+		if (this.schema.infrastructure === undefined || this.schema.infrastructure.stages === undefined) {
+			return undefined
+		}
+		return this.schema.infrastructure?.stages.find(s => s.name === stage)
+	}
+
+	public getSchemaViews (): string[] {
+		return this.schema.infrastructure?.views?.map(p => p.name) || []
 	}
 
 	private toSchema (originalSchema: Schema): Schema {

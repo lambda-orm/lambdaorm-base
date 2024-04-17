@@ -160,12 +160,18 @@ export interface DomainSchema {
 	entities: Entity[]
 	enums?: Enum[]
 }
+
+export interface ServerConfig {
+	url: string
+}
+
 export interface InfrastructureSchema {
 	paths?: AppPathsConfig
 	mappings?: Mapping[]
 	views?: View[]
 	sources?: Source[]
 	stages?: Stage[]
+	server?: ServerConfig
 }
 export interface ApplicationSchema {
 	start?:TaskConfig[]

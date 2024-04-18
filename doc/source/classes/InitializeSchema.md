@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/initialize.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/6bb5e166bd0babb11ca6f556f074a60047514bac/src/lib/schema/application/useCases/initialize.ts#L6)
+[src/lib/schema/application/useCases/initialize.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/useCases/initialize.ts#L6)
 
 ## Methods
 
@@ -51,4 +51,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/initialize.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/6bb5e166bd0babb11ca6f556f074a60047514bac/src/lib/schema/application/useCases/initialize.ts#L10)
+[src/lib/schema/application/useCases/initialize.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/useCases/initialize.ts#L10)

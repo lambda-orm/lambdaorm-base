@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[src/lib/repository/domain/queryable.ts:254](https://github.com/lambda-orm/lambdaorm-base/blob/6bb5e166bd0babb11ca6f556f074a60047514bac/src/lib/repository/domain/queryable.ts#L254)
+[src/lib/repository/domain/queryable.ts:254](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/repository/domain/queryable.ts#L254)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/domain/queryable.ts:250](https://github.com/lambda-orm/lambdaorm-base/blob/6bb5e166bd0babb11ca6f556f074a60047514bac/src/lib/repository/domain/queryable.ts#L250)
+[src/lib/repository/domain/queryable.ts:250](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/repository/domain/queryable.ts#L250)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/lib/repository/domain/queryable.ts:252](https://github.com/lambda-orm/lambdaorm-base/blob/6bb5e166bd0babb11ca6f556f074a60047514bac/src/lib/repository/domain/queryable.ts#L252)
+[src/lib/repository/domain/queryable.ts:252](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/repository/domain/queryable.ts#L252)
 
 ___
 
@@ -123,4 +123,4 @@ ___
 
 #### Defined in
 
-[src/lib/repository/domain/queryable.ts:248](https://github.com/lambda-orm/lambdaorm-base/blob/6bb5e166bd0babb11ca6f556f074a60047514bac/src/lib/repository/domain/queryable.ts#L248)
+[src/lib/repository/domain/queryable.ts:248](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/repository/domain/queryable.ts#L248)

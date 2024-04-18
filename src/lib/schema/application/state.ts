@@ -105,8 +105,8 @@ export class SchemaState {
 		}
 	}
 
-	public getSchemaVersion (): { version: string| undefined } {
-		return { version: this.schema.version || undefined }
+	public getSchemaVersion (): { version: string } {
+		return { version: this.schema.version || '0.0.0' }
 	}
 
 	public getSchemaDomain (): DomainSchema {

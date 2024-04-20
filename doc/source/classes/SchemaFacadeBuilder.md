@@ -23,7 +23,7 @@
 | Name | Type |
 | :------ | :------ |
 | `expressions` | `Expressions` |
-| `helper` | [`SchemaH3lp`](SchemaH3lp.md) |
+| `helper` | [`OrmBaseH3lp`](OrmBaseH3lp.md) |
 
 #### Returns
 
@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/facadeBuilder.ts#L10)
+[src/lib/schema/infrastructure/facadeBuilder.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/schema/infrastructure/facadeBuilder.ts#L10)
 
 ## Methods
 
@@ -45,4 +45,4 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/facadeBuilder.ts#L15)
+[src/lib/schema/infrastructure/facadeBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/schema/infrastructure/facadeBuilder.ts#L15)

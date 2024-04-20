@@ -27,7 +27,7 @@
 | `mapping` | [`MappingsConfigService`](MappingsConfigService.md) |
 | `stage` | [`StageConfigService`](StageConfigService.md) |
 | `view` | [`ViewsConfigService`](ViewsConfigService.md) |
-| `helper` | [`SchemaH3lp`](SchemaH3lp.md) |
+| `helper` | [`OrmBaseH3lp`](OrmBaseH3lp.md) |
 
 #### Returns
 
@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/load.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/application/useCases/load.ts#L11)
+[src/lib/schema/application/useCases/load.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/schema/application/useCases/load.ts#L11)
 
 ## Methods
 
@@ -55,4 +55,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/useCases/load.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/application/useCases/load.ts#L18)
+[src/lib/schema/application/useCases/load.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/schema/application/useCases/load.ts#L18)

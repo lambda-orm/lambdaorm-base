@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.4.0](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.3.0...v1.4.0) (2024-04-20)
 
-
-### Features
+**Features:**
 
 * **helper:** add sqlString.dateFormat ([871b756](https://github.com/FlavioLionelRita/lambdaorm-base/commit/871b756b00d28fdc18bcbe969e2972718eead366)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

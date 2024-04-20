@@ -1,6 +1,6 @@
 import { Entity, Property, Relation, RelationType } from '../../domain'
 import { ObjType, Type } from 'typ3s'
-import { SchemaHelper } from './helper'
+import { SchemaHelper } from '../../infrastructure/schemaHelper'
 
 export class CreateEntitiesService {
 	// eslint-disable-next-line no-useless-constructor

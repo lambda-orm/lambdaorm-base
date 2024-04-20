@@ -94,7 +94,14 @@ export class SchemaExtender {
 			return
 		}
 		if (!schema.infrastructure.mappings || !schema.infrastructure.mappings.length || schema.infrastructure.mappings.length === 0) {
-			schema.infrastructure.mappings = [{ name: 'default', entities: [] }]
+			if (schema.infrastructure.sources && schema.infrastructure.sources.length === 1 && schema.infrastructure.sources[0].name) {
+				if (!schema.infrastructure.sources[0].mapping) {
+					schema.infrastructure.sources[0].mapping = schema.infrastructure.sources[0].name
+				}
+				schema.infrastructure.mappings = [{ name: schema.infrastructure.sources[0].mapping, entities: [] }]
+			} else {
+				schema.infrastructure.mappings = [{ name: 'default', entities: [] }]
+			}
 		} else {
 			// extend entities into mapping
 			for (const mapping of schema.infrastructure.mappings) {

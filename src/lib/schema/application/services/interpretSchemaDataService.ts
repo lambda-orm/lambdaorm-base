@@ -1,6 +1,6 @@
 import { SchemaData, SchemaEntityData } from '../../domain'
 import { ObjType, Type } from 'typ3s'
-import { SchemaHelper } from './helper'
+import { SchemaHelper } from '../../infrastructure/schemaHelper'
 
 export class InterpretSchemaDataService {
 	// eslint-disable-next-line no-useless-constructor
@@ -14,7 +14,7 @@ export class InterpretSchemaDataService {
 		} else if (Type.isObj(type) && type.obj) {
 			const pkName = this.helper.getPkName(type.obj)
 			if (pkName === '_id') {
-				source[pkName] = this.helper.uuid()
+				source[pkName] = this.helper.newId()
 			}
 			this.objectToRow(schemaData, type.obj, source, entityName, pkName)
 		}
@@ -26,7 +26,7 @@ export class InterpretSchemaDataService {
 			const schemaEntityData = this.getSchemaEntityData(schemaData, entityName)
 			for (const item of source) {
 				if (pkName === '_id') {
-					item[pkName] = this.helper.uuid()
+					item[pkName] = this.helper.newId()
 				} else if (schemaEntityData.rows.some(p => p[pkName] === item[pkName])) {
 				// En el caso de que el id ya exista, no se añade la fila
 					continue
@@ -37,7 +37,7 @@ export class InterpretSchemaDataService {
 		} else {
 			for (const item of source) {
 				if (pkName === '_id') {
-					item[pkName] = this.helper.uuid()
+					item[pkName] = this.helper.newId()
 				}
 				const row = this.objectToRow(schemaData, objType, item, entityName, pkName)
 				rows.push(row)
@@ -72,7 +72,7 @@ export class InterpretSchemaDataService {
 						}
 						const schemaEntityData = this.getSchemaEntityData(schemaData, relatedEntityName)
 						if (relatedPkName === '_id') {
-							row[relatedPkName] = this.helper.uuid()
+							row[relatedPkName] = this.helper.newId()
 						} else if (!schemaEntityData.rows.some(p => p[relatedPkName] === value[relatedPkName])) {
 							// En el caso que el registro no exista, se añade
 							const childRow = this.objectToRow(schemaData, prop.type.obj, value, relatedEntityName, relatedPkName)

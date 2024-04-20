@@ -1,5 +1,5 @@
 import { Entity, EntityMapping, Schema } from '../../domain'
-import { SchemaHelper } from '../services/helper'
+import { SchemaHelper } from '../../infrastructure/schemaHelper'
 
 export class ClearSchema {
 	// eslint-disable-next-line no-useless-constructor

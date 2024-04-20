@@ -9,7 +9,7 @@ export class SchemaHelper {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (private readonly str:IStringHelper) {}
 
-	public uuid ():string {
+	public newId ():string {
 		return uuidv4()
 	}
 

@@ -1,5 +1,5 @@
 import { Entity, EntityMapping, Mapping, MatchOptions, Property, RelationType, Schema, SchemaError } from '../../domain'
-import { SchemaHelper } from '../services/helper'
+import { SchemaHelper } from '../../infrastructure/schemaHelper'
 import { SchemaService } from '../services/schemaService'
 
 export class MatchSchema {

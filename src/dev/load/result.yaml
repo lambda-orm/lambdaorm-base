@@ -1,0 +1,23 @@
+domain:
+  entities: []
+  enums: []
+infrastructure:
+  sources:
+    - name: MySQL
+      dialect: MySQL
+      connection: ${ORM_CNN_MYSQL}
+      mapping: MySQL
+  mappings:
+    - name: MySQL
+      entities: []
+  stages:
+    - name: default
+      sources:
+        - name: MySQL
+  paths:
+    src: src
+    data: data
+    domain: domain
+  views:
+    - name: default
+      entities: []

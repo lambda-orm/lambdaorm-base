@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `H3lp`
+- `ExprH3lp`
 
   ↳ **`OrmBaseH3lp`**
 
@@ -17,6 +17,7 @@
 ### Properties
 
 - [array](OrmBaseH3lp.md#array)
+- [expression](OrmBaseH3lp.md#expression)
 - [fs](OrmBaseH3lp.md#fs)
 - [http](OrmBaseH3lp.md#http)
 - [logger](OrmBaseH3lp.md#logger)
@@ -50,11 +51,11 @@
 
 #### Overrides
 
-H3lp.constructor
+ExprH3lp.constructor
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:97](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/shared/infrastructure/helper.ts#L97)
+[src/lib/shared/infrastructure/helper.ts:96](https://github.com/lambda-orm/lambdaorm-base/blob/69f2c1fe8e90fe0a78f67c761506613209d6e5f1/src/lib/shared/infrastructure/helper.ts#L96)
 
 ## Properties
 
@@ -64,11 +65,25 @@ H3lp.constructor
 
 #### Inherited from
 
-H3lp.array
+ExprH3lp.array
 
 #### Defined in
 
 node_modules/h3lp/application/h3lp.d.ts:10
+
+___
+
+### expression
+
+• **expression**: `ExpressionHelper`
+
+#### Inherited from
+
+ExprH3lp.expression
+
+#### Defined in
+
+node_modules/3xpr/shared/infrastructure/helper.d.ts:5
 
 ___
 
@@ -78,7 +93,7 @@ ___
 
 #### Inherited from
 
-H3lp.fs
+ExprH3lp.fs
 
 #### Defined in
 
@@ -92,7 +107,7 @@ ___
 
 #### Inherited from
 
-H3lp.http
+ExprH3lp.http
 
 #### Defined in
 
@@ -106,7 +121,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:97](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/shared/infrastructure/helper.ts#L97)
+[src/lib/shared/infrastructure/helper.ts:96](https://github.com/lambda-orm/lambdaorm-base/blob/69f2c1fe8e90fe0a78f67c761506613209d6e5f1/src/lib/shared/infrastructure/helper.ts#L96)
 
 ___
 
@@ -116,7 +131,7 @@ ___
 
 #### Inherited from
 
-H3lp.obj
+ExprH3lp.obj
 
 #### Defined in
 
@@ -128,9 +143,13 @@ ___
 
 • **operand**: `OperandHelper`
 
+#### Inherited from
+
+ExprH3lp.operand
+
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:96](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/shared/infrastructure/helper.ts#L96)
+node_modules/3xpr/shared/infrastructure/helper.d.ts:6
 
 ___
 
@@ -140,7 +159,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:92](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/shared/infrastructure/helper.ts#L92)
+[src/lib/shared/infrastructure/helper.ts:92](https://github.com/lambda-orm/lambdaorm-base/blob/69f2c1fe8e90fe0a78f67c761506613209d6e5f1/src/lib/shared/infrastructure/helper.ts#L92)
 
 ___
 
@@ -150,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:94](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/shared/infrastructure/helper.ts#L94)
+[src/lib/shared/infrastructure/helper.ts:94](https://github.com/lambda-orm/lambdaorm-base/blob/69f2c1fe8e90fe0a78f67c761506613209d6e5f1/src/lib/shared/infrastructure/helper.ts#L94)
 
 ___
 
@@ -160,7 +179,7 @@ ___
 
 #### Inherited from
 
-H3lp.str
+ExprH3lp.str
 
 #### Defined in
 
@@ -174,7 +193,7 @@ ___
 
 #### Inherited from
 
-H3lp.test
+ExprH3lp.test
 
 #### Defined in
 
@@ -188,7 +207,7 @@ ___
 
 #### Inherited from
 
-H3lp.utils
+ExprH3lp.utils
 
 #### Defined in
 
@@ -202,7 +221,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:95](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/shared/infrastructure/helper.ts#L95)
+[src/lib/shared/infrastructure/helper.ts:95](https://github.com/lambda-orm/lambdaorm-base/blob/69f2c1fe8e90fe0a78f67c761506613209d6e5f1/src/lib/shared/infrastructure/helper.ts#L95)
 
 ___
 
@@ -212,7 +231,7 @@ ___
 
 #### Inherited from
 
-H3lp.val
+ExprH3lp.val
 
 #### Defined in
 
@@ -226,4 +245,4 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:93](https://github.com/lambda-orm/lambdaorm-base/blob/871b756b00d28fdc18bcbe969e2972718eead366/src/lib/shared/infrastructure/helper.ts#L93)
+[src/lib/shared/infrastructure/helper.ts:93](https://github.com/lambda-orm/lambdaorm-base/blob/69f2c1fe8e90fe0a78f67c761506613209d6e5f1/src/lib/shared/infrastructure/helper.ts#L93)

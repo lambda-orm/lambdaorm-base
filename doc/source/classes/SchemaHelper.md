@@ -25,11 +25,11 @@
 - [indexName](SchemaHelper.md#indexname)
 - [length](SchemaHelper.md#length)
 - [lengthFromType](SchemaHelper.md#lengthfromtype)
+- [newId](SchemaHelper.md#newid)
 - [propertyName](SchemaHelper.md#propertyname)
 - [refPropertyName](SchemaHelper.md#refpropertyname)
 - [relationName](SchemaHelper.md#relationname)
 - [type](SchemaHelper.md#type)
-- [uuid](SchemaHelper.md#uuid)
 
 ## Constructors
 
@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L10)
+[src/lib/schema/infrastructure/schemaHelper.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L10)
 
 ## Properties
 
@@ -59,7 +59,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L7)
+[src/lib/schema/infrastructure/schemaHelper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L7)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L6)
+[src/lib/schema/infrastructure/schemaHelper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L6)
 
 ## Methods
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L35)
+[src/lib/schema/infrastructure/schemaHelper.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L35)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L22)
+[src/lib/schema/infrastructure/schemaHelper.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L22)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L16)
+[src/lib/schema/infrastructure/schemaHelper.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L16)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L57)
+[src/lib/schema/infrastructure/schemaHelper.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L57)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L63)
+[src/lib/schema/infrastructure/schemaHelper.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L63)
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:47](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L47)
+[src/lib/schema/infrastructure/schemaHelper.ts:47](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L47)
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L52)
+[src/lib/schema/infrastructure/schemaHelper.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L52)
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L39)
+[src/lib/schema/infrastructure/schemaHelper.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L39)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:86](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L86)
+[src/lib/schema/infrastructure/schemaHelper.ts:86](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L86)
 
 ___
 
@@ -270,7 +270,21 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:90](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L90)
+[src/lib/schema/infrastructure/schemaHelper.ts:90](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L90)
+
+___
+
+### newId
+
+▸ **newId**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[src/lib/schema/infrastructure/schemaHelper.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L12)
 
 ___
 
@@ -290,7 +304,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L27)
+[src/lib/schema/infrastructure/schemaHelper.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L27)
 
 ___
 
@@ -311,7 +325,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L31)
+[src/lib/schema/infrastructure/schemaHelper.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L31)
 
 ___
 
@@ -331,7 +345,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:43](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L43)
+[src/lib/schema/infrastructure/schemaHelper.ts:43](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L43)
 
 ___
 
@@ -352,18 +366,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/helper.ts:81](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L81)
-
-___
-
-### uuid
-
-▸ **uuid**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[src/lib/schema/application/services/helper.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/schema/application/services/helper.ts#L12)
+[src/lib/schema/infrastructure/schemaHelper.ts:81](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/schema/infrastructure/schemaHelper.ts#L81)

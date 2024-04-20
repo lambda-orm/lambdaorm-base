@@ -22,10 +22,13 @@
 - [logger](SchemaH3lp.md#logger)
 - [obj](SchemaH3lp.md#obj)
 - [schema](SchemaH3lp.md#schema)
+- [sqlString](SchemaH3lp.md#sqlstring)
 - [str](SchemaH3lp.md#str)
 - [test](SchemaH3lp.md#test)
 - [utils](SchemaH3lp.md#utils)
+- [uuid](SchemaH3lp.md#uuid)
 - [val](SchemaH3lp.md#val)
+- [yaml](SchemaH3lp.md#yaml)
 
 ## Constructors
 
@@ -50,7 +53,7 @@ H3lp.constructor
 
 #### Defined in
 
-[src/lib/shared/application/helper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/shared/application/helper.ts#L7)
+[src/lib/shared/infrastructure/helper.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/shared/infrastructure/helper.ts#L76)
 
 ## Properties
 
@@ -102,7 +105,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/application/helper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/shared/application/helper.ts#L7)
+[src/lib/shared/infrastructure/helper.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/shared/infrastructure/helper.ts#L76)
 
 ___
 
@@ -126,7 +129,17 @@ ___
 
 #### Defined in
 
-[src/lib/shared/application/helper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/c2d8aab1390cea00bb604cb5f468fe612a44ac65/src/lib/shared/application/helper.ts#L6)
+[src/lib/shared/infrastructure/helper.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/shared/infrastructure/helper.ts#L72)
+
+___
+
+### sqlString
+
+• **sqlString**: `SqlStringWrapper`
+
+#### Defined in
+
+[src/lib/shared/infrastructure/helper.ts:74](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/shared/infrastructure/helper.ts#L74)
 
 ___
 
@@ -172,6 +185,16 @@ node_modules/h3lp/application/h3lp.d.ts:3
 
 ___
 
+### uuid
+
+• **uuid**: `UUIDWrapper`
+
+#### Defined in
+
+[src/lib/shared/infrastructure/helper.ts:75](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/shared/infrastructure/helper.ts#L75)
+
+___
+
 ### val
 
 • `Readonly` **val**: `IValidator`
@@ -183,3 +206,13 @@ H3lp.val
 #### Defined in
 
 node_modules/h3lp/application/h3lp.d.ts:4
+
+___
+
+### yaml
+
+• **yaml**: `YamlWrapper`
+
+#### Defined in
+
+[src/lib/shared/infrastructure/helper.ts:73](https://github.com/lambda-orm/lambdaorm-base/blob/3797a9fa3ae3c4470a37c190adcdb88d49954313/src/lib/shared/infrastructure/helper.ts#L73)

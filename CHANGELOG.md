@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+## [1.3.0](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.2.4...v1.3.0) (2024-04-20)
+
+
+### Features
+
+* **helper:** add uuid, yaml and sqlstring helper ([3797a9f](https://github.com/FlavioLionelRita/lambdaorm-base/commit/3797a9fa3ae3c4470a37c190adcdb88d49954313)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [1.2.4](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.2.3...v1.2.4) (2024-04-18)
 
 **Bug Fixes:**

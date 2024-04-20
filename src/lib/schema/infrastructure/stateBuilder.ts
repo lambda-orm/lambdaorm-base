@@ -3,13 +3,13 @@ import {
 	DataSourceConfigService, SchemaState, MappingsConfigService, DomainConfigService, SchemaFacade, StageConfigService, ViewsConfigService,
 	RouteService, LoadSchema
 } from '../application'
-import { SchemaH3lp } from '../../shared'
+import { OrmBaseH3lp } from '../../shared'
 export class SchemaStateBuilder {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
 		private readonly expressions: Expressions,
 		private readonly facade:SchemaFacade,
-		private readonly helper: SchemaH3lp
+		private readonly helper: OrmBaseH3lp
 	) {}
 
 	public build ():SchemaState {

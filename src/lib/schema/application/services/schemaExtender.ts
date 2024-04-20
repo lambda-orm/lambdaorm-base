@@ -5,13 +5,13 @@ import {
 } from '../../domain'
 import { Primitive } from 'typ3s'
 import { Expressions } from '3xpr'
-import { SchemaH3lp } from '../../../shared'
+import { OrmBaseH3lp } from '../../../shared'
 
 export class SchemaExtender {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
 		private readonly expressions: Expressions,
-		private readonly helper: SchemaH3lp
+		private readonly helper: OrmBaseH3lp
 	) {}
 
 	public extend (schema: Schema): void {

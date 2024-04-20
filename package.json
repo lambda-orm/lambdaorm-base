@@ -34,7 +34,8 @@
 		"js-yaml": "^4.1.0",
 		"sqlstring": "^2.3.3",
 		"uuid": "^9.0.1",
-		"winston": "^3.13.0"
+		"winston": "^3.13.0",
+		"luxon": "^3.4.4"
 	},
 	"devDependencies": {
 		"@babel/eslint-parser": "^7.23.10",

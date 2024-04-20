@@ -1,9 +1,9 @@
 import path from 'path'
-import { SchemaH3lp } from '../../shared'
+import { OrmBaseH3lp } from '../../shared'
 
 export class SchemaFileHelper {
 	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly helper:SchemaH3lp) {}
+	constructor (private readonly helper:OrmBaseH3lp) {}
 
 	public async getConfigPath (source?: string):Promise<string|undefined> {
 		let workspace: string

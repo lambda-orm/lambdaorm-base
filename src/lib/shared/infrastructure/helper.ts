@@ -1,9 +1,11 @@
-import { H3lp } from 'h3lp'
+import { H3lp, IStringHelper } from 'h3lp'
+import { expressions, OperandHelper } from '3xpr'
 import { SchemaHelper } from '../../schema/infrastructure'
 import { Logger } from '../application/ports/logger'
 const YAML = require('js-yaml')
 const UUID = require('uuid')
 const SqlString = require('sqlstring')
+const LUXON = require('luxon')
 
 class YamlWrapper {
 	public load (yaml?:string|null):any {
@@ -16,7 +18,10 @@ class YamlWrapper {
 	}
 }
 
-class SqlStringWrapper {
+class SqlStringHelper {
+	// eslint-disable-next-line no-useless-constructor
+	constructor (private readonly str:IStringHelper) {}
+
 	public escapeId (name:string):string {
 		return SqlString.escapeId(name)
 	}
@@ -33,8 +38,17 @@ class SqlStringWrapper {
 		return SqlString.format(sql, values, stringifyObjects, timeZone)
 	}
 
-	public dateToString (date:Date, timeZone:string):string {
+	public dateToString (date:Date, timeZone:string = 'local'):string {
 		return SqlString.dateToString(date, timeZone)
+	}
+
+	public dateFormat (value:any, format:string = 'ISO'):string {
+		const iso = new Date(value).toISOString()
+		if (format === 'ISO') {
+			return LUXON.DateTime.fromISO(iso).toISO()
+		} else {
+			return LUXON.DateTime.fromISO(iso).toFormat(format)
+		}
 	}
 
 	public bufferToString (buffer:Buffer):string {
@@ -43,6 +57,12 @@ class SqlStringWrapper {
 
 	public raw (sql:string):string {
 		return SqlString.raw(sql)
+	}
+
+	public transformParameter (name:string) {
+		return this.str.replace(name, '.', '_')
+		// con la siguiente opción falla cuando se hace value=Helper.str.replace(value,"\\'","\\''")
+		// return string.replace(new RegExp(search, 'g'), replace)
 	}
 }
 
@@ -68,16 +88,18 @@ class UUIDWrapper {
 	}
 }
 
-export class SchemaH3lp extends H3lp {
+export class OrmBaseH3lp extends H3lp {
 	public schema:SchemaHelper
 	public yaml:YamlWrapper
-	public sqlString:SqlStringWrapper
+	public sqlString:SqlStringHelper
 	public uuid:UUIDWrapper
+	public operand: OperandHelper
 	constructor (h3lp: H3lp, public readonly logger:Logger) {
 		super(h3lp.utils, h3lp.val, h3lp.fs, h3lp.http, h3lp.obj, h3lp.str, h3lp.test, h3lp.array)
 		this.schema = new SchemaHelper(this.str)
 		this.yaml = new YamlWrapper()
-		this.sqlString = new SqlStringWrapper()
+		this.sqlString = new SqlStringHelper(h3lp.str)
+		this.operand = new OperandHelper(expressions.constBuilder)
 		this.uuid = new UUIDWrapper()
 	}
 }

@@ -6,7 +6,7 @@ import { StageConfigService } from './services/config/stageConfigService'
 import { ViewsConfigService } from './services/config/viewsConfigService'
 import { RouteService } from './services/routeService'
 import { SchemaFacade } from './facade'
-import { SchemaH3lp } from '../../shared'
+import { OrmBaseH3lp } from '../../shared'
 import path from 'path'
 import { LoadSchema } from './useCases/load'
 
@@ -23,7 +23,7 @@ export class SchemaState {
 		private readonly routeService:RouteService,
 		private readonly facade:SchemaFacade,
 		private readonly loadSchema:LoadSchema,
-		private readonly helper: SchemaH3lp
+		private readonly helper: OrmBaseH3lp
 	) {
 		this.originalSchema = this.facade.create()
 		this.schema = helper.obj.clone(this.originalSchema)

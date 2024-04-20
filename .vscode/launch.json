@@ -5,6 +5,15 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "sqlString",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/src/dev/sqlString/index.ts"
+		},
+		{
 			"name": "load",
 			"type": "node",
 			"request": "launch",

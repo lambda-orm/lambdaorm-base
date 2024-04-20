@@ -1,7 +1,9 @@
 import {
 	Enum, Entity, Relation, EntityMapping,
 	Schema, Mapping, RelationType, View,
-	DIALECT_DEFAULT, ObservableAction, SchemaError
+	DIALECT_DEFAULT, SentenceAction, SchemaError,
+	SentenceCategory,
+	SentenceType
 } from '../../domain'
 import { Primitive } from 'typ3s'
 import { Expressions } from '3xpr'
@@ -471,12 +473,13 @@ export class SchemaExtender {
 		if (!schema.infrastructure || !schema.infrastructure.sources || !schema.infrastructure.stages) {
 			return false
 		}
-		const context = { entity, action: ObservableAction.ddl, read: false, write: true, dml: false, ddl: true }
+		// const context = { entity, action: ObservableAction.ddl, read: false, write: true, dml: false, ddl: true }
+		const info = { entity, action: SentenceAction.undefined, category: SentenceCategory.undefined, type: SentenceType.dml }
 		const dataSourcesNames = schema.infrastructure.sources.filter(p => p.mapping === mapping).map(p => p.name)
 		for (const stage of schema.infrastructure.stages) {
 			const ruleDataSources = stage.sources.filter(p => dataSourcesNames.includes(p.name))
 			for (const ruleDataSource of ruleDataSources) {
-				if (ruleDataSource.condition === undefined || this.expressions.eval(ruleDataSource.condition, context)) {
+				if (ruleDataSource.condition === undefined || this.expressions.eval(ruleDataSource.condition, info)) {
 					return true
 				}
 			}

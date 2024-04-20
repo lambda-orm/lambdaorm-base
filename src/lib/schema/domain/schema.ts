@@ -1,4 +1,4 @@
-import { SentenceAction } from './actions'
+import { SentenceAction } from './sentence'
 import { Dialect } from './dialect'
 export const DIALECT_DEFAULT = Dialect.MySQL
 

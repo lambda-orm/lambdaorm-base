@@ -2,6 +2,7 @@ import { H3lp, IStringHelper } from 'h3lp'
 import { ExprH3lp } from '3xpr'
 import { SchemaHelper } from '../../schema/infrastructure'
 import { Logger } from '../application/ports/logger'
+import { SentenceAction, SentenceCategory, SentenceInfo, SentenceType } from 'lib/schema/domain'
 const YAML = require('js-yaml')
 const UUID = require('uuid')
 const SqlString = require('sqlstring')
@@ -18,7 +19,7 @@ class YamlWrapper {
 	}
 }
 
-class SqlStringHelper {
+class SqlHelper {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (private readonly str:IStringHelper) {}
 
@@ -64,6 +65,85 @@ class SqlStringHelper {
 		// con la siguiente opción falla cuando se hace value=Helper.str.replace(value,"\\'","\\''")
 		// return string.replace(new RegExp(search, 'g'), replace)
 	}
+
+	public getInfo (action:SentenceAction, entity:string): SentenceInfo {
+		switch (action) {
+		case SentenceAction.select:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.dql }
+		case SentenceAction.insert:
+			return { entity, action, category: SentenceCategory.insert, type: SentenceType.dml }
+		case SentenceAction.insertConditional:
+			return { entity, action, category: SentenceCategory.insert, type: SentenceType.dml }
+		case SentenceAction.update:
+			return { entity, action, category: SentenceCategory.update, type: SentenceType.dml }
+		case SentenceAction.delete:
+			return { entity, action, category: SentenceCategory.delete, type: SentenceType.dml }
+		case SentenceAction.merge:
+			return { entity, action, category: SentenceCategory.upsert, type: SentenceType.dml }
+		case SentenceAction.bulkInsert:
+			return { entity, action, category: SentenceCategory.insert, type: SentenceType.dml }
+		case SentenceAction.bulkDelete:
+			return { entity, action, category: SentenceCategory.delete, type: SentenceType.dml }
+		case SentenceAction.upsert:
+			return { entity, action, category: SentenceCategory.upsert, type: SentenceType.dml }
+		case SentenceAction.bulkMerge:
+			return { entity, action, category: SentenceCategory.upsert, type: SentenceType.dml }
+		case SentenceAction.truncateEntity:
+			return { entity, action, category: SentenceCategory.truncate, type: SentenceType.ddl }
+		case SentenceAction.createEntity:
+			return { entity, action, category: SentenceCategory.create, type: SentenceType.ddl }
+		case SentenceAction.createSequence:
+			return { entity, action, category: SentenceCategory.create, type: SentenceType.ddl }
+		case SentenceAction.createFk:
+			return { entity, action, category: SentenceCategory.create, type: SentenceType.ddl }
+		case SentenceAction.createIndex:
+			return { entity, action, category: SentenceCategory.create, type: SentenceType.ddl }
+		case SentenceAction.alterProperty:
+			return { entity, action, category: SentenceCategory.alter, type: SentenceType.ddl }
+		case SentenceAction.addProperty:
+			return { entity, action, category: SentenceCategory.add, type: SentenceType.ddl }
+		case SentenceAction.addPk:
+			return { entity, action, category: SentenceCategory.add, type: SentenceType.ddl }
+		case SentenceAction.addUk:
+			return { entity, action, category: SentenceCategory.add, type: SentenceType.ddl }
+		case SentenceAction.addFk:
+			return { entity, action, category: SentenceCategory.add, type: SentenceType.ddl }
+		case SentenceAction.dropSequence:
+			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+		case SentenceAction.dropEntity:
+			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+		case SentenceAction.dropProperty:
+			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+		case SentenceAction.dropPk:
+			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+		case SentenceAction.dropUk:
+			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+		case SentenceAction.dropFk:
+			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+		case SentenceAction.dropIndex:
+			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+		case SentenceAction.objects:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+		case SentenceAction.tables:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+		case SentenceAction.views:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+		case SentenceAction.foreignKeys:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+		case SentenceAction.primaryKeys:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+		case SentenceAction.uniqueKeys:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+		case SentenceAction.indexes:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+		case SentenceAction.sequences:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+		case SentenceAction.partitions:
+			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+		default:
+			throw new Error(`Invalid action ${action}`)
+		}
+	}
 }
 
 class UUIDWrapper {
@@ -91,13 +171,13 @@ class UUIDWrapper {
 export class OrmBaseH3lp extends ExprH3lp {
 	public schema:SchemaHelper
 	public yaml:YamlWrapper
-	public sqlString:SqlStringHelper
+	public sql:SqlHelper
 	public uuid:UUIDWrapper
 	constructor (h3lp: H3lp, public readonly logger:Logger) {
 		super(h3lp)
 		this.schema = new SchemaHelper(this.str)
 		this.yaml = new YamlWrapper()
-		this.sqlString = new SqlStringHelper(h3lp.str)
+		this.sql = new SqlHelper(h3lp.str)
 		this.uuid = new UUIDWrapper()
 	}
 }

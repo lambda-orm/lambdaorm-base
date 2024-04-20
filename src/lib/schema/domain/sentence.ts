@@ -1,22 +1,35 @@
-export enum ObservableAction {
-	select = 'select',
-	insert = 'insert',
-	// bulkInsert = 'bulkInsert',
-	merge = 'merge',
-	update = 'update',
-	delete = 'delete',
-	ddl = 'ddl'
-}
-
-export enum SentenceCrudAction {
+export enum SentenceCategory {
 	undefined = 'undefined',
 	select = 'select',
 	insert = 'insert',
+	upsert = 'upsert',
 	update = 'update',
 	delete = 'delete',
-	merge = 'merge'
+	truncate = 'truncate',
+	create = 'create',
+	add = 'add',
+	alter = 'alter',
+	drop = 'drop'
 }
+
+export enum SentenceType {
+	dql = 'dql', // SELECT statements
+	dml = 'dml', //  INSERT, UPDATE, DELETE statements
+	ddl = 'ddl', // CREATE, ALTER, DROP statements
+	metadata = 'metadata' // Metadata statements
+}
+
+// export enum SentenceCrudAction {
+// undefined = 'undefined',
+// select = 'select',
+// insert = 'insert',
+// update = 'update',
+// delete = 'delete',
+// merge = 'merge'
+// }
+
 export enum SentenceAction {
+	undefined = 'undefined',
 	select = 'select',
 	insert = 'insert',
 	insertConditional = 'insertConditional',
@@ -44,7 +57,6 @@ export enum SentenceAction {
 	dropUk = 'dropUk',
 	dropFk = 'dropFk',
 	dropIndex = 'dropIndex',
-	ddl = 'ddl',
 	objects = 'objects',
 	tables = 'tables',
 	views = 'views',
@@ -54,4 +66,11 @@ export enum SentenceAction {
 	uniqueKeys = 'uniqueKeys',
 	foreignKeys = 'foreignKeys',
 	partitions = 'partitions'
+}
+
+export interface SentenceInfo {
+	entity: string
+	action: SentenceAction
+	category: SentenceCategory
+	type : SentenceType
 }

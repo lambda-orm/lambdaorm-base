@@ -1,10 +1,10 @@
 import { SourceRule } from './schema'
 import { Dialect } from './dialect'
-import { ClauseInfo } from './info'
+import { SentenceInfo } from './sentence'
 
 export interface IRouteService {
-	eval (source:SourceRule, clauseInfo: ClauseInfo):boolean
-	getSource (clauseInfo: ClauseInfo, stage?: string):string
+	eval (source:SourceRule, info: SentenceInfo):boolean
+	getSource (info: SentenceInfo, stage?: string):string
 }
 
 export interface MatchOptions {

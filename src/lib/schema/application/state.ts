@@ -1,4 +1,4 @@
-import { Schema, SchemaError, SchemaData, ClauseInfo, SourceRule, Mapping, MatchOptions, InitializeSchemaArgs, DomainSchema, Entity, Enum, EntityMapping, Stage } from '../domain'
+import { Schema, SchemaError, SchemaData, SourceRule, Mapping, MatchOptions, InitializeSchemaArgs, DomainSchema, Entity, Enum, EntityMapping, Stage, SentenceInfo } from '../domain'
 import { DataSourceConfigService } from './services/config/dataSourceConfigService'
 import { MappingsConfigService } from './services/config/mappingsConfigService'
 import { DomainConfigService } from './services/config/domainConfigService'
@@ -84,12 +84,12 @@ export class SchemaState {
 		this.schema = this.toSchema(this.originalSchema)
 	}
 
-	public evalSourceRule (rule:SourceRule, clauseInfo: ClauseInfo):boolean {
-		return this.routeService.eval(rule, clauseInfo)
+	public evalSourceRule (rule:SourceRule, info: SentenceInfo):boolean {
+		return this.routeService.eval(rule, info)
 	}
 
-	public getSource (clauseInfo: ClauseInfo, stage?: string):string {
-		return this.routeService.getSource(clauseInfo, stage)
+	public getSource (info: SentenceInfo, stage?: string):string {
+		return this.routeService.getSource(info, stage)
 	}
 
 	public getSchemaSources (): { name: string; dialect: string }[] {

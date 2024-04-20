@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [1.4.4](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.4.3...v1.4.4) (2024-04-20)
 
-
-### Bug Fixes
+**Bug Fixes:**
 
 * **helper:** bugfix import in helper ([65087f8](https://github.com/FlavioLionelRita/lambdaorm-base/commit/65087f84cfbd6ccc99ab4388b6009fa8e9302755)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

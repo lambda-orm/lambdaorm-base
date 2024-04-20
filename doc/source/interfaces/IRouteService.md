@@ -17,14 +17,14 @@
 
 ### eval
 
-▸ **eval**(`source`, `clauseInfo`): `boolean`
+▸ **eval**(`source`, `info`): `boolean`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `source` | [`SourceRule`](SourceRule.md) |
-| `clauseInfo` | [`ClauseInfo`](ClauseInfo.md) |
+| `info` | [`SentenceInfo`](SentenceInfo.md) |
 
 #### Returns
 
@@ -32,19 +32,19 @@
 
 #### Defined in
 
-[src/lib/schema/domain/services.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/schema/domain/services.ts#L6)
+[src/lib/schema/domain/services.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/schema/domain/services.ts#L6)
 
 ___
 
 ### getSource
 
-▸ **getSource**(`clauseInfo`, `stage?`): `string`
+▸ **getSource**(`info`, `stage?`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `clauseInfo` | [`ClauseInfo`](ClauseInfo.md) |
+| `info` | [`SentenceInfo`](SentenceInfo.md) |
 | `stage?` | `string` |
 
 #### Returns
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/services.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/schema/domain/services.ts#L7)
+[src/lib/schema/domain/services.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/schema/domain/services.ts#L7)

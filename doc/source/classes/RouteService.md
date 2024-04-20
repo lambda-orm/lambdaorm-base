@@ -36,20 +36,20 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/routeService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/schema/application/services/routeService.ts#L7)
+[src/lib/schema/application/services/routeService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/schema/application/services/routeService.ts#L7)
 
 ## Methods
 
 ### eval
 
-▸ **eval**(`source`, `clauseInfo`): `boolean`
+▸ **eval**(`source`, `info`): `boolean`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `source` | [`SourceRule`](../interfaces/SourceRule.md) |
-| `clauseInfo` | [`ClauseInfo`](../interfaces/ClauseInfo.md) |
+| `info` | [`SentenceInfo`](../interfaces/SentenceInfo.md) |
 
 #### Returns
 
@@ -61,19 +61,19 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/routeService.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/schema/application/services/routeService.ts#L10)
+[src/lib/schema/application/services/routeService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/schema/application/services/routeService.ts#L11)
 
 ___
 
 ### getSource
 
-▸ **getSource**(`clauseInfo`, `stage?`): `string`
+▸ **getSource**(`info`, `stage?`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `clauseInfo` | [`ClauseInfo`](../interfaces/ClauseInfo.md) |
+| `info` | [`SentenceInfo`](../interfaces/SentenceInfo.md) |
 | `stage?` | `string` |
 
 #### Returns
@@ -86,4 +86,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/routeService.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/schema/application/services/routeService.ts#L27)
+[src/lib/schema/application/services/routeService.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/schema/application/services/routeService.ts#L27)

@@ -24,7 +24,7 @@
 - [obj](OrmBaseH3lp.md#obj)
 - [operand](OrmBaseH3lp.md#operand)
 - [schema](OrmBaseH3lp.md#schema)
-- [sqlString](OrmBaseH3lp.md#sqlstring)
+- [sql](OrmBaseH3lp.md#sql)
 - [str](OrmBaseH3lp.md#str)
 - [test](OrmBaseH3lp.md#test)
 - [utils](OrmBaseH3lp.md#utils)
@@ -55,7 +55,7 @@ ExprH3lp.constructor
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:96](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/shared/infrastructure/helper.ts#L96)
+[src/lib/shared/infrastructure/helper.ts:176](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/shared/infrastructure/helper.ts#L176)
 
 ## Properties
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:96](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/shared/infrastructure/helper.ts#L96)
+[src/lib/shared/infrastructure/helper.ts:176](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/shared/infrastructure/helper.ts#L176)
 
 ___
 
@@ -159,17 +159,17 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:92](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/shared/infrastructure/helper.ts#L92)
+[src/lib/shared/infrastructure/helper.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/shared/infrastructure/helper.ts#L172)
 
 ___
 
-### sqlString
+### sql
 
-• **sqlString**: `SqlStringHelper`
+• **sql**: `SqlHelper`
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:94](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/shared/infrastructure/helper.ts#L94)
+[src/lib/shared/infrastructure/helper.ts:174](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/shared/infrastructure/helper.ts#L174)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:95](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/shared/infrastructure/helper.ts#L95)
+[src/lib/shared/infrastructure/helper.ts:175](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/shared/infrastructure/helper.ts#L175)
 
 ___
 
@@ -245,4 +245,4 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:93](https://github.com/lambda-orm/lambdaorm-base/blob/f05639463d61009f8bbb0506eec30106c529593e/src/lib/shared/infrastructure/helper.ts#L93)
+[src/lib/shared/infrastructure/helper.ts:173](https://github.com/lambda-orm/lambdaorm-base/blob/74f7c8b857fa6bb1671dd2c51c1b652b4c192303/src/lib/shared/infrastructure/helper.ts#L173)

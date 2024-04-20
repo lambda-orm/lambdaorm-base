@@ -13,8 +13,8 @@ class YamlWrapper {
 		return YAML.load(yaml)
 	}
 
-	public dump (obj?:any|null):string {
-		return YAML.dump(obj)
+	public dump (obj?:any|null, options?:any):string {
+		return YAML.dump(obj, options)
 	}
 }
 

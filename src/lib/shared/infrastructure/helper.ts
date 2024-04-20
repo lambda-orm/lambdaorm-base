@@ -2,7 +2,7 @@ import { H3lp, IStringHelper } from 'h3lp'
 import { ExprH3lp } from '3xpr'
 import { SchemaHelper } from '../../schema/infrastructure'
 import { Logger } from '../application/ports/logger'
-import { SentenceAction, SentenceCategory, SentenceInfo, SentenceType } from 'lib/schema/domain'
+import { SentenceAction, SentenceCategory, SentenceInfo, SentenceType } from '../../schema/domain'
 const YAML = require('js-yaml')
 const UUID = require('uuid')
 const SqlString = require('sqlstring')

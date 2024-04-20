@@ -1,5 +1,5 @@
 import { H3lp, IStringHelper } from 'h3lp'
-import { expressions, OperandHelper } from '3xpr'
+import { ExprH3lp } from '3xpr'
 import { SchemaHelper } from '../../schema/infrastructure'
 import { Logger } from '../application/ports/logger'
 const YAML = require('js-yaml')
@@ -88,18 +88,16 @@ class UUIDWrapper {
 	}
 }
 
-export class OrmBaseH3lp extends H3lp {
+export class OrmBaseH3lp extends ExprH3lp {
 	public schema:SchemaHelper
 	public yaml:YamlWrapper
 	public sqlString:SqlStringHelper
 	public uuid:UUIDWrapper
-	public operand: OperandHelper
 	constructor (h3lp: H3lp, public readonly logger:Logger) {
-		super(h3lp.utils, h3lp.val, h3lp.fs, h3lp.http, h3lp.obj, h3lp.str, h3lp.test, h3lp.array)
+		super(h3lp)
 		this.schema = new SchemaHelper(this.str)
 		this.yaml = new YamlWrapper()
 		this.sqlString = new SqlStringHelper(h3lp.str)
-		this.operand = new OperandHelper(expressions.constBuilder)
 		this.uuid = new UUIDWrapper()
 	}
 }

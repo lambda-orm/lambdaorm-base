@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/routeService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/65087f84cfbd6ccc99ab4388b6009fa8e9302755/src/lib/schema/application/services/routeService.ts#L7)
+[src/lib/schema/application/services/routeService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/d0a857cc1bc4a7a4e62ea32e87b10c56fb9eaf37/src/lib/schema/application/services/routeService.ts#L7)
 
 ## Methods
 
@@ -61,7 +61,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/routeService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/65087f84cfbd6ccc99ab4388b6009fa8e9302755/src/lib/schema/application/services/routeService.ts#L11)
+[src/lib/schema/application/services/routeService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/d0a857cc1bc4a7a4e62ea32e87b10c56fb9eaf37/src/lib/schema/application/services/routeService.ts#L11)
 
 ___
 
@@ -86,4 +86,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/routeService.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/65087f84cfbd6ccc99ab4388b6009fa8e9302755/src/lib/schema/application/services/routeService.ts#L27)
+[src/lib/schema/application/services/routeService.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/d0a857cc1bc4a7a4e62ea32e87b10c56fb9eaf37/src/lib/schema/application/services/routeService.ts#L16)

@@ -94,7 +94,6 @@ export class Sentence extends Operand {
 		this.constraints = []
 		this.values = []
 		this.defaults = []
-		// this.initialize()
 	}
 
 	public getIncludes (): SentenceInclude[] {
@@ -105,34 +104,6 @@ export class Sentence extends Operand {
 		const includes = this.getIncludes()
 		return includes.filter(p => p.relation.composite)
 	}
-
-// private initialize () {
-// const map = this.children.find(p => p instanceof Map)
-// const insert = this.children.find(p => p instanceof Insert) as Insert | undefined
-// const bulkInsert = this.children.find(p => p instanceof BulkInsert) as BulkInsert | undefined
-// const update = this.children.find(p => p instanceof Update) as Update | undefined
-// const _delete = this.children.find(p => p instanceof Delete) as Delete | undefined
-// const bulkDelete = this.children.find(p => p instanceof BulkDelete) as BulkDelete | undefined
-// const upsert = this.children.find(p => p instanceof Upsert) as Upsert | undefined
-// const bulkMerge = this.children.find(p => p instanceof BulkMerge) as BulkMerge | undefined
-// if (map) {
-// this.crudAction = SentenceCrudAction.select
-// } else if (insert) {
-// this.crudAction = SentenceCrudAction.insert
-// } else if (bulkInsert) {
-// this.crudAction = SentenceCrudAction.insert
-// } else if (update) {
-// this.crudAction = SentenceCrudAction.update
-// } else if (_delete) {
-// this.crudAction = SentenceCrudAction.delete
-// } else if (bulkDelete) {
-// this.crudAction = SentenceCrudAction.delete
-// } else if (upsert) {
-// this.crudAction = SentenceCrudAction.merge
-// } else if (bulkMerge) {
-// this.crudAction = SentenceCrudAction.merge
-// }
-// }
 }
 export class SentenceInclude extends Operand {
 	public relation: Relation

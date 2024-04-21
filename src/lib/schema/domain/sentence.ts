@@ -19,15 +19,6 @@ export enum SentenceType {
 	metadata = 'metadata' // Metadata statements
 }
 
-// export enum SentenceCrudAction {
-// undefined = 'undefined',
-// select = 'select',
-// insert = 'insert',
-// update = 'update',
-// delete = 'delete',
-// merge = 'merge'
-// }
-
 export enum SentenceAction {
 	undefined = 'undefined',
 	select = 'select',

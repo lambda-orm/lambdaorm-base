@@ -147,8 +147,8 @@ class SqlHelper {
 }
 
 class UUIDWrapper {
-	public uuidv4 ():string {
-		return UUID.uuidv4()
+	public v4 ():string {
+		return UUID.v4()
 	}
 
 	public isUuid (id:string):boolean {

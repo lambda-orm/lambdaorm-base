@@ -13,17 +13,6 @@ export class RouteService implements IRouteService {
 		return this.expressions.eval(source.condition, info)
 	}
 
-	// private getContextInfo (clauseInfo: ClauseInfo):ContextInfo {
-	// return {
-	// entity: clauseInfo.entity,
-	// action: clauseInfo.action,
-	// read: clauseInfo.action === ObservableAction.select,
-	// write: clauseInfo.action !== ObservableAction.select,
-	// dml: clauseInfo.action !== ObservableAction.ddl,
-	// ddl: clauseInfo.action === ObservableAction.ddl
-	// }
-	// }
-
 	public getSource (info: SentenceInfo, stage?: string):string {
 		// const contextInfo = this.getContextInfo(clauseInfo)
 		const _stage = this.stageConfigService.get(stage)

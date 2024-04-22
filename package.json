@@ -28,9 +28,9 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"3xpr": "^1.15.13",
-		"h3lp": "^1.9.1",
-		"typ3s": "^0.1.18",
+		"3xpr": "^1.15.14",
+		"h3lp": "^1.10.0",
+		"typ3s": "^1.0.2",
 		"js-yaml": "^4.1.0",
 		"sqlstring": "^2.3.3",
 		"uuid": "^9.0.1",

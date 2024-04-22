@@ -42,7 +42,7 @@
 		"@types/jest": "^29.5.10",
 		"@types/mysql": "^2.15.21",
 		"@types/node": "^20.12.5",
-		"@typescript-eslint/eslint-plugin": "^7.5.0",
+		"@typescript-eslint/eslint-plugin": "^7.7.0",
 		"@typescript-eslint/parser": "^7.4.0",
 		"concurrently": "^8.2.2",
 		"dotenv": "^16.4.5",

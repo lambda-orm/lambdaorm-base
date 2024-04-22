@@ -1,6 +1,6 @@
 {
 	"entryPoints": [
-		"src/lib/orm"
+		"src/lib"
 	],
 	"out": "doc/source",
 	"excludePrivate": true,

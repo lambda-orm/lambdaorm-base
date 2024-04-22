@@ -8,7 +8,7 @@ const UUID = require('uuid')
 const SqlString = require('sqlstring')
 const LUXON = require('luxon')
 
-class YamlWrapper {
+export class YamlWrapper {
 	public load (yaml?:string|null):any {
 		if (!yaml) return undefined
 		return YAML.load(yaml)
@@ -19,7 +19,7 @@ class YamlWrapper {
 	}
 }
 
-class SqlHelper {
+export class SqlHelper {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (private readonly str:IStringHelper) {}
 
@@ -146,7 +146,7 @@ class SqlHelper {
 	}
 }
 
-class UUIDWrapper {
+export class UUIDWrapper {
 	public v4 ():string {
 		return UUID.v4()
 	}

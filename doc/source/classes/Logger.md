@@ -41,4 +41,4 @@
 
 #### Defined in
 
-[src/lib/shared/application/ports/logger.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/003144648abf70422862859950af236b7fb049f7/src/lib/shared/application/ports/logger.ts#L7)
+[src/lib/shared/application/ports/logger.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/673ebba8f7a82df874402408876d4ee87836d112/src/lib/shared/application/ports/logger.ts#L7)

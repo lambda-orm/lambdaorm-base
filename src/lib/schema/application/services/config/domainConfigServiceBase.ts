@@ -79,7 +79,7 @@ export abstract class DomainConfigServiceBase<TEntity extends Entity, TProperty 
 
 	/**
 	 * Sort a list of entities according to their relationships
-	 * @param entities entities to order
+	 * @param allEntities entities to order
 	 * @returns returns the sorted entities
 	 */
 	public sortByRelations (mainEntities: string[], allEntities: string[]): string[] {

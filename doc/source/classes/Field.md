@@ -65,7 +65,7 @@ Operand.constructor
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/673ebba8f7a82df874402408876d4ee87836d112/src/lib/sentence/domain/sentence.ts#L32)
+[src/lib/sentence/domain/sentence.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/986eb2b1d63aa5000f6fe1e57b34c29825075831/src/lib/sentence/domain/sentence.ts#L32)
 
 ## Properties
 
@@ -75,7 +75,7 @@ Operand.constructor
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/673ebba8f7a82df874402408876d4ee87836d112/src/lib/sentence/domain/sentence.ts#L29)
+[src/lib/sentence/domain/sentence.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/986eb2b1d63aa5000f6fe1e57b34c29825075831/src/lib/sentence/domain/sentence.ts#L29)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/673ebba8f7a82df874402408876d4ee87836d112/src/lib/sentence/domain/sentence.ts#L28)
+[src/lib/sentence/domain/sentence.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/986eb2b1d63aa5000f6fe1e57b34c29825075831/src/lib/sentence/domain/sentence.ts#L28)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/673ebba8f7a82df874402408876d4ee87836d112/src/lib/sentence/domain/sentence.ts#L30)
+[src/lib/sentence/domain/sentence.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/986eb2b1d63aa5000f6fe1e57b34c29825075831/src/lib/sentence/domain/sentence.ts#L30)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/673ebba8f7a82df874402408876d4ee87836d112/src/lib/sentence/domain/sentence.ts#L31)
+[src/lib/sentence/domain/sentence.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/986eb2b1d63aa5000f6fe1e57b34c29825075831/src/lib/sentence/domain/sentence.ts#L31)
 
 ___
 
@@ -231,7 +231,7 @@ node_modules/3xpr/shared/domain/operand.d.ts:43
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/673ebba8f7a82df874402408876d4ee87836d112/src/lib/sentence/domain/sentence.ts#L46)
+[src/lib/sentence/domain/sentence.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/986eb2b1d63aa5000f6fe1e57b34c29825075831/src/lib/sentence/domain/sentence.ts#L46)
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/673ebba8f7a82df874402408876d4ee87836d112/src/lib/sentence/domain/sentence.ts#L39)
+[src/lib/sentence/domain/sentence.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/986eb2b1d63aa5000f6fe1e57b34c29825075831/src/lib/sentence/domain/sentence.ts#L39)
 
 ___
 

@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/ports/fileSchemaService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/b017793ac4f59142bbdc92360d810523dacc7525/src/lib/schema/application/ports/fileSchemaService.ts#L4)
+[src/lib/schema/application/ports/fileSchemaService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/6519a36bb90ceba6741ed0abf1b5c31fac3d7d67/src/lib/schema/application/ports/fileSchemaService.ts#L4)
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/ports/fileSchemaService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/b017793ac4f59142bbdc92360d810523dacc7525/src/lib/schema/application/ports/fileSchemaService.ts#L5)
+[src/lib/schema/application/ports/fileSchemaService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/6519a36bb90ceba6741ed0abf1b5c31fac3d7d67/src/lib/schema/application/ports/fileSchemaService.ts#L5)

@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[src/lib/schema/domain/sentence.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/b017793ac4f59142bbdc92360d810523dacc7525/src/lib/schema/domain/sentence.ts#L18)
+[src/lib/schema/domain/sentence.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/6519a36bb90ceba6741ed0abf1b5c31fac3d7d67/src/lib/schema/domain/sentence.ts#L18)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/sentence.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/b017793ac4f59142bbdc92360d810523dacc7525/src/lib/schema/domain/sentence.ts#L17)
+[src/lib/schema/domain/sentence.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/6519a36bb90ceba6741ed0abf1b5c31fac3d7d67/src/lib/schema/domain/sentence.ts#L17)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/sentence.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/b017793ac4f59142bbdc92360d810523dacc7525/src/lib/schema/domain/sentence.ts#L16)
+[src/lib/schema/domain/sentence.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/6519a36bb90ceba6741ed0abf1b5c31fac3d7d67/src/lib/schema/domain/sentence.ts#L16)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/sentence.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/b017793ac4f59142bbdc92360d810523dacc7525/src/lib/schema/domain/sentence.ts#L19)
+[src/lib/schema/domain/sentence.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/6519a36bb90ceba6741ed0abf1b5c31fac3d7d67/src/lib/schema/domain/sentence.ts#L19)

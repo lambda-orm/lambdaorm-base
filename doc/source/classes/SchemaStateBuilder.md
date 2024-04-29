@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/stateBuilder.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/f718b5f22fc7aeca3e27d0306c7b78fd07ae1281/src/lib/schema/infrastructure/stateBuilder.ts#L9)
+[src/lib/schema/infrastructure/stateBuilder.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/7ea443d3ebae76b8fea45044f8a52e5d45444f32/src/lib/schema/infrastructure/stateBuilder.ts#L9)
 
 ## Methods
 
@@ -46,4 +46,4 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/stateBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/f718b5f22fc7aeca3e27d0306c7b78fd07ae1281/src/lib/schema/infrastructure/stateBuilder.ts#L15)
+[src/lib/schema/infrastructure/stateBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/7ea443d3ebae76b8fea45044f8a52e5d45444f32/src/lib/schema/infrastructure/stateBuilder.ts#L15)

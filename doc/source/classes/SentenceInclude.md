@@ -58,7 +58,7 @@ Operand.constructor
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:110](https://github.com/lambda-orm/lambdaorm-base/blob/f718b5f22fc7aeca3e27d0306c7b78fd07ae1281/src/lib/sentence/domain/sentence.ts#L110)
+[src/lib/sentence/domain/sentence.ts:110](https://github.com/lambda-orm/lambdaorm-base/blob/7ea443d3ebae76b8fea45044f8a52e5d45444f32/src/lib/sentence/domain/sentence.ts#L110)
 
 ## Properties
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/f718b5f22fc7aeca3e27d0306c7b78fd07ae1281/src/lib/sentence/domain/sentence.ts#L109)
+[src/lib/sentence/domain/sentence.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/7ea443d3ebae76b8fea45044f8a52e5d45444f32/src/lib/sentence/domain/sentence.ts#L109)
 
 ___
 

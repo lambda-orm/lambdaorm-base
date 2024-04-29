@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [1.4.11](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.4.10...v1.4.11) (2024-04-29)
 
-
-### Bug Fixes
+**Bug Fixes:**
 
 * solve entityName with semicolon ([f718b5f](https://github.com/FlavioLionelRita/lambdaorm-base/commit/f718b5f22fc7aeca3e27d0306c7b78fd07ae1281)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

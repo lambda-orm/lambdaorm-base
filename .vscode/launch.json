@@ -14,6 +14,15 @@
 			"program": "${workspaceFolder}/src/dev/sqlString/index.ts"
 		},
 		{
+			"name": "helper",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/src/dev/helper/index.ts"
+		},
+		{
 			"name": "load",
 			"type": "node",
 			"request": "launch",

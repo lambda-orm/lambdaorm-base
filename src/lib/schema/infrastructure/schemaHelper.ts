@@ -20,8 +20,9 @@ export class SchemaHelper {
 	}
 
 	public entityName (name:string):string {
-		const plural = this.str.plural(name)
-		return this.str.notation(plural, 'pascal')
+		let entityName = this.str.replace(name, '"', '').replace('\'', '').replace('`', '')
+		entityName = this.str.plural(entityName)
+		return this.str.notation(entityName, 'pascal')
 	}
 
 	public propertyName (name:string):string {

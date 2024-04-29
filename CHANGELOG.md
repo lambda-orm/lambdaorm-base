@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [1.4.12](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.4.11...v1.4.12) (2024-04-29)
+
 ### [1.4.11](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.4.10...v1.4.11) (2024-04-29)
 
 **Bug Fixes:**

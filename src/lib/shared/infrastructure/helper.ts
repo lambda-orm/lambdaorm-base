@@ -69,79 +69,93 @@ export class SqlHelper {
 	public getInfo (action:SentenceAction, entity:string): SentenceInfo {
 		switch (action) {
 		case SentenceAction.select:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.dql }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.dql)
 		case SentenceAction.insert:
-			return { entity, action, category: SentenceCategory.insert, type: SentenceType.dml }
+			return this.createInfo(entity, action, SentenceCategory.insert, SentenceType.dml)
 		case SentenceAction.insertConditional:
-			return { entity, action, category: SentenceCategory.insert, type: SentenceType.dml }
+			return this.createInfo(entity, action, SentenceCategory.insert, SentenceType.dml)
 		case SentenceAction.update:
-			return { entity, action, category: SentenceCategory.update, type: SentenceType.dml }
+			return this.createInfo(entity, action, SentenceCategory.update, SentenceType.dml)
 		case SentenceAction.delete:
-			return { entity, action, category: SentenceCategory.delete, type: SentenceType.dml }
+			return this.createInfo(entity, action, SentenceCategory.delete, SentenceType.dml)
 		case SentenceAction.merge:
-			return { entity, action, category: SentenceCategory.upsert, type: SentenceType.dml }
+			return this.createInfo(entity, action, SentenceCategory.upsert, SentenceType.dml)
 		case SentenceAction.bulkInsert:
-			return { entity, action, category: SentenceCategory.insert, type: SentenceType.dml }
+			return this.createInfo(entity, action, SentenceCategory.insert, SentenceType.dml)
 		case SentenceAction.bulkDelete:
-			return { entity, action, category: SentenceCategory.delete, type: SentenceType.dml }
+			return this.createInfo(entity, action, SentenceCategory.delete, SentenceType.dml)
 		case SentenceAction.upsert:
-			return { entity, action, category: SentenceCategory.upsert, type: SentenceType.dml }
+			return this.createInfo(entity, action, SentenceCategory.upsert, SentenceType.dml)
 		case SentenceAction.bulkMerge:
-			return { entity, action, category: SentenceCategory.upsert, type: SentenceType.dml }
+			return this.createInfo(entity, action, SentenceCategory.upsert, SentenceType.dml)
 		case SentenceAction.truncateEntity:
-			return { entity, action, category: SentenceCategory.truncate, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.truncate, SentenceType.ddl)
 		case SentenceAction.createEntity:
-			return { entity, action, category: SentenceCategory.create, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.create, SentenceType.ddl)
 		case SentenceAction.createSequence:
-			return { entity, action, category: SentenceCategory.create, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.create, SentenceType.ddl)
 		case SentenceAction.createFk:
-			return { entity, action, category: SentenceCategory.create, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.create, SentenceType.ddl)
 		case SentenceAction.createIndex:
-			return { entity, action, category: SentenceCategory.create, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.create, SentenceType.ddl)
 		case SentenceAction.alterProperty:
-			return { entity, action, category: SentenceCategory.alter, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.alter, SentenceType.ddl)
 		case SentenceAction.addProperty:
-			return { entity, action, category: SentenceCategory.add, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.add, SentenceType.ddl)
 		case SentenceAction.addPk:
-			return { entity, action, category: SentenceCategory.add, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.add, SentenceType.ddl)
 		case SentenceAction.addUk:
-			return { entity, action, category: SentenceCategory.add, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.add, SentenceType.ddl)
 		case SentenceAction.addFk:
-			return { entity, action, category: SentenceCategory.add, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.add, SentenceType.ddl)
 		case SentenceAction.dropSequence:
-			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.drop, SentenceType.ddl)
 		case SentenceAction.dropEntity:
-			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.drop, SentenceType.ddl)
 		case SentenceAction.dropProperty:
-			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.drop, SentenceType.ddl)
 		case SentenceAction.dropPk:
-			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.drop, SentenceType.ddl)
 		case SentenceAction.dropUk:
-			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.drop, SentenceType.ddl)
 		case SentenceAction.dropFk:
-			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.drop, SentenceType.ddl)
 		case SentenceAction.dropIndex:
-			return { entity, action, category: SentenceCategory.drop, type: SentenceType.ddl }
+			return this.createInfo(entity, action, SentenceCategory.drop, SentenceType.ddl)
 		case SentenceAction.objects:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.metadata)
 		case SentenceAction.tables:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.metadata)
 		case SentenceAction.views:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.metadata)
 		case SentenceAction.foreignKeys:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.metadata)
 		case SentenceAction.primaryKeys:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.metadata)
 		case SentenceAction.uniqueKeys:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.metadata)
 		case SentenceAction.indexes:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.metadata)
 		case SentenceAction.sequences:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.metadata)
 		case SentenceAction.partitions:
-			return { entity, action, category: SentenceCategory.select, type: SentenceType.metadata }
+			return this.createInfo(entity, action, SentenceCategory.select, SentenceType.metadata)
 		default:
 			throw new Error(`Invalid action ${action}`)
+		}
+	}
+
+	private createInfo (entity:string, action:SentenceAction, category:SentenceCategory, type:SentenceType): SentenceInfo {
+		return {
+			entity,
+			action,
+			category,
+			type,
+			// for retro-compatibility
+			read: category === SentenceCategory.select,
+			write: category !== SentenceCategory.select,
+			ddl: type === SentenceType.ddl,
+			dml: type === SentenceType.dml || type === SentenceType.dql
 		}
 	}
 }

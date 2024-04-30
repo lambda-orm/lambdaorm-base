@@ -64,4 +64,9 @@ export interface SentenceInfo {
 	action: SentenceAction
 	category: SentenceCategory
 	type : SentenceType
+	// for retro-compatibility
+	read: boolean
+	write: boolean
+	ddl: boolean
+	dml: boolean
 }

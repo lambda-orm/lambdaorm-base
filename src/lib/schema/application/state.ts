@@ -34,7 +34,11 @@ export class SchemaState {
 		const schemaInfo = await this.facade.read(workspace)
 		if (schemaInfo === null) {
 			this.originalSchema = this.facade.create()
-			this.schemaPath = workspace
+			if (await this.helper.fs.isDirectory(workspace)) {
+				this.schemaPath = path.join(workspace, 'lambdaORM.yaml')
+			} else {
+				this.schemaPath = workspace
+			}
 		} else {
 			this.originalSchema = schemaInfo.schema
 			this.schemaPath = schemaInfo.path

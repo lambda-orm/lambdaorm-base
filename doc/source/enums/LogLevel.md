@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/lib/shared/application/ports/logger.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/2023ab01f1931e23aafcce332668a646372adfad/src/lib/shared/application/ports/logger.ts#L3)
+[src/lib/shared/application/ports/logger.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/718fa7249304e448c36276215c5894bb7b365dbd/src/lib/shared/application/ports/logger.ts#L3)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/lib/shared/application/ports/logger.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/2023ab01f1931e23aafcce332668a646372adfad/src/lib/shared/application/ports/logger.ts#L2)
+[src/lib/shared/application/ports/logger.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/718fa7249304e448c36276215c5894bb7b365dbd/src/lib/shared/application/ports/logger.ts#L2)

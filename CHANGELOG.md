@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.5.0](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.4.13...v1.5.0) (2024-04-30)
 
-
-### Features
+**Features:**
 
 * add getInfo on helper.sql ([718fa72](https://github.com/FlavioLionelRita/lambdaorm-base/commit/718fa7249304e448c36276215c5894bb7b365dbd)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

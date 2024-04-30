@@ -145,7 +145,7 @@ export class SqlHelper {
 		}
 	}
 
-	private createInfo (entity:string, action:SentenceAction, category:SentenceCategory, type:SentenceType): SentenceInfo {
+	public createInfo (entity:string, action:SentenceAction, category:SentenceCategory, type:SentenceType): SentenceInfo {
 		return {
 			entity,
 			action,

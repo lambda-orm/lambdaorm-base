@@ -16,13 +16,13 @@
 
 ### constructor
 
-• **new SchemaStateBuilder**(`expressions`, `facade`, `helper`): [`SchemaStateBuilder`](SchemaStateBuilder.md)
+• **new SchemaStateBuilder**(`exp`, `facade`, `helper`): [`SchemaStateBuilder`](SchemaStateBuilder.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `expressions` | `Expressions` |
+| `exp` | `Expressions` |
 | `facade` | [`SchemaFacade`](SchemaFacade.md) |
 | `helper` | [`OrmBaseH3lp`](OrmBaseH3lp.md) |
 
@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/stateBuilder.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/infrastructure/stateBuilder.ts#L9)
+[src/lib/schema/infrastructure/stateBuilder.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/infrastructure/stateBuilder.ts#L9)
 
 ## Methods
 
@@ -46,4 +46,4 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/stateBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/infrastructure/stateBuilder.ts#L15)
+[src/lib/schema/infrastructure/stateBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/infrastructure/stateBuilder.ts#L15)

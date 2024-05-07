@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/config/viewsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/config/viewsConfigService.ts#L7)
+[src/lib/schema/application/services/config/viewsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/config/viewsConfigService.ts#L7)
 
 ## Properties
 
@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/config/viewsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/config/viewsConfigService.ts#L5)
+[src/lib/schema/application/services/config/viewsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/config/viewsConfigService.ts#L5)
 
 ## Methods
 
@@ -60,7 +60,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/config/viewsConfigService.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/config/viewsConfigService.ts#L25)
+[src/lib/schema/application/services/config/viewsConfigService.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/config/viewsConfigService.ts#L25)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/config/viewsConfigService.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/config/viewsConfigService.ts#L36)
+[src/lib/schema/application/services/config/viewsConfigService.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/config/viewsConfigService.ts#L36)
 
 ___
 
@@ -100,4 +100,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/config/viewsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/config/viewsConfigService.ts#L11)
+[src/lib/schema/application/services/config/viewsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/config/viewsConfigService.ts#L11)

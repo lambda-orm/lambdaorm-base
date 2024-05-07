@@ -16,13 +16,13 @@
 
 ### constructor
 
-• **new SchemaFacadeBuilder**(`expressions`, `helper`): [`SchemaFacadeBuilder`](SchemaFacadeBuilder.md)
+• **new SchemaFacadeBuilder**(`exp`, `helper`): [`SchemaFacadeBuilder`](SchemaFacadeBuilder.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `expressions` | `Expressions` |
+| `exp` | `Expressions` |
 | `helper` | [`OrmBaseH3lp`](OrmBaseH3lp.md) |
 
 #### Returns
@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/infrastructure/facadeBuilder.ts#L10)
+[src/lib/schema/infrastructure/facadeBuilder.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/infrastructure/facadeBuilder.ts#L10)
 
 ## Methods
 
@@ -45,4 +45,4 @@
 
 #### Defined in
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/infrastructure/facadeBuilder.ts#L15)
+[src/lib/schema/infrastructure/facadeBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/infrastructure/facadeBuilder.ts#L15)

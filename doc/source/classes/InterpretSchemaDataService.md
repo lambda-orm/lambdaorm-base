@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/interpretSchemaDataService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/interpretSchemaDataService.ts#L7)
+[src/lib/schema/application/services/interpretSchemaDataService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/interpretSchemaDataService.ts#L7)
 
 ## Methods
 
@@ -53,4 +53,4 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/interpretSchemaDataService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/interpretSchemaDataService.ts#L9)
+[src/lib/schema/application/services/interpretSchemaDataService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/interpretSchemaDataService.ts#L9)

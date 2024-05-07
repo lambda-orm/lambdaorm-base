@@ -18,13 +18,13 @@
 
 ### constructor
 
-• **new SchemaExtender**(`expressions`, `helper`): [`SchemaExtender`](SchemaExtender.md)
+• **new SchemaExtender**(`exp`, `helper`): [`SchemaExtender`](SchemaExtender.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `expressions` | `Expressions` |
+| `exp` | `Expressions` |
 | `helper` | [`OrmBaseH3lp`](OrmBaseH3lp.md) |
 
 #### Returns
@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/schemaExtender.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/schemaExtender.ts#L14)
+[src/lib/schema/application/services/schemaExtender.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/schemaExtender.ts#L14)
 
 ## Methods
 
@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/schemaExtender.ts:162](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/schemaExtender.ts#L162)
+[src/lib/schema/application/services/schemaExtender.ts:162](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/schemaExtender.ts#L162)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/schemaExtender.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/schemaExtender.ts#L19)
+[src/lib/schema/application/services/schemaExtender.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/schemaExtender.ts#L19)
 
 ___
 
@@ -94,4 +94,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/schemaExtender.ts:179](https://github.com/lambda-orm/lambdaorm-base/blob/41a05895716d06facf8eeb89fc05145036aa7b9b/src/lib/schema/application/services/schemaExtender.ts#L179)
+[src/lib/schema/application/services/schemaExtender.ts:179](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/schemaExtender.ts#L179)

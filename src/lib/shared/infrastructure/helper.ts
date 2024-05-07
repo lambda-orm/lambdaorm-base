@@ -134,6 +134,7 @@ export class QueryHelper {
 		case SentenceAction.delete:
 			return SentenceCategory.delete
 		case SentenceAction.update:
+			return SentenceCategory.update
 		case SentenceAction.merge:
 		case SentenceAction.bulkMerge:
 		case SentenceAction.upsert:

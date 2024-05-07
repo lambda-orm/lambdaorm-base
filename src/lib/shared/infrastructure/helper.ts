@@ -160,24 +160,26 @@ export class QueryHelper {
 		case SentenceAction.dropFk:
 		case SentenceAction.dropIndex:
 			return SentenceCategory.drop
+		case SentenceAction.undefined:
+			return SentenceCategory.undefined
 		default:
 			throw new Error(`Invalid action ${action}`)
 		}
 	}
 
-	public getInfo (action:SentenceAction, entity:string): SentenceInfo {
+	public getInfo (action:SentenceAction, entity:string, type?:SentenceType): SentenceInfo {
 		const category = this.getSentenceCategory(action)
-		const type = this.getSentenceType(action)
+		const _type = type || this.getSentenceType(action)
 		return {
 			entity,
 			action,
 			category,
-			type,
+			type: _type,
 			// for retro-compatibility
 			read: category === SentenceCategory.select,
 			write: category !== SentenceCategory.select,
-			ddl: type === SentenceType.ddl,
-			dml: type === SentenceType.dml || type === SentenceType.dql
+			ddl: _type === SentenceType.ddl,
+			dml: _type === SentenceType.dml || _type === SentenceType.dql
 		}
 	}
 }

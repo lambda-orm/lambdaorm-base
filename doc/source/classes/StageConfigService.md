@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/config/stageConfigService.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/config/stageConfigService.ts#L6)
+[src/lib/schema/application/services/config/stageConfigService.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/application/services/config/stageConfigService.ts#L6)
 
 ## Properties
 
@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/config/stageConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/config/stageConfigService.ts#L4)
+[src/lib/schema/application/services/config/stageConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/application/services/config/stageConfigService.ts#L4)
 
 ## Methods
 
@@ -59,7 +59,7 @@
 
 #### Defined in
 
-[src/lib/schema/application/services/config/stageConfigService.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/config/stageConfigService.ts#L21)
+[src/lib/schema/application/services/config/stageConfigService.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/application/services/config/stageConfigService.ts#L21)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[src/lib/schema/application/services/config/stageConfigService.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/application/services/config/stageConfigService.ts#L10)
+[src/lib/schema/application/services/config/stageConfigService.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/application/services/config/stageConfigService.ts#L10)

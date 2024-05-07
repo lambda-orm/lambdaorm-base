@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:145](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/domain/schema.ts#L145)
+[src/lib/schema/domain/schema.ts:145](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/domain/schema.ts#L145)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:144](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/domain/schema.ts#L144)
+[src/lib/schema/domain/schema.ts:144](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/domain/schema.ts#L144)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:143](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/domain/schema.ts#L143)
+[src/lib/schema/domain/schema.ts:143](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/domain/schema.ts#L143)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:146](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/domain/schema.ts#L146)
+[src/lib/schema/domain/schema.ts:146](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/domain/schema.ts#L146)
 
 ___
 
@@ -61,14 +61,14 @@ ___
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:141](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/domain/schema.ts#L141)
+[src/lib/schema/domain/schema.ts:141](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/domain/schema.ts#L141)
 
 ___
 
 ### on
 
-• **on**: [`SentenceAction`](../enums/SentenceAction.md)[]
+• **on**: [`SentenceCategory`](../enums/SentenceCategory.md)[]
 
 #### Defined in
 
-[src/lib/schema/domain/schema.ts:142](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/schema/domain/schema.ts#L142)
+[src/lib/schema/domain/schema.ts:142](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/schema/domain/schema.ts#L142)

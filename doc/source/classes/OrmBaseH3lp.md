@@ -23,8 +23,8 @@
 - [logger](OrmBaseH3lp.md#logger)
 - [obj](OrmBaseH3lp.md#obj)
 - [operand](OrmBaseH3lp.md#operand)
+- [query](OrmBaseH3lp.md#query)
 - [schema](OrmBaseH3lp.md#schema)
-- [sql](OrmBaseH3lp.md#sql)
 - [str](OrmBaseH3lp.md#str)
 - [test](OrmBaseH3lp.md#test)
 - [utils](OrmBaseH3lp.md#utils)
@@ -55,7 +55,7 @@ ExprH3lp.constructor
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:190](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/shared/infrastructure/helper.ts#L190)
+[src/lib/shared/infrastructure/helper.ts:212](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L212)
 
 ## Properties
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:190](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/shared/infrastructure/helper.ts#L190)
+[src/lib/shared/infrastructure/helper.ts:212](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L212)
 
 ___
 
@@ -153,23 +153,23 @@ node_modules/3xpr/shared/infrastructure/helper.d.ts:6
 
 ___
 
+### query
+
+• **query**: [`QueryHelper`](QueryHelper.md)
+
+#### Defined in
+
+[src/lib/shared/infrastructure/helper.ts:210](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L210)
+
+___
+
 ### schema
 
 • **schema**: [`SchemaHelper`](SchemaHelper.md)
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:186](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/shared/infrastructure/helper.ts#L186)
-
-___
-
-### sql
-
-• **sql**: [`SqlHelper`](SqlHelper.md)
-
-#### Defined in
-
-[src/lib/shared/infrastructure/helper.ts:188](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/shared/infrastructure/helper.ts#L188)
+[src/lib/shared/infrastructure/helper.ts:208](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L208)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:189](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/shared/infrastructure/helper.ts#L189)
+[src/lib/shared/infrastructure/helper.ts:211](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L211)
 
 ___
 
@@ -245,4 +245,4 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:187](https://github.com/lambda-orm/lambdaorm-base/blob/7b6b74ecb98995ca00f3d0d7aa2f84db15cdd7eb/src/lib/shared/infrastructure/helper.ts#L187)
+[src/lib/shared/infrastructure/helper.ts:209](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L209)

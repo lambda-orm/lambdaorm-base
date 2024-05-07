@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### [1.6.1](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.6.0...v1.6.1) (2024-05-07)
 
-
-### Bug Fixes
+**Bug Fixes:**
 
 * bugfix on sentence catetory with action update ([9b21e86](https://github.com/FlavioLionelRita/lambdaorm-base/commit/9b21e8689acd2305a4bae966af6b658877a4045e)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

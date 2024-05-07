@@ -38,7 +38,7 @@
 		"luxon": "^3.4.4"
 	},
 	"devDependencies": {
-		"@babel/eslint-parser": "^7.23.10",
+		"@babel/eslint-parser": "^7.24.5",
 		"@types/jest": "^29.5.10",
 		"@types/mysql": "^2.15.21",
 		"@types/node": "^20.12.8",

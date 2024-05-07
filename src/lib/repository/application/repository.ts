@@ -2,7 +2,7 @@ import { Queryable } from '../domain/queryable'
 
 export interface IRepository<TEntity, TQuery> {
 
-	execute (expression: string, data?: any): Promise<any>
+	execute (query: string, data?: any): Promise<any>
 	insert(entity: TEntity): Promise<any>
 	insert(entity:TEntity, include: (value: TQuery, index: number, array: TQuery[]) => unknown): Promise<any>
 	insert (entity: TEntity, include?: (value: TQuery, index: number, array: TQuery[]) => unknown): Promise<any>

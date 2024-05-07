@@ -12,7 +12,7 @@ import { OrmBaseH3lp } from '../../../shared'
 export class SchemaExtender {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
-		private readonly expressions: Expressions,
+		private readonly exp: Expressions,
 		private readonly helper: OrmBaseH3lp
 	) {}
 
@@ -479,7 +479,7 @@ export class SchemaExtender {
 		for (const stage of schema.infrastructure.stages) {
 			const ruleDataSources = stage.sources.filter(p => dataSourcesNames.includes(p.name))
 			for (const ruleDataSource of ruleDataSources) {
-				if (ruleDataSource.condition === undefined || this.expressions.eval(ruleDataSource.condition, info)) {
+				if (ruleDataSource.condition === undefined || this.exp.eval(ruleDataSource.condition, info)) {
 					return true
 				}
 			}

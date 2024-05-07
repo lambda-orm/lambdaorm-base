@@ -8,7 +8,7 @@ import { SchemaFileHelper } from './schemaFileHelper'
 export class SchemaFacadeBuilder {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
-		private readonly expressions: Expressions,
+		private readonly exp: Expressions,
 		private readonly helper: OrmBaseH3lp
 	) {}
 
@@ -16,7 +16,7 @@ export class SchemaFacadeBuilder {
 		const schemaService = new SchemaService()
 		const createEntitiesService = new CreateEntitiesService(this.helper.schema)
 		const interpretSchemaDataService = new InterpretSchemaDataService(this.helper.schema)
-		const extender = new SchemaExtender(this.expressions, this.helper)
+		const extender = new SchemaExtender(this.exp, this.helper)
 		const createSchema = new CreateSchema(schemaService)
 		const initializeSchema = new InitializeSchema(schemaService)
 		const updateSchema = new UpdateSchema(createEntitiesService)

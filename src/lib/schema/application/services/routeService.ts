@@ -6,11 +6,11 @@ export class RouteService implements IRouteService {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (
 		private readonly stageConfigService: StageConfigService,
-		private readonly expressions:Expressions) {}
+		private readonly exp:Expressions) {}
 
 	public eval (source:SourceRule, info: SentenceInfo):boolean {
 		if (source.condition === undefined) return true
-		return this.expressions.eval(source.condition, info)
+		return this.exp.eval(source.condition, info)
 	}
 
 	public getSource (info: SentenceInfo, stage?: string):string {
@@ -21,7 +21,7 @@ export class RouteService implements IRouteService {
 			if (source.condition === undefined) {
 				return source.name
 			} else {
-				const result = this.expressions.eval(source.condition, info)
+				const result = this.exp.eval(source.condition, info)
 				if (result) {
 					return source.name
 				}

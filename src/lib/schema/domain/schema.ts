@@ -1,4 +1,4 @@
-import { SentenceAction } from './sentence'
+import { SentenceCategory } from './sentence'
 import { Dialect } from './dialect'
 export const DIALECT_DEFAULT = Dialect.MySQL
 
@@ -139,7 +139,7 @@ export interface Stage {
 }
 export interface ListenerConfig {
 	name: string
-	on: SentenceAction[]
+	on: SentenceCategory[]
 	condition?: string
 	before?:string
 	after?:string

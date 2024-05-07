@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L24)
+[src/lib/shared/infrastructure/helper.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L24)
 
 ## Methods
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L34)
+[src/lib/shared/infrastructure/helper.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L34)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:55](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L55)
+[src/lib/shared/infrastructure/helper.ts:55](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L55)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L46)
+[src/lib/shared/infrastructure/helper.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L46)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L42)
+[src/lib/shared/infrastructure/helper.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L42)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L30)
+[src/lib/shared/infrastructure/helper.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L30)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L26)
+[src/lib/shared/infrastructure/helper.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L26)
 
 ___
 
@@ -187,13 +187,13 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L38)
+[src/lib/shared/infrastructure/helper.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L38)
 
 ___
 
 ### getInfo
 
-▸ **getInfo**(`action`, `entity`): [`SentenceInfo`](../interfaces/SentenceInfo.md)
+▸ **getInfo**(`action`, `entity`, `type?`): [`SentenceInfo`](../interfaces/SentenceInfo.md)
 
 #### Parameters
 
@@ -201,6 +201,7 @@ ___
 | :------ | :------ |
 | `action` | [`SentenceAction`](../enums/SentenceAction.md) |
 | `entity` | `string` |
+| `type?` | [`SentenceType`](../enums/SentenceType.md) |
 
 #### Returns
 
@@ -208,7 +209,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:168](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L168)
+[src/lib/shared/infrastructure/helper.ts:170](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L170)
 
 ___
 
@@ -228,7 +229,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:116](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L116)
+[src/lib/shared/infrastructure/helper.ts:116](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L116)
 
 ___
 
@@ -248,7 +249,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L69)
+[src/lib/shared/infrastructure/helper.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L69)
 
 ___
 
@@ -268,7 +269,7 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L59)
+[src/lib/shared/infrastructure/helper.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L59)
 
 ___
 
@@ -288,4 +289,4 @@ ___
 
 #### Defined in
 
-[src/lib/shared/infrastructure/helper.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/shared/infrastructure/helper.ts#L63)
+[src/lib/shared/infrastructure/helper.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/shared/infrastructure/helper.ts#L63)

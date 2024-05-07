@@ -68,7 +68,7 @@ Operand.constructor
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:87](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L87)
+[src/lib/sentence/domain/sentence.ts:87](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L87)
 
 ## Properties
 
@@ -78,7 +78,7 @@ Operand.constructor
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L82)
+[src/lib/sentence/domain/sentence.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L82)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:81](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L81)
+[src/lib/sentence/domain/sentence.ts:81](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L81)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:78](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L78)
+[src/lib/sentence/domain/sentence.ts:78](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L78)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:83](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L83)
+[src/lib/sentence/domain/sentence.ts:83](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L83)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L85)
+[src/lib/sentence/domain/sentence.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L85)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:80](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L80)
+[src/lib/sentence/domain/sentence.ts:80](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L80)
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:79](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L79)
+[src/lib/sentence/domain/sentence.ts:79](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L79)
 
 ___
 
@@ -260,7 +260,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:84](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L84)
+[src/lib/sentence/domain/sentence.ts:84](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L84)
 
 ## Methods
 
@@ -322,7 +322,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:103](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L103)
+[src/lib/sentence/domain/sentence.ts:103](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L103)
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 #### Defined in
 
-[src/lib/sentence/domain/sentence.ts:99](https://github.com/lambda-orm/lambdaorm-base/blob/ebf23f0efda68734da44516482f9d879bcfaea24/src/lib/sentence/domain/sentence.ts#L99)
+[src/lib/sentence/domain/sentence.ts:99](https://github.com/lambda-orm/lambdaorm-base/blob/f0d71aa10e836415abad81a08fda57f8dc5c26a5/src/lib/sentence/domain/sentence.ts#L99)
 
 ___
 

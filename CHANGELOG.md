@@ -6,8 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.6.0](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.5.3...v1.6.0) (2024-05-07)
 
-
-### Features
+**Features:**
 
 * update query helper ([f0d71aa](https://github.com/FlavioLionelRita/lambdaorm-base/commit/f0d71aa10e836415abad81a08fda57f8dc5c26a5)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
 

@@ -1,49 +1,43 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / SchemaStateBuilder
 
 # Class: SchemaStateBuilder
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SchemaStateBuilder.md#constructor)
-
-### Methods
-
-- [build](SchemaStateBuilder.md#build)
-
 ## Constructors
 
-### constructor
+### new SchemaStateBuilder()
 
-• **new SchemaStateBuilder**(`exp`, `facade`, `helper`): [`SchemaStateBuilder`](SchemaStateBuilder.md)
+> **new SchemaStateBuilder**(`exp`, `facade`, `helper`): [`SchemaStateBuilder`](SchemaStateBuilder.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `exp` | `Expressions` |
-| `facade` | [`SchemaFacade`](SchemaFacade.md) |
-| `helper` | [`OrmBaseH3lp`](OrmBaseH3lp.md) |
+• **exp**: `Expressions`
+
+• **facade**: [`SchemaFacade`](SchemaFacade.md)
+
+• **helper**: [`OrmBaseH3lp`](OrmBaseH3lp.md)
 
 #### Returns
 
 [`SchemaStateBuilder`](SchemaStateBuilder.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/stateBuilder.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/stateBuilder.ts#L9)
+[src/lib/schema/infrastructure/stateBuilder.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/stateBuilder.ts#L9)
 
 ## Methods
 
-### build
+### build()
 
-▸ **build**(): [`SchemaState`](SchemaState.md)
+> **build**(): [`SchemaState`](SchemaState.md)
 
 #### Returns
 
 [`SchemaState`](SchemaState.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/stateBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/stateBuilder.ts#L15)
+[src/lib/schema/infrastructure/stateBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/stateBuilder.ts#L15)

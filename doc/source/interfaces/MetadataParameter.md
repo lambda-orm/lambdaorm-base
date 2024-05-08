@@ -1,41 +1,37 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / MetadataParameter
 
 # Interface: MetadataParameter
 
-## Table of contents
-
-### Properties
-
-- [children](MetadataParameter.md#children)
-- [name](MetadataParameter.md#name)
-- [type](MetadataParameter.md#type)
-
 ## Properties
 
-### children
+### children?
 
-• `Optional` **children**: [`MetadataParameter`](MetadataParameter.md)[]
+> `optional` **children**: [`MetadataParameter`](MetadataParameter.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L7)
+[src/lib/sentence/domain/metadata.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L7)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L5)
+[src/lib/sentence/domain/metadata.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L5)
 
-___
+***
 
 ### type
 
-• **type**: `string`
+> **type**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L6)
+[src/lib/sentence/domain/metadata.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L6)

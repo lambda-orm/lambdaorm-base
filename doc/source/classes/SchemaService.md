@@ -1,27 +1,16 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / SchemaService
 
 # Class: SchemaService
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SchemaService.md#constructor)
-
-### Methods
-
-- [complete](SchemaService.md#complete)
-- [newApplication](SchemaService.md#newapplication)
-- [newDomain](SchemaService.md#newdomain)
-- [newInfrastructure](SchemaService.md#newinfrastructure)
-- [newPathsApp](SchemaService.md#newpathsapp)
-- [newSchema](SchemaService.md#newschema)
-
 ## Constructors
 
-### constructor
+### new SchemaService()
 
-• **new SchemaService**(): [`SchemaService`](SchemaService.md)
+> **new SchemaService**(): [`SchemaService`](SchemaService.md)
 
 #### Returns
 
@@ -29,90 +18,88 @@
 
 ## Methods
 
-### complete
+### complete()
 
-▸ **complete**(`schema`): `void`
+> **complete**(`schema`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`Schema`](../interfaces/Schema.md) |
+• **schema**: [`Schema`](../interfaces/Schema.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaService.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaService.ts#L24)
+[src/lib/schema/application/services/schemaService.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaService.ts#L24)
 
-___
+***
 
-### newApplication
+### newApplication()
 
-▸ **newApplication**(): `undefined` \| [`ApplicationSchema`](../interfaces/ApplicationSchema.md)
+> **newApplication**(): `undefined` \| [`ApplicationSchema`](../interfaces/ApplicationSchema.md)
 
 #### Returns
 
 `undefined` \| [`ApplicationSchema`](../interfaces/ApplicationSchema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaService.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaService.ts#L16)
+[src/lib/schema/application/services/schemaService.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaService.ts#L16)
 
-___
+***
 
-### newDomain
+### newDomain()
 
-▸ **newDomain**(): [`DomainSchema`](../interfaces/DomainSchema.md)
+> **newDomain**(): [`DomainSchema`](../interfaces/DomainSchema.md)
 
 #### Returns
 
 [`DomainSchema`](../interfaces/DomainSchema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaService.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaService.ts#L12)
+[src/lib/schema/application/services/schemaService.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaService.ts#L12)
 
-___
+***
 
-### newInfrastructure
+### newInfrastructure()
 
-▸ **newInfrastructure**(): [`InfrastructureSchema`](../interfaces/InfrastructureSchema.md)
+> **newInfrastructure**(): [`InfrastructureSchema`](../interfaces/InfrastructureSchema.md)
 
 #### Returns
 
 [`InfrastructureSchema`](../interfaces/InfrastructureSchema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaService.ts#L8)
+[src/lib/schema/application/services/schemaService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaService.ts#L8)
 
-___
+***
 
-### newPathsApp
+### newPathsApp()
 
-▸ **newPathsApp**(): [`AppPathsConfig`](../interfaces/AppPathsConfig.md)
+> **newPathsApp**(): [`AppPathsConfig`](../interfaces/AppPathsConfig.md)
 
 #### Returns
 
 [`AppPathsConfig`](../interfaces/AppPathsConfig.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaService.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaService.ts#L20)
+[src/lib/schema/application/services/schemaService.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaService.ts#L20)
 
-___
+***
 
-### newSchema
+### newSchema()
 
-▸ **newSchema**(): [`Schema`](../interfaces/Schema.md)
+> **newSchema**(): [`Schema`](../interfaces/Schema.md)
 
 #### Returns
 
 [`Schema`](../interfaces/Schema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaService.ts#L4)
+[src/lib/schema/application/services/schemaService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaService.ts#L4)

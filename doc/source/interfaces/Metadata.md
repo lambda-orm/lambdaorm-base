@@ -1,206 +1,187 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Metadata
 
 # Interface: Metadata
 
-## Table of contents
-
-### Properties
-
-- [alias](Metadata.md#alias)
-- [children](Metadata.md#children)
-- [classtype](Metadata.md#classtype)
-- [clause](Metadata.md#clause)
-- [columns](Metadata.md#columns)
-- [constraints](Metadata.md#constraints)
-- [defaults](Metadata.md#defaults)
-- [entity](Metadata.md#entity)
-- [isRoot](Metadata.md#isroot)
-- [name](Metadata.md#name)
-- [number](Metadata.md#number)
-- [parameters](Metadata.md#parameters)
-- [pos](Metadata.md#pos)
-- [property](Metadata.md#property)
-- [relation](Metadata.md#relation)
-- [returnType](Metadata.md#returntype)
-- [type](Metadata.md#type)
-- [values](Metadata.md#values)
-
 ## Properties
 
-### alias
+### alias?
 
-• `Optional` **alias**: `string`
+> `optional` **alias**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L38)
+[src/lib/sentence/domain/metadata.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L38)
 
-___
+***
 
-### children
+### children?
 
-• `Optional` **children**: [`Metadata`](Metadata.md)[]
+> `optional` **children**: [`Metadata`](Metadata.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L26)
+[src/lib/sentence/domain/metadata.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L26)
 
-___
+***
 
 ### classtype
 
-• **classtype**: `string`
+> **classtype**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L23)
+[src/lib/sentence/domain/metadata.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L23)
 
-___
+***
 
-### clause
+### clause?
 
-• `Optional` **clause**: `string`
+> `optional` **clause**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L37)
+[src/lib/sentence/domain/metadata.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L37)
 
-___
+***
 
-### columns
+### columns?
 
-• `Optional` **columns**: [`Property`](Property.md)[]
+> `optional` **columns**: [`Property`](Property.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L30)
+[src/lib/sentence/domain/metadata.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L30)
 
-___
+***
 
-### constraints
+### constraints?
 
-• `Optional` **constraints**: [`Constraint`](Constraint.md)[]
+> `optional` **constraints**: [`Constraint`](Constraint.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L33)
+[src/lib/sentence/domain/metadata.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L33)
 
-___
+***
 
-### defaults
+### defaults?
 
-• `Optional` **defaults**: [`Behavior`](Behavior.md)[]
+> `optional` **defaults**: [`Behavior`](Behavior.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L35)
+[src/lib/sentence/domain/metadata.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L35)
 
-___
+***
 
-### entity
+### entity?
 
-• `Optional` **entity**: `string`
+> `optional` **entity**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L29)
+[src/lib/sentence/domain/metadata.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L29)
 
-___
+***
 
-### isRoot
+### isRoot?
 
-• `Optional` **isRoot**: `boolean`
+> `optional` **isRoot**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L39)
+[src/lib/sentence/domain/metadata.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L39)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L25)
+[src/lib/sentence/domain/metadata.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L25)
 
-___
+***
 
-### number
+### number?
 
-• `Optional` **number**: `number`
+> `optional` **number**: `number`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:40](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L40)
+[src/lib/sentence/domain/metadata.ts:40](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L40)
 
-___
+***
 
-### parameters
+### parameters?
 
-• `Optional` **parameters**: `Parameter`[]
+> `optional` **parameters**: `Parameter`[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L32)
+[src/lib/sentence/domain/metadata.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L32)
 
-___
+***
 
 ### pos
 
-• **pos**: `Position`
+> **pos**: `Position`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L24)
+[src/lib/sentence/domain/metadata.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L24)
 
-___
+***
 
-### property
+### property?
 
-• `Optional` **property**: `string`
+> `optional` **property**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L31)
+[src/lib/sentence/domain/metadata.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L31)
 
-___
+***
 
-### relation
+### relation?
 
-• `Optional` **relation**: [`Relation`](Relation.md)
+> `optional` **relation**: [`Relation`](Relation.md)
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L36)
+[src/lib/sentence/domain/metadata.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L36)
 
-___
+***
 
-### returnType
+### returnType?
 
-• `Optional` **returnType**: `string`
+> `optional` **returnType**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L28)
+[src/lib/sentence/domain/metadata.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L28)
 
-___
+***
 
 ### type
 
-• **type**: `string`
+> **type**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L27)
+[src/lib/sentence/domain/metadata.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L27)
 
-___
+***
 
-### values
+### values?
 
-• `Optional` **values**: [`Behavior`](Behavior.md)[]
+> `optional` **values**: [`Behavior`](Behavior.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L34)
+[src/lib/sentence/domain/metadata.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L34)

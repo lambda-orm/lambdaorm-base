@@ -1,55 +1,47 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / UpdateSchema
 
 # Class: UpdateSchema
 
-## Table of contents
-
-### Constructors
-
-- [constructor](UpdateSchema.md#constructor)
-
-### Methods
-
-- [update](UpdateSchema.md#update)
-
 ## Constructors
 
-### constructor
+### new UpdateSchema()
 
-• **new UpdateSchema**(`createEntitiesService`): [`UpdateSchema`](UpdateSchema.md)
+> **new UpdateSchema**(`createEntitiesService`): [`UpdateSchema`](UpdateSchema.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `createEntitiesService` | [`CreateEntitiesService`](CreateEntitiesService.md) |
+• **createEntitiesService**: [`CreateEntitiesService`](CreateEntitiesService.md)
 
 #### Returns
 
 [`UpdateSchema`](UpdateSchema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/useCases/update.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/useCases/update.ts#L7)
+[src/lib/schema/application/useCases/update.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/useCases/update.ts#L7)
 
 ## Methods
 
-### update
+### update()
 
-▸ **update**(`schema`, `data`, `name`): `Type`
+> **update**(`schema`, `data`, `name`): `Type`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`Schema`](../interfaces/Schema.md) |
-| `data` | `any` |
-| `name` | `string` |
+• **schema**: [`Schema`](../interfaces/Schema.md)
+
+• **data**: `any`
+
+• **name**: `string`
 
 #### Returns
 
 `Type`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/useCases/update.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/useCases/update.ts#L9)
+[src/lib/schema/application/useCases/update.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/useCases/update.ts#L9)

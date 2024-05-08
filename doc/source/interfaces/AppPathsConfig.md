@@ -1,41 +1,37 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / AppPathsConfig
 
 # Interface: AppPathsConfig
 
-## Table of contents
-
-### Properties
-
-- [data](AppPathsConfig.md#data)
-- [domain](AppPathsConfig.md#domain)
-- [src](AppPathsConfig.md#src)
-
 ## Properties
 
-### data
+### data?
 
-• `Optional` **data**: `string`
+> `optional` **data**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:155](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L155)
+[src/lib/schema/domain/schema.ts:155](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L155)
 
-___
+***
 
-### domain
+### domain?
 
-• `Optional` **domain**: `string`
+> `optional` **domain**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:156](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L156)
+[src/lib/schema/domain/schema.ts:156](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L156)
 
-___
+***
 
-### src
+### src?
 
-• `Optional` **src**: `string`
+> `optional` **src**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:154](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L154)
+[src/lib/schema/domain/schema.ts:154](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L154)

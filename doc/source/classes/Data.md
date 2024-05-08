@@ -1,195 +1,169 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Data
 
 # Class: Data
 
-## Table of contents
-
-### Constructors
-
-- [constructor](Data.md#constructor)
-
-### Properties
-
-- [data](Data.md#data)
-- [parent](Data.md#parent)
-
-### Methods
-
-- [clone](Data.md#clone)
-- [contains](Data.md#contains)
-- [get](Data.md#get)
-- [getData](Data.md#getdata)
-- [init](Data.md#init)
-- [newData](Data.md#newdata)
-- [set](Data.md#set)
-
 ## Constructors
 
-### constructor
+### new Data()
 
-• **new Data**(`data`, `parent?`): [`Data`](Data.md)
+> **new Data**(`data`, `parent`?): [`Data`](Data.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
-| `parent?` | [`Data`](Data.md) |
+• **data**: `any`
+
+• **parent?**: [`Data`](Data.md)
 
 #### Returns
 
 [`Data`](Data.md)
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L4)
+[src/lib/query/domain/data.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L4)
 
 ## Properties
 
 ### data
 
-• **data**: `any`
+> **data**: `any`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L2)
+[src/lib/query/domain/data.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L2)
 
-___
+***
 
 ### parent
 
-• **parent**: `any`
+> **parent**: `any`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L3)
+[src/lib/query/domain/data.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L3)
 
 ## Methods
 
-### clone
+### clone()
 
-▸ **clone**(): [`Data`](Data.md)
+> **clone**(): [`Data`](Data.md)
 
 #### Returns
 
 [`Data`](Data.md)
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L13)
+[src/lib/query/domain/data.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L13)
 
-___
+***
 
-### contains
+### contains()
 
-▸ **contains**(`name`): `boolean`
+> **contains**(`name`): `boolean`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L25)
+[src/lib/query/domain/data.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L25)
 
-___
+***
 
-### get
+### get()
 
-▸ **get**(`name`): `any`
+> **get**(`name`): `any`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
 `any`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L35)
+[src/lib/query/domain/data.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L35)
 
-___
+***
 
-### getData
+### getData()
 
-▸ **getData**(`variable`): `any`
+> **getData**(`variable`): `any`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `variable` | `string` |
+• **variable**: `string`
 
 #### Returns
 
 `any`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L19)
+[src/lib/query/domain/data.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L19)
 
-___
+***
 
-### init
+### init()
 
-▸ **init**(`name`, `value`): `void`
+> **init**(`name`, `value`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `value` | `any` |
+• **name**: `string`
+
+• **value**: `any`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:56](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L56)
+[src/lib/query/domain/data.ts:56](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L56)
 
-___
+***
 
-### newData
+### newData()
 
-▸ **newData**(): [`Data`](Data.md)
+> **newData**(): [`Data`](Data.md)
 
 #### Returns
 
 [`Data`](Data.md)
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L9)
+[src/lib/query/domain/data.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L9)
 
-___
+***
 
-### set
+### set()
 
-▸ **set**(`name`, `value`): `void`
+> **set**(`name`, `value`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `value` | `any` |
+• **name**: `string`
+
+• **value**: `any`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/data.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/data.ts#L46)
+[src/lib/query/domain/data.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/data.ts#L46)

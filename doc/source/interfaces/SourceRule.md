@@ -1,30 +1,27 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / SourceRule
 
 # Interface: SourceRule
 
-## Table of contents
-
-### Properties
-
-- [condition](SourceRule.md#condition)
-- [name](SourceRule.md#name)
-
 ## Properties
 
-### condition
+### condition?
 
-• `Optional` **condition**: `string`
+> `optional` **condition**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:134](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L134)
+[src/lib/schema/domain/schema.ts:134](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L134)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:133](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L133)
+[src/lib/schema/domain/schema.ts:133](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L133)

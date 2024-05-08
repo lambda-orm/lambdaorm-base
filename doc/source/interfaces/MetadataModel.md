@@ -1,41 +1,37 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / MetadataModel
 
 # Interface: MetadataModel
 
-## Table of contents
-
-### Properties
-
-- [children](MetadataModel.md#children)
-- [name](MetadataModel.md#name)
-- [type](MetadataModel.md#type)
-
 ## Properties
 
-### children
+### children?
 
-• `Optional` **children**: [`MetadataModel`](MetadataModel.md)[]
+> `optional` **children**: [`MetadataModel`](MetadataModel.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L13)
+[src/lib/sentence/domain/metadata.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L13)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L11)
+[src/lib/sentence/domain/metadata.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L11)
 
-___
+***
 
 ### type
 
-• **type**: `string`
+> **type**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L12)
+[src/lib/sentence/domain/metadata.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L12)

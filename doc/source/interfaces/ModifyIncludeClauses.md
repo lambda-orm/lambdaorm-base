@@ -1,36 +1,31 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / ModifyIncludeClauses
 
 # Interface: ModifyIncludeClauses\<T\>
 
 ## Type parameters
 
-| Name |
-| :------ |
-| `T` |
-
-## Table of contents
-
-### Methods
-
-- [filter](ModifyIncludeClauses.md#filter)
+• **T**
 
 ## Methods
 
-### filter
+### filter()
 
-▸ **filter**(`predicate`, `thisArg?`): [`ModifyFilterClauses`](ModifyFilterClauses.md)\<`T`\>
+> **filter**(`predicate`, `thisArg`?): [`ModifyFilterClauses`](ModifyFilterClauses.md)\<`T`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `predicate` | (`value`: `T`, `index`: `number`, `array`: `T`[]) => `unknown` |
-| `thisArg?` | `any` |
+• **predicate**
+
+• **thisArg?**: `any`
 
 #### Returns
 
 [`ModifyFilterClauses`](ModifyFilterClauses.md)\<`T`\>
 
-#### Defined in
+#### Source
 
-[src/lib/repository/domain/queryable.ts:224](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/domain/queryable.ts#L224)
+[src/lib/repository/domain/queryable.ts:224](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/domain/queryable.ts#L224)

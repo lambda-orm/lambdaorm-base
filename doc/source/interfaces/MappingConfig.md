@@ -1,41 +1,37 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / MappingConfig
 
 # Interface: MappingConfig
-
-## Table of contents
-
-### Properties
-
-- [inconsistency](MappingConfig.md#inconsistency)
-- [mapping](MappingConfig.md#mapping)
-- [pending](MappingConfig.md#pending)
 
 ## Properties
 
 ### inconsistency
 
-• **inconsistency**: `any`[]
+> **inconsistency**: `any`[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:198](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L198)
+[src/lib/schema/domain/schema.ts:198](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L198)
 
-___
+***
 
 ### mapping
 
-• **mapping**: `any`
+> **mapping**: `any`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:196](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L196)
+[src/lib/schema/domain/schema.ts:196](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L196)
 
-___
+***
 
 ### pending
 
-• **pending**: `any`[]
+> **pending**: `any`[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:197](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L197)
+[src/lib/schema/domain/schema.ts:197](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L197)

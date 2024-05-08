@@ -1,56 +1,49 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / InterpretSchemaDataService
 
 # Class: InterpretSchemaDataService
 
-## Table of contents
-
-### Constructors
-
-- [constructor](InterpretSchemaDataService.md#constructor)
-
-### Methods
-
-- [completeSchemaData](InterpretSchemaDataService.md#completeschemadata)
-
 ## Constructors
 
-### constructor
+### new InterpretSchemaDataService()
 
-• **new InterpretSchemaDataService**(`helper`): [`InterpretSchemaDataService`](InterpretSchemaDataService.md)
+> **new InterpretSchemaDataService**(`helper`): [`InterpretSchemaDataService`](InterpretSchemaDataService.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `helper` | [`SchemaHelper`](SchemaHelper.md) |
+• **helper**: [`SchemaHelper`](SchemaHelper.md)
 
 #### Returns
 
 [`InterpretSchemaDataService`](InterpretSchemaDataService.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/interpretSchemaDataService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/interpretSchemaDataService.ts#L7)
+[src/lib/schema/application/services/interpretSchemaDataService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/interpretSchemaDataService.ts#L7)
 
 ## Methods
 
-### completeSchemaData
+### completeSchemaData()
 
-▸ **completeSchemaData**(`source`, `name`, `type`, `schemaData`): `void`
+> **completeSchemaData**(`source`, `name`, `type`, `schemaData`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `source` | `any` |
-| `name` | `string` |
-| `type` | `Type` |
-| `schemaData` | [`SchemaData`](../interfaces/SchemaData.md) |
+• **source**: `any`
+
+• **name**: `string`
+
+• **type**: `Type`
+
+• **schemaData**: [`SchemaData`](../interfaces/SchemaData.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/interpretSchemaDataService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/interpretSchemaDataService.ts#L9)
+[src/lib/schema/application/services/interpretSchemaDataService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/interpretSchemaDataService.ts#L9)

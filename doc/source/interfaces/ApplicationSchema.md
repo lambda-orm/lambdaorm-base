@@ -1,41 +1,37 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / ApplicationSchema
 
 # Interface: ApplicationSchema
 
-## Table of contents
-
-### Properties
-
-- [end](ApplicationSchema.md#end)
-- [listeners](ApplicationSchema.md#listeners)
-- [start](ApplicationSchema.md#start)
-
 ## Properties
 
-### end
+### end?
 
-• `Optional` **end**: [`TaskConfig`](TaskConfig.md)[]
+> `optional` **end**: [`TaskConfig`](TaskConfig.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:179](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L179)
+[src/lib/schema/domain/schema.ts:179](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L179)
 
-___
+***
 
-### listeners
+### listeners?
 
-• `Optional` **listeners**: [`ListenerConfig`](ListenerConfig.md)[]
+> `optional` **listeners**: [`ListenerConfig`](ListenerConfig.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:178](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L178)
+[src/lib/schema/domain/schema.ts:178](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L178)
 
-___
+***
 
-### start
+### start?
 
-• `Optional` **start**: [`TaskConfig`](TaskConfig.md)[]
+> `optional` **start**: [`TaskConfig`](TaskConfig.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:177](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L177)
+[src/lib/schema/domain/schema.ts:177](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L177)

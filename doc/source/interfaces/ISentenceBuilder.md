@@ -1,29 +1,25 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / ISentenceBuilder
 
 # Interface: ISentenceBuilder
 
-## Table of contents
-
-### Methods
-
-- [build](ISentenceBuilder.md#build)
-
 ## Methods
 
-### build
+### build()
 
-▸ **build**(`query`): [`Sentence`](../classes/Sentence.md)
+> **build**(`query`): [`Sentence`](../classes/Sentence.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `query` | `string` |
+• **query**: `string`
 
 #### Returns
 
 [`Sentence`](../classes/Sentence.md)
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/services.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/services.ts#L5)
+[src/lib/sentence/domain/services.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/services.ts#L5)

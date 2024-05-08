@@ -1,52 +1,47 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Source
 
 # Interface: Source
-
-## Table of contents
-
-### Properties
-
-- [connection](Source.md#connection)
-- [dialect](Source.md#dialect)
-- [mapping](Source.md#mapping)
-- [name](Source.md#name)
 
 ## Properties
 
 ### connection
 
-• **connection**: `any`
+> **connection**: `any`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:130](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L130)
+[src/lib/schema/domain/schema.ts:130](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L130)
 
-___
+***
 
 ### dialect
 
-• **dialect**: [`Dialect`](../enums/Dialect.md)
+> **dialect**: [`Dialect`](../enumerations/Dialect.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:128](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L128)
+[src/lib/schema/domain/schema.ts:128](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L128)
 
-___
+***
 
 ### mapping
 
-• **mapping**: `string`
+> **mapping**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L129)
+[src/lib/schema/domain/schema.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L129)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:127](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L127)
+[src/lib/schema/domain/schema.ts:127](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L127)

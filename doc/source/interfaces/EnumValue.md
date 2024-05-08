@@ -1,30 +1,27 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / EnumValue
 
 # Interface: EnumValue
-
-## Table of contents
-
-### Properties
-
-- [name](EnumValue.md#name)
-- [value](EnumValue.md#value)
 
 ## Properties
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L11)
+[src/lib/schema/domain/schema.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L11)
 
-___
+***
 
 ### value
 
-• **value**: `any`
+> **value**: `any`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L12)
+[src/lib/schema/domain/schema.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L12)

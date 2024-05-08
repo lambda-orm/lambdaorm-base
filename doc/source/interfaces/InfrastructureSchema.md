@@ -1,74 +1,67 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / InfrastructureSchema
 
 # Interface: InfrastructureSchema
 
-## Table of contents
-
-### Properties
-
-- [mappings](InfrastructureSchema.md#mappings)
-- [paths](InfrastructureSchema.md#paths)
-- [server](InfrastructureSchema.md#server)
-- [sources](InfrastructureSchema.md#sources)
-- [stages](InfrastructureSchema.md#stages)
-- [views](InfrastructureSchema.md#views)
-
 ## Properties
 
-### mappings
+### mappings?
 
-• `Optional` **mappings**: [`Mapping`](Mapping.md)[]
+> `optional` **mappings**: [`Mapping`](Mapping.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:170](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L170)
+[src/lib/schema/domain/schema.ts:170](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L170)
 
-___
+***
 
-### paths
+### paths?
 
-• `Optional` **paths**: [`AppPathsConfig`](AppPathsConfig.md)
+> `optional` **paths**: [`AppPathsConfig`](AppPathsConfig.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:169](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L169)
+[src/lib/schema/domain/schema.ts:169](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L169)
 
-___
+***
 
-### server
+### server?
 
-• `Optional` **server**: [`ServerConfig`](ServerConfig.md)
+> `optional` **server**: [`ServerConfig`](ServerConfig.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:174](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L174)
+[src/lib/schema/domain/schema.ts:174](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L174)
 
-___
+***
 
-### sources
+### sources?
 
-• `Optional` **sources**: [`Source`](Source.md)[]
+> `optional` **sources**: [`Source`](Source.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L172)
+[src/lib/schema/domain/schema.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L172)
 
-___
+***
 
-### stages
+### stages?
 
-• `Optional` **stages**: [`Stage`](Stage.md)[]
+> `optional` **stages**: [`Stage`](Stage.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:173](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L173)
+[src/lib/schema/domain/schema.ts:173](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L173)
 
-___
+***
 
-### views
+### views?
 
-• `Optional` **views**: [`View`](View.md)[]
+> `optional` **views**: [`View`](View.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:171](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L171)
+[src/lib/schema/domain/schema.ts:171](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L171)

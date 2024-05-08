@@ -1,36 +1,31 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / ModifyFilterClauses
 
 # Interface: ModifyFilterClauses\<T\>
 
 ## Type parameters
 
-| Name |
-| :------ |
-| `T` |
-
-## Table of contents
-
-### Methods
-
-- [include](ModifyFilterClauses.md#include)
+• **T**
 
 ## Methods
 
-### include
+### include()
 
-▸ **include**(`predicate`, `thisArg?`): `void`
+> **include**(`predicate`, `thisArg`?): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `predicate` | (`value`: `T`, `index`: `number`, `array`: `T`[]) => `unknown` |
-| `thisArg?` | `any` |
+• **predicate**
+
+• **thisArg?**: `any`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/repository/domain/queryable.ts:220](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/domain/queryable.ts#L220)
+[src/lib/repository/domain/queryable.ts:220](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/domain/queryable.ts#L220)

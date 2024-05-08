@@ -1,54 +1,45 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / InitializeSchema
 
 # Class: InitializeSchema
 
-## Table of contents
-
-### Constructors
-
-- [constructor](InitializeSchema.md#constructor)
-
-### Methods
-
-- [initialize](InitializeSchema.md#initialize)
-
 ## Constructors
 
-### constructor
+### new InitializeSchema()
 
-• **new InitializeSchema**(`schemaService`): [`InitializeSchema`](InitializeSchema.md)
+> **new InitializeSchema**(`schemaService`): [`InitializeSchema`](InitializeSchema.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `schemaService` | [`SchemaService`](SchemaService.md) |
+• **schemaService**: [`SchemaService`](SchemaService.md)
 
 #### Returns
 
 [`InitializeSchema`](InitializeSchema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/useCases/initialize.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/useCases/initialize.ts#L6)
+[src/lib/schema/application/useCases/initialize.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/useCases/initialize.ts#L6)
 
 ## Methods
 
-### initialize
+### initialize()
 
-▸ **initialize**(`schema`, `args`): [`Schema`](../interfaces/Schema.md)
+> **initialize**(`schema`, `args`): [`Schema`](../interfaces/Schema.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`Schema`](../interfaces/Schema.md) |
-| `args` | [`InitializeSchemaArgs`](../interfaces/InitializeSchemaArgs.md) |
+• **schema**: [`Schema`](../interfaces/Schema.md)
+
+• **args**: [`InitializeSchemaArgs`](../interfaces/InitializeSchemaArgs.md)
 
 #### Returns
 
 [`Schema`](../interfaces/Schema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/useCases/initialize.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/useCases/initialize.ts#L10)
+[src/lib/schema/application/useCases/initialize.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/useCases/initialize.ts#L10)

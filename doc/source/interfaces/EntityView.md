@@ -1,41 +1,37 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / EntityView
 
 # Interface: EntityView
 
-## Table of contents
-
-### Properties
-
-- [exclude](EntityView.md#exclude)
-- [name](EntityView.md#name)
-- [properties](EntityView.md#properties)
-
 ## Properties
 
-### exclude
+### exclude?
 
-• `Optional` **exclude**: `boolean`
+> `optional` **exclude**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:119](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L119)
+[src/lib/schema/domain/schema.ts:119](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L119)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:118](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L118)
+[src/lib/schema/domain/schema.ts:118](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L118)
 
-___
+***
 
 ### properties
 
-• **properties**: [`PropertyView`](PropertyView.md)[]
+> **properties**: [`PropertyView`](PropertyView.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:120](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L120)
+[src/lib/schema/domain/schema.ts:120](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L120)

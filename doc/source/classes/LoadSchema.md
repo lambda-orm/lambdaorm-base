@@ -1,58 +1,53 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / LoadSchema
 
 # Class: LoadSchema
 
-## Table of contents
-
-### Constructors
-
-- [constructor](LoadSchema.md#constructor)
-
-### Methods
-
-- [load](LoadSchema.md#load)
-
 ## Constructors
 
-### constructor
+### new LoadSchema()
 
-• **new LoadSchema**(`source`, `domain`, `mapping`, `stage`, `view`, `helper`): [`LoadSchema`](LoadSchema.md)
+> **new LoadSchema**(`source`, `domain`, `mapping`, `stage`, `view`, `helper`): [`LoadSchema`](LoadSchema.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `source` | [`DataSourceConfigService`](DataSourceConfigService.md) |
-| `domain` | [`DomainConfigService`](DomainConfigService.md) |
-| `mapping` | [`MappingsConfigService`](MappingsConfigService.md) |
-| `stage` | [`StageConfigService`](StageConfigService.md) |
-| `view` | [`ViewsConfigService`](ViewsConfigService.md) |
-| `helper` | [`OrmBaseH3lp`](OrmBaseH3lp.md) |
+• **source**: [`DataSourceConfigService`](DataSourceConfigService.md)
+
+• **domain**: [`DomainConfigService`](DomainConfigService.md)
+
+• **mapping**: [`MappingsConfigService`](MappingsConfigService.md)
+
+• **stage**: [`StageConfigService`](StageConfigService.md)
+
+• **view**: [`ViewsConfigService`](ViewsConfigService.md)
+
+• **helper**: [`OrmBaseH3lp`](OrmBaseH3lp.md)
 
 #### Returns
 
 [`LoadSchema`](LoadSchema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/useCases/load.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/useCases/load.ts#L11)
+[src/lib/schema/application/useCases/load.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/useCases/load.ts#L11)
 
 ## Methods
 
-### load
+### load()
 
-▸ **load**(`source`): [`Schema`](../interfaces/Schema.md)
+> **load**(`source`): [`Schema`](../interfaces/Schema.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `source` | [`Schema`](../interfaces/Schema.md) |
+• **source**: [`Schema`](../interfaces/Schema.md)
 
 #### Returns
 
 [`Schema`](../interfaces/Schema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/useCases/load.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/useCases/load.ts#L18)
+[src/lib/schema/application/useCases/load.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/useCases/load.ts#L18)

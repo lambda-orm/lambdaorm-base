@@ -1,51 +1,26 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / DomainConfigService
 
 # Class: DomainConfigService
 
-## Hierarchy
+## Extends
 
 - `DomainConfigServiceBase`\<[`Entity`](../interfaces/Entity.md), [`Property`](../interfaces/Property.md)\>
 
-  ↳ **`DomainConfigService`**
-
-## Table of contents
-
-### Constructors
-
-- [constructor](DomainConfigService.md#constructor)
-
-### Properties
-
-- [entities](DomainConfigService.md#entities)
-- [enums](DomainConfigService.md#enums)
-
-### Methods
-
-- [existsProperty](DomainConfigService.md#existsproperty)
-- [getAutoIncrement](DomainConfigService.md#getautoincrement)
-- [getEntity](DomainConfigService.md#getentity)
-- [getEnum](DomainConfigService.md#getenum)
-- [getFieldIds](DomainConfigService.md#getfieldids)
-- [getForcedEntity](DomainConfigService.md#getforcedentity)
-- [getProperty](DomainConfigService.md#getproperty)
-- [getRelation](DomainConfigService.md#getrelation)
-- [isChild](DomainConfigService.md#ischild)
-- [listEntities](DomainConfigService.md#listentities)
-- [sortByDependencies](DomainConfigService.md#sortbydependencies)
-- [sortByRelations](DomainConfigService.md#sortbyrelations)
-
 ## Constructors
 
-### constructor
+### new DomainConfigService()
 
-• **new DomainConfigService**(`entities?`, `enums?`): [`DomainConfigService`](DomainConfigService.md)
+> **new DomainConfigService**(`entities`, `enums`): [`DomainConfigService`](DomainConfigService.md)
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `entities` | [`Entity`](../interfaces/Entity.md)[] | `[]` |
-| `enums` | [`Enum`](../interfaces/Enum.md)[] | `[]` |
+• **entities**: [`Entity`](../interfaces/Entity.md)[]= `[]`
+
+• **enums**: [`Enum`](../interfaces/Enum.md)[]= `[]`
 
 #### Returns
 
@@ -53,52 +28,51 @@
 
 #### Overrides
 
-DomainConfigServiceBase\&lt;Entity, Property\&gt;.constructor
+`DomainConfigServiceBase<Entity, Property>.constructor`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigService.ts#L8)
+[src/lib/schema/application/services/config/domainConfigService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigService.ts#L8)
 
 ## Properties
 
 ### entities
 
-• **entities**: [`Entity`](../interfaces/Entity.md)[]
+> **entities**: [`Entity`](../interfaces/Entity.md)[]
 
 #### Overrides
 
-DomainConfigServiceBase.entities
+`DomainConfigServiceBase.entities`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigService.ts#L5)
+[src/lib/schema/application/services/config/domainConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigService.ts#L5)
 
-___
+***
 
 ### enums
 
-• **enums**: [`Enum`](../interfaces/Enum.md)[]
+> **enums**: [`Enum`](../interfaces/Enum.md)[]
 
 #### Overrides
 
-DomainConfigServiceBase.enums
+`DomainConfigServiceBase.enums`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigService.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigService.ts#L6)
+[src/lib/schema/application/services/config/domainConfigService.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigService.ts#L6)
 
 ## Methods
 
-### existsProperty
+### existsProperty()
 
-▸ **existsProperty**(`entityName`, `name`): `boolean`
+> **existsProperty**(`entityName`, `name`): `boolean`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entityName` | `string` |
-| `name` | `string` |
+• **entityName**: `string`
+
+• **name**: `string`
 
 #### Returns
 
@@ -106,23 +80,21 @@ DomainConfigServiceBase.enums
 
 #### Inherited from
 
-DomainConfigServiceBase.existsProperty
+`DomainConfigServiceBase.existsProperty`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L38)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L38)
 
-___
+***
 
-### getAutoIncrement
+### getAutoIncrement()
 
-▸ **getAutoIncrement**(`entityName`): `undefined` \| [`Property`](../interfaces/Property.md)
+> **getAutoIncrement**(`entityName`): `undefined` \| [`Property`](../interfaces/Property.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entityName` | `string` |
+• **entityName**: `string`
 
 #### Returns
 
@@ -130,23 +102,21 @@ ___
 
 #### Inherited from
 
-DomainConfigServiceBase.getAutoIncrement
+`DomainConfigServiceBase.getAutoIncrement`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L57)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L57)
 
-___
+***
 
-### getEntity
+### getEntity()
 
-▸ **getEntity**(`name`): `undefined` \| [`Entity`](../interfaces/Entity.md)
+> **getEntity**(`name`): `undefined` \| [`Entity`](../interfaces/Entity.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
@@ -154,23 +124,21 @@ ___
 
 #### Inherited from
 
-DomainConfigServiceBase.getEntity
+`DomainConfigServiceBase.getEntity`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L11)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L11)
 
-___
+***
 
-### getEnum
+### getEnum()
 
-▸ **getEnum**(`name`): `undefined` \| [`Enum`](../interfaces/Enum.md)
+> **getEnum**(`name`): `undefined` \| [`Enum`](../interfaces/Enum.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
@@ -178,23 +146,21 @@ ___
 
 #### Inherited from
 
-DomainConfigServiceBase.getEnum
+`DomainConfigServiceBase.getEnum`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L23)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L23)
 
-___
+***
 
-### getFieldIds
+### getFieldIds()
 
-▸ **getFieldIds**(`entityName`): `undefined` \| [`Property`](../interfaces/Property.md)[]
+> **getFieldIds**(`entityName`): `undefined` \| [`Property`](../interfaces/Property.md)[]
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entityName` | `string` |
+• **entityName**: `string`
 
 #### Returns
 
@@ -202,23 +168,21 @@ ___
 
 #### Inherited from
 
-DomainConfigServiceBase.getFieldIds
+`DomainConfigServiceBase.getFieldIds`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L65)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L65)
 
-___
+***
 
-### getForcedEntity
+### getForcedEntity()
 
-▸ **getForcedEntity**(`name`): [`Entity`](../interfaces/Entity.md)
+> **getForcedEntity**(`name`): [`Entity`](../interfaces/Entity.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
@@ -226,24 +190,23 @@ ___
 
 #### Inherited from
 
-DomainConfigServiceBase.getForcedEntity
+`DomainConfigServiceBase.getForcedEntity`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L15)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L15)
 
-___
+***
 
-### getProperty
+### getProperty()
 
-▸ **getProperty**(`entityName`, `name`): [`Property`](../interfaces/Property.md)
+> **getProperty**(`entityName`, `name`): [`Property`](../interfaces/Property.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entityName` | `string` |
-| `name` | `string` |
+• **entityName**: `string`
+
+• **name**: `string`
 
 #### Returns
 
@@ -251,24 +214,23 @@ ___
 
 #### Inherited from
 
-DomainConfigServiceBase.getProperty
+`DomainConfigServiceBase.getProperty`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:45](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L45)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:45](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L45)
 
-___
+***
 
-### getRelation
+### getRelation()
 
-▸ **getRelation**(`entity`, `relation`): [`RelationInfo`](../interfaces/RelationInfo.md)
+> **getRelation**(`entity`, `relation`): [`RelationInfo`](../interfaces/RelationInfo.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `string` |
-| `relation` | `string` |
+• **entity**: `string`
+
+• **relation**: `string`
 
 #### Returns
 
@@ -276,23 +238,21 @@ ___
 
 #### Inherited from
 
-DomainConfigServiceBase.getRelation
+`DomainConfigServiceBase.getRelation`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:284](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L284)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:284](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L284)
 
-___
+***
 
-### isChild
+### isChild()
 
-▸ **isChild**(`entityName`): `boolean`
+> **isChild**(`entityName`): `boolean`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entityName` | `string` |
+• **entityName**: `string`
 
 #### Returns
 
@@ -300,17 +260,17 @@ ___
 
 #### Inherited from
 
-DomainConfigServiceBase.isChild
+`DomainConfigServiceBase.isChild`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L27)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L27)
 
-___
+***
 
-### listEntities
+### listEntities()
 
-▸ **listEntities**(): `string`[]
+> **listEntities**(): `string`[]
 
 #### Returns
 
@@ -318,25 +278,25 @@ ___
 
 #### Inherited from
 
-DomainConfigServiceBase.listEntities
+`DomainConfigServiceBase.listEntities`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L76)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L76)
 
-___
+***
 
-### sortByDependencies
+### sortByDependencies()
 
-▸ **sortByDependencies**(`entities?`): `string`[]
+> **sortByDependencies**(`entities`): `string`[]
 
 Sort a list of entities according to their dependencies
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `entities` | `string`[] | `[]` | entities to order |
+• **entities**: `string`[]= `[]`
+
+entities to order
 
 #### Returns
 
@@ -346,26 +306,27 @@ returns the sorted entities
 
 #### Inherited from
 
-DomainConfigServiceBase.sortByDependencies
+`DomainConfigServiceBase.sortByDependencies`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:139](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L139)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:139](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L139)
 
-___
+***
 
-### sortByRelations
+### sortByRelations()
 
-▸ **sortByRelations**(`mainEntities`, `allEntities`): `string`[]
+> **sortByRelations**(`mainEntities`, `allEntities`): `string`[]
 
 Sort a list of entities according to their relationships
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `mainEntities` | `string`[] | - |
-| `allEntities` | `string`[] | entities to order |
+• **mainEntities**: `string`[]
+
+• **allEntities**: `string`[]
+
+entities to order
 
 #### Returns
 
@@ -375,8 +336,8 @@ returns the sorted entities
 
 #### Inherited from
 
-DomainConfigServiceBase.sortByRelations
+`DomainConfigServiceBase.sortByRelations`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/domainConfigServiceBase.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L85)
+[src/lib/schema/application/services/config/domainConfigServiceBase.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L85)

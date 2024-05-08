@@ -1,246 +1,227 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / PropertyMapping
 
 # Interface: PropertyMapping
 
-## Hierarchy
+## Extends
 
 - [`Property`](Property.md)
 
-  ↳ **`PropertyMapping`**
-
-## Table of contents
-
-### Properties
-
-- [autoIncrement](PropertyMapping.md#autoincrement)
-- [default](PropertyMapping.md#default)
-- [enum](PropertyMapping.md#enum)
-- [key](PropertyMapping.md#key)
-- [length](PropertyMapping.md#length)
-- [mapping](PropertyMapping.md#mapping)
-- [name](PropertyMapping.md#name)
-- [primaryKey](PropertyMapping.md#primarykey)
-- [readExp](PropertyMapping.md#readexp)
-- [readMappingExp](PropertyMapping.md#readmappingexp)
-- [readValue](PropertyMapping.md#readvalue)
-- [required](PropertyMapping.md#required)
-- [type](PropertyMapping.md#type)
-- [view](PropertyMapping.md#view)
-- [writeExp](PropertyMapping.md#writeexp)
-- [writeValue](PropertyMapping.md#writevalue)
-
 ## Properties
 
-### autoIncrement
+### autoIncrement?
 
-• `Optional` **autoIncrement**: `boolean`
-
-#### Inherited from
-
-[Property](Property.md).[autoIncrement](Property.md#autoincrement)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L30)
-
-___
-
-### default
-
-• `Optional` **default**: `string`
+> `optional` **autoIncrement**: `boolean`
 
 #### Inherited from
 
-[Property](Property.md).[default](Property.md#default)
+[`Property`](Property.md).[`autoIncrement`](Property.md#autoincrement)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L34)
+[src/lib/schema/domain/schema.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L30)
 
-___
+***
 
-### enum
+### default?
 
-• `Optional` **enum**: `string`
-
-#### Inherited from
-
-[Property](Property.md).[enum](Property.md#enum)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L37)
-
-___
-
-### key
-
-• `Optional` **key**: `string`
+> `optional` **default**: `string`
 
 #### Inherited from
 
-[Property](Property.md).[key](Property.md#key)
+[`Property`](Property.md).[`default`](Property.md#default)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L38)
+[src/lib/schema/domain/schema.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L34)
 
-___
+***
 
-### length
+### enum?
 
-• `Optional` **length**: `number`
+> `optional` **enum**: `string`
 
 #### Inherited from
 
-[Property](Property.md).[length](Property.md#length)
+[`Property`](Property.md).[`enum`](Property.md#enum)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L27)
+[src/lib/schema/domain/schema.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L37)
 
-___
+***
+
+### key?
+
+> `optional` **key**: `string`
+
+#### Inherited from
+
+[`Property`](Property.md).[`key`](Property.md#key)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L38)
+
+***
+
+### length?
+
+> `optional` **length**: `number`
+
+#### Inherited from
+
+[`Property`](Property.md).[`length`](Property.md#length)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L27)
+
+***
 
 ### mapping
 
-• **mapping**: `string`
+> **mapping**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:88](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L88)
+[src/lib/schema/domain/schema.ts:88](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L88)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
 #### Inherited from
 
-[Property](Property.md).[name](Property.md#name)
+[`Property`](Property.md).[`name`](Property.md#name)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L25)
+[src/lib/schema/domain/schema.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L25)
 
-___
+***
 
-### primaryKey
+### primaryKey?
 
-• `Optional` **primaryKey**: `boolean`
-
-#### Inherited from
-
-[Property](Property.md).[primaryKey](Property.md#primarykey)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L29)
-
-___
-
-### readExp
-
-• `Optional` **readExp**: `string`
+> `optional` **primaryKey**: `boolean`
 
 #### Inherited from
 
-[Property](Property.md).[readExp](Property.md#readexp)
+[`Property`](Property.md).[`primaryKey`](Property.md#primarykey)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L32)
+[src/lib/schema/domain/schema.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L29)
 
-___
+***
 
-### readMappingExp
+### readExp?
 
-• `Optional` **readMappingExp**: `string`
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:89](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L89)
-
-___
-
-### readValue
-
-• `Optional` **readValue**: `string`
+> `optional` **readExp**: `string`
 
 #### Inherited from
 
-[Property](Property.md).[readValue](Property.md#readvalue)
+[`Property`](Property.md).[`readExp`](Property.md#readexp)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L35)
+[src/lib/schema/domain/schema.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L32)
 
-___
+***
 
-### required
+### readMappingExp?
 
-• `Optional` **required**: `boolean`
+> `optional` **readMappingExp**: `string`
 
-#### Inherited from
+#### Source
 
-[Property](Property.md).[required](Property.md#required)
+[src/lib/schema/domain/schema.ts:89](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L89)
 
-#### Defined in
+***
 
-[src/lib/schema/domain/schema.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L28)
+### readValue?
 
-___
-
-### type
-
-• `Optional` **type**: `string`
+> `optional` **readValue**: `string`
 
 #### Inherited from
 
-[Property](Property.md).[type](Property.md#type)
+[`Property`](Property.md).[`readValue`](Property.md#readvalue)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L26)
+[src/lib/schema/domain/schema.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L35)
 
-___
+***
 
-### view
+### required?
 
-• `Optional` **view**: `boolean`
-
-#### Inherited from
-
-[Property](Property.md).[view](Property.md#view)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L31)
-
-___
-
-### writeExp
-
-• `Optional` **writeExp**: `string`
+> `optional` **required**: `boolean`
 
 #### Inherited from
 
-[Property](Property.md).[writeExp](Property.md#writeexp)
+[`Property`](Property.md).[`required`](Property.md#required)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L33)
+[src/lib/schema/domain/schema.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L28)
 
-___
+***
 
-### writeValue
+### type?
 
-• `Optional` **writeValue**: `string`
+> `optional` **type**: `string`
 
 #### Inherited from
 
-[Property](Property.md).[writeValue](Property.md#writevalue)
+[`Property`](Property.md).[`type`](Property.md#type)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L36)
+[src/lib/schema/domain/schema.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L26)
+
+***
+
+### view?
+
+> `optional` **view**: `boolean`
+
+#### Inherited from
+
+[`Property`](Property.md).[`view`](Property.md#view)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L31)
+
+***
+
+### writeExp?
+
+> `optional` **writeExp**: `string`
+
+#### Inherited from
+
+[`Property`](Property.md).[`writeExp`](Property.md#writeexp)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L33)
+
+***
+
+### writeValue?
+
+> `optional` **writeValue**: `string`
+
+#### Inherited from
+
+[`Property`](Property.md).[`writeValue`](Property.md#writevalue)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L36)

@@ -1,362 +1,335 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / FormatMapping
 
 # Interface: FormatMapping
 
-## Hierarchy
+## Extends
 
 - [`Entity`](Entity.md)
 
-  ↳ **`FormatMapping`**
-
-## Table of contents
-
-### Properties
-
-- [abstract](FormatMapping.md#abstract)
-- [composite](FormatMapping.md#composite)
-- [constraints](FormatMapping.md#constraints)
-- [date](FormatMapping.md#date)
-- [dateTime](FormatMapping.md#datetime)
-- [dependents](FormatMapping.md#dependents)
-- [extends](FormatMapping.md#extends)
-- [hadDefaults](FormatMapping.md#haddefaults)
-- [hadReadExps](FormatMapping.md#hadreadexps)
-- [hadReadValues](FormatMapping.md#hadreadvalues)
-- [hadViewReadExp](FormatMapping.md#hadviewreadexp)
-- [hadWriteExps](FormatMapping.md#hadwriteexps)
-- [hadWriteValues](FormatMapping.md#hadwritevalues)
-- [indexes](FormatMapping.md#indexes)
-- [intermediate](FormatMapping.md#intermediate)
-- [name](FormatMapping.md#name)
-- [primaryKey](FormatMapping.md#primarykey)
-- [properties](FormatMapping.md#properties)
-- [relations](FormatMapping.md#relations)
-- [required](FormatMapping.md#required)
-- [singular](FormatMapping.md#singular)
-- [time](FormatMapping.md#time)
-- [uniqueKey](FormatMapping.md#uniquekey)
-- [view](FormatMapping.md#view)
-
 ## Properties
 
-### abstract
+### abstract?
 
-• `Optional` **abstract**: `boolean`
-
-#### Inherited from
-
-[Entity](Entity.md).[abstract](Entity.md#abstract)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L62)
-
-___
-
-### composite
-
-• `Optional` **composite**: `boolean`
+> `optional` **abstract**: `boolean`
 
 #### Inherited from
 
-[Entity](Entity.md).[composite](Entity.md#composite)
+[`Entity`](Entity.md).[`abstract`](Entity.md#abstract)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:78](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L78)
+[src/lib/schema/domain/schema.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L62)
 
-___
+***
 
-### constraints
+### composite?
 
-• `Optional` **constraints**: [`Constraint`](Constraint.md)[]
-
-#### Inherited from
-
-[Entity](Entity.md).[constraints](Entity.md#constraints)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L71)
-
-___
-
-### date
-
-• `Optional` **date**: `string`
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:101](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L101)
-
-___
-
-### dateTime
-
-• `Optional` **dateTime**: `string`
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:100](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L100)
-
-___
-
-### dependents
-
-• `Optional` **dependents**: [`Dependent`](Dependent.md)[]
+> `optional` **composite**: `boolean`
 
 #### Inherited from
 
-[Entity](Entity.md).[dependents](Entity.md#dependents)
+[`Entity`](Entity.md).[`composite`](Entity.md#composite)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L70)
+[src/lib/schema/domain/schema.ts:78](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L78)
 
-___
+***
 
-### extends
+### constraints?
 
-• `Optional` **extends**: `string`
-
-#### Inherited from
-
-[Entity](Entity.md).[extends](Entity.md#extends)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:61](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L61)
-
-___
-
-### hadDefaults
-
-• `Optional` **hadDefaults**: `boolean`
+> `optional` **constraints**: [`Constraint`](Constraint.md)[]
 
 #### Inherited from
 
-[Entity](Entity.md).[hadDefaults](Entity.md#haddefaults)
+[`Entity`](Entity.md).[`constraints`](Entity.md#constraints)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L76)
+[src/lib/schema/domain/schema.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L71)
 
-___
+***
 
-### hadReadExps
+### date?
 
-• `Optional` **hadReadExps**: `boolean`
+> `optional` **date**: `string`
 
-#### Inherited from
+#### Source
 
-[Entity](Entity.md).[hadReadExps](Entity.md#hadreadexps)
+[src/lib/schema/domain/schema.ts:101](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L101)
 
-#### Defined in
+***
 
-[src/lib/schema/domain/schema.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L72)
+### dateTime?
 
-___
+> `optional` **dateTime**: `string`
 
-### hadReadValues
+#### Source
 
-• `Optional` **hadReadValues**: `boolean`
+[src/lib/schema/domain/schema.ts:100](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L100)
 
-#### Inherited from
+***
 
-[Entity](Entity.md).[hadReadValues](Entity.md#hadreadvalues)
+### dependents?
 
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:74](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L74)
-
-___
-
-### hadViewReadExp
-
-• `Optional` **hadViewReadExp**: `boolean`
+> `optional` **dependents**: [`Dependent`](Dependent.md)[]
 
 #### Inherited from
 
-[Entity](Entity.md).[hadViewReadExp](Entity.md#hadviewreadexp)
+[`Entity`](Entity.md).[`dependents`](Entity.md#dependents)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:77](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L77)
+[src/lib/schema/domain/schema.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L70)
 
-___
+***
 
-### hadWriteExps
+### extends?
 
-• `Optional` **hadWriteExps**: `boolean`
-
-#### Inherited from
-
-[Entity](Entity.md).[hadWriteExps](Entity.md#hadwriteexps)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:73](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L73)
-
-___
-
-### hadWriteValues
-
-• `Optional` **hadWriteValues**: `boolean`
+> `optional` **extends**: `string`
 
 #### Inherited from
 
-[Entity](Entity.md).[hadWriteValues](Entity.md#hadwritevalues)
+[`Entity`](Entity.md).[`extends`](Entity.md#extends)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:75](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L75)
+[src/lib/schema/domain/schema.ts:61](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L61)
 
-___
+***
 
-### indexes
+### hadDefaults?
 
-• `Optional` **indexes**: [`Index`](Index.md)[]
-
-#### Inherited from
-
-[Entity](Entity.md).[indexes](Entity.md#indexes)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L69)
-
-___
-
-### intermediate
-
-• `Optional` **intermediate**: `boolean`
+> `optional` **hadDefaults**: `boolean`
 
 #### Inherited from
 
-[Entity](Entity.md).[intermediate](Entity.md#intermediate)
+[`Entity`](Entity.md).[`hadDefaults`](Entity.md#haddefaults)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:79](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L79)
+[src/lib/schema/domain/schema.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L76)
 
-___
+***
+
+### hadReadExps?
+
+> `optional` **hadReadExps**: `boolean`
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`hadReadExps`](Entity.md#hadreadexps)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L72)
+
+***
+
+### hadReadValues?
+
+> `optional` **hadReadValues**: `boolean`
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`hadReadValues`](Entity.md#hadreadvalues)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:74](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L74)
+
+***
+
+### hadViewReadExp?
+
+> `optional` **hadViewReadExp**: `boolean`
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`hadViewReadExp`](Entity.md#hadviewreadexp)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:77](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L77)
+
+***
+
+### hadWriteExps?
+
+> `optional` **hadWriteExps**: `boolean`
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`hadWriteExps`](Entity.md#hadwriteexps)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:73](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L73)
+
+***
+
+### hadWriteValues?
+
+> `optional` **hadWriteValues**: `boolean`
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`hadWriteValues`](Entity.md#hadwritevalues)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:75](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L75)
+
+***
+
+### indexes?
+
+> `optional` **indexes**: [`Index`](Index.md)[]
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`indexes`](Entity.md#indexes)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L69)
+
+***
+
+### intermediate?
+
+> `optional` **intermediate**: `boolean`
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`intermediate`](Entity.md#intermediate)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:79](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L79)
+
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
 #### Inherited from
 
-[Entity](Entity.md).[name](Entity.md#name)
+[`Entity`](Entity.md).[`name`](Entity.md#name)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L59)
+[src/lib/schema/domain/schema.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L59)
 
-___
+***
 
-### primaryKey
+### primaryKey?
 
-• `Optional` **primaryKey**: `string`[]
-
-#### Inherited from
-
-[Entity](Entity.md).[primaryKey](Entity.md#primarykey)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L65)
-
-___
-
-### properties
-
-• `Optional` **properties**: [`Property`](Property.md)[]
+> `optional` **primaryKey**: `string`[]
 
 #### Inherited from
 
-[Entity](Entity.md).[properties](Entity.md#properties)
+[`Entity`](Entity.md).[`primaryKey`](Entity.md#primarykey)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:60](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L60)
+[src/lib/schema/domain/schema.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L65)
 
-___
+***
 
-### relations
+### properties?
 
-• `Optional` **relations**: [`Relation`](Relation.md)[]
-
-#### Inherited from
-
-[Entity](Entity.md).[relations](Entity.md#relations)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L67)
-
-___
-
-### required
-
-• `Optional` **required**: `string`[]
+> `optional` **properties**: [`Property`](Property.md)[]
 
 #### Inherited from
 
-[Entity](Entity.md).[required](Entity.md#required)
+[`Entity`](Entity.md).[`properties`](Entity.md#properties)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L68)
+[src/lib/schema/domain/schema.ts:60](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L60)
 
-___
+***
 
-### singular
+### relations?
 
-• `Optional` **singular**: `string`
-
-#### Inherited from
-
-[Entity](Entity.md).[singular](Entity.md#singular)
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L63)
-
-___
-
-### time
-
-• `Optional` **time**: `string`
-
-#### Defined in
-
-[src/lib/schema/domain/schema.ts:102](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L102)
-
-___
-
-### uniqueKey
-
-• `Optional` **uniqueKey**: `string`[]
+> `optional` **relations**: [`Relation`](Relation.md)[]
 
 #### Inherited from
 
-[Entity](Entity.md).[uniqueKey](Entity.md#uniquekey)
+[`Entity`](Entity.md).[`relations`](Entity.md#relations)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L66)
+[src/lib/schema/domain/schema.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L67)
 
-___
+***
 
-### view
+### required?
 
-• `Optional` **view**: `boolean`
+> `optional` **required**: `string`[]
 
 #### Inherited from
 
-[Entity](Entity.md).[view](Entity.md#view)
+[`Entity`](Entity.md).[`required`](Entity.md#required)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L64)
+[src/lib/schema/domain/schema.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L68)
+
+***
+
+### singular?
+
+> `optional` **singular**: `string`
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`singular`](Entity.md#singular)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L63)
+
+***
+
+### time?
+
+> `optional` **time**: `string`
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:102](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L102)
+
+***
+
+### uniqueKey?
+
+> `optional` **uniqueKey**: `string`[]
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`uniqueKey`](Entity.md#uniquekey)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L66)
+
+***
+
+### view?
+
+> `optional` **view**: `boolean`
+
+#### Inherited from
+
+[`Entity`](Entity.md).[`view`](Entity.md#view)
+
+#### Source
+
+[src/lib/schema/domain/schema.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L64)

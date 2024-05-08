@@ -1,56 +1,47 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / IRouteService
 
 # Interface: IRouteService
 
-## Implemented by
-
-- [`RouteService`](../classes/RouteService.md)
-
-## Table of contents
-
-### Methods
-
-- [eval](IRouteService.md#eval)
-- [getSource](IRouteService.md#getsource)
-
 ## Methods
 
-### eval
+### eval()
 
-▸ **eval**(`source`, `info`): `boolean`
+> **eval**(`source`, `info`): `boolean`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `source` | [`SourceRule`](SourceRule.md) |
-| `info` | [`SentenceInfo`](SentenceInfo.md) |
+• **source**: [`SourceRule`](SourceRule.md)
+
+• **info**: [`SentenceInfo`](SentenceInfo.md)
 
 #### Returns
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/services.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/services.ts#L6)
+[src/lib/schema/domain/services.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/services.ts#L6)
 
-___
+***
 
-### getSource
+### getSource()
 
-▸ **getSource**(`info`, `stage?`): `string`
+> **getSource**(`info`, `stage`?): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `info` | [`SentenceInfo`](SentenceInfo.md) |
-| `stage?` | `string` |
+• **info**: [`SentenceInfo`](SentenceInfo.md)
+
+• **stage?**: `string`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/services.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/services.ts#L7)
+[src/lib/schema/domain/services.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/services.ts#L7)

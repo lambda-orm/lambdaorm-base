@@ -1,52 +1,47 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Schema
 
 # Interface: Schema
 
-## Table of contents
-
-### Properties
-
-- [application](Schema.md#application)
-- [domain](Schema.md#domain)
-- [infrastructure](Schema.md#infrastructure)
-- [version](Schema.md#version)
-
 ## Properties
 
-### application
+### application?
 
-• `Optional` **application**: [`ApplicationSchema`](ApplicationSchema.md)
+> `optional` **application**: [`ApplicationSchema`](ApplicationSchema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:185](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L185)
+[src/lib/schema/domain/schema.ts:185](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L185)
 
-___
+***
 
 ### domain
 
-• **domain**: [`DomainSchema`](DomainSchema.md)
+> **domain**: [`DomainSchema`](DomainSchema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:183](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L183)
+[src/lib/schema/domain/schema.ts:183](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L183)
 
-___
+***
 
-### infrastructure
+### infrastructure?
 
-• `Optional` **infrastructure**: [`InfrastructureSchema`](InfrastructureSchema.md)
+> `optional` **infrastructure**: [`InfrastructureSchema`](InfrastructureSchema.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:184](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L184)
+[src/lib/schema/domain/schema.ts:184](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L184)
 
-___
+***
 
 ### version
 
-• **version**: `string`
+> **version**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:182](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L182)
+[src/lib/schema/domain/schema.ts:182](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L182)

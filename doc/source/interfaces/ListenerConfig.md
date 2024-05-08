@@ -1,74 +1,67 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / ListenerConfig
 
 # Interface: ListenerConfig
 
-## Table of contents
-
-### Properties
-
-- [after](ListenerConfig.md#after)
-- [before](ListenerConfig.md#before)
-- [condition](ListenerConfig.md#condition)
-- [error](ListenerConfig.md#error)
-- [name](ListenerConfig.md#name)
-- [on](ListenerConfig.md#on)
-
 ## Properties
 
-### after
+### after?
 
-• `Optional` **after**: `string`
+> `optional` **after**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:145](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L145)
+[src/lib/schema/domain/schema.ts:145](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L145)
 
-___
+***
 
-### before
+### before?
 
-• `Optional` **before**: `string`
+> `optional` **before**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:144](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L144)
+[src/lib/schema/domain/schema.ts:144](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L144)
 
-___
+***
 
-### condition
+### condition?
 
-• `Optional` **condition**: `string`
+> `optional` **condition**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:143](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L143)
+[src/lib/schema/domain/schema.ts:143](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L143)
 
-___
+***
 
-### error
+### error?
 
-• `Optional` **error**: `string`
+> `optional` **error**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:146](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L146)
+[src/lib/schema/domain/schema.ts:146](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L146)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:141](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L141)
+[src/lib/schema/domain/schema.ts:141](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L141)
 
-___
+***
 
 ### on
 
-• **on**: [`SentenceCategory`](../enums/SentenceCategory.md)[]
+> **on**: [`SentenceCategory`](../enumerations/SentenceCategory.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:142](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L142)
+[src/lib/schema/domain/schema.ts:142](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L142)

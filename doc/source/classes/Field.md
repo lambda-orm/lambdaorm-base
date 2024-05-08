@@ -1,59 +1,34 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Field
 
 # Class: Field
 
-## Hierarchy
+## Extends
 
 - `Operand`
 
-  ↳ **`Field`**
-
-## Table of contents
-
-### Constructors
-
-- [constructor](Field.md#constructor)
-
-### Properties
-
-- [alias](Field.md#alias)
-- [children](Field.md#children)
-- [entity](Field.md#entity)
-- [evaluator](Field.md#evaluator)
-- [id](Field.md#id)
-- [isRoot](Field.md#isroot)
-- [name](Field.md#name)
-- [number](Field.md#number)
-- [pos](Field.md#pos)
-- [prefix](Field.md#prefix)
-- [returnType](Field.md#returntype)
-- [type](Field.md#type)
-
-### Methods
-
-- [clone](Field.md#clone)
-- [eval](Field.md#eval)
-- [evalAsync](Field.md#evalasync)
-- [fieldName](Field.md#fieldname)
-- [isAsync](Field.md#isasync)
-- [solve](Field.md#solve)
-
 ## Constructors
 
-### constructor
+### new Field()
 
-• **new Field**(`pos`, `entity`, `name`, `returnType?`, `alias?`, `isRoot?`): [`Field`](Field.md)
+> **new Field**(`pos`, `entity`, `name`, `returnType`?, `alias`?, `isRoot`?): [`Field`](Field.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `pos` | `Position` |
-| `entity` | `string` |
-| `name` | `string` |
-| `returnType?` | `Type` |
-| `alias?` | `string` |
-| `isRoot?` | `boolean` |
+• **pos**: `Position`
+
+• **entity**: `string`
+
+• **name**: `string`
+
+• **returnType?**: `Type`
+
+• **alias?**: `string`
+
+• **isRoot?**: `boolean`
 
 #### Returns
 
@@ -61,189 +36,187 @@
 
 #### Overrides
 
-Operand.constructor
+`Operand.constructor`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/sentence.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/sentence.ts#L32)
+[src/lib/sentence/domain/sentence.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/sentence.ts#L32)
 
 ## Properties
 
-### alias
+### alias?
 
-• `Optional` **alias**: `string`
+> `optional` **alias**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/sentence.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/sentence.ts#L29)
+[src/lib/sentence/domain/sentence.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/sentence.ts#L29)
 
-___
+***
 
 ### children
 
-• **children**: `Operand`[]
+> **children**: `Operand`[]
 
 #### Inherited from
 
-Operand.children
+`Operand.children`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:44
+node\_modules/3xpr/shared/domain/operand.d.ts:44
 
-___
+***
 
 ### entity
 
-• **entity**: `string`
+> **entity**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/sentence.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/sentence.ts#L28)
+[src/lib/sentence/domain/sentence.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/sentence.ts#L28)
 
-___
+***
 
-### evaluator
+### evaluator?
 
-• `Optional` **evaluator**: `IEvaluator`
-
-#### Inherited from
-
-Operand.evaluator
-
-#### Defined in
-
-node_modules/3xpr/shared/domain/operand.d.ts:46
-
-___
-
-### id
-
-• `Optional` **id**: `string`
+> `optional` **evaluator**: `IEvaluator`
 
 #### Inherited from
 
-Operand.id
+`Operand.evaluator`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:48
+node\_modules/3xpr/shared/domain/operand.d.ts:46
 
-___
+***
 
-### isRoot
+### id?
 
-• `Optional` **isRoot**: `boolean`
+> `optional` **id**: `string`
 
-#### Defined in
+#### Inherited from
 
-[src/lib/sentence/domain/sentence.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/sentence.ts#L30)
+`Operand.id`
 
-___
+#### Source
+
+node\_modules/3xpr/shared/domain/operand.d.ts:48
+
+***
+
+### isRoot?
+
+> `optional` **isRoot**: `boolean`
+
+#### Source
+
+[src/lib/sentence/domain/sentence.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/sentence.ts#L30)
+
+***
 
 ### name
 
-• **name**: `any`
+> **name**: `any`
 
 #### Inherited from
 
-Operand.name
+`Operand.name`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:42
+node\_modules/3xpr/shared/domain/operand.d.ts:42
 
-___
+***
 
-### number
+### number?
 
-• `Optional` **number**: `number`
+> `optional` **number**: `number`
 
 #### Inherited from
 
-Operand.number
+`Operand.number`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:47
+node\_modules/3xpr/shared/domain/operand.d.ts:47
 
-___
+***
 
 ### pos
 
-• `Readonly` **pos**: `Position`
+> `readonly` **pos**: `Position`
 
 #### Inherited from
 
-Operand.pos
+`Operand.pos`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:41
+node\_modules/3xpr/shared/domain/operand.d.ts:41
 
-___
+***
 
-### prefix
+### prefix?
 
-• `Optional` **prefix**: `string`
+> `optional` **prefix**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/sentence.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/sentence.ts#L31)
+[src/lib/sentence/domain/sentence.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/sentence.ts#L31)
 
-___
+***
 
-### returnType
+### returnType?
 
-• `Optional` **returnType**: `Type`
+> `optional` **returnType**: `Type`
 
 #### Inherited from
 
-Operand.returnType
+`Operand.returnType`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:45
+node\_modules/3xpr/shared/domain/operand.d.ts:45
 
-___
+***
 
 ### type
 
-• `Readonly` **type**: `OperandType`
+> `readonly` **type**: `OperandType`
 
 #### Inherited from
 
-Operand.type
+`Operand.type`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:43
+node\_modules/3xpr/shared/domain/operand.d.ts:43
 
 ## Methods
 
-### clone
+### clone()
 
-▸ **clone**(): [`Field`](Field.md)
+> **clone**(): [`Field`](Field.md)
 
 #### Returns
 
 [`Field`](Field.md)
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/sentence.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/sentence.ts#L46)
+[src/lib/sentence/domain/sentence.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/sentence.ts#L46)
 
-___
+***
 
-### eval
+### eval()
 
-▸ **eval**(`context`): `any`
+> **eval**(`context`): `any`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `context` | `Context` |
+• **context**: `Context`
 
 #### Returns
 
@@ -251,23 +224,21 @@ ___
 
 #### Inherited from
 
-Operand.eval
+`Operand.eval`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:50
+node\_modules/3xpr/shared/domain/operand.d.ts:50
 
-___
+***
 
-### evalAsync
+### evalAsync()
 
-▸ **evalAsync**(`context`): `Promise`\<`any`\>
+> **evalAsync**(`context`): `Promise`\<`any`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `context` | `Context` |
+• **context**: `Context`
 
 #### Returns
 
@@ -275,31 +246,31 @@ ___
 
 #### Inherited from
 
-Operand.evalAsync
+`Operand.evalAsync`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:51
+node\_modules/3xpr/shared/domain/operand.d.ts:51
 
-___
+***
 
-### fieldName
+### fieldName()
 
-▸ **fieldName**(): `any`
+> **fieldName**(): `any`
 
 #### Returns
 
 `any`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/sentence.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/sentence.ts#L39)
+[src/lib/sentence/domain/sentence.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/sentence.ts#L39)
 
-___
+***
 
-### isAsync
+### isAsync()
 
-▸ **isAsync**(): `boolean`
+> **isAsync**(): `boolean`
 
 #### Returns
 
@@ -307,23 +278,21 @@ ___
 
 #### Inherited from
 
-Operand.isAsync
+`Operand.isAsync`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:52
+node\_modules/3xpr/shared/domain/operand.d.ts:52
 
-___
+***
 
-### solve
+### solve()
 
-▸ **solve**(`context`): `Promise`\<`any`\>
+> **solve**(`context`): `Promise`\<`any`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `context` | `Context` |
+• **context**: `Context`
 
 #### Returns
 
@@ -331,8 +300,8 @@ ___
 
 #### Inherited from
 
-Operand.solve
+`Operand.solve`
 
-#### Defined in
+#### Source
 
-node_modules/3xpr/shared/domain/operand.d.ts:53
+node\_modules/3xpr/shared/domain/operand.d.ts:53

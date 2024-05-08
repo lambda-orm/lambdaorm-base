@@ -1,41 +1,37 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / MetadataConstraint
 
 # Interface: MetadataConstraint
 
-## Table of contents
-
-### Properties
-
-- [children](MetadataConstraint.md#children)
-- [constraints](MetadataConstraint.md#constraints)
-- [entity](MetadataConstraint.md#entity)
-
 ## Properties
 
-### children
+### children?
 
-• `Optional` **children**: [`MetadataConstraint`](MetadataConstraint.md)[]
+> `optional` **children**: [`MetadataConstraint`](MetadataConstraint.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L19)
+[src/lib/sentence/domain/metadata.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L19)
 
-___
+***
 
 ### constraints
 
-• **constraints**: [`Constraint`](Constraint.md)[]
+> **constraints**: [`Constraint`](Constraint.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L18)
+[src/lib/sentence/domain/metadata.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L18)
 
-___
+***
 
 ### entity
 
-• **entity**: `string`
+> **entity**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/metadata.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/metadata.ts#L17)
+[src/lib/sentence/domain/metadata.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/metadata.ts#L17)

@@ -1,168 +1,151 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Property
 
 # Interface: Property
 
-## Hierarchy
+## Extended by
 
-- **`Property`**
-
-  ↳ [`PropertyMapping`](PropertyMapping.md)
-
-## Table of contents
-
-### Properties
-
-- [autoIncrement](Property.md#autoincrement)
-- [default](Property.md#default)
-- [enum](Property.md#enum)
-- [key](Property.md#key)
-- [length](Property.md#length)
-- [name](Property.md#name)
-- [primaryKey](Property.md#primarykey)
-- [readExp](Property.md#readexp)
-- [readValue](Property.md#readvalue)
-- [required](Property.md#required)
-- [type](Property.md#type)
-- [view](Property.md#view)
-- [writeExp](Property.md#writeexp)
-- [writeValue](Property.md#writevalue)
+- [`PropertyMapping`](PropertyMapping.md)
 
 ## Properties
 
-### autoIncrement
+### autoIncrement?
 
-• `Optional` **autoIncrement**: `boolean`
+> `optional` **autoIncrement**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L30)
+[src/lib/schema/domain/schema.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L30)
 
-___
+***
 
-### default
+### default?
 
-• `Optional` **default**: `string`
+> `optional` **default**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L34)
+[src/lib/schema/domain/schema.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L34)
 
-___
+***
 
-### enum
+### enum?
 
-• `Optional` **enum**: `string`
+> `optional` **enum**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L37)
+[src/lib/schema/domain/schema.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L37)
 
-___
+***
 
-### key
+### key?
 
-• `Optional` **key**: `string`
+> `optional` **key**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L38)
+[src/lib/schema/domain/schema.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L38)
 
-___
+***
 
-### length
+### length?
 
-• `Optional` **length**: `number`
+> `optional` **length**: `number`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L27)
+[src/lib/schema/domain/schema.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L27)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L25)
+[src/lib/schema/domain/schema.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L25)
 
-___
+***
 
-### primaryKey
+### primaryKey?
 
-• `Optional` **primaryKey**: `boolean`
+> `optional` **primaryKey**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L29)
+[src/lib/schema/domain/schema.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L29)
 
-___
+***
 
-### readExp
+### readExp?
 
-• `Optional` **readExp**: `string`
+> `optional` **readExp**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L32)
+[src/lib/schema/domain/schema.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L32)
 
-___
+***
 
-### readValue
+### readValue?
 
-• `Optional` **readValue**: `string`
+> `optional` **readValue**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L35)
+[src/lib/schema/domain/schema.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L35)
 
-___
+***
 
-### required
+### required?
 
-• `Optional` **required**: `boolean`
+> `optional` **required**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L28)
+[src/lib/schema/domain/schema.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L28)
 
-___
+***
 
-### type
+### type?
 
-• `Optional` **type**: `string`
+> `optional` **type**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L26)
+[src/lib/schema/domain/schema.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L26)
 
-___
+***
 
-### view
+### view?
 
-• `Optional` **view**: `boolean`
+> `optional` **view**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L31)
+[src/lib/schema/domain/schema.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L31)
 
-___
+***
 
-### writeExp
+### writeExp?
 
-• `Optional` **writeExp**: `string`
+> `optional` **writeExp**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L33)
+[src/lib/schema/domain/schema.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L33)
 
-___
+***
 
-### writeValue
+### writeValue?
 
-• `Optional` **writeValue**: `string`
+> `optional` **writeValue**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L36)
+[src/lib/schema/domain/schema.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L36)

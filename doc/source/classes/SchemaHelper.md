@@ -1,369 +1,317 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / SchemaHelper
 
 # Class: SchemaHelper
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SchemaHelper.md#constructor)
-
-### Properties
-
-- [DEFAULT\_LENGTH](SchemaHelper.md#default_length)
-- [DEFAULT\_TYPE](SchemaHelper.md#default_type)
-
-### Methods
-
-- [capitalize](SchemaHelper.md#capitalize)
-- [entityName](SchemaHelper.md#entityname)
-- [equalName](SchemaHelper.md#equalname)
-- [getFk](SchemaHelper.md#getfk)
-- [getKey](SchemaHelper.md#getkey)
-- [getPk](SchemaHelper.md#getpk)
-- [getPkName](SchemaHelper.md#getpkname)
-- [indexName](SchemaHelper.md#indexname)
-- [length](SchemaHelper.md#length)
-- [lengthFromType](SchemaHelper.md#lengthfromtype)
-- [newId](SchemaHelper.md#newid)
-- [propertyName](SchemaHelper.md#propertyname)
-- [refPropertyName](SchemaHelper.md#refpropertyname)
-- [relationName](SchemaHelper.md#relationname)
-- [type](SchemaHelper.md#type)
-
 ## Constructors
 
-### constructor
+### new SchemaHelper()
 
-• **new SchemaHelper**(`str`): [`SchemaHelper`](SchemaHelper.md)
+> **new SchemaHelper**(`str`): [`SchemaHelper`](SchemaHelper.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `str` | `IStringHelper` |
+• **str**: `IStringHelper`
 
 #### Returns
 
 [`SchemaHelper`](SchemaHelper.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L10)
+[src/lib/schema/infrastructure/schemaHelper.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L10)
 
 ## Properties
 
 ### DEFAULT\_LENGTH
 
-• `Readonly` **DEFAULT\_LENGTH**: ``80``
+> `readonly` **DEFAULT\_LENGTH**: `80` = `80`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L7)
+[src/lib/schema/infrastructure/schemaHelper.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L7)
 
-___
+***
 
 ### DEFAULT\_TYPE
 
-• `Readonly` **DEFAULT\_TYPE**: ``"string"``
+> `readonly` **DEFAULT\_TYPE**: `"string"` = `'string'`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L6)
+[src/lib/schema/infrastructure/schemaHelper.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L6)
 
 ## Methods
 
-### capitalize
+### capitalize()
 
-▸ **capitalize**(`name`): `string`
+> **capitalize**(`name`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L36)
+[src/lib/schema/infrastructure/schemaHelper.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L36)
 
-___
+***
 
-### entityName
+### entityName()
 
-▸ **entityName**(`name`): `string`
+> **entityName**(`name`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L22)
+[src/lib/schema/infrastructure/schemaHelper.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L22)
 
-___
+***
 
-### equalName
+### equalName()
 
-▸ **equalName**(`name1?`, `name2?`): `boolean`
+> **equalName**(`name1`?, `name2`?): `boolean`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name1?` | `string` |
-| `name2?` | `string` |
+• **name1?**: `string`
+
+• **name2?**: `string`
 
 #### Returns
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L16)
+[src/lib/schema/infrastructure/schemaHelper.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L16)
 
-___
+***
 
-### getFk
+### getFk()
 
-▸ **getFk**(`objType`): `undefined` \| `PropertyType`
+> **getFk**(`objType`): `undefined` \| `PropertyType`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `objType` | `ObjType` |
+• **objType**: `ObjType`
 
 #### Returns
 
 `undefined` \| `PropertyType`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:58](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L58)
+[src/lib/schema/infrastructure/schemaHelper.ts:58](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L58)
 
-___
+***
 
-### getKey
+### getKey()
 
-▸ **getKey**(`uniques`): `undefined` \| `PropertyType`
+> **getKey**(`uniques`): `undefined` \| `PropertyType`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `uniques` | `PropertyType`[] |
+• **uniques**: `PropertyType`[]
 
 #### Returns
 
 `undefined` \| `PropertyType`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L64)
+[src/lib/schema/infrastructure/schemaHelper.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L64)
 
-___
+***
 
-### getPk
+### getPk()
 
-▸ **getPk**(`objType`): `undefined` \| `PropertyType`
+> **getPk**(`objType`): `undefined` \| `PropertyType`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `objType` | `ObjType` |
+• **objType**: `ObjType`
 
 #### Returns
 
 `undefined` \| `PropertyType`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:48](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L48)
+[src/lib/schema/infrastructure/schemaHelper.ts:48](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L48)
 
-___
+***
 
-### getPkName
+### getPkName()
 
-▸ **getPkName**(`objType`): `string`
+> **getPkName**(`objType`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `objType` | `ObjType` |
+• **objType**: `ObjType`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L53)
+[src/lib/schema/infrastructure/schemaHelper.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L53)
 
-___
+***
 
-### indexName
+### indexName()
 
-▸ **indexName**(`name`): `string`
+> **indexName**(`name`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:40](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L40)
+[src/lib/schema/infrastructure/schemaHelper.ts:40](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L40)
 
-___
+***
 
-### length
+### length()
 
-▸ **length**(`length?`): `undefined` \| `number`
+> **length**(`length`?): `undefined` \| `number`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `length?` | `number` |
+• **length?**: `number`
 
 #### Returns
 
 `undefined` \| `number`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:87](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L87)
+[src/lib/schema/infrastructure/schemaHelper.ts:87](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L87)
 
-___
+***
 
-### lengthFromType
+### lengthFromType()
 
-▸ **lengthFromType**(`type`): `undefined` \| `number`
+> **lengthFromType**(`type`): `undefined` \| `number`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `Type` |
+• **type**: `Type`
 
 #### Returns
 
 `undefined` \| `number`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:91](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L91)
+[src/lib/schema/infrastructure/schemaHelper.ts:91](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L91)
 
-___
+***
 
-### newId
+### newId()
 
-▸ **newId**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[src/lib/schema/infrastructure/schemaHelper.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L12)
-
-___
-
-### propertyName
-
-▸ **propertyName**(`name`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+> **newId**(): `string`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L28)
+[src/lib/schema/infrastructure/schemaHelper.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L12)
 
-___
+***
 
-### refPropertyName
+### propertyName()
 
-▸ **refPropertyName**(`entityName`, `propertyName`): `string`
+> **propertyName**(`name`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entityName` | `string` |
-| `propertyName` | `string` |
+• **name**: `string`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L32)
+[src/lib/schema/infrastructure/schemaHelper.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L28)
 
-___
+***
 
-### relationName
+### refPropertyName()
 
-▸ **relationName**(`name`): `string`
+> **refPropertyName**(`entityName`, `propertyName`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **entityName**: `string`
+
+• **propertyName**: `string`
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L44)
+[src/lib/schema/infrastructure/schemaHelper.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L32)
 
-___
+***
 
-### type
+### relationName()
 
-▸ **type**(`type?`, `length?`): `undefined` \| `string`
+> **relationName**(`name`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type?` | `string` |
-| `length?` | `number` |
+• **name**: `string`
+
+#### Returns
+
+`string`
+
+#### Source
+
+[src/lib/schema/infrastructure/schemaHelper.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L44)
+
+***
+
+### type()
+
+> **type**(`type`?, `length`?): `undefined` \| `string`
+
+#### Parameters
+
+• **type?**: `string`
+
+• **length?**: `number`
 
 #### Returns
 
 `undefined` \| `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/schemaHelper.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/schemaHelper.ts#L82)
+[src/lib/schema/infrastructure/schemaHelper.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/schemaHelper.ts#L82)

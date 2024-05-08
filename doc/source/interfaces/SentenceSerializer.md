@@ -1,71 +1,61 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / SentenceSerializer
 
 # Interface: SentenceSerializer
 
-## Table of contents
-
-### Methods
-
-- [clone](SentenceSerializer.md#clone)
-- [deserialize](SentenceSerializer.md#deserialize)
-- [serialize](SentenceSerializer.md#serialize)
-
 ## Methods
 
-### clone
+### clone()
 
-▸ **clone**(`sentence`): [`Sentence`](../classes/Sentence.md)
+> **clone**(`sentence`): [`Sentence`](../classes/Sentence.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sentence` | [`Sentence`](../classes/Sentence.md) |
+• **sentence**: [`Sentence`](../classes/Sentence.md)
 
 #### Returns
 
 [`Sentence`](../classes/Sentence.md)
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/services.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/services.ts#L13)
+[src/lib/sentence/domain/services.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/services.ts#L13)
 
-___
+***
 
-### deserialize
+### deserialize()
 
-▸ **deserialize**(`value`): [`Sentence`](../classes/Sentence.md)
+> **deserialize**(`value`): [`Sentence`](../classes/Sentence.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `string` |
+• **value**: `string`
 
 #### Returns
 
 [`Sentence`](../classes/Sentence.md)
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/services.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/services.ts#L15)
+[src/lib/sentence/domain/services.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/services.ts#L15)
 
-___
+***
 
-### serialize
+### serialize()
 
-▸ **serialize**(`sentence`): `string`
+> **serialize**(`sentence`): `string`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sentence` | [`Sentence`](../classes/Sentence.md) |
+• **sentence**: [`Sentence`](../classes/Sentence.md)
 
 #### Returns
 
 `string`
 
-#### Defined in
+#### Source
 
-[src/lib/sentence/domain/services.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/sentence/domain/services.ts#L14)
+[src/lib/sentence/domain/services.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/sentence/domain/services.ts#L14)

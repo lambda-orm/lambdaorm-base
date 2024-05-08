@@ -1,63 +1,57 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Mapping
 
 # Interface: Mapping
 
-## Table of contents
-
-### Properties
-
-- [entities](Mapping.md#entities)
-- [extends](Mapping.md#extends)
-- [format](Mapping.md#format)
-- [mapping](Mapping.md#mapping)
-- [name](Mapping.md#name)
-
 ## Properties
 
-### entities
+### entities?
 
-• `Optional` **entities**: [`EntityMapping`](EntityMapping.md)[]
+> `optional` **entities**: [`EntityMapping`](EntityMapping.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:108](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L108)
+[src/lib/schema/domain/schema.ts:108](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L108)
 
-___
+***
 
-### extends
+### extends?
 
-• `Optional` **extends**: `string`
+> `optional` **extends**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:105](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L105)
+[src/lib/schema/domain/schema.ts:105](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L105)
 
-___
+***
 
-### format
+### format?
 
-• `Optional` **format**: [`FormatMapping`](FormatMapping.md)
+> `optional` **format**: [`FormatMapping`](FormatMapping.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L109)
+[src/lib/schema/domain/schema.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L109)
 
-___
+***
 
-### mapping
+### mapping?
 
-• `Optional` **mapping**: `string`
+> `optional` **mapping**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:106](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L106)
+[src/lib/schema/domain/schema.ts:106](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L106)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:107](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L107)
+[src/lib/schema/domain/schema.ts:107](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L107)

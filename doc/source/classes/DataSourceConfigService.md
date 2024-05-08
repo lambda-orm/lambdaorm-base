@@ -1,93 +1,77 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / DataSourceConfigService
 
 # Class: DataSourceConfigService
 
-## Table of contents
-
-### Constructors
-
-- [constructor](DataSourceConfigService.md#constructor)
-
-### Properties
-
-- [default](DataSourceConfigService.md#default)
-- [sources](DataSourceConfigService.md#sources)
-
-### Methods
-
-- [get](DataSourceConfigService.md#get)
-- [load](DataSourceConfigService.md#load)
-
 ## Constructors
 
-### constructor
+### new DataSourceConfigService()
 
-• **new DataSourceConfigService**(): [`DataSourceConfigService`](DataSourceConfigService.md)
+> **new DataSourceConfigService**(): [`DataSourceConfigService`](DataSourceConfigService.md)
 
 #### Returns
 
 [`DataSourceConfigService`](DataSourceConfigService.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/dataSourceConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/dataSourceConfigService.ts#L7)
+[src/lib/schema/application/services/config/dataSourceConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/dataSourceConfigService.ts#L7)
 
 ## Properties
 
-### default
+### default?
 
-• `Optional` **default**: `string`
+> `optional` **default**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/dataSourceConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/dataSourceConfigService.ts#L5)
+[src/lib/schema/application/services/config/dataSourceConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/dataSourceConfigService.ts#L5)
 
-___
+***
 
 ### sources
 
-• **sources**: [`Source`](../interfaces/Source.md)[]
+> **sources**: [`Source`](../interfaces/Source.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/dataSourceConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/dataSourceConfigService.ts#L4)
+[src/lib/schema/application/services/config/dataSourceConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/dataSourceConfigService.ts#L4)
 
 ## Methods
 
-### get
+### get()
 
-▸ **get**(`name?`): [`Source`](../interfaces/Source.md)
+> **get**(`name`?): [`Source`](../interfaces/Source.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name?` | `string` |
+• **name?**: `string`
 
 #### Returns
 
 [`Source`](../interfaces/Source.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/dataSourceConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/dataSourceConfigService.ts#L22)
+[src/lib/schema/application/services/config/dataSourceConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/dataSourceConfigService.ts#L22)
 
-___
+***
 
-### load
+### load()
 
-▸ **load**(`value`): `void`
+> **load**(`value`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | [`Source`](../interfaces/Source.md) |
+• **value**: [`Source`](../interfaces/Source.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/dataSourceConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/dataSourceConfigService.ts#L11)
+[src/lib/schema/application/services/config/dataSourceConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/dataSourceConfigService.ts#L11)

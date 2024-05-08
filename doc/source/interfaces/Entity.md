@@ -1,247 +1,222 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Entity
 
 # Interface: Entity
 
-## Hierarchy
+## Extended by
 
-- **`Entity`**
-
-  ↳ [`EntityMapping`](EntityMapping.md)
-
-  ↳ [`FormatMapping`](FormatMapping.md)
-
-## Table of contents
-
-### Properties
-
-- [abstract](Entity.md#abstract)
-- [composite](Entity.md#composite)
-- [constraints](Entity.md#constraints)
-- [dependents](Entity.md#dependents)
-- [extends](Entity.md#extends)
-- [hadDefaults](Entity.md#haddefaults)
-- [hadReadExps](Entity.md#hadreadexps)
-- [hadReadValues](Entity.md#hadreadvalues)
-- [hadViewReadExp](Entity.md#hadviewreadexp)
-- [hadWriteExps](Entity.md#hadwriteexps)
-- [hadWriteValues](Entity.md#hadwritevalues)
-- [indexes](Entity.md#indexes)
-- [intermediate](Entity.md#intermediate)
-- [name](Entity.md#name)
-- [primaryKey](Entity.md#primarykey)
-- [properties](Entity.md#properties)
-- [relations](Entity.md#relations)
-- [required](Entity.md#required)
-- [singular](Entity.md#singular)
-- [uniqueKey](Entity.md#uniquekey)
-- [view](Entity.md#view)
+- [`EntityMapping`](EntityMapping.md)
+- [`FormatMapping`](FormatMapping.md)
 
 ## Properties
 
-### abstract
+### abstract?
 
-• `Optional` **abstract**: `boolean`
+> `optional` **abstract**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L62)
+[src/lib/schema/domain/schema.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L62)
 
-___
+***
 
-### composite
+### composite?
 
-• `Optional` **composite**: `boolean`
+> `optional` **composite**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:78](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L78)
+[src/lib/schema/domain/schema.ts:78](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L78)
 
-___
+***
 
-### constraints
+### constraints?
 
-• `Optional` **constraints**: [`Constraint`](Constraint.md)[]
+> `optional` **constraints**: [`Constraint`](Constraint.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L71)
+[src/lib/schema/domain/schema.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L71)
 
-___
+***
 
-### dependents
+### dependents?
 
-• `Optional` **dependents**: [`Dependent`](Dependent.md)[]
+> `optional` **dependents**: [`Dependent`](Dependent.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L70)
+[src/lib/schema/domain/schema.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L70)
 
-___
+***
 
-### extends
+### extends?
 
-• `Optional` **extends**: `string`
+> `optional` **extends**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:61](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L61)
+[src/lib/schema/domain/schema.ts:61](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L61)
 
-___
+***
 
-### hadDefaults
+### hadDefaults?
 
-• `Optional` **hadDefaults**: `boolean`
+> `optional` **hadDefaults**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L76)
+[src/lib/schema/domain/schema.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L76)
 
-___
+***
 
-### hadReadExps
+### hadReadExps?
 
-• `Optional` **hadReadExps**: `boolean`
+> `optional` **hadReadExps**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L72)
+[src/lib/schema/domain/schema.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L72)
 
-___
+***
 
-### hadReadValues
+### hadReadValues?
 
-• `Optional` **hadReadValues**: `boolean`
+> `optional` **hadReadValues**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:74](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L74)
+[src/lib/schema/domain/schema.ts:74](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L74)
 
-___
+***
 
-### hadViewReadExp
+### hadViewReadExp?
 
-• `Optional` **hadViewReadExp**: `boolean`
+> `optional` **hadViewReadExp**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:77](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L77)
+[src/lib/schema/domain/schema.ts:77](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L77)
 
-___
+***
 
-### hadWriteExps
+### hadWriteExps?
 
-• `Optional` **hadWriteExps**: `boolean`
+> `optional` **hadWriteExps**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:73](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L73)
+[src/lib/schema/domain/schema.ts:73](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L73)
 
-___
+***
 
-### hadWriteValues
+### hadWriteValues?
 
-• `Optional` **hadWriteValues**: `boolean`
+> `optional` **hadWriteValues**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:75](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L75)
+[src/lib/schema/domain/schema.ts:75](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L75)
 
-___
+***
 
-### indexes
+### indexes?
 
-• `Optional` **indexes**: [`Index`](Index.md)[]
+> `optional` **indexes**: [`Index`](Index.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L69)
+[src/lib/schema/domain/schema.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L69)
 
-___
+***
 
-### intermediate
+### intermediate?
 
-• `Optional` **intermediate**: `boolean`
+> `optional` **intermediate**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:79](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L79)
+[src/lib/schema/domain/schema.ts:79](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L79)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L59)
+[src/lib/schema/domain/schema.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L59)
 
-___
+***
 
-### primaryKey
+### primaryKey?
 
-• `Optional` **primaryKey**: `string`[]
+> `optional` **primaryKey**: `string`[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L65)
+[src/lib/schema/domain/schema.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L65)
 
-___
+***
 
-### properties
+### properties?
 
-• `Optional` **properties**: [`Property`](Property.md)[]
+> `optional` **properties**: [`Property`](Property.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:60](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L60)
+[src/lib/schema/domain/schema.ts:60](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L60)
 
-___
+***
 
-### relations
+### relations?
 
-• `Optional` **relations**: [`Relation`](Relation.md)[]
+> `optional` **relations**: [`Relation`](Relation.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L67)
+[src/lib/schema/domain/schema.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L67)
 
-___
+***
 
-### required
+### required?
 
-• `Optional` **required**: `string`[]
+> `optional` **required**: `string`[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L68)
+[src/lib/schema/domain/schema.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L68)
 
-___
+***
 
-### singular
+### singular?
 
-• `Optional` **singular**: `string`
+> `optional` **singular**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L63)
+[src/lib/schema/domain/schema.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L63)
 
-___
+***
 
-### uniqueKey
+### uniqueKey?
 
-• `Optional` **uniqueKey**: `string`[]
+> `optional` **uniqueKey**: `string`[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L66)
+[src/lib/schema/domain/schema.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L66)
 
-___
+***
 
-### view
+### view?
 
-• `Optional` **view**: `boolean`
+> `optional` **view**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L64)
+[src/lib/schema/domain/schema.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L64)

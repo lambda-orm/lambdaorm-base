@@ -1,124 +1,103 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / MappingsConfigService
 
 # Class: MappingsConfigService
 
-## Table of contents
-
-### Constructors
-
-- [constructor](MappingsConfigService.md#constructor)
-
-### Properties
-
-- [mappings](MappingsConfigService.md#mappings)
-
-### Methods
-
-- [delete](MappingsConfigService.md#delete)
-- [get](MappingsConfigService.md#get)
-- [getInstance](MappingsConfigService.md#getinstance)
-- [load](MappingsConfigService.md#load)
-
 ## Constructors
 
-### constructor
+### new MappingsConfigService()
 
-• **new MappingsConfigService**(): [`MappingsConfigService`](MappingsConfigService.md)
+> **new MappingsConfigService**(): [`MappingsConfigService`](MappingsConfigService.md)
 
 #### Returns
 
 [`MappingsConfigService`](MappingsConfigService.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/mappingsConfigService.ts#L7)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/mappingsConfigService.ts#L7)
 
 ## Properties
 
 ### mappings
 
-• **mappings**: [`Mapping`](../interfaces/Mapping.md)[]
+> **mappings**: [`Mapping`](../interfaces/Mapping.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/mappingsConfigService.ts#L5)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/mappingsConfigService.ts#L5)
 
 ## Methods
 
-### delete
+### delete()
 
-▸ **delete**(`name`): `void`
+> **delete**(`name`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/mappingsConfigService.ts#L22)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/mappingsConfigService.ts#L22)
 
-___
+***
 
-### get
+### get()
 
-▸ **get**(`name`): [`Mapping`](../interfaces/Mapping.md)
+> **get**(`name`): [`Mapping`](../interfaces/Mapping.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
 [`Mapping`](../interfaces/Mapping.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/mappingsConfigService.ts#L29)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/mappingsConfigService.ts#L29)
 
-___
+***
 
-### getInstance
+### getInstance()
 
-▸ **getInstance**(`name`): [`MappingConfigService`](MappingConfigService.md)
+> **getInstance**(`name`): [`MappingConfigService`](MappingConfigService.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+• **name**: `string`
 
 #### Returns
 
 [`MappingConfigService`](MappingConfigService.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/mappingsConfigService.ts#L37)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/mappingsConfigService.ts#L37)
 
-___
+***
 
-### load
+### load()
 
-▸ **load**(`value`): `void`
+> **load**(`value`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | [`Mapping`](../interfaces/Mapping.md) |
+• **value**: [`Mapping`](../interfaces/Mapping.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/config/mappingsConfigService.ts#L11)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/config/mappingsConfigService.ts#L11)

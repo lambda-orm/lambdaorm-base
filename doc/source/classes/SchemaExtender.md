@@ -1,97 +1,83 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / SchemaExtender
 
 # Class: SchemaExtender
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SchemaExtender.md#constructor)
-
-### Methods
-
-- [complete](SchemaExtender.md#complete)
-- [extend](SchemaExtender.md#extend)
-- [isCompound](SchemaExtender.md#iscompound)
-
 ## Constructors
 
-### constructor
+### new SchemaExtender()
 
-• **new SchemaExtender**(`exp`, `helper`): [`SchemaExtender`](SchemaExtender.md)
+> **new SchemaExtender**(`exp`, `helper`): [`SchemaExtender`](SchemaExtender.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `exp` | `Expressions` |
-| `helper` | [`OrmBaseH3lp`](OrmBaseH3lp.md) |
+• **exp**: `Expressions`
+
+• **helper**: [`OrmBaseH3lp`](OrmBaseH3lp.md)
 
 #### Returns
 
 [`SchemaExtender`](SchemaExtender.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaExtender.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaExtender.ts#L14)
+[src/lib/schema/application/services/schemaExtender.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaExtender.ts#L14)
 
 ## Methods
 
-### complete
+### complete()
 
-▸ **complete**(`schema`): `void`
+> **complete**(`schema`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`Schema`](../interfaces/Schema.md) |
+• **schema**: [`Schema`](../interfaces/Schema.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaExtender.ts:162](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaExtender.ts#L162)
+[src/lib/schema/application/services/schemaExtender.ts:162](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaExtender.ts#L162)
 
-___
+***
 
-### extend
+### extend()
 
-▸ **extend**(`schema`): `void`
+> **extend**(`schema`): `void`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`Schema`](../interfaces/Schema.md) |
+• **schema**: [`Schema`](../interfaces/Schema.md)
 
 #### Returns
 
 `void`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaExtender.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaExtender.ts#L19)
+[src/lib/schema/application/services/schemaExtender.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaExtender.ts#L19)
 
-___
+***
 
-### isCompound
+### isCompound()
 
-▸ **isCompound**(`parent`, `child`): `boolean`
+> **isCompound**(`parent`, `child`): `boolean`
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `parent` | `any` |
-| `child` | `any` |
+• **parent**: `any`
+
+• **child**: `any`
 
 #### Returns
 
 `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/schemaExtender.ts:179](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/schemaExtender.ts#L179)
+[src/lib/schema/application/services/schemaExtender.ts:179](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/schemaExtender.ts#L179)

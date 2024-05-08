@@ -1,54 +1,45 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / CreateEntitiesService
 
 # Class: CreateEntitiesService
 
-## Table of contents
-
-### Constructors
-
-- [constructor](CreateEntitiesService.md#constructor)
-
-### Methods
-
-- [getEntities](CreateEntitiesService.md#getentities)
-
 ## Constructors
 
-### constructor
+### new CreateEntitiesService()
 
-• **new CreateEntitiesService**(`helper`): [`CreateEntitiesService`](CreateEntitiesService.md)
+> **new CreateEntitiesService**(`helper`): [`CreateEntitiesService`](CreateEntitiesService.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `helper` | [`SchemaHelper`](SchemaHelper.md) |
+• **helper**: [`SchemaHelper`](SchemaHelper.md)
 
 #### Returns
 
 [`CreateEntitiesService`](CreateEntitiesService.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/createEntitiesService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/createEntitiesService.ts#L7)
+[src/lib/schema/application/services/createEntitiesService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/createEntitiesService.ts#L7)
 
 ## Methods
 
-### getEntities
+### getEntities()
 
-▸ **getEntities**(`name`, `type`): [`Entity`](../interfaces/Entity.md)[]
+> **getEntities**(`name`, `type`): [`Entity`](../interfaces/Entity.md)[]
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `type` | `Type` |
+• **name**: `string`
+
+• **type**: `Type`
 
 #### Returns
 
 [`Entity`](../interfaces/Entity.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/application/services/createEntitiesService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/application/services/createEntitiesService.ts#L9)
+[src/lib/schema/application/services/createEntitiesService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/services/createEntitiesService.ts#L9)

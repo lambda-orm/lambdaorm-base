@@ -1,41 +1,37 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / DomainSchema
 
 # Interface: DomainSchema
-
-## Table of contents
-
-### Properties
-
-- [entities](DomainSchema.md#entities)
-- [enums](DomainSchema.md#enums)
-- [version](DomainSchema.md#version)
 
 ## Properties
 
 ### entities
 
-• **entities**: [`Entity`](Entity.md)[]
+> **entities**: [`Entity`](Entity.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:160](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L160)
+[src/lib/schema/domain/schema.ts:160](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L160)
 
-___
+***
 
-### enums
+### enums?
 
-• `Optional` **enums**: [`Enum`](Enum.md)[]
+> `optional` **enums**: [`Enum`](Enum.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:161](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L161)
+[src/lib/schema/domain/schema.ts:161](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L161)
 
-___
+***
 
 ### version
 
-• **version**: `string`
+> **version**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:159](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L159)
+[src/lib/schema/domain/schema.ts:159](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L159)

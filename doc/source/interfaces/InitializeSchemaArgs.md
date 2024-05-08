@@ -1,74 +1,67 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / InitializeSchemaArgs
 
 # Interface: InitializeSchemaArgs
 
-## Table of contents
-
-### Properties
-
-- [connection](InitializeSchemaArgs.md#connection)
-- [dataPath](InitializeSchemaArgs.md#datapath)
-- [dialect](InitializeSchemaArgs.md#dialect)
-- [source](InitializeSchemaArgs.md#source)
-- [url](InitializeSchemaArgs.md#url)
-- [workspace](InitializeSchemaArgs.md#workspace)
-
 ## Properties
 
-### connection
+### connection?
 
-• `Optional` **connection**: `string`
+> `optional` **connection**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/services.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/services.ts#L21)
+[src/lib/schema/domain/services.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/services.ts#L21)
 
-___
+***
 
-### dataPath
+### dataPath?
 
-• `Optional` **dataPath**: `string`
+> `optional` **dataPath**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/services.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/services.ts#L22)
+[src/lib/schema/domain/services.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/services.ts#L22)
 
-___
+***
 
-### dialect
+### dialect?
 
-• `Optional` **dialect**: [`Dialect`](../enums/Dialect.md)
+> `optional` **dialect**: [`Dialect`](../enumerations/Dialect.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/services.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/services.ts#L20)
+[src/lib/schema/domain/services.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/services.ts#L20)
 
-___
+***
 
-### source
+### source?
 
-• `Optional` **source**: `string`
+> `optional` **source**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/services.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/services.ts#L19)
+[src/lib/schema/domain/services.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/services.ts#L19)
 
-___
+***
 
-### url
+### url?
 
-• `Optional` **url**: `string`
+> `optional` **url**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/services.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/services.ts#L18)
+[src/lib/schema/domain/services.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/services.ts#L18)
 
-___
+***
 
 ### workspace
 
-• **workspace**: `string`
+> **workspace**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/services.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/services.ts#L17)
+[src/lib/schema/domain/services.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/services.ts#L17)

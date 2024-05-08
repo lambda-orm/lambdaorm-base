@@ -1,63 +1,57 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / QueryPlan
 
 # Interface: QueryPlan
 
-## Table of contents
-
-### Properties
-
-- [children](QueryPlan.md#children)
-- [dialect](QueryPlan.md#dialect)
-- [entity](QueryPlan.md#entity)
-- [sentence](QueryPlan.md#sentence)
-- [source](QueryPlan.md#source)
-
 ## Properties
 
-### children
+### children?
 
-• `Optional` **children**: [`QueryPlan`](QueryPlan.md)[]
+> `optional` **children**: [`QueryPlan`](QueryPlan.md)[]
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L6)
+[src/lib/query/domain/query.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L6)
 
-___
+***
 
 ### dialect
 
-• **dialect**: `string`
+> **dialect**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L3)
+[src/lib/query/domain/query.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L3)
 
-___
+***
 
 ### entity
 
-• **entity**: `string`
+> **entity**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L2)
+[src/lib/query/domain/query.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L2)
 
-___
+***
 
 ### sentence
 
-• **sentence**: `string`
+> **sentence**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L5)
+[src/lib/query/domain/query.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L5)
 
-___
+***
 
 ### source
 
-• **source**: `string`
+> **source**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L4)
+[src/lib/query/domain/query.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L4)

@@ -1,48 +1,41 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / SchemaFacadeBuilder
 
 # Class: SchemaFacadeBuilder
 
-## Table of contents
-
-### Constructors
-
-- [constructor](SchemaFacadeBuilder.md#constructor)
-
-### Methods
-
-- [build](SchemaFacadeBuilder.md#build)
-
 ## Constructors
 
-### constructor
+### new SchemaFacadeBuilder()
 
-• **new SchemaFacadeBuilder**(`exp`, `helper`): [`SchemaFacadeBuilder`](SchemaFacadeBuilder.md)
+> **new SchemaFacadeBuilder**(`exp`, `helper`): [`SchemaFacadeBuilder`](SchemaFacadeBuilder.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `exp` | `Expressions` |
-| `helper` | [`OrmBaseH3lp`](OrmBaseH3lp.md) |
+• **exp**: `Expressions`
+
+• **helper**: [`OrmBaseH3lp`](OrmBaseH3lp.md)
 
 #### Returns
 
 [`SchemaFacadeBuilder`](SchemaFacadeBuilder.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/facadeBuilder.ts#L10)
+[src/lib/schema/infrastructure/facadeBuilder.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/facadeBuilder.ts#L10)
 
 ## Methods
 
-### build
+### build()
 
-▸ **build**(): [`SchemaFacade`](SchemaFacade.md)
+> **build**(): [`SchemaFacade`](SchemaFacade.md)
 
 #### Returns
 
 [`SchemaFacade`](SchemaFacade.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/infrastructure/facadeBuilder.ts#L15)
+[src/lib/schema/infrastructure/facadeBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/infrastructure/facadeBuilder.ts#L15)

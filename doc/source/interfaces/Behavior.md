@@ -1,41 +1,37 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Behavior
 
 # Interface: Behavior
 
-## Table of contents
-
-### Properties
-
-- [alias](Behavior.md#alias)
-- [expression](Behavior.md#expression)
-- [property](Behavior.md#property)
-
 ## Properties
 
-### alias
+### alias?
 
-• `Optional` **alias**: `string`
+> `optional` **alias**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:201](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L201)
+[src/lib/schema/domain/schema.ts:201](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L201)
 
-___
+***
 
 ### expression
 
-• **expression**: `string`
+> **expression**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:203](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L203)
+[src/lib/schema/domain/schema.ts:203](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L203)
 
-___
+***
 
 ### property
 
-• **property**: `string`
+> **property**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:202](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L202)
+[src/lib/schema/domain/schema.ts:202](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L202)

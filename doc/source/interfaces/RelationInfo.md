@@ -1,52 +1,47 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / RelationInfo
 
 # Interface: RelationInfo
-
-## Table of contents
-
-### Properties
-
-- [entity](RelationInfo.md#entity)
-- [previousEntity](RelationInfo.md#previousentity)
-- [previousRelation](RelationInfo.md#previousrelation)
-- [relation](RelationInfo.md#relation)
 
 ## Properties
 
 ### entity
 
-• **entity**: [`Entity`](Entity.md)
+> **entity**: [`Entity`](Entity.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:84](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L84)
+[src/lib/schema/domain/schema.ts:84](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L84)
 
-___
+***
 
 ### previousEntity
 
-• **previousEntity**: [`Entity`](Entity.md)
+> **previousEntity**: [`Entity`](Entity.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:83](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L83)
+[src/lib/schema/domain/schema.ts:83](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L83)
 
-___
+***
 
 ### previousRelation
 
-• **previousRelation**: `string`
+> **previousRelation**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L82)
+[src/lib/schema/domain/schema.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L82)
 
-___
+***
 
 ### relation
 
-• **relation**: [`Relation`](Relation.md)
+> **relation**: [`Relation`](Relation.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L85)
+[src/lib/schema/domain/schema.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L85)

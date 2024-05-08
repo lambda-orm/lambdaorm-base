@@ -1,96 +1,87 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / Relation
 
 # Interface: Relation
 
-## Table of contents
-
-### Properties
-
-- [composite](Relation.md#composite)
-- [entity](Relation.md#entity)
-- [from](Relation.md#from)
-- [name](Relation.md#name)
-- [target](Relation.md#target)
-- [to](Relation.md#to)
-- [type](Relation.md#type)
-- [weak](Relation.md#weak)
-
 ## Properties
 
-### composite
+### composite?
 
-• `Optional` **composite**: `boolean`
+> `optional` **composite**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:43](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L43)
+[src/lib/schema/domain/schema.ts:43](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L43)
 
-___
+***
 
 ### entity
 
-• **entity**: `string`
+> **entity**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:45](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L45)
+[src/lib/schema/domain/schema.ts:45](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L45)
 
-___
+***
 
 ### from
 
-• **from**: `string`
+> **from**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L44)
+[src/lib/schema/domain/schema.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L44)
 
-___
+***
 
 ### name
 
-• **name**: `string`
+> **name**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:41](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L41)
+[src/lib/schema/domain/schema.ts:41](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L41)
 
-___
+***
 
-### target
+### target?
 
-• `Optional` **target**: `string`
+> `optional` **target**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:48](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L48)
+[src/lib/schema/domain/schema.ts:48](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L48)
 
-___
+***
 
 ### to
 
-• **to**: `string`
+> **to**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L46)
+[src/lib/schema/domain/schema.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L46)
 
-___
+***
 
 ### type
 
-• **type**: [`RelationType`](../enums/RelationType.md)
+> **type**: [`RelationType`](../enumerations/RelationType.md)
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L42)
+[src/lib/schema/domain/schema.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L42)
 
-___
+***
 
-### weak
+### weak?
 
-• `Optional` **weak**: `boolean`
+> `optional` **weak**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/schema/domain/schema.ts:47](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/schema/domain/schema.ts#L47)
+[src/lib/schema/domain/schema.ts:47](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/domain/schema.ts#L47)

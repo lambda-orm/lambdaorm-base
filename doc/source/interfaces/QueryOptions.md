@@ -1,63 +1,57 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / QueryOptions
 
 # Interface: QueryOptions
 
-## Table of contents
-
-### Properties
-
-- [chunkSize](QueryOptions.md#chunksize)
-- [headers](QueryOptions.md#headers)
-- [stage](QueryOptions.md#stage)
-- [tryAllCan](QueryOptions.md#tryallcan)
-- [view](QueryOptions.md#view)
-
 ## Properties
 
-### chunkSize
+### chunkSize?
 
-• `Optional` **chunkSize**: `number`
+> `optional` **chunkSize**: `number`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L12)
+[src/lib/query/domain/query.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L12)
 
-___
+***
 
-### headers
+### headers?
 
-• `Optional` **headers**: [`string`, `any`][]
+> `optional` **headers**: [`string`, `any`][]
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L14)
+[src/lib/query/domain/query.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L14)
 
-___
+***
 
-### stage
+### stage?
 
-• `Optional` **stage**: `string`
+> `optional` **stage**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L10)
+[src/lib/query/domain/query.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L10)
 
-___
+***
 
-### tryAllCan
+### tryAllCan?
 
-• `Optional` **tryAllCan**: `boolean`
+> `optional` **tryAllCan**: `boolean`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L13)
+[src/lib/query/domain/query.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L13)
 
-___
+***
 
-### view
+### view?
 
-• `Optional` **view**: `string`
+> `optional` **view**: `string`
 
-#### Defined in
+#### Source
 
-[src/lib/query/domain/query.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/query/domain/query.ts#L11)
+[src/lib/query/domain/query.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/query/domain/query.ts#L11)

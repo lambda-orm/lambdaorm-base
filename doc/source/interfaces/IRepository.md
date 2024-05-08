@@ -1,631 +1,629 @@
+[**Lambda ORM**](../README.md) • **Docs**
+
+***
+
 [Lambda ORM](../README.md) / IRepository
 
 # Interface: IRepository\<TEntity, TQuery\>
 
 ## Type parameters
 
-| Name |
-| :------ |
-| `TEntity` |
-| `TQuery` |
+• **TEntity**
 
-## Table of contents
-
-### Methods
-
-- [bulkDelete](IRepository.md#bulkdelete)
-- [bulkInsert](IRepository.md#bulkinsert)
-- [bulkMerge](IRepository.md#bulkmerge)
-- [delete](IRepository.md#delete)
-- [deleteAll](IRepository.md#deleteall)
-- [distinct](IRepository.md#distinct)
-- [execute](IRepository.md#execute)
-- [first](IRepository.md#first)
-- [insert](IRepository.md#insert)
-- [last](IRepository.md#last)
-- [list](IRepository.md#list)
-- [merge](IRepository.md#merge)
-- [query](IRepository.md#query)
-- [update](IRepository.md#update)
-- [updateAll](IRepository.md#updateall)
-- [upsert](IRepository.md#upsert)
+• **TQuery**
 
 ## Methods
 
-### bulkDelete
+### bulkDelete()
 
-▸ **bulkDelete**(`entities`): `Promise`\<`any`[]\>
+#### bulkDelete(entities)
 
-#### Parameters
+> **bulkDelete**(`entities`): `Promise`\<`any`[]\>
 
-| Name | Type |
-| :------ | :------ |
-| `entities` | `TEntity`[] |
+##### Parameters
 
-#### Returns
+• **entities**: `TEntity`[]
 
-`Promise`\<`any`[]\>
-
-#### Defined in
-
-[src/lib/repository/application/repository.ts:40](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L40)
-
-▸ **bulkDelete**(`entities`, `include`): `Promise`\<`any`[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entities` | `TEntity`[] |
-| `include` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
+##### Returns
 
 `Promise`\<`any`[]\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:41](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L41)
+[src/lib/repository/application/repository.ts:40](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L40)
 
-▸ **bulkDelete**(`entities`, `include?`): `Promise`\<`any`[]\>
+#### bulkDelete(entities, include)
 
-#### Parameters
+> **bulkDelete**(`entities`, `include`): `Promise`\<`any`[]\>
 
-| Name | Type |
-| :------ | :------ |
-| `entities` | `TEntity`[] |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+##### Parameters
 
-#### Returns
+• **entities**: `TEntity`[]
 
-`Promise`\<`any`[]\>
+• **include**
 
-#### Defined in
-
-[src/lib/repository/application/repository.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L42)
-
-___
-
-### bulkInsert
-
-▸ **bulkInsert**(`entities`): `Promise`\<`any`[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entities` | `TEntity`[] |
-
-#### Returns
+##### Returns
 
 `Promise`\<`any`[]\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L10)
+[src/lib/repository/application/repository.ts:41](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L41)
 
-▸ **bulkInsert**(`entities`, `include`): `Promise`\<`any`[]\>
+#### bulkDelete(entities, include)
 
-#### Parameters
+> **bulkDelete**(`entities`, `include`?): `Promise`\<`any`[]\>
 
-| Name | Type |
-| :------ | :------ |
-| `entities` | `TEntity`[] |
-| `include` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+##### Parameters
 
-#### Returns
+• **entities**: `TEntity`[]
 
-`Promise`\<`any`[]\>
+• **include?**
 
-#### Defined in
-
-[src/lib/repository/application/repository.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L11)
-
-▸ **bulkInsert**(`entities`, `include?`): `Promise`\<`any`[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entities` | `TEntity`[] |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
+##### Returns
 
 `Promise`\<`any`[]\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L12)
+[src/lib/repository/application/repository.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L42)
 
-___
+***
 
-### bulkMerge
+### bulkInsert()
 
-▸ **bulkMerge**(`entities`): `Promise`\<`any`[]\>
+#### bulkInsert(entities)
 
-#### Parameters
+> **bulkInsert**(`entities`): `Promise`\<`any`[]\>
 
-| Name | Type |
-| :------ | :------ |
-| `entities` | `TEntity`[] |
+##### Parameters
 
-#### Returns
+• **entities**: `TEntity`[]
 
-`Promise`\<`any`[]\>
-
-#### Defined in
-
-[src/lib/repository/application/repository.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L32)
-
-▸ **bulkMerge**(`entities`, `include`): `Promise`\<`any`[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entities` | `TEntity`[] |
-| `include` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
+##### Returns
 
 `Promise`\<`any`[]\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L33)
+[src/lib/repository/application/repository.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L10)
 
-▸ **bulkMerge**(`entities`, `include?`): `Promise`\<`any`[]\>
+#### bulkInsert(entities, include)
 
-#### Parameters
+> **bulkInsert**(`entities`, `include`): `Promise`\<`any`[]\>
 
-| Name | Type |
-| :------ | :------ |
-| `entities` | `TEntity`[] |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+##### Parameters
 
-#### Returns
+• **entities**: `TEntity`[]
+
+• **include**
+
+##### Returns
 
 `Promise`\<`any`[]\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L34)
+[src/lib/repository/application/repository.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L11)
 
-___
+#### bulkInsert(entities, include)
 
-### delete
+> **bulkInsert**(`entities`, `include`?): `Promise`\<`any`[]\>
 
-▸ **delete**(`entity`): `Promise`\<`number`\>
+##### Parameters
+
+• **entities**: `TEntity`[]
+
+• **include?**
+
+##### Returns
+
+`Promise`\<`any`[]\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L12)
+
+***
+
+### bulkMerge()
+
+#### bulkMerge(entities)
+
+> **bulkMerge**(`entities`): `Promise`\<`any`[]\>
+
+##### Parameters
+
+• **entities**: `TEntity`[]
+
+##### Returns
+
+`Promise`\<`any`[]\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L32)
+
+#### bulkMerge(entities, include)
+
+> **bulkMerge**(`entities`, `include`): `Promise`\<`any`[]\>
+
+##### Parameters
+
+• **entities**: `TEntity`[]
+
+• **include**
+
+##### Returns
+
+`Promise`\<`any`[]\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L33)
+
+#### bulkMerge(entities, include)
+
+> **bulkMerge**(`entities`, `include`?): `Promise`\<`any`[]\>
+
+##### Parameters
+
+• **entities**: `TEntity`[]
+
+• **include?**
+
+##### Returns
+
+`Promise`\<`any`[]\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L34)
+
+***
+
+### delete()
+
+#### delete(entity)
+
+> **delete**(`entity`): `Promise`\<`number`\>
+
+##### Parameters
+
+• **entity**: `TEntity`
+
+##### Returns
+
+`Promise`\<`number`\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L36)
+
+#### delete(entity, include)
+
+> **delete**(`entity`, `include`): `Promise`\<`number`\>
+
+##### Parameters
+
+• **entity**: `TEntity`
+
+• **include**
+
+##### Returns
+
+`Promise`\<`number`\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L37)
+
+#### delete(entity, include)
+
+> **delete**(`entity`, `include`?): `Promise`\<`number`\>
+
+##### Parameters
+
+• **entity**: `TEntity`
+
+• **include?**
+
+##### Returns
+
+`Promise`\<`number`\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L38)
+
+***
+
+### deleteAll()
+
+> **deleteAll**(`data`, `filter`?, `include`?): `Promise`\<`number`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
+• **data**: `any`
+
+• **filter?**
+
+• **include?**
 
 #### Returns
 
 `Promise`\<`number`\>
 
-#### Defined in
+#### Source
 
-[src/lib/repository/application/repository.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L36)
+[src/lib/repository/application/repository.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L44)
 
-▸ **delete**(`entity`, `include`): `Promise`\<`number`\>
+***
 
-#### Parameters
+### distinct()
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
-
-`Promise`\<`number`\>
-
-#### Defined in
-
-[src/lib/repository/application/repository.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L37)
-
-▸ **delete**(`entity`, `include?`): `Promise`\<`number`\>
+> **distinct**(`data`, `filter`?, `include`?): `Promise`\<`any`[]\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+• **data**: `any`
 
-#### Returns
+• **filter?**
 
-`Promise`\<`number`\>
-
-#### Defined in
-
-[src/lib/repository/application/repository.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L38)
-
-___
-
-### deleteAll
-
-▸ **deleteAll**(`data`, `filter?`, `include?`): `Promise`\<`number`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
-| `filter?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
-
-`Promise`\<`number`\>
-
-#### Defined in
-
-[src/lib/repository/application/repository.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L44)
-
-___
-
-### distinct
-
-▸ **distinct**(`data`, `filter?`, `include?`): `Promise`\<`any`[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
-| `filter?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+• **include?**
 
 #### Returns
 
 `Promise`\<`any`[]\>
 
-#### Defined in
+#### Source
 
-[src/lib/repository/application/repository.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L54)
+[src/lib/repository/application/repository.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L54)
 
-___
+***
 
-### execute
+### execute()
 
-▸ **execute**(`query`, `data?`): `Promise`\<`any`\>
+> **execute**(`query`, `data`?): `Promise`\<`any`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `query` | `string` |
-| `data?` | `any` |
+• **query**: `string`
+
+• **data?**: `any`
 
 #### Returns
 
 `Promise`\<`any`\>
 
-#### Defined in
+#### Source
 
-[src/lib/repository/application/repository.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L5)
+[src/lib/repository/application/repository.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L5)
 
-___
+***
 
-### first
+### first()
 
-▸ **first**(`data`, `filter?`, `include?`): `Promise`\<``null`` \| `TEntity`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
-| `filter?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
-
-`Promise`\<``null`` \| `TEntity`\>
-
-#### Defined in
-
-[src/lib/repository/application/repository.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L59)
-
-___
-
-### insert
-
-▸ **insert**(`entity`): `Promise`\<`any`\>
+> **first**(`data`, `filter`?, `include`?): `Promise`\<`null` \| `TEntity`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
+• **data**: `any`
+
+• **filter?**
+
+• **include?**
 
 #### Returns
+
+`Promise`\<`null` \| `TEntity`\>
+
+#### Source
+
+[src/lib/repository/application/repository.ts:59](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L59)
+
+***
+
+### insert()
+
+#### insert(entity)
+
+> **insert**(`entity`): `Promise`\<`any`\>
+
+##### Parameters
+
+• **entity**: `TEntity`
+
+##### Returns
 
 `Promise`\<`any`\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L6)
+[src/lib/repository/application/repository.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L6)
 
-▸ **insert**(`entity`, `include`): `Promise`\<`any`\>
+#### insert(entity, include)
 
-#### Parameters
+> **insert**(`entity`, `include`): `Promise`\<`any`\>
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+##### Parameters
 
-#### Returns
+• **entity**: `TEntity`
 
-`Promise`\<`any`\>
+• **include**
 
-#### Defined in
-
-[src/lib/repository/application/repository.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L7)
-
-▸ **insert**(`entity`, `include?`): `Promise`\<`any`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
+##### Returns
 
 `Promise`\<`any`\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L8)
+[src/lib/repository/application/repository.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L7)
 
-___
+#### insert(entity, include)
 
-### last
+> **insert**(`entity`, `include`?): `Promise`\<`any`\>
 
-▸ **last**(`data`, `filter?`, `include?`): `Promise`\<``null`` \| `TEntity`\>
+##### Parameters
+
+• **entity**: `TEntity`
+
+• **include?**
+
+##### Returns
+
+`Promise`\<`any`\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L8)
+
+***
+
+### last()
+
+> **last**(`data`, `filter`?, `include`?): `Promise`\<`null` \| `TEntity`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
-| `filter?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+• **data**: `any`
+
+• **filter?**
+
+• **include?**
 
 #### Returns
 
-`Promise`\<``null`` \| `TEntity`\>
+`Promise`\<`null` \| `TEntity`\>
 
-#### Defined in
+#### Source
 
-[src/lib/repository/application/repository.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L64)
+[src/lib/repository/application/repository.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L64)
 
-___
+***
 
-### list
+### list()
 
-▸ **list**(`data`, `filter?`, `include?`): `Promise`\<`TEntity`[]\>
+> **list**(`data`, `filter`?, `include`?): `Promise`\<`TEntity`[]\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
-| `filter?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+• **data**: `any`
+
+• **filter?**
+
+• **include?**
 
 #### Returns
 
 `Promise`\<`TEntity`[]\>
 
-#### Defined in
+#### Source
 
-[src/lib/repository/application/repository.ts:49](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L49)
+[src/lib/repository/application/repository.ts:49](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L49)
 
-___
+***
 
-### merge
+### merge()
 
-▸ **merge**(`entity`): `Promise`\<`number`\>
+#### merge(entity)
 
-#### Parameters
+> **merge**(`entity`): `Promise`\<`number`\>
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
+##### Parameters
 
-#### Returns
+• **entity**: `TEntity`
 
-`Promise`\<`number`\>
-
-#### Defined in
-
-[src/lib/repository/application/repository.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L28)
-
-▸ **merge**(`entity`, `include`): `Promise`\<`number`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
+##### Returns
 
 `Promise`\<`number`\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L29)
+[src/lib/repository/application/repository.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L28)
 
-▸ **merge**(`entity`, `include?`): `Promise`\<`number`\>
+#### merge(entity, include)
 
-#### Parameters
+> **merge**(`entity`, `include`): `Promise`\<`number`\>
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+##### Parameters
 
-#### Returns
+• **entity**: `TEntity`
+
+• **include**
+
+##### Returns
 
 `Promise`\<`number`\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L30)
+[src/lib/repository/application/repository.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L29)
 
-___
+#### merge(entity, include)
 
-### query
+> **merge**(`entity`, `include`?): `Promise`\<`number`\>
 
-▸ **query**(): [`Queryable`](../classes/Queryable.md)\<`TQuery`\>
+##### Parameters
+
+• **entity**: `TEntity`
+
+• **include?**
+
+##### Returns
+
+`Promise`\<`number`\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L30)
+
+***
+
+### query()
+
+> **query**(): [`Queryable`](../classes/Queryable.md)\<`TQuery`\>
 
 #### Returns
 
 [`Queryable`](../classes/Queryable.md)\<`TQuery`\>
 
-#### Defined in
+#### Source
 
-[src/lib/repository/application/repository.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L69)
+[src/lib/repository/application/repository.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L69)
 
-___
+***
 
-### update
+### update()
 
-▸ **update**(`entity`): `Promise`\<`number`\>
+#### update(entity)
+
+> **update**(`entity`): `Promise`\<`number`\>
+
+##### Parameters
+
+• **entity**: `TEntity`
+
+##### Returns
+
+`Promise`\<`number`\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L14)
+
+#### update(entity, include)
+
+> **update**(`entity`, `include`): `Promise`\<`number`\>
+
+##### Parameters
+
+• **entity**: `TEntity`
+
+• **include**
+
+##### Returns
+
+`Promise`\<`number`\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L15)
+
+#### update(entity, include)
+
+> **update**(`entity`, `include`?): `Promise`\<`number`\>
+
+##### Parameters
+
+• **entity**: `TEntity`
+
+• **include?**
+
+##### Returns
+
+`Promise`\<`number`\>
+
+##### Source
+
+[src/lib/repository/application/repository.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L16)
+
+***
+
+### updateAll()
+
+> **updateAll**(`data`, `map`, `filter`?, `include`?): `Promise`\<`number`\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
+• **data**: `any`
+
+• **map**
+
+• **filter?**
+
+• **include?**
 
 #### Returns
 
 `Promise`\<`number`\>
 
-#### Defined in
+#### Source
 
-[src/lib/repository/application/repository.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L14)
+[src/lib/repository/application/repository.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L22)
 
-▸ **update**(`entity`, `include`): `Promise`\<`number`\>
+***
 
-#### Parameters
+### upsert()
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+#### upsert(entity)
 
-#### Returns
+> **upsert**(`entity`): `Promise`\<`number`\>
 
-`Promise`\<`number`\>
+##### Parameters
 
-#### Defined in
+• **entity**: `TEntity`
 
-[src/lib/repository/application/repository.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L15)
-
-▸ **update**(`entity`, `include?`): `Promise`\<`number`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
+##### Returns
 
 `Promise`\<`number`\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L16)
+[src/lib/repository/application/repository.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L18)
 
-___
+#### upsert(entity, include)
 
-### updateAll
+> **upsert**(`entity`, `include`): `Promise`\<`number`\>
 
-▸ **updateAll**(`data`, `map`, `filter?`, `include?`): `Promise`\<`number`\>
+##### Parameters
 
-#### Parameters
+• **entity**: `TEntity`
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
-| `map` | (`value`: `TEntity`) => `unknown` |
-| `filter?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
+• **include**
 
-#### Returns
+##### Returns
 
 `Promise`\<`number`\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L22)
+[src/lib/repository/application/repository.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L19)
 
-___
+#### upsert(entity, include)
 
-### upsert
+> **upsert**(`entity`, `include`?): `Promise`\<`number`\>
 
-▸ **upsert**(`entity`): `Promise`\<`number`\>
+##### Parameters
 
-#### Parameters
+• **entity**: `TEntity`
 
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
+• **include?**
 
-#### Returns
+##### Returns
 
 `Promise`\<`number`\>
 
-#### Defined in
+##### Source
 
-[src/lib/repository/application/repository.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L18)
-
-▸ **upsert**(`entity`, `include`): `Promise`\<`number`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
-
-`Promise`\<`number`\>
-
-#### Defined in
-
-[src/lib/repository/application/repository.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L19)
-
-▸ **upsert**(`entity`, `include?`): `Promise`\<`number`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | `TEntity` |
-| `include?` | (`value`: `TQuery`, `index`: `number`, `array`: `TQuery`[]) => `unknown` |
-
-#### Returns
-
-`Promise`\<`number`\>
-
-#### Defined in
-
-[src/lib/repository/application/repository.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/9b21e8689acd2305a4bae966af6b658877a4045e/src/lib/repository/application/repository.ts#L20)
+[src/lib/repository/application/repository.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/application/repository.ts#L20)

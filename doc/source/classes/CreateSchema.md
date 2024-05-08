@@ -22,7 +22,7 @@
 
 #### Source
 
-[src/lib/schema/application/useCases/create.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/useCases/create.ts#L6)
+[src/lib/schema/application/useCases/create.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/7ab89b6bcd2fea05971e688ab15feca3a500d972/src/lib/schema/application/useCases/create.ts#L6)
 
 ## Methods
 
@@ -42,4 +42,4 @@
 
 #### Source
 
-[src/lib/schema/application/useCases/create.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/schema/application/useCases/create.ts#L10)
+[src/lib/schema/application/useCases/create.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/7ab89b6bcd2fea05971e688ab15feca3a500d972/src/lib/schema/application/useCases/create.ts#L10)

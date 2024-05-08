@@ -22,4 +22,4 @@ Get remainder
 
 ## Source
 
-[src/lib/repository/domain/queryable.ts:322](https://github.com/lambda-orm/lambdaorm-base/blob/ca6421568853c5efe7433915c5510adb7501a76c/src/lib/repository/domain/queryable.ts#L322)
+[src/lib/repository/domain/queryable.ts:322](https://github.com/lambda-orm/lambdaorm-base/blob/7ab89b6bcd2fea05971e688ab15feca3a500d972/src/lib/repository/domain/queryable.ts#L322)

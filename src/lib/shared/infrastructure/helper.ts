@@ -55,10 +55,9 @@ export class QueryHelper {
 		if (_format === 'utc') {
 			return iso
 		} else if (_format === 'iso') {
-				return LUXON.DateTime.fromISO(iso).toISO()
-			} else {
-				return LUXON.DateTime.fromISO(iso).toFormat(format)
-			}
+			return LUXON.DateTime.fromISO(iso).toISO()
+		} else {
+			return LUXON.DateTime.fromISO(iso).toFormat(format)
 		}
 	}
 

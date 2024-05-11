@@ -87,6 +87,7 @@ export interface RelationInfo {
 export interface PropertyMapping extends Property {
 	mapping: string
 	readMappingExp?: string
+	dbType?: string
 }
 export interface EntityMapping extends Entity {
 	mapping?: string

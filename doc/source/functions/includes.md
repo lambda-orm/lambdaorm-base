@@ -22,7 +22,7 @@
 
 ### Source
 
-[src/lib/repository/domain/queryable.ts:293](https://github.com/lambda-orm/lambdaorm-base/blob/7ab89b6bcd2fea05971e688ab15feca3a500d972/src/lib/repository/domain/queryable.ts#L293)
+[src/lib/repository/domain/queryable.ts:293](https://github.com/lambda-orm/lambdaorm-base/blob/f5bdfd5d7ef4bf9d8223ee81080c8ed65a6bb693/src/lib/repository/domain/queryable.ts#L293)
 
 ## includes(field, searchString)
 
@@ -42,4 +42,4 @@ Returns true if searchString appears as a substring of the result of converting 
 
 ### Source
 
-[src/lib/repository/domain/queryable.ts:374](https://github.com/lambda-orm/lambdaorm-base/blob/7ab89b6bcd2fea05971e688ab15feca3a500d972/src/lib/repository/domain/queryable.ts#L374)
+[src/lib/repository/domain/queryable.ts:374](https://github.com/lambda-orm/lambdaorm-base/blob/f5bdfd5d7ef4bf9d8223ee81080c8ed65a6bb693/src/lib/repository/domain/queryable.ts#L374)

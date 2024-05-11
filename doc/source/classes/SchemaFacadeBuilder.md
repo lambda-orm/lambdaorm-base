@@ -24,7 +24,7 @@
 
 #### Source
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/7ab89b6bcd2fea05971e688ab15feca3a500d972/src/lib/schema/infrastructure/facadeBuilder.ts#L10)
+[src/lib/schema/infrastructure/facadeBuilder.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/f5bdfd5d7ef4bf9d8223ee81080c8ed65a6bb693/src/lib/schema/infrastructure/facadeBuilder.ts#L10)
 
 ## Methods
 
@@ -38,4 +38,4 @@
 
 #### Source
 
-[src/lib/schema/infrastructure/facadeBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/7ab89b6bcd2fea05971e688ab15feca3a500d972/src/lib/schema/infrastructure/facadeBuilder.ts#L15)
+[src/lib/schema/infrastructure/facadeBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/f5bdfd5d7ef4bf9d8223ee81080c8ed65a6bb693/src/lib/schema/infrastructure/facadeBuilder.ts#L15)

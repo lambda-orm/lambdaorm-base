@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+## [1.7.0](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.6.3...v1.7.0) (2024-05-11)
+
+
+### Features
+
+* add custom dbType in property mapping ([f5bdfd5](https://github.com/FlavioLionelRita/lambdaorm-base/commit/f5bdfd5d7ef4bf9d8223ee81080c8ed65a6bb693)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [1.6.3](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.6.2...v1.6.3) (2024-05-08)
 
 ### [1.6.2](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.6.1...v1.6.2) (2024-05-08)

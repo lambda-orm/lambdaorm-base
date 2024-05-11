@@ -20,4 +20,4 @@ Get natural logarithm of num
 
 ## Source
 
-[src/lib/repository/domain/queryable.ts:318](https://github.com/lambda-orm/lambdaorm-base/blob/aa369ded9e7763a31678c0168646a8ee1291b500/src/lib/repository/domain/queryable.ts#L318)
+[src/lib/repository/domain/queryable.ts:318](https://github.com/lambda-orm/lambdaorm-base/blob/4cf2de441f2b52a79b8dbd828c5ce7422ffa163a/src/lib/repository/domain/queryable.ts#L318)

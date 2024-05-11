@@ -36,7 +36,7 @@
 
 #### Source
 
-[src/lib/sentence/domain/sentence.ts:110](https://github.com/lambda-orm/lambdaorm-base/blob/aa369ded9e7763a31678c0168646a8ee1291b500/src/lib/sentence/domain/sentence.ts#L110)
+[src/lib/sentence/domain/sentence.ts:110](https://github.com/lambda-orm/lambdaorm-base/blob/4cf2de441f2b52a79b8dbd828c5ce7422ffa163a/src/lib/sentence/domain/sentence.ts#L110)
 
 ## Properties
 
@@ -130,7 +130,7 @@ node\_modules/3xpr/shared/domain/operand.d.ts:41
 
 #### Source
 
-[src/lib/sentence/domain/sentence.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/aa369ded9e7763a31678c0168646a8ee1291b500/src/lib/sentence/domain/sentence.ts#L109)
+[src/lib/sentence/domain/sentence.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/4cf2de441f2b52a79b8dbd828c5ce7422ffa163a/src/lib/sentence/domain/sentence.ts#L109)
 
 ***
 

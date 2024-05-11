@@ -153,7 +153,7 @@ export interface TaskConfig {
 }
 export interface AppPathsConfig {
 	src?: string
-	data?: string
+	state?: string
 	domain?: string
 }
 export interface DomainSchema {

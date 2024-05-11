@@ -18,7 +18,7 @@ export class SchemaService {
 	}
 
 	public newPathsApp (): AppPathsConfig {
-		return { src: 'src', data: 'data', domain: 'domain' }
+		return { src: 'src', state: 'orm_state', domain: 'domain' }
 	}
 
 	public complete (schema: Schema):void {
@@ -50,8 +50,8 @@ export class SchemaService {
 			if (!schema.infrastructure.paths.src) {
 				schema.infrastructure.paths.src = 'src'
 			}
-			if (!schema.infrastructure.paths.data) {
-				schema.infrastructure.paths.data = 'data'
+			if (!schema.infrastructure.paths.state) {
+				schema.infrastructure.paths.state = 'orm_state'
 			}
 			if (!schema.infrastructure.paths.domain) {
 				schema.infrastructure.paths.domain = 'domain'

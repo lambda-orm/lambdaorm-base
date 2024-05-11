@@ -13,7 +13,7 @@ export class ClearSchema {
 		if (schema.infrastructure) {
 			if (schema.infrastructure.paths) {
 				if (schema.infrastructure.paths.src === '') schema.infrastructure.paths.src = undefined
-				if (schema.infrastructure.paths.data === '') schema.infrastructure.paths.data = undefined
+				if (schema.infrastructure.paths.state === '') schema.infrastructure.paths.state = undefined
 				if (schema.infrastructure.paths.domain === '') schema.infrastructure.paths.domain = undefined
 			}
 			if (schema.infrastructure.mappings && schema.infrastructure.mappings.length === 0) {

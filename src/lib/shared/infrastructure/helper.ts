@@ -51,13 +51,13 @@ export class QueryHelper {
 			throw new Error('Value is required')
 		}
 		const _format = format.toLowerCase()
-		const iso = new Date(value).toISOString()
+		const utc = new Date(value).toISOString()
 		if (_format === 'utc') {
-			return iso
+			return utc
 		} else if (_format === 'iso') {
-			return LUXON.DateTime.fromISO(iso).toISO()
+			return LUXON.DateTime.fromISO(utc, { zone: 'utc' }).toISO()
 		} else {
-			return LUXON.DateTime.fromISO(iso).toFormat(format)
+			return LUXON.DateTime.fromISO(utc, { zone: 'utc' }).toFormat(format)
 		}
 	}
 

@@ -50,11 +50,11 @@ export class QueryHelper {
 		if (!value) {
 			throw new Error('Value is required')
 		}
-		if (format.toLowerCase() === 'utc') {
-			return new Date(value).toUTCString()
-		} else {
-			const iso = new Date(value).toISOString()
-			if (format.toLowerCase() === 'iso') {
+		const _format = format.toLowerCase()
+		const iso = new Date(value).toISOString()
+		if (_format === 'utc') {
+			return iso
+		} else if (_format === 'iso') {
 				return LUXON.DateTime.fromISO(iso).toISO()
 			} else {
 				return LUXON.DateTime.fromISO(iso).toFormat(format)

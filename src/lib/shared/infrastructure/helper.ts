@@ -43,12 +43,22 @@ export class QueryHelper {
 		return SqlString.dateToString(date, timeZone)
 	}
 
-	public dateFormat (value:any, format:string = 'ISO'):string {
-		const iso = new Date(value).toISOString()
-		if (format === 'ISO') {
-			return LUXON.DateTime.fromISO(iso).toISO()
+	public dateFormat (value:any, format:string = 'iso'):string {
+		if (!format) {
+			throw new Error('Format is required')
+		}
+		if (!value) {
+			throw new Error('Value is required')
+		}
+		if (format.toLowerCase() === 'utc') {
+			return new Date(value).toUTCString()
 		} else {
-			return LUXON.DateTime.fromISO(iso).toFormat(format)
+			const iso = new Date(value).toISOString()
+			if (format.toLowerCase() === 'iso') {
+				return LUXON.DateTime.fromISO(iso).toISO()
+			} else {
+				return LUXON.DateTime.fromISO(iso).toFormat(format)
+			}
 		}
 	}
 

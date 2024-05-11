@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [1.7.4](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.7.3...v1.7.4) (2024-05-11)
+
+
+### Bug Fixes
+
+* adjust dateFormat ([1d2abad](https://github.com/FlavioLionelRita/lambdaorm-base/commit/1d2abad50f28511cd0e6125c8c883a452d54160f)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+* adjust dateFormat ([524a91a](https://github.com/FlavioLionelRita/lambdaorm-base/commit/524a91ac7d7ff7ed572a36df43fb34c9b8f10a30)), closes [#0](https://github.com/FlavioLionelRita/lambdaorm-base/issues/0)
+
 ### [1.7.3](https://github.com/FlavioLionelRita/lambdaorm-base/compare/v1.7.2...v1.7.3) (2024-05-11)
 
 **Bug Fixes:**

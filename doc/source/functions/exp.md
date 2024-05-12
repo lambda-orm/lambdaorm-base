@@ -20,4 +20,4 @@ Raise e to the nth power
 
 ## Source
 
-[src/lib/repository/domain/queryable.ts:314](https://github.com/lambda-orm/lambdaorm-base/blob/b218b3f63a52b1177feec1e7ed5eb0f37947c503/src/lib/repository/domain/queryable.ts#L314)
+[src/lib/repository/domain/queryable.ts:314](https://github.com/lambda-orm/lambdaorm-base/blob/5d74b344f8322b5f4e53698b0a2759c1bc628a31/src/lib/repository/domain/queryable.ts#L314)

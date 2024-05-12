@@ -50,16 +50,16 @@ export class QueryHelper {
 		if (!value) {
 			throw new Error('Value is required')
 		}
+		const date = value instanceof Date ? value : new Date(value)
 		const _format = format.toLowerCase()
-		const utc = new Date(value).toISOString()
 		if (_format === 'utc') {
-			return utc
+			return date.toISOString()
 		} else if (_format === 'utc-without-ms') {
-			return utc.replace(/\.\d{3}Z$/, '.000Z')
+			return date.toISOString().replace(/\.\d{3}Z$/, '.000Z')
 		} else if (_format === 'iso') {
-			return LUXON.DateTime.fromISO(utc).toISO()
+			return LUXON.DateTime.fromJSDate(date).toISO()
 		} else {
-			return LUXON.DateTime.fromISO(utc).toFormat(format)
+			return LUXON.DateTime.fromJSDate(date).toFormat(format)
 		}
 	}
 

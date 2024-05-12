@@ -38,7 +38,7 @@
 
 #### Source
 
-[src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/b218b3f63a52b1177feec1e7ed5eb0f37947c503/src/lib/sentence/domain/sentence.ts#L54)
+[src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/5d74b344f8322b5f4e53698b0a2759c1bc628a31/src/lib/sentence/domain/sentence.ts#L54)
 
 ## Properties
 
@@ -48,7 +48,7 @@
 
 #### Source
 
-[src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/b218b3f63a52b1177feec1e7ed5eb0f37947c503/src/lib/sentence/domain/sentence.ts#L52)
+[src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/5d74b344f8322b5f4e53698b0a2759c1bc628a31/src/lib/sentence/domain/sentence.ts#L52)
 
 ***
 
@@ -72,7 +72,7 @@ node\_modules/3xpr/shared/domain/operand.d.ts:44
 
 #### Source
 
-[src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/b218b3f63a52b1177feec1e7ed5eb0f37947c503/src/lib/sentence/domain/sentence.ts#L53)
+[src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/5d74b344f8322b5f4e53698b0a2759c1bc628a31/src/lib/sentence/domain/sentence.ts#L53)
 
 ***
 

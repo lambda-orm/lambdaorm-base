@@ -22,4 +22,4 @@ Get rounded value
 
 ## Source
 
-[src/lib/repository/domain/queryable.ts:324](https://github.com/lambda-orm/lambdaorm-base/blob/e3a7772bb5fa4082532c38729067cbcb8dfa89b9/src/lib/repository/domain/queryable.ts#L324)
+[src/lib/repository/domain/queryable.ts:324](https://github.com/lambda-orm/lambdaorm-base/blob/b218b3f63a52b1177feec1e7ed5eb0f37947c503/src/lib/repository/domain/queryable.ts#L324)

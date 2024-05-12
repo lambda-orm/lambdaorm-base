@@ -54,10 +54,12 @@ export class QueryHelper {
 		const utc = new Date(value).toISOString()
 		if (_format === 'utc') {
 			return utc
+		} else if (_format === 'utc-without-ms') {
+			return utc.replace(/\.\d{3}Z$/, '.000Z')
 		} else if (_format === 'iso') {
-			return LUXON.DateTime.fromISO(utc, { zone: 'utc' }).toISO()
+			return LUXON.DateTime.fromISO(utc).toISO()
 		} else {
-			return LUXON.DateTime.fromISO(utc, { zone: 'utc' }).toFormat(format)
+			return LUXON.DateTime.fromISO(utc).toFormat(format)
 		}
 	}
 

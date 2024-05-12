@@ -14,6 +14,15 @@
 			"program": "${workspaceFolder}/src/dev/sqlString/index.ts"
 		},
 		{
+			"name": "dates",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/src/dev/dates/index.ts"
+		},
+		{
 			"name": "lab",
 			"type": "node",
 			"request": "launch",

@@ -56,6 +56,8 @@ export class QueryHelper {
 			return date.toISOString()
 		} else if (_format === 'utc-without-ms') {
 			return date.toISOString().replace(/\.\d{3}Z$/, '.000Z')
+		} else if (_format === 'utc-date') {
+			return new Date(LUXON.DateTime.fromJSDate(date).toFormat('yyyy-MM-dd 00:00:00')).toISOString()
 		} else if (_format === 'iso') {
 			return LUXON.DateTime.fromJSDate(date).toISO()
 		} else {

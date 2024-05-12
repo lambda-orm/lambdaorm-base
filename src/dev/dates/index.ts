@@ -9,8 +9,9 @@ const lab = async () => {
 		const now = new Date(value)
 		console.log('value:', value)
 		console.log(helper.query.dateFormat(now, 'utc'))
-		console.log(helper.query.dateFormat(now, 'iso'))
 		console.log(helper.query.dateFormat(now, 'utc-without-ms'))
+		console.log(helper.query.dateFormat(now, 'utc-date'))
+		console.log(helper.query.dateFormat(now, 'iso'))
 		console.log(helper.query.dateFormat(now, 'yyyy-MM-dd HH:mm:ss.000'))
 		console.log(helper.query.dateFormat(now, 'yyyy-MM-dd 00:00:00.000'))
 	}

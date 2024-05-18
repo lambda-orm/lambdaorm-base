@@ -22,4 +22,4 @@ Get logarithm, base num1, of num2
 
 ## Source
 
-[src/lib/repository/domain/queryable.ts:320](https://github.com/lambda-orm/lambdaorm-base/blob/369fa6c47dfcaa18334efd22efe5cc76c83a011a/src/lib/repository/domain/queryable.ts#L320)
+[src/lib/repository/domain/queryable.ts:320](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/repository/domain/queryable.ts#L320)

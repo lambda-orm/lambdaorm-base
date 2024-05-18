@@ -32,7 +32,7 @@
 
 #### Source
 
-[src/lib/shared/domain/error.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/369fa6c47dfcaa18334efd22efe5cc76c83a011a/src/lib/shared/domain/error.ts#L9)
+[src/lib/shared/domain/error.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/shared/domain/error.ts#L9)
 
 ## Properties
 

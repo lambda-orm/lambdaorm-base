@@ -28,7 +28,7 @@
 
 #### Source
 
-[src/lib/schema/application/services/routeService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/369fa6c47dfcaa18334efd22efe5cc76c83a011a/src/lib/schema/application/services/routeService.ts#L7)
+[src/lib/schema/application/services/routeService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/application/services/routeService.ts#L7)
 
 ## Methods
 
@@ -52,7 +52,7 @@
 
 #### Source
 
-[src/lib/schema/application/services/routeService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/369fa6c47dfcaa18334efd22efe5cc76c83a011a/src/lib/schema/application/services/routeService.ts#L11)
+[src/lib/schema/application/services/routeService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/application/services/routeService.ts#L11)
 
 ***
 
@@ -76,4 +76,4 @@
 
 #### Source
 
-[src/lib/schema/application/services/routeService.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/369fa6c47dfcaa18334efd22efe5cc76c83a011a/src/lib/schema/application/services/routeService.ts#L16)
+[src/lib/schema/application/services/routeService.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/application/services/routeService.ts#L16)

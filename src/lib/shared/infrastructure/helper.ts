@@ -1,7 +1,7 @@
 import { H3lp, IStringHelper } from 'h3lp'
 import { ExprH3lp } from '3xpr'
 import { SchemaHelper } from '../../schema/infrastructure'
-import { Logger } from '../application/ports/logger'
+import { Logger } from '../domain/ports/logger'
 import { SentenceAction, SentenceCategory, SentenceInfo, SentenceType } from '../../schema/domain'
 const YAML = require('js-yaml')
 const UUID = require('uuid')

@@ -1,4 +1,4 @@
-import { Logger } from '../application/ports/logger'
+import { Logger } from '../domain/ports/logger'
 import { ConsoleLogger } from './consoleLogger'
 import { WinstonLogger } from './winstonLogger'
 

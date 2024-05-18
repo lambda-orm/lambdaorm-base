@@ -1,4 +1,3 @@
-export * from './ports/fileSchemaService'
 export * from './services/schemaService'
 export * from './services/interpretSchemaDataService'
 export * from './services/config/dataSourceConfigService'

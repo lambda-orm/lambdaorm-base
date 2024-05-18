@@ -1,7 +1,6 @@
-import { Schema, SchemaError, SchemaInfo } from '../domain'
+import { Schema, SchemaError, SchemaInfo, IFileSchemaService } from '../domain'
 import path from 'path'
 import { H3lp } from 'h3lp'
-import { IFileSchemaService } from '../application'
 import { SchemaFileHelper } from './schemaFileHelper'
 const yaml = require('js-yaml')
 

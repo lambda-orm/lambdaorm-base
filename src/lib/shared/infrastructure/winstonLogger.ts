@@ -1,4 +1,4 @@
-import { Logger } from '../application/ports/logger'
+import { Logger } from '../domain/ports/logger'
 const { transports, createLogger, format } = require('winston')
 
 export class WinstonLogger extends Logger {

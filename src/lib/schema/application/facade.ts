@@ -1,4 +1,4 @@
-import { Schema, SchemaData, Dialect, Mapping, MatchOptions, InitializeSchemaArgs, SchemaInfo } from '../domain'
+import { Schema, SchemaData, Dialect, Mapping, MatchOptions, InitializeSchemaArgs, SchemaInfo, IFileSchemaService } from '../domain'
 import { SchemaExtender } from './services/schemaExtender'
 import { CreateSchema } from './useCases/create'
 import { UpdateSchema } from './useCases/update'
@@ -7,7 +7,6 @@ import { GetSchemaSchema } from './useCases/getSchemaData'
 import { Type } from 'typ3s'
 import { MatchSchema } from './useCases/match'
 import { InitializeSchema } from './useCases/initialize'
-import { IFileSchemaService } from './ports/fileSchemaService'
 export class SchemaFacade {
 	// eslint-disable-next-line no-useless-constructor
 	constructor (

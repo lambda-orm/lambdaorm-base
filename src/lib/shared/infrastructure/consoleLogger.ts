@@ -1,4 +1,4 @@
-import { Logger } from '../application/ports/logger'
+import { Logger } from '../domain/ports/logger'
 
 export class ConsoleLogger extends Logger {
 	protected override async error (message: string|any): Promise<void> {

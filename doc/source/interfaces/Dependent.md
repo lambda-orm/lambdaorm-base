@@ -14,7 +14,7 @@
 
 #### Source
 
-[src/lib/schema/domain/schema.ts:51](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/domain/schema.ts#L51)
+[src/lib/schema/domain/schema.ts:51](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/schema/domain/schema.ts#L51)
 
 ***
 
@@ -24,4 +24,4 @@
 
 #### Source
 
-[src/lib/schema/domain/schema.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/domain/schema.ts#L52)
+[src/lib/schema/domain/schema.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/schema/domain/schema.ts#L52)

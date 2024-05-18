@@ -20,4 +20,4 @@ Get character from ASCII code
 
 ## Source
 
-[src/lib/repository/domain/queryable.ts:339](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/repository/domain/queryable.ts#L339)
+[src/lib/repository/domain/queryable.ts:339](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/repository/domain/queryable.ts#L339)

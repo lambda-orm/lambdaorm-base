@@ -18,7 +18,7 @@
 
 #### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/application/services/config/mappingsConfigService.ts#L7)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/schema/application/services/config/mappingsConfigService.ts#L7)
 
 ## Properties
 
@@ -28,7 +28,7 @@
 
 #### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/application/services/config/mappingsConfigService.ts#L5)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/schema/application/services/config/mappingsConfigService.ts#L5)
 
 ## Methods
 
@@ -46,7 +46,7 @@
 
 #### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/application/services/config/mappingsConfigService.ts#L22)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/schema/application/services/config/mappingsConfigService.ts#L22)
 
 ***
 
@@ -64,7 +64,7 @@
 
 #### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/application/services/config/mappingsConfigService.ts#L29)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/schema/application/services/config/mappingsConfigService.ts#L29)
 
 ***
 
@@ -82,7 +82,7 @@
 
 #### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/application/services/config/mappingsConfigService.ts#L37)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/schema/application/services/config/mappingsConfigService.ts#L37)
 
 ***
 
@@ -100,4 +100,4 @@
 
 #### Source
 
-[src/lib/schema/application/services/config/mappingsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/75309e81097991935956cdab867faba6428c498c/src/lib/schema/application/services/config/mappingsConfigService.ts#L11)
+[src/lib/schema/application/services/config/mappingsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/schema/application/services/config/mappingsConfigService.ts#L11)

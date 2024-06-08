@@ -34,4 +34,4 @@
 
 #### Source
 
-[src/lib/shared/domain/ports/logger.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/shared/domain/ports/logger.ts#L7)
+[src/lib/shared/domain/ports/logger.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/domain/ports/logger.ts#L7)

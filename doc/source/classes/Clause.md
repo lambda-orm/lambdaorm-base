@@ -10,6 +10,24 @@
 
 - `Operand`
 
+## Extended by
+
+- [`Map`](Map.md)
+- [`Filter`](Filter.md)
+- [`GroupBy`](GroupBy.md)
+- [`Having`](Having.md)
+- [`Sort`](Sort.md)
+- [`Page`](Page.md)
+- [`From`](From.md)
+- [`Join`](Join.md)
+- [`Insert`](Insert.md)
+- [`BulkInsert`](BulkInsert.md)
+- [`Update`](Update.md)
+- [`Upsert`](Upsert.md)
+- [`Delete`](Delete.md)
+- [`BulkDelete`](BulkDelete.md)
+- [`BulkMerge`](BulkMerge.md)
+
 ## Constructors
 
 ### new Clause()
@@ -38,7 +56,7 @@
 
 #### Source
 
-[src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/sentence/domain/sentence.ts#L54)
+[src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/sentence.ts#L54)
 
 ## Properties
 
@@ -48,7 +66,7 @@
 
 #### Source
 
-[src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/sentence/domain/sentence.ts#L52)
+[src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/sentence.ts#L52)
 
 ***
 
@@ -72,7 +90,7 @@ node\_modules/3xpr/shared/domain/operand.d.ts:44
 
 #### Source
 
-[src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/sentence/domain/sentence.ts#L53)
+[src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/sentence.ts#L53)
 
 ***
 

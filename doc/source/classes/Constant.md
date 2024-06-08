@@ -168,7 +168,7 @@ node\_modules/3xpr/shared/domain/operand.d.ts:43
 
 #### Source
 
-[src/lib/sentence/domain/sentence.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/b57bb1d116951848254ba54a2a732f51efc20654/src/lib/sentence/domain/sentence.ts#L8)
+[src/lib/sentence/domain/sentence.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/sentence.ts#L8)
 
 ***
 

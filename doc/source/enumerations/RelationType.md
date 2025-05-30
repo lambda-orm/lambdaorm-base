@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Enumeration: RelationType
 
+Defined in: [src/lib/schema/domain/schema.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L5)
+
 ## Enumeration Members
 
 ### manyToOne
 
 > **manyToOne**: `"manyToOne"`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L7)
+Defined in: [src/lib/schema/domain/schema.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L7)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > **oneToMany**: `"oneToMany"`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L6)
+Defined in: [src/lib/schema/domain/schema.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L6)
 
 ***
 
@@ -32,6 +30,4 @@
 
 > **oneToOne**: `"oneToOne"`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L8)
+Defined in: [src/lib/schema/domain/schema.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L8)

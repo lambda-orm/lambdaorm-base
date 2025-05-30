@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: SentenceInfo
 
+Defined in: [src/lib/schema/domain/sentence.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L62)
+
 ## Properties
 
 ### action
 
 > **action**: [`SentenceAction`](../enumerations/SentenceAction.md)
 
-#### Source
-
-[src/lib/schema/domain/sentence.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/sentence.ts#L64)
+Defined in: [src/lib/schema/domain/sentence.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L64)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > **category**: [`SentenceCategory`](../enumerations/SentenceCategory.md)
 
-#### Source
-
-[src/lib/schema/domain/sentence.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/sentence.ts#L65)
+Defined in: [src/lib/schema/domain/sentence.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L65)
 
 ***
 
@@ -32,9 +30,7 @@
 
 > **ddl**: `boolean`
 
-#### Source
-
-[src/lib/schema/domain/sentence.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/sentence.ts#L70)
+Defined in: [src/lib/schema/domain/sentence.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L70)
 
 ***
 
@@ -42,9 +38,7 @@
 
 > **dml**: `boolean`
 
-#### Source
-
-[src/lib/schema/domain/sentence.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/sentence.ts#L71)
+Defined in: [src/lib/schema/domain/sentence.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L71)
 
 ***
 
@@ -52,9 +46,7 @@
 
 > **entity**: `string`
 
-#### Source
-
-[src/lib/schema/domain/sentence.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/sentence.ts#L63)
+Defined in: [src/lib/schema/domain/sentence.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L63)
 
 ***
 
@@ -62,9 +54,7 @@
 
 > **read**: `boolean`
 
-#### Source
-
-[src/lib/schema/domain/sentence.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/sentence.ts#L68)
+Defined in: [src/lib/schema/domain/sentence.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L68)
 
 ***
 
@@ -72,9 +62,7 @@
 
 > **type**: [`SentenceType`](../enumerations/SentenceType.md)
 
-#### Source
-
-[src/lib/schema/domain/sentence.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/sentence.ts#L66)
+Defined in: [src/lib/schema/domain/sentence.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L66)
 
 ***
 
@@ -82,6 +70,4 @@
 
 > **write**: `boolean`
 
-#### Source
-
-[src/lib/schema/domain/sentence.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/sentence.ts#L69)
+Defined in: [src/lib/schema/domain/sentence.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L69)

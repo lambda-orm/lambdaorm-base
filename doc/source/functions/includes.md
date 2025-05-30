@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,40 +6,44 @@
 
 # Function: includes()
 
-## includes(value, list)
+## Call Signature
 
 > **includes**(`value`, `list`): `boolean`
 
+Defined in: [src/lib/repository/domain/queryable.ts:293](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L293)
+
 ### Parameters
 
-• **value**: `any`
+#### value
 
-• **list**: `any`[]
+`any`
+
+#### list
+
+`any`[]
 
 ### Returns
 
 `boolean`
 
-### Source
-
-[src/lib/repository/domain/queryable.ts:293](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L293)
-
-## includes(field, searchString)
+## Call Signature
 
 > **includes**(`field`, `searchString`): `string`
+
+Defined in: [src/lib/repository/domain/queryable.ts:374](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L374)
 
 Returns true if searchString appears as a substring of the result of converting this
 
 ### Parameters
 
-• **field**: `string`
+#### field
 
-• **searchString**: `string`
+`string`
+
+#### searchString
+
+`string`
 
 ### Returns
 
 `string`
-
-### Source
-
-[src/lib/repository/domain/queryable.ts:374](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L374)

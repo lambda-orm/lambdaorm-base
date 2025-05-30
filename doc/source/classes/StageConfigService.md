@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,19 +6,19 @@
 
 # Class: StageConfigService
 
+Defined in: [src/lib/schema/application/services/config/stageConfigService.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/stageConfigService.ts#L3)
+
 ## Constructors
 
-### new StageConfigService()
+### Constructor
 
-> **new StageConfigService**(): [`StageConfigService`](StageConfigService.md)
+> **new StageConfigService**(): `StageConfigService`
+
+Defined in: [src/lib/schema/application/services/config/stageConfigService.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/stageConfigService.ts#L6)
 
 #### Returns
 
-[`StageConfigService`](StageConfigService.md)
-
-#### Source
-
-[src/lib/schema/application/services/config/stageConfigService.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/config/stageConfigService.ts#L6)
+`StageConfigService`
 
 ## Properties
 
@@ -26,27 +26,25 @@
 
 > **stages**: [`Stage`](../interfaces/Stage.md)[]
 
-#### Source
-
-[src/lib/schema/application/services/config/stageConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/config/stageConfigService.ts#L4)
+Defined in: [src/lib/schema/application/services/config/stageConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/stageConfigService.ts#L4)
 
 ## Methods
 
 ### get()
 
-> **get**(`name`?): [`Stage`](../interfaces/Stage.md)
+> **get**(`name?`): [`Stage`](../interfaces/Stage.md)
+
+Defined in: [src/lib/schema/application/services/config/stageConfigService.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/stageConfigService.ts#L21)
 
 #### Parameters
 
-• **name?**: `string`
+##### name?
+
+`string`
 
 #### Returns
 
 [`Stage`](../interfaces/Stage.md)
-
-#### Source
-
-[src/lib/schema/application/services/config/stageConfigService.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/config/stageConfigService.ts#L21)
 
 ***
 
@@ -54,14 +52,14 @@
 
 > **load**(`value`): `void`
 
+Defined in: [src/lib/schema/application/services/config/stageConfigService.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/stageConfigService.ts#L10)
+
 #### Parameters
 
-• **value**: [`Stage`](../interfaces/Stage.md)
+##### value
+
+[`Stage`](../interfaces/Stage.md)
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/lib/schema/application/services/config/stageConfigService.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/config/stageConfigService.ts#L10)

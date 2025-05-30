@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,23 +6,25 @@
 
 # Interface: QueryActions
 
+Defined in: [src/lib/repository/domain/actions.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/actions.ts#L3)
+
 ## Methods
 
 ### constraints()
 
 > **constraints**(`query`): `Promise`\<[`MetadataConstraint`](MetadataConstraint.md)\>
 
+Defined in: [src/lib/repository/domain/actions.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/actions.ts#L8)
+
 #### Parameters
 
-• **query**: `string`
+##### query
+
+`string`
 
 #### Returns
 
 `Promise`\<[`MetadataConstraint`](MetadataConstraint.md)\>
-
-#### Source
-
-[src/lib/repository/domain/actions.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/actions.ts#L8)
 
 ***
 
@@ -30,19 +32,21 @@
 
 > **execute**(`query`, `data`): `Promise`\<`any`\>
 
+Defined in: [src/lib/repository/domain/actions.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/actions.ts#L4)
+
 #### Parameters
 
-• **query**: `string`
+##### query
 
-• **data**: `any`
+`string`
+
+##### data
+
+`any`
 
 #### Returns
 
 `Promise`\<`any`\>
-
-#### Source
-
-[src/lib/repository/domain/actions.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/actions.ts#L4)
 
 ***
 
@@ -50,17 +54,17 @@
 
 > **metadata**(`query`): `Promise`\<[`Metadata`](Metadata.md)\>
 
+Defined in: [src/lib/repository/domain/actions.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/actions.ts#L9)
+
 #### Parameters
 
-• **query**: `string`
+##### query
+
+`string`
 
 #### Returns
 
 `Promise`\<[`Metadata`](Metadata.md)\>
-
-#### Source
-
-[src/lib/repository/domain/actions.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/actions.ts#L9)
 
 ***
 
@@ -68,17 +72,17 @@
 
 > **model**(`query`): `Promise`\<[`MetadataModel`](MetadataModel.md)[]\>
 
+Defined in: [src/lib/repository/domain/actions.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/actions.ts#L6)
+
 #### Parameters
 
-• **query**: `string`
+##### query
+
+`string`
 
 #### Returns
 
 `Promise`\<[`MetadataModel`](MetadataModel.md)[]\>
-
-#### Source
-
-[src/lib/repository/domain/actions.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/actions.ts#L6)
 
 ***
 
@@ -86,17 +90,17 @@
 
 > **normalize**(`query`): `string`
 
+Defined in: [src/lib/repository/domain/actions.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/actions.ts#L5)
+
 #### Parameters
 
-• **query**: `string`
+##### query
+
+`string`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/repository/domain/actions.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/actions.ts#L5)
 
 ***
 
@@ -104,17 +108,17 @@
 
 > **parameters**(`query`): `Promise`\<[`MetadataParameter`](MetadataParameter.md)[]\>
 
+Defined in: [src/lib/repository/domain/actions.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/actions.ts#L7)
+
 #### Parameters
 
-• **query**: `string`
+##### query
+
+`string`
 
 #### Returns
 
 `Promise`\<[`MetadataParameter`](MetadataParameter.md)[]\>
-
-#### Source
-
-[src/lib/repository/domain/actions.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/actions.ts#L7)
 
 ***
 
@@ -122,14 +126,14 @@
 
 > **plan**(`query`): `Promise`\<[`QueryPlan`](QueryPlan.md)\>
 
+Defined in: [src/lib/repository/domain/actions.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/actions.ts#L10)
+
 #### Parameters
 
-• **query**: `string`
+##### query
+
+`string`
 
 #### Returns
 
 `Promise`\<[`QueryPlan`](QueryPlan.md)\>
-
-#### Source
-
-[src/lib/repository/domain/actions.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/actions.ts#L10)

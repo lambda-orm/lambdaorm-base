@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,23 +6,25 @@
 
 # Class: InterpretSchemaDataService
 
+Defined in: [src/lib/schema/application/services/interpretSchemaDataService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/interpretSchemaDataService.ts#L5)
+
 ## Constructors
 
-### new InterpretSchemaDataService()
+### Constructor
 
-> **new InterpretSchemaDataService**(`helper`): [`InterpretSchemaDataService`](InterpretSchemaDataService.md)
+> **new InterpretSchemaDataService**(`helper`): `InterpretSchemaDataService`
+
+Defined in: [src/lib/schema/application/services/interpretSchemaDataService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/interpretSchemaDataService.ts#L7)
 
 #### Parameters
 
-• **helper**: [`SchemaHelper`](SchemaHelper.md)
+##### helper
+
+[`SchemaHelper`](SchemaHelper.md)
 
 #### Returns
 
-[`InterpretSchemaDataService`](InterpretSchemaDataService.md)
-
-#### Source
-
-[src/lib/schema/application/services/interpretSchemaDataService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/interpretSchemaDataService.ts#L7)
+`InterpretSchemaDataService`
 
 ## Methods
 
@@ -30,20 +32,26 @@
 
 > **completeSchemaData**(`source`, `name`, `type`, `schemaData`): `void`
 
+Defined in: [src/lib/schema/application/services/interpretSchemaDataService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/interpretSchemaDataService.ts#L9)
+
 #### Parameters
 
-• **source**: `any`
+##### source
 
-• **name**: `string`
+`any`
 
-• **type**: `Type`
+##### name
 
-• **schemaData**: [`SchemaData`](../interfaces/SchemaData.md)
+`string`
+
+##### type
+
+`Type`
+
+##### schemaData
+
+[`SchemaData`](../interfaces/SchemaData.md)
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/lib/schema/application/services/interpretSchemaDataService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/interpretSchemaDataService.ts#L9)

@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,23 +6,25 @@
 
 # Class: CreateEntitiesService
 
+Defined in: [src/lib/schema/application/services/createEntitiesService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/createEntitiesService.ts#L5)
+
 ## Constructors
 
-### new CreateEntitiesService()
+### Constructor
 
-> **new CreateEntitiesService**(`helper`): [`CreateEntitiesService`](CreateEntitiesService.md)
+> **new CreateEntitiesService**(`helper`): `CreateEntitiesService`
+
+Defined in: [src/lib/schema/application/services/createEntitiesService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/createEntitiesService.ts#L7)
 
 #### Parameters
 
-• **helper**: [`SchemaHelper`](SchemaHelper.md)
+##### helper
+
+[`SchemaHelper`](SchemaHelper.md)
 
 #### Returns
 
-[`CreateEntitiesService`](CreateEntitiesService.md)
-
-#### Source
-
-[src/lib/schema/application/services/createEntitiesService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/createEntitiesService.ts#L7)
+`CreateEntitiesService`
 
 ## Methods
 
@@ -30,16 +32,18 @@
 
 > **getEntities**(`name`, `type`): [`Entity`](../interfaces/Entity.md)[]
 
+Defined in: [src/lib/schema/application/services/createEntitiesService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/createEntitiesService.ts#L9)
+
 #### Parameters
 
-• **name**: `string`
+##### name
 
-• **type**: `Type`
+`string`
+
+##### type
+
+`Type`
 
 #### Returns
 
 [`Entity`](../interfaces/Entity.md)[]
-
-#### Source
-
-[src/lib/schema/application/services/createEntitiesService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/createEntitiesService.ts#L9)

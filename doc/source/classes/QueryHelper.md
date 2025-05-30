@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,23 +6,25 @@
 
 # Class: QueryHelper
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L22)
+
 ## Constructors
 
-### new QueryHelper()
+### Constructor
 
-> **new QueryHelper**(`str`): [`QueryHelper`](QueryHelper.md)
+> **new QueryHelper**(`str`): `QueryHelper`
+
+Defined in: [src/lib/shared/infrastructure/helper.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L24)
 
 #### Parameters
 
-• **str**: `IStringHelper`
+##### str
+
+`IStringHelper`
 
 #### Returns
 
-[`QueryHelper`](QueryHelper.md)
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L24)
+`QueryHelper`
 
 ## Methods
 
@@ -30,19 +32,21 @@
 
 > **arrayToList**(`array`, `timeZone`): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L34)
+
 #### Parameters
 
-• **array**: `any`[]
+##### array
 
-• **timeZone**: `string`
+`any`[]
+
+##### timeZone
+
+`string`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L34)
 
 ***
 
@@ -50,17 +54,17 @@
 
 > **bufferToString**(`buffer`): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L68)
+
 #### Parameters
 
-• **buffer**: `Buffer`
+##### buffer
+
+`Buffer`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L68)
 
 ***
 
@@ -68,19 +72,21 @@
 
 > **dateFormat**(`value`, `format`): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L46)
+
 #### Parameters
 
-• **value**: `any`
+##### value
 
-• **format**: `string`= `'iso'`
+`any`
+
+##### format
+
+`string` = `'iso'`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L46)
 
 ***
 
@@ -88,19 +94,21 @@
 
 > **dateToString**(`date`, `timeZone`): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L42)
+
 #### Parameters
 
-• **date**: `Date`
+##### date
 
-• **timeZone**: `string`= `'local'`
+`Date`
+
+##### timeZone
+
+`string` = `'local'`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L42)
 
 ***
 
@@ -108,17 +116,17 @@
 
 > **escape**(`name`): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L30)
+
 #### Parameters
 
-• **name**: `string`
+##### name
+
+`string`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L30)
 
 ***
 
@@ -126,17 +134,17 @@
 
 > **escapeId**(`name`): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L26)
+
 #### Parameters
 
-• **name**: `string`
+##### name
+
+`string`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L26)
 
 ***
 
@@ -144,45 +152,55 @@
 
 > **format**(`sql`, `values`, `stringifyObjects`, `timeZone`): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L38)
+
 #### Parameters
 
-• **sql**: `string`
+##### sql
 
-• **values**: `any`[]
+`string`
 
-• **stringifyObjects**: `string`
+##### values
 
-• **timeZone**: `string`
+`any`[]
+
+##### stringifyObjects
+
+`string`
+
+##### timeZone
+
+`string`
 
 #### Returns
 
 `string`
 
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L38)
-
 ***
 
 ### getInfo()
 
-> **getInfo**(`action`, `entity`, `type`?): [`SentenceInfo`](../interfaces/SentenceInfo.md)
+> **getInfo**(`action`, `entity`, `type?`): [`SentenceInfo`](../interfaces/SentenceInfo.md)
+
+Defined in: [src/lib/shared/infrastructure/helper.ts:184](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L184)
 
 #### Parameters
 
-• **action**: [`SentenceAction`](../enumerations/SentenceAction.md)
+##### action
 
-• **entity**: `string`
+[`SentenceAction`](../enumerations/SentenceAction.md)
 
-• **type?**: [`SentenceType`](../enumerations/SentenceType.md)
+##### entity
+
+`string`
+
+##### type?
+
+[`SentenceType`](../enumerations/SentenceType.md)
 
 #### Returns
 
 [`SentenceInfo`](../interfaces/SentenceInfo.md)
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:184](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L184)
 
 ***
 
@@ -190,17 +208,17 @@
 
 > **getSentenceCategory**(`action`): [`SentenceCategory`](../enumerations/SentenceCategory.md)
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L129)
+
 #### Parameters
 
-• **action**: [`SentenceAction`](../enumerations/SentenceAction.md)
+##### action
+
+[`SentenceAction`](../enumerations/SentenceAction.md)
 
 #### Returns
 
 [`SentenceCategory`](../enumerations/SentenceCategory.md)
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L129)
 
 ***
 
@@ -208,17 +226,17 @@
 
 > **getSentenceType**(`action`): [`SentenceType`](../enumerations/SentenceType.md)
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L82)
+
 #### Parameters
 
-• **action**: [`SentenceAction`](../enumerations/SentenceAction.md)
+##### action
+
+[`SentenceAction`](../enumerations/SentenceAction.md)
 
 #### Returns
 
 [`SentenceType`](../enumerations/SentenceType.md)
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L82)
 
 ***
 
@@ -226,17 +244,17 @@
 
 > **raw**(`sql`): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L72)
+
 #### Parameters
 
-• **sql**: `string`
+##### sql
+
+`string`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L72)
 
 ***
 
@@ -244,14 +262,14 @@
 
 > **transformParameter**(`name`): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L76)
+
 #### Parameters
 
-• **name**: `string`
+##### name
+
+`string`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L76)

@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -8,20 +8,22 @@
 
 > **startsWith**(`field`, `searchString`): `string`
 
+Defined in: [src/lib/repository/domain/queryable.ts:372](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L372)
+
 Returns true if the sequence of elements of searchString converted to a String is the
 same as the corresponding elements of this object (converted to a String) starting at
 position. Otherwise returns false.
 
 ## Parameters
 
-• **field**: `string`
+### field
 
-• **searchString**: `string`
+`string`
+
+### searchString
+
+`string`
 
 ## Returns
 
 `string`
-
-## Source
-
-[src/lib/repository/domain/queryable.ts:372](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L372)

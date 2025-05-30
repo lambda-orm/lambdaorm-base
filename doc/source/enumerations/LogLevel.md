@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Enumeration: LogLevel
 
+Defined in: [src/lib/shared/domain/ports/logger.ts:1](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/domain/ports/logger.ts#L1)
+
 ## Enumeration Members
 
 ### ERROR
 
 > **ERROR**: `"error"`
 
-#### Source
-
-[src/lib/shared/domain/ports/logger.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/domain/ports/logger.ts#L3)
+Defined in: [src/lib/shared/domain/ports/logger.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/domain/ports/logger.ts#L3)
 
 ***
 
@@ -22,6 +22,4 @@
 
 > **INFO**: `"info"`
 
-#### Source
-
-[src/lib/shared/domain/ports/logger.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/domain/ports/logger.ts#L2)
+Defined in: [src/lib/shared/domain/ports/logger.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/domain/ports/logger.ts#L2)

@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,46 +6,54 @@
 
 # Interface: ModifyClauses\<T\>
 
-## Type parameters
+Defined in: [src/lib/repository/domain/queryable.ts:226](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L226)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Methods
 
 ### filter()
 
-> **filter**(`predicate`, `thisArg`?): [`ModifyFilterClauses`](ModifyFilterClauses.md)\<`T`\>
+> **filter**(`predicate`, `thisArg?`): [`ModifyFilterClauses`](ModifyFilterClauses.md)\<`T`\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L228)
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `unknown`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`ModifyFilterClauses`](ModifyFilterClauses.md)\<`T`\>
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L228)
-
 ***
 
 ### include()
 
-> **include**(`predicate`, `thisArg`?): [`ModifyIncludeClauses`](ModifyIncludeClauses.md)\<`T`\>
+> **include**(`predicate`, `thisArg?`): [`ModifyIncludeClauses`](ModifyIncludeClauses.md)\<`T`\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:230](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L230)
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `unknown`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`ModifyIncludeClauses`](ModifyIncludeClauses.md)\<`T`\>
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:230](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L230)

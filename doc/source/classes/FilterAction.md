@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,43 +6,51 @@
 
 # Class: FilterAction\<T\>
 
+Defined in: [src/lib/repository/domain/queryable.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L109)
+
 ## Extends
 
 - [`QueryAction`](QueryAction.md)
 
-## Type parameters
+## Type Parameters
 
-• **T**
+### T
+
+`T`
 
 ## Constructors
 
-### new FilterAction()
+### Constructor
 
-> **new FilterAction**\<`T`\>(`actions`, `query`): [`FilterAction`](FilterAction.md)\<`T`\>
+> **new FilterAction**\<`T`\>(`actions`, `query`): `FilterAction`\<`T`\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L8)
 
 #### Parameters
 
-• **actions**: [`QueryActions`](../interfaces/QueryActions.md)
+##### actions
 
-• **query**: `string`
+[`QueryActions`](../interfaces/QueryActions.md)
+
+##### query
+
+`string`
 
 #### Returns
 
-[`FilterAction`](FilterAction.md)\<`T`\>
+`FilterAction`\<`T`\>
 
 #### Inherited from
 
-[`QueryAction`](QueryAction.md).[`constructor`](QueryAction.md#constructors)
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L8)
+[`QueryAction`](QueryAction.md).[`constructor`](QueryAction.md#constructor)
 
 ## Methods
 
 ### constraints()
 
 > **constraints**(): `Promise`\<[`MetadataConstraint`](../interfaces/MetadataConstraint.md)\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L25)
 
 #### Returns
 
@@ -52,19 +60,19 @@
 
 [`QueryAction`](QueryAction.md).[`constraints`](QueryAction.md#constraints)
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L25)
-
 ***
 
 ### execute()
 
 > **execute**(`data`): `Promise`\<`any`\>
 
+Defined in: [src/lib/repository/domain/queryable.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L13)
+
 #### Parameters
 
-• **data**: `any`
+##### data
+
+`any`
 
 #### Returns
 
@@ -74,33 +82,31 @@
 
 [`QueryAction`](QueryAction.md).[`execute`](QueryAction.md#execute)
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L13)
-
 ***
 
 ### filter()
 
 > **filter**(`predicate`): [`QueryAction`](QueryAction.md)
 
+Defined in: [src/lib/repository/domain/queryable.ts:111](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L111)
+
 #### Parameters
 
-• **predicate**
+##### predicate
+
+(`value`, `index`, `array`) => `unknown`
 
 #### Returns
 
 [`QueryAction`](QueryAction.md)
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:111](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L111)
 
 ***
 
 ### metadata()
 
 > **metadata**(): `Promise`\<[`Metadata`](../interfaces/Metadata.md)\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L37)
 
 #### Returns
 
@@ -110,15 +116,13 @@
 
 [`QueryAction`](QueryAction.md).[`metadata`](QueryAction.md#metadata)
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L37)
-
 ***
 
 ### model()
 
 > **model**(): `Promise`\<[`MetadataModel`](../interfaces/MetadataModel.md)[]\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L21)
 
 #### Returns
 
@@ -128,15 +132,13 @@
 
 [`QueryAction`](QueryAction.md).[`model`](QueryAction.md#model)
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L21)
-
 ***
 
 ### normalize()
 
 > **normalize**(): `string`
+
+Defined in: [src/lib/repository/domain/queryable.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L17)
 
 #### Returns
 
@@ -146,15 +148,13 @@
 
 [`QueryAction`](QueryAction.md).[`normalize`](QueryAction.md#normalize)
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L17)
-
 ***
 
 ### parameters()
 
 > **parameters**(): `Promise`\<[`MetadataParameter`](../interfaces/MetadataParameter.md)[]\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L29)
 
 #### Returns
 
@@ -164,15 +164,13 @@
 
 [`QueryAction`](QueryAction.md).[`parameters`](QueryAction.md#parameters)
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L29)
-
 ***
 
 ### sentence()
 
 > **sentence**(): `Promise`\<[`QueryPlan`](../interfaces/QueryPlan.md)\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L33)
 
 #### Returns
 
@@ -181,7 +179,3 @@
 #### Inherited from
 
 [`QueryAction`](QueryAction.md).[`sentence`](QueryAction.md#sentence)
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L33)

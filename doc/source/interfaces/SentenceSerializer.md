@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,23 +6,25 @@
 
 # Interface: SentenceSerializer
 
+Defined in: [src/lib/sentence/domain/services.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/services.ts#L12)
+
 ## Methods
 
 ### clone()
 
 > **clone**(`sentence`): [`Sentence`](../classes/Sentence.md)
 
+Defined in: [src/lib/sentence/domain/services.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/services.ts#L13)
+
 #### Parameters
 
-• **sentence**: [`Sentence`](../classes/Sentence.md)
+##### sentence
+
+[`Sentence`](../classes/Sentence.md)
 
 #### Returns
 
 [`Sentence`](../classes/Sentence.md)
-
-#### Source
-
-[src/lib/sentence/domain/services.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/services.ts#L13)
 
 ***
 
@@ -30,17 +32,17 @@
 
 > **deserialize**(`value`): [`Sentence`](../classes/Sentence.md)
 
+Defined in: [src/lib/sentence/domain/services.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/services.ts#L15)
+
 #### Parameters
 
-• **value**: `string`
+##### value
+
+`string`
 
 #### Returns
 
 [`Sentence`](../classes/Sentence.md)
-
-#### Source
-
-[src/lib/sentence/domain/services.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/services.ts#L15)
 
 ***
 
@@ -48,14 +50,14 @@
 
 > **serialize**(`sentence`): `string`
 
+Defined in: [src/lib/sentence/domain/services.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/services.ts#L14)
+
 #### Parameters
 
-• **sentence**: [`Sentence`](../classes/Sentence.md)
+##### sentence
+
+[`Sentence`](../classes/Sentence.md)
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/sentence/domain/services.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/services.ts#L14)

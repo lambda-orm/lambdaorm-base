@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,50 +6,54 @@
 
 # Class: YamlWrapper
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L11)
+
 ## Constructors
 
-### new YamlWrapper()
+### Constructor
 
-> **new YamlWrapper**(): [`YamlWrapper`](YamlWrapper.md)
+> **new YamlWrapper**(): `YamlWrapper`
 
 #### Returns
 
-[`YamlWrapper`](YamlWrapper.md)
+`YamlWrapper`
 
 ## Methods
 
 ### dump()
 
-> **dump**(`obj`?, `options`?): `string`
+> **dump**(`obj?`, `options?`): `string`
+
+Defined in: [src/lib/shared/infrastructure/helper.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L17)
 
 #### Parameters
 
-• **obj?**: `any`
+##### obj?
 
-• **options?**: `any`
+`any`
+
+##### options?
+
+`any`
 
 #### Returns
 
 `string`
 
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L17)
-
 ***
 
 ### load()
 
-> **load**(`yaml`?): `any`
+> **load**(`yaml?`): `any`
+
+Defined in: [src/lib/shared/infrastructure/helper.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L12)
 
 #### Parameters
 
-• **yaml?**: `null` \| `string`
+##### yaml?
+
+`null` | `string`
 
 #### Returns
 
 `any`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L12)

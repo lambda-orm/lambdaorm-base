@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,49 +6,57 @@
 
 # Interface: RelationMapClauses\<T\>
 
-## Type parameters
+Defined in: [src/lib/repository/domain/queryable.ts:238](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L238)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Methods
 
 ### filter()
 
-> **filter**(`predicate`, `thisArg`?): [`FilterClauses`](../classes/FilterClauses.md)\<`T`\>
+> **filter**(`predicate`, `thisArg?`): [`FilterClauses`](../classes/FilterClauses.md)\<`T`\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:242](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L242)
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `unknown`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`FilterClauses`](../classes/FilterClauses.md)\<`T`\>
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:242](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L242)
-
 ***
 
 ### include()
 
-> **include**(`predicate`, `thisArg`?): [`IncludeClauses`](../classes/IncludeClauses.md)\<`T`\>
+> **include**(`predicate`, `thisArg?`): [`IncludeClauses`](../classes/IncludeClauses.md)\<`T`\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:244](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L244)
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `unknown`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`IncludeClauses`](../classes/IncludeClauses.md)\<`T`\>
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:244](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L244)
 
 ***
 
@@ -56,16 +64,18 @@
 
 > **sort**(`predicate`, ...`args`): `void`
 
+Defined in: [src/lib/repository/domain/queryable.ts:240](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L240)
+
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• ...**args**: `any`
+(`value`, `index`, `array`) => `unknown`
+
+##### args
+
+...`any`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:240](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L240)

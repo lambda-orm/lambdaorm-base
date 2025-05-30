@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: SourceRule
 
+Defined in: [src/lib/schema/domain/schema.ts:133](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L133)
+
 ## Properties
 
 ### condition?
 
 > `optional` **condition**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:135](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L135)
+Defined in: [src/lib/schema/domain/schema.ts:135](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L135)
 
 ***
 
@@ -22,6 +22,4 @@
 
 > **name**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:134](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L134)
+Defined in: [src/lib/schema/domain/schema.ts:134](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L134)

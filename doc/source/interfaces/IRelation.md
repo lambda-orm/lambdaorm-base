@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,196 +6,220 @@
 
 # Interface: IRelation\<T\>
 
-## Type parameters
+Defined in: [src/lib/repository/domain/queryable.ts:256](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L256)
 
-• **T**
+## Type Parameters
+
+### T
+
+`T`
 
 ## Methods
 
 ### distinct()
 
-> **distinct**\<`U`\>(`predicate`, `thisArg`?): [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
+> **distinct**\<`U`\>(`predicate`, `thisArg?`): [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
 
-#### Type parameters
+Defined in: [src/lib/repository/domain/queryable.ts:264](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L264)
 
-• **U**
+#### Type Parameters
+
+##### U
+
+`U`
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `U`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:264](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L264)
 
 ***
 
 ### filter()
 
-> **filter**(`predicate`, `thisArg`?): [`FilterClauses`](../classes/FilterClauses.md)\<`T`\>
+> **filter**(`predicate`, `thisArg?`): [`FilterClauses`](../classes/FilterClauses.md)\<`T`\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:276](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L276)
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `unknown`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`FilterClauses`](../classes/FilterClauses.md)\<`T`\>
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:276](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L276)
-
 ***
 
 ### first()
 
-> **first**\<`U`\>(`predicate`, `thisArg`?): [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
+> **first**\<`U`\>(`predicate`, `thisArg?`): [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
 
-#### Type parameters
+Defined in: [src/lib/repository/domain/queryable.ts:260](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L260)
 
-• **U**
+#### Type Parameters
+
+##### U
+
+`U`
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `U`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:260](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L260)
 
 ***
 
 ### include()
 
-> **include**(`predicate`, `thisArg`?): [`RelationIncludeClauses`](RelationIncludeClauses.md)\<`T`\>
+> **include**(`predicate`, `thisArg?`): [`RelationIncludeClauses`](RelationIncludeClauses.md)\<`T`\>
+
+Defined in: [src/lib/repository/domain/queryable.ts:266](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L266)
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `unknown`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`RelationIncludeClauses`](RelationIncludeClauses.md)\<`T`\>
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:266](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L266)
-
 ***
 
 ### insert()
 
-> **insert**(`predicate`?): `void`
+> **insert**(`predicate?`): `void`
+
+Defined in: [src/lib/repository/domain/queryable.ts:271](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L271)
 
 #### Parameters
 
-• **predicate?**
+##### predicate?
+
+(`value`) => `unknown`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:271](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L271)
 
 ***
 
 ### last()
 
-> **last**\<`U`\>(`predicate`, `thisArg`?): [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
+> **last**\<`U`\>(`predicate`, `thisArg?`): [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
 
-#### Type parameters
+Defined in: [src/lib/repository/domain/queryable.ts:262](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L262)
 
-• **U**
+#### Type Parameters
+
+##### U
+
+`U`
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `U`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:262](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L262)
 
 ***
 
 ### map()
 
-> **map**\<`U`\>(`predicate`, `thisArg`?): [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
+> **map**\<`U`\>(`predicate`, `thisArg?`): [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
 
-#### Type parameters
+Defined in: [src/lib/repository/domain/queryable.ts:258](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L258)
 
-• **U**
+#### Type Parameters
+
+##### U
+
+`U`
 
 #### Parameters
 
-• **predicate**
+##### predicate
 
-• **thisArg?**: `any`
+(`value`, `index`, `array`) => `U`
+
+##### thisArg?
+
+`any`
 
 #### Returns
 
 [`RelationMapClauses`](RelationMapClauses.md)\<`T`\>
 
-#### Source
-
-[src/lib/repository/domain/queryable.ts:258](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L258)
-
 ***
 
 ### update()
 
-> **update**(`predicate`?): `void`
+> **update**(`predicate?`): `void`
+
+Defined in: [src/lib/repository/domain/queryable.ts:268](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L268)
 
 #### Parameters
 
-• **predicate?**
+##### predicate?
+
+(`value`) => `unknown`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:268](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L268)
 
 ***
 
 ### upsert()
 
-> **upsert**(`predicate`?): `void`
+> **upsert**(`predicate?`): `void`
+
+Defined in: [src/lib/repository/domain/queryable.ts:273](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L273)
 
 #### Parameters
 
-• **predicate?**
+##### predicate?
+
+(`value`) => `unknown`
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/lib/repository/domain/queryable.ts:273](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L273)

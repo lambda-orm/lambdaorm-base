@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,40 +6,44 @@
 
 # Class: CreateSchema
 
+Defined in: [src/lib/schema/application/useCases/create.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/create.ts#L4)
+
 ## Constructors
 
-### new CreateSchema()
+### Constructor
 
-> **new CreateSchema**(`schemaService`): [`CreateSchema`](CreateSchema.md)
+> **new CreateSchema**(`schemaService`): `CreateSchema`
+
+Defined in: [src/lib/schema/application/useCases/create.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/create.ts#L6)
 
 #### Parameters
 
-• **schemaService**: [`SchemaService`](SchemaService.md)
+##### schemaService
+
+[`SchemaService`](SchemaService.md)
 
 #### Returns
 
-[`CreateSchema`](CreateSchema.md)
-
-#### Source
-
-[src/lib/schema/application/useCases/create.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/useCases/create.ts#L6)
+`CreateSchema`
 
 ## Methods
 
 ### create()
 
-> **create**(`dialect`?, `connection`?): [`Schema`](../interfaces/Schema.md)
+> **create**(`dialect?`, `connection?`): [`Schema`](../interfaces/Schema.md)
+
+Defined in: [src/lib/schema/application/useCases/create.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/create.ts#L10)
 
 #### Parameters
 
-• **dialect?**: [`Dialect`](../enumerations/Dialect.md)
+##### dialect?
 
-• **connection?**: `any`
+[`Dialect`](../enumerations/Dialect.md)
+
+##### connection?
+
+`any`
 
 #### Returns
 
 [`Schema`](../interfaces/Schema.md)
-
-#### Source
-
-[src/lib/schema/application/useCases/create.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/useCases/create.ts#L10)

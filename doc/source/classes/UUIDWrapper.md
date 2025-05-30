@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,17 @@
 
 # Class: UUIDWrapper
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:201](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L201)
+
 ## Constructors
 
-### new UUIDWrapper()
+### Constructor
 
-> **new UUIDWrapper**(): [`UUIDWrapper`](UUIDWrapper.md)
+> **new UUIDWrapper**(): `UUIDWrapper`
 
 #### Returns
 
-[`UUIDWrapper`](UUIDWrapper.md)
+`UUIDWrapper`
 
 ## Methods
 
@@ -22,33 +24,33 @@
 
 > **empty**(): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:210](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L210)
+
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:210](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L210)
 
 ***
 
 ### fromString()
 
-> **fromString**(`text`, `namespace`?): `string`
+> **fromString**(`text`, `namespace?`): `string`
+
+Defined in: [src/lib/shared/infrastructure/helper.ts:214](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L214)
 
 #### Parameters
 
-• **text**: `string`
+##### text
 
-• **namespace?**: `string`
+`string`
+
+##### namespace?
+
+`string`
 
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:214](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L214)
 
 ***
 
@@ -56,17 +58,17 @@
 
 > **isUuid**(`id`): `boolean`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:206](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L206)
+
 #### Parameters
 
-• **id**: `string`
+##### id
+
+`string`
 
 #### Returns
 
 `boolean`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:206](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L206)
 
 ***
 
@@ -74,13 +76,11 @@
 
 > **jsonSchema**(): `any`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:218](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L218)
+
 #### Returns
 
 `any`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:218](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L218)
 
 ***
 
@@ -88,10 +88,8 @@
 
 > **v4**(): `string`
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:202](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L202)
+
 #### Returns
 
 `string`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:202](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L202)

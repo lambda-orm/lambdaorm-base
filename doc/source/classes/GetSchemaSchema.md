@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,23 +6,25 @@
 
 # Class: GetSchemaSchema
 
+Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/getSchemaData.ts#L5)
+
 ## Constructors
 
-### new GetSchemaSchema()
+### Constructor
 
-> **new GetSchemaSchema**(`interpretSchemaDataService`): [`GetSchemaSchema`](GetSchemaSchema.md)
+> **new GetSchemaSchema**(`interpretSchemaDataService`): `GetSchemaSchema`
+
+Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/getSchemaData.ts#L7)
 
 #### Parameters
 
-• **interpretSchemaDataService**: [`InterpretSchemaDataService`](InterpretSchemaDataService.md)
+##### interpretSchemaDataService
+
+[`InterpretSchemaDataService`](InterpretSchemaDataService.md)
 
 #### Returns
 
-[`GetSchemaSchema`](GetSchemaSchema.md)
-
-#### Source
-
-[src/lib/schema/application/useCases/getSchemaData.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/useCases/getSchemaData.ts#L7)
+`GetSchemaSchema`
 
 ## Methods
 
@@ -30,18 +32,22 @@
 
 > **getData**(`data`, `name`, `type`): [`SchemaData`](../interfaces/SchemaData.md)
 
+Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/getSchemaData.ts#L11)
+
 #### Parameters
 
-• **data**: `any`
+##### data
 
-• **name**: `string`
+`any`
 
-• **type**: `Type`
+##### name
+
+`string`
+
+##### type
+
+`Type`
 
 #### Returns
 
 [`SchemaData`](../interfaces/SchemaData.md)
-
-#### Source
-
-[src/lib/schema/application/useCases/getSchemaData.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/useCases/getSchemaData.ts#L11)

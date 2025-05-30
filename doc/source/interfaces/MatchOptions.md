@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: MatchOptions
 
+Defined in: [src/lib/schema/domain/services.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/services.ts#L10)
+
 ## Properties
 
 ### removeEntities?
 
 > `optional` **removeEntities**: `boolean`
 
-#### Source
-
-[src/lib/schema/domain/services.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/services.ts#L11)
+Defined in: [src/lib/schema/domain/services.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/services.ts#L11)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > `optional` **removeProperties**: `boolean`
 
-#### Source
-
-[src/lib/schema/domain/services.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/services.ts#L12)
+Defined in: [src/lib/schema/domain/services.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/services.ts#L12)
 
 ***
 
@@ -32,6 +30,4 @@
 
 > `optional` **removeRelations**: `boolean`
 
-#### Source
-
-[src/lib/schema/domain/services.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/services.ts#L13)
+Defined in: [src/lib/schema/domain/services.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/services.ts#L13)

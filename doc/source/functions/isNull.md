@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -8,14 +8,14 @@
 
 > **isNull**(`value`): `boolean`
 
+Defined in: [src/lib/repository/domain/queryable.ts:445](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L445)
+
 ## Parameters
 
-• **value**: `any`
+### value
+
+`any`
 
 ## Returns
 
 `boolean`
-
-## Source
-
-[src/lib/repository/domain/queryable.ts:445](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L445)

@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: ApplicationSchema
 
+Defined in: [src/lib/schema/domain/schema.ts:177](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L177)
+
 ## Properties
 
 ### end?
 
 > `optional` **end**: [`TaskConfig`](TaskConfig.md)[]
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:180](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L180)
+Defined in: [src/lib/schema/domain/schema.ts:180](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L180)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > `optional` **listeners**: [`ListenerConfig`](ListenerConfig.md)[]
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:179](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L179)
+Defined in: [src/lib/schema/domain/schema.ts:179](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L179)
 
 ***
 
@@ -32,6 +30,4 @@
 
 > `optional` **start**: [`TaskConfig`](TaskConfig.md)[]
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:178](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L178)
+Defined in: [src/lib/schema/domain/schema.ts:178](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L178)

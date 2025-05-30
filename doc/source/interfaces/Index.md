@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: Index
 
+Defined in: [src/lib/schema/domain/schema.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L54)
+
 ## Properties
 
 ### fields
 
 > **fields**: `string`[]
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:56](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L56)
+Defined in: [src/lib/schema/domain/schema.ts:56](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L56)
 
 ***
 
@@ -22,6 +22,4 @@
 
 > **name**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:55](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L55)
+Defined in: [src/lib/schema/domain/schema.ts:55](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L55)

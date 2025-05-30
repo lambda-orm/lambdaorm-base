@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,25 +6,29 @@
 
 # Class: MatchSchema
 
+Defined in: [src/lib/schema/application/useCases/match.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/match.ts#L5)
+
 ## Constructors
 
-### new MatchSchema()
+### Constructor
 
-> **new MatchSchema**(`schemaService`, `helper`): [`MatchSchema`](MatchSchema.md)
+> **new MatchSchema**(`schemaService`, `helper`): `MatchSchema`
+
+Defined in: [src/lib/schema/application/useCases/match.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/match.ts#L7)
 
 #### Parameters
 
-• **schemaService**: [`SchemaService`](SchemaService.md)
+##### schemaService
 
-• **helper**: [`SchemaHelper`](SchemaHelper.md)
+[`SchemaService`](SchemaService.md)
+
+##### helper
+
+[`SchemaHelper`](SchemaHelper.md)
 
 #### Returns
 
-[`MatchSchema`](MatchSchema.md)
-
-#### Source
-
-[src/lib/schema/application/useCases/match.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/useCases/match.ts#L7)
+`MatchSchema`
 
 ## Methods
 
@@ -32,18 +36,22 @@
 
 > **match**(`schema`, `mappings`, `options`): `void`
 
+Defined in: [src/lib/schema/application/useCases/match.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/match.ts#L11)
+
 #### Parameters
 
-• **schema**: [`Schema`](../interfaces/Schema.md)
+##### schema
 
-• **mappings**: [`Mapping`](../interfaces/Mapping.md)[]
+[`Schema`](../interfaces/Schema.md)
 
-• **options**: [`MatchOptions`](../interfaces/MatchOptions.md)
+##### mappings
+
+[`Mapping`](../interfaces/Mapping.md)[]
+
+##### options
+
+[`MatchOptions`](../interfaces/MatchOptions.md)
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/lib/schema/application/useCases/match.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/useCases/match.ts#L11)

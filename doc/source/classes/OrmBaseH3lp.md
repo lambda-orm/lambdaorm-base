@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,33 +6,37 @@
 
 # Class: OrmBaseH3lp
 
+Defined in: [src/lib/shared/infrastructure/helper.ts:223](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L223)
+
 ## Extends
 
 - `ExprH3lp`
 
 ## Constructors
 
-### new OrmBaseH3lp()
+### Constructor
 
-> **new OrmBaseH3lp**(`h3lp`, `logger`): [`OrmBaseH3lp`](OrmBaseH3lp.md)
+> **new OrmBaseH3lp**(`h3lp`, `logger`): `OrmBaseH3lp`
+
+Defined in: [src/lib/shared/infrastructure/helper.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L228)
 
 #### Parameters
 
-• **h3lp**: `H3lp`
+##### h3lp
 
-• **logger**: [`Logger`](Logger.md)
+`H3lp`
+
+##### logger
+
+[`Logger`](Logger.md)
 
 #### Returns
 
-[`OrmBaseH3lp`](OrmBaseH3lp.md)
+`OrmBaseH3lp`
 
 #### Overrides
 
 `ExprH3lp.constructor`
-
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L228)
 
 ## Properties
 
@@ -40,13 +44,11 @@
 
 > `readonly` **array**: `IArrayHelper`
 
+Defined in: node\_modules/h3lp/application/h3lp.d.ts:10
+
 #### Inherited from
 
 `ExprH3lp.array`
-
-#### Source
-
-node\_modules/h3lp/application/h3lp.d.ts:10
 
 ***
 
@@ -54,13 +56,11 @@ node\_modules/h3lp/application/h3lp.d.ts:10
 
 > **expression**: `ExpressionHelper`
 
+Defined in: node\_modules/3xpr/shared/infrastructure/helper.d.ts:5
+
 #### Inherited from
 
 `ExprH3lp.expression`
-
-#### Source
-
-node\_modules/3xpr/shared/infrastructure/helper.d.ts:5
 
 ***
 
@@ -68,13 +68,11 @@ node\_modules/3xpr/shared/infrastructure/helper.d.ts:5
 
 > `readonly` **fs**: `IFsHelper`
 
+Defined in: node\_modules/h3lp/application/h3lp.d.ts:5
+
 #### Inherited from
 
 `ExprH3lp.fs`
-
-#### Source
-
-node\_modules/h3lp/application/h3lp.d.ts:5
 
 ***
 
@@ -82,13 +80,11 @@ node\_modules/h3lp/application/h3lp.d.ts:5
 
 > `readonly` **http**: `IHttpHelper`
 
+Defined in: node\_modules/h3lp/application/h3lp.d.ts:6
+
 #### Inherited from
 
 `ExprH3lp.http`
-
-#### Source
-
-node\_modules/h3lp/application/h3lp.d.ts:6
 
 ***
 
@@ -96,9 +92,7 @@ node\_modules/h3lp/application/h3lp.d.ts:6
 
 > `readonly` **logger**: [`Logger`](Logger.md)
 
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L228)
+Defined in: [src/lib/shared/infrastructure/helper.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L228)
 
 ***
 
@@ -106,13 +100,11 @@ node\_modules/h3lp/application/h3lp.d.ts:6
 
 > `readonly` **obj**: `IObjectHelper`
 
+Defined in: node\_modules/h3lp/application/h3lp.d.ts:7
+
 #### Inherited from
 
 `ExprH3lp.obj`
-
-#### Source
-
-node\_modules/h3lp/application/h3lp.d.ts:7
 
 ***
 
@@ -120,13 +112,11 @@ node\_modules/h3lp/application/h3lp.d.ts:7
 
 > **operand**: `OperandHelper`
 
+Defined in: node\_modules/3xpr/shared/infrastructure/helper.d.ts:6
+
 #### Inherited from
 
 `ExprH3lp.operand`
-
-#### Source
-
-node\_modules/3xpr/shared/infrastructure/helper.d.ts:6
 
 ***
 
@@ -134,9 +124,7 @@ node\_modules/3xpr/shared/infrastructure/helper.d.ts:6
 
 > **query**: [`QueryHelper`](QueryHelper.md)
 
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:226](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L226)
+Defined in: [src/lib/shared/infrastructure/helper.ts:226](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L226)
 
 ***
 
@@ -144,9 +132,7 @@ node\_modules/3xpr/shared/infrastructure/helper.d.ts:6
 
 > **schema**: [`SchemaHelper`](SchemaHelper.md)
 
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:224](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L224)
+Defined in: [src/lib/shared/infrastructure/helper.ts:224](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L224)
 
 ***
 
@@ -154,13 +140,11 @@ node\_modules/3xpr/shared/infrastructure/helper.d.ts:6
 
 > `readonly` **str**: `IStringHelper`
 
+Defined in: node\_modules/h3lp/application/h3lp.d.ts:8
+
 #### Inherited from
 
 `ExprH3lp.str`
-
-#### Source
-
-node\_modules/h3lp/application/h3lp.d.ts:8
 
 ***
 
@@ -168,13 +152,11 @@ node\_modules/h3lp/application/h3lp.d.ts:8
 
 > `readonly` **test**: `ITestHelper`
 
+Defined in: node\_modules/h3lp/application/h3lp.d.ts:9
+
 #### Inherited from
 
 `ExprH3lp.test`
-
-#### Source
-
-node\_modules/h3lp/application/h3lp.d.ts:9
 
 ***
 
@@ -182,13 +164,11 @@ node\_modules/h3lp/application/h3lp.d.ts:9
 
 > `readonly` **utils**: `IUtils`
 
+Defined in: node\_modules/h3lp/application/h3lp.d.ts:3
+
 #### Inherited from
 
 `ExprH3lp.utils`
-
-#### Source
-
-node\_modules/h3lp/application/h3lp.d.ts:3
 
 ***
 
@@ -196,9 +176,7 @@ node\_modules/h3lp/application/h3lp.d.ts:3
 
 > **uuid**: [`UUIDWrapper`](UUIDWrapper.md)
 
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:227](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L227)
+Defined in: [src/lib/shared/infrastructure/helper.ts:227](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L227)
 
 ***
 
@@ -206,13 +184,11 @@ node\_modules/h3lp/application/h3lp.d.ts:3
 
 > `readonly` **val**: `IValidator`
 
+Defined in: node\_modules/h3lp/application/h3lp.d.ts:4
+
 #### Inherited from
 
 `ExprH3lp.val`
-
-#### Source
-
-node\_modules/h3lp/application/h3lp.d.ts:4
 
 ***
 
@@ -220,6 +196,4 @@ node\_modules/h3lp/application/h3lp.d.ts:4
 
 > **yaml**: [`YamlWrapper`](YamlWrapper.md)
 
-#### Source
-
-[src/lib/shared/infrastructure/helper.ts:225](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/infrastructure/helper.ts#L225)
+Defined in: [src/lib/shared/infrastructure/helper.ts:225](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L225)

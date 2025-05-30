@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,17 @@
 
 # Class: SchemaService
 
+Defined in: [src/lib/schema/application/services/schemaService.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/schemaService.ts#L3)
+
 ## Constructors
 
-### new SchemaService()
+### Constructor
 
-> **new SchemaService**(): [`SchemaService`](SchemaService.md)
+> **new SchemaService**(): `SchemaService`
 
 #### Returns
 
-[`SchemaService`](SchemaService.md)
+`SchemaService`
 
 ## Methods
 
@@ -22,17 +24,17 @@
 
 > **complete**(`schema`): `void`
 
+Defined in: [src/lib/schema/application/services/schemaService.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/schemaService.ts#L24)
+
 #### Parameters
 
-• **schema**: [`Schema`](../interfaces/Schema.md)
+##### schema
+
+[`Schema`](../interfaces/Schema.md)
 
 #### Returns
 
 `void`
-
-#### Source
-
-[src/lib/schema/application/services/schemaService.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/schemaService.ts#L24)
 
 ***
 
@@ -40,13 +42,11 @@
 
 > **newApplication**(): `undefined` \| [`ApplicationSchema`](../interfaces/ApplicationSchema.md)
 
+Defined in: [src/lib/schema/application/services/schemaService.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/schemaService.ts#L16)
+
 #### Returns
 
 `undefined` \| [`ApplicationSchema`](../interfaces/ApplicationSchema.md)
-
-#### Source
-
-[src/lib/schema/application/services/schemaService.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/schemaService.ts#L16)
 
 ***
 
@@ -54,13 +54,11 @@
 
 > **newDomain**(): [`DomainSchema`](../interfaces/DomainSchema.md)
 
+Defined in: [src/lib/schema/application/services/schemaService.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/schemaService.ts#L12)
+
 #### Returns
 
 [`DomainSchema`](../interfaces/DomainSchema.md)
-
-#### Source
-
-[src/lib/schema/application/services/schemaService.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/schemaService.ts#L12)
 
 ***
 
@@ -68,13 +66,11 @@
 
 > **newInfrastructure**(): [`InfrastructureSchema`](../interfaces/InfrastructureSchema.md)
 
+Defined in: [src/lib/schema/application/services/schemaService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/schemaService.ts#L8)
+
 #### Returns
 
 [`InfrastructureSchema`](../interfaces/InfrastructureSchema.md)
-
-#### Source
-
-[src/lib/schema/application/services/schemaService.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/schemaService.ts#L8)
 
 ***
 
@@ -82,13 +78,11 @@
 
 > **newPathsApp**(): [`AppPathsConfig`](../interfaces/AppPathsConfig.md)
 
+Defined in: [src/lib/schema/application/services/schemaService.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/schemaService.ts#L20)
+
 #### Returns
 
 [`AppPathsConfig`](../interfaces/AppPathsConfig.md)
-
-#### Source
-
-[src/lib/schema/application/services/schemaService.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/schemaService.ts#L20)
 
 ***
 
@@ -96,10 +90,8 @@
 
 > **newSchema**(): [`Schema`](../interfaces/Schema.md)
 
+Defined in: [src/lib/schema/application/services/schemaService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/schemaService.ts#L4)
+
 #### Returns
 
 [`Schema`](../interfaces/Schema.md)
-
-#### Source
-
-[src/lib/schema/application/services/schemaService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/application/services/schemaService.ts#L4)

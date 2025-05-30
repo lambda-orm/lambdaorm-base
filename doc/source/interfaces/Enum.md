@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: Enum
 
+Defined in: [src/lib/schema/domain/schema.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L14)
+
 ## Properties
 
 ### abstract?
 
 > `optional` **abstract**: `boolean`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L17)
+Defined in: [src/lib/schema/domain/schema.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L17)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > `optional` **extends**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L16)
+Defined in: [src/lib/schema/domain/schema.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L16)
 
 ***
 
@@ -32,9 +30,7 @@
 
 > **name**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L15)
+Defined in: [src/lib/schema/domain/schema.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L15)
 
 ***
 
@@ -42,6 +38,4 @@
 
 > **values**: [`EnumValue`](EnumValue.md)[]
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L18)
+Defined in: [src/lib/schema/domain/schema.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L18)

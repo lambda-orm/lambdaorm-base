@@ -1,4 +1,4 @@
-**Lambda ORM** • **Docs**
+**Lambda ORM**
 
 ***
 
@@ -57,9 +57,9 @@
 - [OrmBaseH3lp](classes/OrmBaseH3lp.md)
 - [Page](classes/Page.md)
 - [PageClauses](classes/PageClauses.md)
+- [Queryable](classes/Queryable.md)
 - [QueryAction](classes/QueryAction.md)
 - [QueryHelper](classes/QueryHelper.md)
-- [Queryable](classes/Queryable.md)
 - [RouteService](classes/RouteService.md)
 - [SchemaError](classes/SchemaError.md)
 - [SchemaExtender](classes/SchemaExtender.md)
@@ -74,18 +74,18 @@
 - [SintaxisError](classes/SintaxisError.md)
 - [Sort](classes/Sort.md)
 - [StageConfigService](classes/StageConfigService.md)
-- [UUIDWrapper](classes/UUIDWrapper.md)
 - [Update](classes/Update.md)
 - [UpdateSchema](classes/UpdateSchema.md)
 - [Upsert](classes/Upsert.md)
+- [UUIDWrapper](classes/UUIDWrapper.md)
 - [ViewConfigService](classes/ViewConfigService.md)
 - [ViewsConfigService](classes/ViewsConfigService.md)
 - [YamlWrapper](classes/YamlWrapper.md)
 
 ## Interfaces
 
-- [AppPathsConfig](interfaces/AppPathsConfig.md)
 - [ApplicationSchema](interfaces/ApplicationSchema.md)
+- [AppPathsConfig](interfaces/AppPathsConfig.md)
 - [Behavior](interfaces/Behavior.md)
 - [Constraint](interfaces/Constraint.md)
 - [Dependent](interfaces/Dependent.md)
@@ -97,14 +97,14 @@
 - [EnumValue](interfaces/EnumValue.md)
 - [FormatMapping](interfaces/FormatMapping.md)
 - [IFileSchemaService](interfaces/IFileSchemaService.md)
+- [Index](interfaces/Index.md)
+- [InfrastructureSchema](interfaces/InfrastructureSchema.md)
+- [InitializeSchemaArgs](interfaces/InitializeSchemaArgs.md)
 - [IRelation](interfaces/IRelation.md)
 - [IRepository](interfaces/IRepository.md)
 - [IRouteService](interfaces/IRouteService.md)
 - [ISentenceBuilder](interfaces/ISentenceBuilder.md)
 - [ISentenceCompleteBuilder](interfaces/ISentenceCompleteBuilder.md)
-- [Index](interfaces/Index.md)
-- [InfrastructureSchema](interfaces/InfrastructureSchema.md)
-- [InitializeSchemaArgs](interfaces/InitializeSchemaArgs.md)
 - [ListenerConfig](interfaces/ListenerConfig.md)
 - [Mapping](interfaces/Mapping.md)
 - [MappingConfig](interfaces/MappingConfig.md)
@@ -223,11 +223,11 @@
 - [timeDiff](functions/timeDiff.md)
 - [toDate](functions/toDate.md)
 - [toDateTime](functions/toDateTime.md)
+- [today](functions/today.md)
 - [toJson](functions/toJson.md)
 - [toNumber](functions/toNumber.md)
 - [toString](functions/toString.md)
 - [toTime](functions/toTime.md)
-- [today](functions/today.md)
 - [trim](functions/trim.md)
 - [trunc](functions/trunc.md)
 - [upper](functions/upper.md)

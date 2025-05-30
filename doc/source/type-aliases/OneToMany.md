@@ -1,17 +1,17 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
 [Lambda ORM](../README.md) / OneToMany
 
-# Type alias: OneToMany\<T\>
+# Type Alias: OneToMany\<T\>
 
-> **OneToMany**\<`T`\>: [`IRelation`](../interfaces/IRelation.md)\<`T`\>
+> **OneToMany**\<`T`\> = [`IRelation`](../interfaces/IRelation.md)\<`T`\>
 
-## Type parameters
+Defined in: [src/lib/repository/domain/queryable.ts:279](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L279)
 
-• **T**
+## Type Parameters
 
-## Source
+### T
 
-[src/lib/repository/domain/queryable.ts:279](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L279)
+`T`

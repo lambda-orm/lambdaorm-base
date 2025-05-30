@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,25 +6,23 @@
 
 # Interface: QueryOptions
 
+Defined in: [src/lib/query/domain/query.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/query.ts#L9)
+
 ## Properties
 
 ### chunkSize?
 
 > `optional` **chunkSize**: `number`
 
-#### Source
-
-[src/lib/query/domain/query.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/query/domain/query.ts#L12)
+Defined in: [src/lib/query/domain/query.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/query.ts#L12)
 
 ***
 
 ### headers?
 
-> `optional` **headers**: [`string`, `any`][]
+> `optional` **headers**: \[`string`, `any`\][]
 
-#### Source
-
-[src/lib/query/domain/query.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/query/domain/query.ts#L14)
+Defined in: [src/lib/query/domain/query.ts:14](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/query.ts#L14)
 
 ***
 
@@ -32,9 +30,7 @@
 
 > `optional` **stage**: `string`
 
-#### Source
-
-[src/lib/query/domain/query.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/query/domain/query.ts#L10)
+Defined in: [src/lib/query/domain/query.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/query.ts#L10)
 
 ***
 
@@ -42,9 +38,7 @@
 
 > `optional` **tryAllCan**: `boolean`
 
-#### Source
-
-[src/lib/query/domain/query.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/query/domain/query.ts#L13)
+Defined in: [src/lib/query/domain/query.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/query.ts#L13)
 
 ***
 
@@ -52,6 +46,4 @@
 
 > `optional` **view**: `string`
 
-#### Source
-
-[src/lib/query/domain/query.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/query/domain/query.ts#L11)
+Defined in: [src/lib/query/domain/query.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/query.ts#L11)

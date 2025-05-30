@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -8,20 +8,24 @@
 
 > **substr**(`value`, `from`, `count`): `string`
 
+Defined in: [src/lib/repository/domain/queryable.ts:355](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L355)
+
 Get a substring of string
 
 ## Parameters
 
-• **value**: `string`
+### value
 
-• **from**: `number`
+`string`
 
-• **count**: `number`
+### from
+
+`number`
+
+### count
+
+`number`
 
 ## Returns
 
 `string`
-
-## Source
-
-[src/lib/repository/domain/queryable.ts:355](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/repository/domain/queryable.ts#L355)

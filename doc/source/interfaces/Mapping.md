@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: Mapping
 
+Defined in: [src/lib/schema/domain/schema.ts:105](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L105)
+
 ## Properties
 
 ### entities?
 
 > `optional` **entities**: [`EntityMapping`](EntityMapping.md)[]
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L109)
+Defined in: [src/lib/schema/domain/schema.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L109)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > `optional` **extends**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:106](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L106)
+Defined in: [src/lib/schema/domain/schema.ts:106](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L106)
 
 ***
 
@@ -32,9 +30,7 @@
 
 > `optional` **format**: [`FormatMapping`](FormatMapping.md)
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:110](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L110)
+Defined in: [src/lib/schema/domain/schema.ts:110](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L110)
 
 ***
 
@@ -42,9 +38,7 @@
 
 > `optional` **mapping**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:107](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L107)
+Defined in: [src/lib/schema/domain/schema.ts:107](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L107)
 
 ***
 
@@ -52,6 +46,4 @@
 
 > **name**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:108](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L108)
+Defined in: [src/lib/schema/domain/schema.ts:108](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L108)

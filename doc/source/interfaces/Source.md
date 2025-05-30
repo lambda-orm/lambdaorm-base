@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: Source
 
+Defined in: [src/lib/schema/domain/schema.ts:127](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L127)
+
 ## Properties
 
 ### connection
 
 > **connection**: `any`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:131](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L131)
+Defined in: [src/lib/schema/domain/schema.ts:131](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L131)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > **dialect**: [`Dialect`](../enumerations/Dialect.md)
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L129)
+Defined in: [src/lib/schema/domain/schema.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L129)
 
 ***
 
@@ -32,9 +30,7 @@
 
 > **mapping**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:130](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L130)
+Defined in: [src/lib/schema/domain/schema.ts:130](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L130)
 
 ***
 
@@ -42,6 +38,4 @@
 
 > **name**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:128](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L128)
+Defined in: [src/lib/schema/domain/schema.ts:128](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L128)

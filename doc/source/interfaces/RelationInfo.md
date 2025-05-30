@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,15 @@
 
 # Interface: RelationInfo
 
+Defined in: [src/lib/schema/domain/schema.ts:81](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L81)
+
 ## Properties
 
 ### entity
 
 > **entity**: [`Entity`](Entity.md)
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:84](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L84)
+Defined in: [src/lib/schema/domain/schema.ts:84](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L84)
 
 ***
 
@@ -22,9 +22,7 @@
 
 > **previousEntity**: [`Entity`](Entity.md)
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:83](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L83)
+Defined in: [src/lib/schema/domain/schema.ts:83](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L83)
 
 ***
 
@@ -32,9 +30,7 @@
 
 > **previousRelation**: `string`
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L82)
+Defined in: [src/lib/schema/domain/schema.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L82)
 
 ***
 
@@ -42,6 +38,4 @@
 
 > **relation**: [`Relation`](Relation.md)
 
-#### Source
-
-[src/lib/schema/domain/schema.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/schema/domain/schema.ts#L85)
+Defined in: [src/lib/schema/domain/schema.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L85)

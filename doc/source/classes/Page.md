@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,39 +6,49 @@
 
 # Class: Page
 
+Defined in: [src/lib/sentence/domain/sentence.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L66)
+
 ## Extends
 
 - [`Clause`](Clause.md)
 
 ## Constructors
 
-### new Page()
+### Constructor
 
-> **new Page**(`pos`, `name`, `children`, `entity`, `alias`): [`Page`](Page.md)
+> **new Page**(`pos`, `name`, `children`, `entity`, `alias`): `Page`
+
+Defined in: [src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L54)
 
 #### Parameters
 
-• **pos**: `Position`
+##### pos
 
-• **name**: `string`
+`Position`
 
-• **children**: `Operand`[]
+##### name
 
-• **entity**: `string`
+`string`
 
-• **alias**: `string`
+##### children
+
+`Operand`[]
+
+##### entity
+
+`string`
+
+##### alias
+
+`string`
 
 #### Returns
 
-[`Page`](Page.md)
+`Page`
 
 #### Inherited from
 
-[`Clause`](Clause.md).[`constructor`](Clause.md#constructors)
-
-#### Source
-
-[src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/sentence.ts#L54)
+[`Clause`](Clause.md).[`constructor`](Clause.md#constructor)
 
 ## Properties
 
@@ -46,13 +56,11 @@
 
 > **alias**: `string`
 
+Defined in: [src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L52)
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`alias`](Clause.md#alias)
-
-#### Source
-
-[src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/sentence.ts#L52)
 
 ***
 
@@ -60,13 +68,11 @@
 
 > **children**: `Operand`[]
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:44
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`children`](Clause.md#children)
-
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:44
 
 ***
 
@@ -74,13 +80,11 @@ node\_modules/3xpr/shared/domain/operand.d.ts:44
 
 > **entity**: `string`
 
+Defined in: [src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L53)
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`entity`](Clause.md#entity)
-
-#### Source
-
-[src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/sentence/domain/sentence.ts#L53)
 
 ***
 
@@ -88,13 +92,11 @@ node\_modules/3xpr/shared/domain/operand.d.ts:44
 
 > `optional` **evaluator**: `IEvaluator`
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:46
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`evaluator`](Clause.md#evaluator)
-
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:46
 
 ***
 
@@ -102,13 +104,11 @@ node\_modules/3xpr/shared/domain/operand.d.ts:46
 
 > `optional` **id**: `string`
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:48
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`id`](Clause.md#id)
-
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:48
 
 ***
 
@@ -116,13 +116,11 @@ node\_modules/3xpr/shared/domain/operand.d.ts:48
 
 > **name**: `any`
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:42
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`name`](Clause.md#name)
-
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:42
 
 ***
 
@@ -130,13 +128,11 @@ node\_modules/3xpr/shared/domain/operand.d.ts:42
 
 > `optional` **number**: `number`
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:47
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`number`](Clause.md#number)
-
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:47
 
 ***
 
@@ -144,13 +140,11 @@ node\_modules/3xpr/shared/domain/operand.d.ts:47
 
 > `readonly` **pos**: `Position`
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:41
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`pos`](Clause.md#pos)
-
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:41
 
 ***
 
@@ -158,13 +152,11 @@ node\_modules/3xpr/shared/domain/operand.d.ts:41
 
 > `optional` **returnType**: `Type`
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:45
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`returnType`](Clause.md#returntype)
-
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:45
 
 ***
 
@@ -172,13 +164,11 @@ node\_modules/3xpr/shared/domain/operand.d.ts:45
 
 > `readonly` **type**: `OperandType`
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:43
+
 #### Inherited from
 
 [`Clause`](Clause.md).[`type`](Clause.md#type)
-
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:43
 
 ## Methods
 
@@ -186,9 +176,13 @@ node\_modules/3xpr/shared/domain/operand.d.ts:43
 
 > **eval**(`context`): `any`
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:50
+
 #### Parameters
 
-• **context**: `Context`
+##### context
+
+`Context`
 
 #### Returns
 
@@ -198,19 +192,19 @@ node\_modules/3xpr/shared/domain/operand.d.ts:43
 
 [`Clause`](Clause.md).[`eval`](Clause.md#eval)
 
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:50
-
 ***
 
 ### evalAsync()
 
 > **evalAsync**(`context`): `Promise`\<`any`\>
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:51
+
 #### Parameters
 
-• **context**: `Context`
+##### context
+
+`Context`
 
 #### Returns
 
@@ -220,15 +214,13 @@ node\_modules/3xpr/shared/domain/operand.d.ts:50
 
 [`Clause`](Clause.md).[`evalAsync`](Clause.md#evalasync)
 
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:51
-
 ***
 
 ### isAsync()
 
 > **isAsync**(): `boolean`
+
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:52
 
 #### Returns
 
@@ -238,19 +230,19 @@ node\_modules/3xpr/shared/domain/operand.d.ts:51
 
 [`Clause`](Clause.md).[`isAsync`](Clause.md#isasync)
 
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:52
-
 ***
 
 ### solve()
 
 > **solve**(`context`): `Promise`\<`any`\>
 
+Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:53
+
 #### Parameters
 
-• **context**: `Context`
+##### context
+
+`Context`
 
 #### Returns
 
@@ -259,7 +251,3 @@ node\_modules/3xpr/shared/domain/operand.d.ts:52
 #### Inherited from
 
 [`Clause`](Clause.md).[`solve`](Clause.md#solve)
-
-#### Source
-
-node\_modules/3xpr/shared/domain/operand.d.ts:53

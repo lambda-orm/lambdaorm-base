@@ -1,4 +1,4 @@
-[**Lambda ORM**](../README.md) • **Docs**
+[**Lambda ORM**](../README.md)
 
 ***
 
@@ -6,15 +6,17 @@
 
 # Class: `abstract` Logger
 
+Defined in: [src/lib/shared/domain/ports/logger.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/domain/ports/logger.ts#L6)
+
 ## Constructors
 
-### new Logger()
+### Constructor
 
-> **new Logger**(): [`Logger`](Logger.md)
+> **new Logger**(): `Logger`
 
 #### Returns
 
-[`Logger`](Logger.md)
+`Logger`
 
 ## Methods
 
@@ -22,16 +24,18 @@
 
 > **log**(`message`, `level`): `Promise`\<`void`\>
 
+Defined in: [src/lib/shared/domain/ports/logger.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/domain/ports/logger.ts#L7)
+
 #### Parameters
 
-• **message**: `any`
+##### message
 
-• **level**: [`LogLevel`](../enumerations/LogLevel.md)= `LogLevel.INFO`
+`any`
+
+##### level
+
+[`LogLevel`](../enumerations/LogLevel.md) = `LogLevel.INFO`
 
 #### Returns
 
 `Promise`\<`void`\>
-
-#### Source
-
-[src/lib/shared/domain/ports/logger.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/a635589f3d58a8022cbddf078d76ce5a7a0b2137/src/lib/shared/domain/ports/logger.ts#L7)

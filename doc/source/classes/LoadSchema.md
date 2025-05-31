@@ -6,7 +6,7 @@
 
 # Class: LoadSchema
 
-Defined in: [src/lib/schema/application/useCases/load.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/load.ts#L9)
+Defined in: [src/lib/schema/application/useCases/load.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/useCases/load.ts#L9)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/application/useCases/load.ts:9](https://github.com/l
 
 > **new LoadSchema**(`source`, `domain`, `mapping`, `stage`, `view`, `helper`): `LoadSchema`
 
-Defined in: [src/lib/schema/application/useCases/load.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/load.ts#L11)
+Defined in: [src/lib/schema/application/useCases/load.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/useCases/load.ts#L11)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [src/lib/schema/application/useCases/load.ts:11](https://github.com/
 
 > **load**(`source`): [`Schema`](../interfaces/Schema.md)
 
-Defined in: [src/lib/schema/application/useCases/load.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/load.ts#L18)
+Defined in: [src/lib/schema/application/useCases/load.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/useCases/load.ts#L18)
 
 #### Parameters
 

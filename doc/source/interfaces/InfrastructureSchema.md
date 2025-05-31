@@ -6,7 +6,7 @@
 
 # Interface: InfrastructureSchema
 
-Defined in: [src/lib/schema/domain/schema.ts:169](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L169)
+Defined in: [src/lib/schema/domain/schema.ts:169](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L169)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:169](https://github.com/lambda-orm/
 
 > `optional` **mappings**: [`Mapping`](Mapping.md)[]
 
-Defined in: [src/lib/schema/domain/schema.ts:171](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L171)
+Defined in: [src/lib/schema/domain/schema.ts:171](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L171)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/schema.ts:171](https://github.com/lambda-orm/
 
 > `optional` **paths**: [`AppPathsConfig`](AppPathsConfig.md)
 
-Defined in: [src/lib/schema/domain/schema.ts:170](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L170)
+Defined in: [src/lib/schema/domain/schema.ts:170](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L170)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/schema/domain/schema.ts:170](https://github.com/lambda-orm/
 
 > `optional` **server**: [`ServerConfig`](ServerConfig.md)
 
-Defined in: [src/lib/schema/domain/schema.ts:175](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L175)
+Defined in: [src/lib/schema/domain/schema.ts:175](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L175)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/lib/schema/domain/schema.ts:175](https://github.com/lambda-orm/
 
 > `optional` **sources**: [`Source`](Source.md)[]
 
-Defined in: [src/lib/schema/domain/schema.ts:173](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L173)
+Defined in: [src/lib/schema/domain/schema.ts:173](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L173)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/lib/schema/domain/schema.ts:173](https://github.com/lambda-orm/
 
 > `optional` **stages**: [`Stage`](Stage.md)[]
 
-Defined in: [src/lib/schema/domain/schema.ts:174](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L174)
+Defined in: [src/lib/schema/domain/schema.ts:174](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L174)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [src/lib/schema/domain/schema.ts:174](https://github.com/lambda-orm/
 
 > `optional` **views**: [`View`](View.md)[]
 
-Defined in: [src/lib/schema/domain/schema.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L172)
+Defined in: [src/lib/schema/domain/schema.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L172)

@@ -6,7 +6,7 @@
 
 # Interface: SentenceInfo
 
-Defined in: [src/lib/schema/domain/sentence.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L62)
+Defined in: [src/lib/schema/domain/sentence.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/sentence.ts#L62)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/sentence.ts:62](https://github.com/lambda-orm
 
 > **action**: [`SentenceAction`](../enumerations/SentenceAction.md)
 
-Defined in: [src/lib/schema/domain/sentence.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L64)
+Defined in: [src/lib/schema/domain/sentence.ts:64](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/sentence.ts#L64)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/sentence.ts:64](https://github.com/lambda-orm
 
 > **category**: [`SentenceCategory`](../enumerations/SentenceCategory.md)
 
-Defined in: [src/lib/schema/domain/sentence.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L65)
+Defined in: [src/lib/schema/domain/sentence.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/sentence.ts#L65)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/schema/domain/sentence.ts:65](https://github.com/lambda-orm
 
 > **ddl**: `boolean`
 
-Defined in: [src/lib/schema/domain/sentence.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L70)
+Defined in: [src/lib/schema/domain/sentence.ts:70](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/sentence.ts#L70)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/lib/schema/domain/sentence.ts:70](https://github.com/lambda-orm
 
 > **dml**: `boolean`
 
-Defined in: [src/lib/schema/domain/sentence.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L71)
+Defined in: [src/lib/schema/domain/sentence.ts:71](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/sentence.ts#L71)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/lib/schema/domain/sentence.ts:71](https://github.com/lambda-orm
 
 > **entity**: `string`
 
-Defined in: [src/lib/schema/domain/sentence.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L63)
+Defined in: [src/lib/schema/domain/sentence.ts:63](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/sentence.ts#L63)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [src/lib/schema/domain/sentence.ts:63](https://github.com/lambda-orm
 
 > **read**: `boolean`
 
-Defined in: [src/lib/schema/domain/sentence.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L68)
+Defined in: [src/lib/schema/domain/sentence.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/sentence.ts#L68)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [src/lib/schema/domain/sentence.ts:68](https://github.com/lambda-orm
 
 > **type**: [`SentenceType`](../enumerations/SentenceType.md)
 
-Defined in: [src/lib/schema/domain/sentence.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L66)
+Defined in: [src/lib/schema/domain/sentence.ts:66](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/sentence.ts#L66)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [src/lib/schema/domain/sentence.ts:66](https://github.com/lambda-orm
 
 > **write**: `boolean`
 
-Defined in: [src/lib/schema/domain/sentence.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/sentence.ts#L69)
+Defined in: [src/lib/schema/domain/sentence.ts:69](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/sentence.ts#L69)

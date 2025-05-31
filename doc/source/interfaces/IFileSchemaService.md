@@ -6,7 +6,7 @@
 
 # Interface: IFileSchemaService
 
-Defined in: [src/lib/schema/domain/ports/fileSchemaService.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/ports/fileSchemaService.ts#L3)
+Defined in: [src/lib/schema/domain/ports/fileSchemaService.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/ports/fileSchemaService.ts#L3)
 
 ## Methods
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/ports/fileSchemaService.ts:3](https://github.
 
 > **read**(`source`): `Promise`\<`null` \| [`SchemaInfo`](SchemaInfo.md)\>
 
-Defined in: [src/lib/schema/domain/ports/fileSchemaService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/ports/fileSchemaService.ts#L4)
+Defined in: [src/lib/schema/domain/ports/fileSchemaService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/ports/fileSchemaService.ts#L4)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/lib/schema/domain/ports/fileSchemaService.ts:4](https://github.
 
 > **write**(`schema`, `fullPath`): `Promise`\<`void`\>
 
-Defined in: [src/lib/schema/domain/ports/fileSchemaService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/ports/fileSchemaService.ts#L5)
+Defined in: [src/lib/schema/domain/ports/fileSchemaService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/ports/fileSchemaService.ts#L5)
 
 #### Parameters
 

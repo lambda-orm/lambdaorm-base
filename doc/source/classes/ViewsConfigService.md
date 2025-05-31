@@ -6,7 +6,7 @@
 
 # Class: ViewsConfigService
 
-Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/viewsConfigService.ts#L4)
+Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/viewsConfigService.ts#L4)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:4]
 
 > **new ViewsConfigService**(): `ViewsConfigService`
 
-Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/viewsConfigService.ts#L7)
+Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/viewsConfigService.ts#L7)
 
 #### Returns
 
@@ -26,7 +26,7 @@ Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:7]
 
 > **views**: [`View`](../interfaces/View.md)[]
 
-Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/viewsConfigService.ts#L5)
+Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/viewsConfigService.ts#L5)
 
 ## Methods
 
@@ -34,7 +34,7 @@ Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:5]
 
 > **get**(`name?`): [`View`](../interfaces/View.md)
 
-Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/viewsConfigService.ts#L25)
+Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/viewsConfigService.ts#L25)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:25
 
 > **getInstance**(`name?`): [`ViewConfigService`](ViewConfigService.md)
 
-Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/viewsConfigService.ts#L36)
+Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/viewsConfigService.ts#L36)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:36
 
 > **load**(`value`): `void`
 
-Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/viewsConfigService.ts#L11)
+Defined in: [src/lib/schema/application/services/config/viewsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/viewsConfigService.ts#L11)
 
 #### Parameters
 

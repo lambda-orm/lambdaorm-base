@@ -6,7 +6,7 @@
 
 # Enumeration: RelationType
 
-Defined in: [src/lib/schema/domain/schema.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L5)
+Defined in: [src/lib/schema/domain/schema.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L5)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:5](https://github.com/lambda-orm/la
 
 > **manyToOne**: `"manyToOne"`
 
-Defined in: [src/lib/schema/domain/schema.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L7)
+Defined in: [src/lib/schema/domain/schema.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L7)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/schema.ts:7](https://github.com/lambda-orm/la
 
 > **oneToMany**: `"oneToMany"`
 
-Defined in: [src/lib/schema/domain/schema.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L6)
+Defined in: [src/lib/schema/domain/schema.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L6)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [src/lib/schema/domain/schema.ts:6](https://github.com/lambda-orm/la
 
 > **oneToOne**: `"oneToOne"`
 
-Defined in: [src/lib/schema/domain/schema.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L8)
+Defined in: [src/lib/schema/domain/schema.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L8)

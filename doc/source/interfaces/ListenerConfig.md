@@ -6,7 +6,7 @@
 
 # Interface: ListenerConfig
 
-Defined in: [src/lib/schema/domain/schema.ts:141](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L141)
+Defined in: [src/lib/schema/domain/schema.ts:141](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L141)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:141](https://github.com/lambda-orm/
 
 > `optional` **after**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:146](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L146)
+Defined in: [src/lib/schema/domain/schema.ts:146](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L146)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/schema.ts:146](https://github.com/lambda-orm/
 
 > `optional` **before**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:145](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L145)
+Defined in: [src/lib/schema/domain/schema.ts:145](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L145)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/schema/domain/schema.ts:145](https://github.com/lambda-orm/
 
 > `optional` **condition**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:144](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L144)
+Defined in: [src/lib/schema/domain/schema.ts:144](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L144)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/lib/schema/domain/schema.ts:144](https://github.com/lambda-orm/
 
 > `optional` **error**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:147](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L147)
+Defined in: [src/lib/schema/domain/schema.ts:147](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L147)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/lib/schema/domain/schema.ts:147](https://github.com/lambda-orm/
 
 > **name**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:142](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L142)
+Defined in: [src/lib/schema/domain/schema.ts:142](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L142)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [src/lib/schema/domain/schema.ts:142](https://github.com/lambda-orm/
 
 > **on**: [`SentenceCategory`](../enumerations/SentenceCategory.md)[]
 
-Defined in: [src/lib/schema/domain/schema.ts:143](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L143)
+Defined in: [src/lib/schema/domain/schema.ts:143](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L143)

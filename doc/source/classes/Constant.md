@@ -6,7 +6,7 @@
 
 # Class: Constant
 
-Defined in: [src/lib/sentence/domain/sentence.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L7)
+Defined in: [src/lib/sentence/domain/sentence.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L7)
 
 ## Extends
 
@@ -152,7 +152,7 @@ Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:43
 
 > **eval**(): `any`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L8)
+Defined in: [src/lib/sentence/domain/sentence.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L8)
 
 #### Returns
 

@@ -6,7 +6,7 @@
 
 # Interface: Constraint
 
-Defined in: [src/lib/schema/domain/schema.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L20)
+Defined in: [src/lib/schema/domain/schema.ts:20](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L20)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:20](https://github.com/lambda-orm/l
 
 > **condition**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L22)
+Defined in: [src/lib/schema/domain/schema.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L22)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [src/lib/schema/domain/schema.ts:22](https://github.com/lambda-orm/l
 
 > **message**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L21)
+Defined in: [src/lib/schema/domain/schema.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L21)

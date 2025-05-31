@@ -10,7 +10,7 @@
 
 > **includes**(`value`, `list`): `boolean`
 
-Defined in: [src/lib/repository/domain/queryable.ts:293](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L293)
+Defined in: [src/lib/repository/domain/queryable.ts:293](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L293)
 
 ### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:293](https://github.com/lamb
 
 > **includes**(`field`, `searchString`): `string`
 
-Defined in: [src/lib/repository/domain/queryable.ts:374](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L374)
+Defined in: [src/lib/repository/domain/queryable.ts:374](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L374)
 
 Returns true if searchString appears as a substring of the result of converting this
 

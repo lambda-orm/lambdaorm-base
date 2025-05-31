@@ -6,7 +6,7 @@
 
 # Class: GetSchemaSchema
 
-Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/getSchemaData.ts#L5)
+Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/useCases/getSchemaData.ts#L5)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:5](https://git
 
 > **new GetSchemaSchema**(`interpretSchemaDataService`): `GetSchemaSchema`
 
-Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/getSchemaData.ts#L7)
+Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/useCases/getSchemaData.ts#L7)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:7](https://git
 
 > **getData**(`data`, `name`, `type`): [`SchemaData`](../interfaces/SchemaData.md)
 
-Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/getSchemaData.ts#L11)
+Defined in: [src/lib/schema/application/useCases/getSchemaData.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/useCases/getSchemaData.ts#L11)
 
 #### Parameters
 

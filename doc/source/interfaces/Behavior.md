@@ -6,7 +6,7 @@
 
 # Interface: Behavior
 
-Defined in: [src/lib/schema/domain/schema.ts:201](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L201)
+Defined in: [src/lib/schema/domain/schema.ts:201](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L201)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:201](https://github.com/lambda-orm/
 
 > `optional` **alias**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:202](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L202)
+Defined in: [src/lib/schema/domain/schema.ts:202](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L202)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/schema.ts:202](https://github.com/lambda-orm/
 
 > **expression**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:204](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L204)
+Defined in: [src/lib/schema/domain/schema.ts:204](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L204)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [src/lib/schema/domain/schema.ts:204](https://github.com/lambda-orm/
 
 > **property**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:203](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L203)
+Defined in: [src/lib/schema/domain/schema.ts:203](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L203)

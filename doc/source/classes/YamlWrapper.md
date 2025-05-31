@@ -6,7 +6,7 @@
 
 # Class: YamlWrapper
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L11)
+Defined in: [src/lib/shared/infrastructure/helper.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L11)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:11](https://github.com/lamb
 
 > **dump**(`obj?`, `options?`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L17)
+Defined in: [src/lib/shared/infrastructure/helper.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L17)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:17](https://github.com/lamb
 
 > **load**(`yaml?`): `any`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L12)
+Defined in: [src/lib/shared/infrastructure/helper.ts:12](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L12)
 
 #### Parameters
 

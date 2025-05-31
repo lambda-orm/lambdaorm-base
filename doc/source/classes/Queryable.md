@@ -6,7 +6,7 @@
 
 # Class: Queryable\<T\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:132](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L132)
+Defined in: [src/lib/repository/domain/queryable.ts:132](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L132)
 
 ## Extends
 
@@ -24,7 +24,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:132](https://github.com/lamb
 
 > **new Queryable**\<`T`\>(`actions`, `query`): `Queryable`\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L8)
+Defined in: [src/lib/repository/domain/queryable.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L8)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:8](https://github.com/lambda
 
 > **bulkDelete**(`value?`): [`ModificableClauses`](ModificableClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:199](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L199)
+Defined in: [src/lib/repository/domain/queryable.ts:199](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L199)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:199](https://github.com/lamb
 
 > **bulkInsert**(`value?`): [`ModificableClauses`](ModificableClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:167](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L167)
+Defined in: [src/lib/repository/domain/queryable.ts:167](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L167)
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:167](https://github.com/lamb
 
 > **bulkMerge**(`value?`): [`ModificableClauses`](ModificableClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:194](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L194)
+Defined in: [src/lib/repository/domain/queryable.ts:194](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L194)
 
 #### Parameters
 
@@ -104,7 +104,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:194](https://github.com/lamb
 
 > **constraints**(): `Promise`\<[`MetadataConstraint`](../interfaces/MetadataConstraint.md)\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L25)
+Defined in: [src/lib/repository/domain/queryable.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L25)
 
 #### Returns
 
@@ -120,7 +120,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:25](https://github.com/lambd
 
 > **delete**(`predicate?`): [`ModificableClauses`](ModificableClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:204](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L204)
+Defined in: [src/lib/repository/domain/queryable.ts:204](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L204)
 
 #### Parameters
 
@@ -138,7 +138,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:204](https://github.com/lamb
 
 > **deleteAll**(): [`IncludeAction`](IncludeAction.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:213](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L213)
+Defined in: [src/lib/repository/domain/queryable.ts:213](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L213)
 
 #### Returns
 
@@ -150,7 +150,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:213](https://github.com/lamb
 
 > **distinct**\<`U`\>(`predicate`): [`MapClauses`](MapClauses.md)\<`U`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:77](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L77)
+Defined in: [src/lib/repository/domain/queryable.ts:77](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L77)
 
 #### Type Parameters
 
@@ -178,7 +178,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:77](https://github.com/lambd
 
 > **execute**(`data`): `Promise`\<`any`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L13)
+Defined in: [src/lib/repository/domain/queryable.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L13)
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:13](https://github.com/lambd
 
 > **filter**(`predicate`): [`FilterClauses`](FilterClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:134](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L134)
+Defined in: [src/lib/repository/domain/queryable.ts:134](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L134)
 
 #### Parameters
 
@@ -218,7 +218,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:134](https://github.com/lamb
 
 > **first**\<`U`\>(`predicate`): [`Map2Clauses`](Map2Clauses.md)\<`U`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L67)
+Defined in: [src/lib/repository/domain/queryable.ts:67](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L67)
 
 #### Type Parameters
 
@@ -246,7 +246,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:67](https://github.com/lambd
 
 > **having**(`predicate`): [`HavingClauses`](HavingClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:144](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L144)
+Defined in: [src/lib/repository/domain/queryable.ts:144](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L144)
 
 #### Parameters
 
@@ -264,7 +264,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:144](https://github.com/lamb
 
 > **include**(`predicate`): [`IncludeClauses`](IncludeClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:139](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L139)
+Defined in: [src/lib/repository/domain/queryable.ts:139](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L139)
 
 #### Parameters
 
@@ -282,7 +282,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:139](https://github.com/lamb
 
 > **insert**(`predicate?`): [`ModificableClauses`](ModificableClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:150](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L150)
+Defined in: [src/lib/repository/domain/queryable.ts:150](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L150)
 
 #### Parameters
 
@@ -300,7 +300,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:150](https://github.com/lamb
 
 > **last**\<`U`\>(`predicate`): [`Map2Clauses`](Map2Clauses.md)\<`U`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L72)
+Defined in: [src/lib/repository/domain/queryable.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L72)
 
 #### Type Parameters
 
@@ -328,7 +328,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:72](https://github.com/lambd
 
 > **map**\<`U`\>(`predicate`): [`MapClauses`](MapClauses.md)\<`U`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L62)
+Defined in: [src/lib/repository/domain/queryable.ts:62](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L62)
 
 #### Type Parameters
 
@@ -356,7 +356,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:62](https://github.com/lambd
 
 > **merge**(`predicate?`): [`ModificableClauses`](ModificableClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:185](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L185)
+Defined in: [src/lib/repository/domain/queryable.ts:185](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L185)
 
 #### Parameters
 
@@ -374,7 +374,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:185](https://github.com/lamb
 
 > **metadata**(): `Promise`\<[`Metadata`](../interfaces/Metadata.md)\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L37)
+Defined in: [src/lib/repository/domain/queryable.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L37)
 
 #### Returns
 
@@ -390,7 +390,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:37](https://github.com/lambd
 
 > **model**(): `Promise`\<[`MetadataModel`](../interfaces/MetadataModel.md)[]\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L21)
+Defined in: [src/lib/repository/domain/queryable.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L21)
 
 #### Returns
 
@@ -406,7 +406,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:21](https://github.com/lambd
 
 > **normalize**(): `string`
 
-Defined in: [src/lib/repository/domain/queryable.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L17)
+Defined in: [src/lib/repository/domain/queryable.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L17)
 
 #### Returns
 
@@ -422,7 +422,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:17](https://github.com/lambd
 
 > **page**(`page`, `records`): [`QueryAction`](QueryAction.md)
 
-Defined in: [src/lib/repository/domain/queryable.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L44)
+Defined in: [src/lib/repository/domain/queryable.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L44)
 
 #### Parameters
 
@@ -448,7 +448,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:44](https://github.com/lambd
 
 > **parameters**(): `Promise`\<[`MetadataParameter`](../interfaces/MetadataParameter.md)[]\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L29)
+Defined in: [src/lib/repository/domain/queryable.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L29)
 
 #### Returns
 
@@ -464,7 +464,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:29](https://github.com/lambd
 
 > **sentence**(): `Promise`\<[`QueryPlan`](../interfaces/QueryPlan.md)\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L33)
+Defined in: [src/lib/repository/domain/queryable.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L33)
 
 #### Returns
 
@@ -480,7 +480,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:33](https://github.com/lambd
 
 > **sort**(`predicate`): [`PageClauses`](PageClauses.md)
 
-Defined in: [src/lib/repository/domain/queryable.ts:50](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L50)
+Defined in: [src/lib/repository/domain/queryable.ts:50](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L50)
 
 #### Parameters
 
@@ -502,7 +502,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:50](https://github.com/lambd
 
 > **update**(`predicate?`): [`ModificableClauses`](ModificableClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L172)
+Defined in: [src/lib/repository/domain/queryable.ts:172](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L172)
 
 #### Parameters
 
@@ -520,7 +520,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:172](https://github.com/lamb
 
 > **updateAll**(`predicate`): [`IncludeAction`](IncludeAction.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:181](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L181)
+Defined in: [src/lib/repository/domain/queryable.ts:181](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L181)
 
 #### Parameters
 
@@ -538,7 +538,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:181](https://github.com/lamb
 
 > **upsert**(`predicate?`): [`ModificableClauses`](ModificableClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:158](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L158)
+Defined in: [src/lib/repository/domain/queryable.ts:158](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L158)
 
 #### Parameters
 

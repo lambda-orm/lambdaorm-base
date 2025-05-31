@@ -6,7 +6,7 @@
 
 # Enumeration: Dialect
 
-Defined in: [src/lib/schema/domain/dialect.ts:1](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/dialect.ts#L1)
+Defined in: [src/lib/schema/domain/dialect.ts:1](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/dialect.ts#L1)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/dialect.ts:1](https://github.com/lambda-orm/l
 
 > **MariaDB**: `"MariaDB"`
 
-Defined in: [src/lib/schema/domain/dialect.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/dialect.ts#L3)
+Defined in: [src/lib/schema/domain/dialect.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/dialect.ts#L3)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/dialect.ts:3](https://github.com/lambda-orm/l
 
 > **MongoDB**: `"MongoDB"`
 
-Defined in: [src/lib/schema/domain/dialect.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/dialect.ts#L8)
+Defined in: [src/lib/schema/domain/dialect.ts:8](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/dialect.ts#L8)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/schema/domain/dialect.ts:8](https://github.com/lambda-orm/l
 
 > **MySQL**: `"MySQL"`
 
-Defined in: [src/lib/schema/domain/dialect.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/dialect.ts#L2)
+Defined in: [src/lib/schema/domain/dialect.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/dialect.ts#L2)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/lib/schema/domain/dialect.ts:2](https://github.com/lambda-orm/l
 
 > **Oracle**: `"Oracle"`
 
-Defined in: [src/lib/schema/domain/dialect.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/dialect.ts#L7)
+Defined in: [src/lib/schema/domain/dialect.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/dialect.ts#L7)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/lib/schema/domain/dialect.ts:7](https://github.com/lambda-orm/l
 
 > **PostgreSQL**: `"PostgreSQL"`
 
-Defined in: [src/lib/schema/domain/dialect.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/dialect.ts#L4)
+Defined in: [src/lib/schema/domain/dialect.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/dialect.ts#L4)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [src/lib/schema/domain/dialect.ts:4](https://github.com/lambda-orm/l
 
 > **SQLjs**: `"SQLjs"`
 
-Defined in: [src/lib/schema/domain/dialect.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/dialect.ts#L6)
+Defined in: [src/lib/schema/domain/dialect.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/dialect.ts#L6)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [src/lib/schema/domain/dialect.ts:6](https://github.com/lambda-orm/l
 
 > **SqlLite**: `"SqlLite"`
 
-Defined in: [src/lib/schema/domain/dialect.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/dialect.ts#L9)
+Defined in: [src/lib/schema/domain/dialect.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/dialect.ts#L9)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [src/lib/schema/domain/dialect.ts:9](https://github.com/lambda-orm/l
 
 > **SqlServer**: `"SqlServer"`
 
-Defined in: [src/lib/schema/domain/dialect.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/dialect.ts#L5)
+Defined in: [src/lib/schema/domain/dialect.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/dialect.ts#L5)

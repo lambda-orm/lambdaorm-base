@@ -3,9 +3,9 @@ import { OrmBaseH3lp } from '../../shared'
 
 export class SchemaFileHelper {
 	// eslint-disable-next-line no-useless-constructor
-	constructor (private readonly helper:OrmBaseH3lp) {}
+	constructor (private readonly helper: OrmBaseH3lp) { }
 
-	public async getConfigPath (source?: string):Promise<string|undefined> {
+	public async getConfigPath (source?: string): Promise<string | undefined> {
 		let workspace: string
 		let configFile: string | undefined
 		workspace = process.cwd()
@@ -39,14 +39,22 @@ export class SchemaFileHelper {
 	}
 
 	public async getConfigFileName (workspace: string): Promise<string | undefined> {
-		if (await this.helper.fs.exists(path.join(workspace, 'lambdaORM.yaml'))) {
-			return 'lambdaORM.yaml'
-		} else if (await this.helper.fs.exists(path.join(workspace, 'lambdaORM.yml'))) {
-			return 'lambdaORM.yml'
-		} else if (await this.helper.fs.exists(path.join(workspace, 'lambdaORM.json'))) {
-			return 'lambdaORM.json'
-		} else {
-			return undefined
+		const entries = await this.helper.fs.readdir(workspace)
+
+		const candidates = entries.filter(entry => {
+			const ext = path.extname(entry).toLowerCase()
+			const name = path.basename(entry, ext).toLowerCase()
+			return (
+				['.json', '.yaml', '.yml'].includes(ext) &&
+				(name.includes('lambdaorm') || name.includes('orm') || name.includes('schema'))
+			)
+		})
+		const priority = ['lambdaorm', 'orm', 'schema']
+		for (const p of priority) {
+			const match = candidates.find(c => path.basename(c).toLowerCase().includes(p))
+			if (match) return match
 		}
+
+		return undefined
 	}
 }

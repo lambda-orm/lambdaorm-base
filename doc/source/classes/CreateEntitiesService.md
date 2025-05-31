@@ -6,7 +6,7 @@
 
 # Class: CreateEntitiesService
 
-Defined in: [src/lib/schema/application/services/createEntitiesService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/createEntitiesService.ts#L5)
+Defined in: [src/lib/schema/application/services/createEntitiesService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/createEntitiesService.ts#L5)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/application/services/createEntitiesService.ts:5](htt
 
 > **new CreateEntitiesService**(`helper`): `CreateEntitiesService`
 
-Defined in: [src/lib/schema/application/services/createEntitiesService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/createEntitiesService.ts#L7)
+Defined in: [src/lib/schema/application/services/createEntitiesService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/createEntitiesService.ts#L7)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/lib/schema/application/services/createEntitiesService.ts:7](htt
 
 > **getEntities**(`name`, `type`): [`Entity`](../interfaces/Entity.md)[]
 
-Defined in: [src/lib/schema/application/services/createEntitiesService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/createEntitiesService.ts#L9)
+Defined in: [src/lib/schema/application/services/createEntitiesService.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/createEntitiesService.ts#L9)
 
 #### Parameters
 

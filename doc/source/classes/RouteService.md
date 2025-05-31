@@ -6,7 +6,7 @@
 
 # Class: RouteService
 
-Defined in: [src/lib/schema/application/services/routeService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/routeService.ts#L5)
+Defined in: [src/lib/schema/application/services/routeService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/routeService.ts#L5)
 
 ## Implements
 
@@ -18,7 +18,7 @@ Defined in: [src/lib/schema/application/services/routeService.ts:5](https://gith
 
 > **new RouteService**(`stageConfigService`, `exp`): `RouteService`
 
-Defined in: [src/lib/schema/application/services/routeService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/routeService.ts#L7)
+Defined in: [src/lib/schema/application/services/routeService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/routeService.ts#L7)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [src/lib/schema/application/services/routeService.ts:7](https://gith
 
 > **eval**(`source`, `info`): `boolean`
 
-Defined in: [src/lib/schema/application/services/routeService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/routeService.ts#L11)
+Defined in: [src/lib/schema/application/services/routeService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/routeService.ts#L11)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [src/lib/schema/application/services/routeService.ts:11](https://git
 
 > **getSource**(`info`, `stage?`): `string`
 
-Defined in: [src/lib/schema/application/services/routeService.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/routeService.ts#L16)
+Defined in: [src/lib/schema/application/services/routeService.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/routeService.ts#L16)
 
 #### Parameters
 

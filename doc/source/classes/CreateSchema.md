@@ -6,7 +6,7 @@
 
 # Class: CreateSchema
 
-Defined in: [src/lib/schema/application/useCases/create.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/create.ts#L4)
+Defined in: [src/lib/schema/application/useCases/create.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/useCases/create.ts#L4)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/application/useCases/create.ts:4](https://github.com
 
 > **new CreateSchema**(`schemaService`): `CreateSchema`
 
-Defined in: [src/lib/schema/application/useCases/create.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/create.ts#L6)
+Defined in: [src/lib/schema/application/useCases/create.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/useCases/create.ts#L6)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/lib/schema/application/useCases/create.ts:6](https://github.com
 
 > **create**(`dialect?`, `connection?`): [`Schema`](../interfaces/Schema.md)
 
-Defined in: [src/lib/schema/application/useCases/create.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/useCases/create.ts#L10)
+Defined in: [src/lib/schema/application/useCases/create.ts:10](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/useCases/create.ts#L10)
 
 #### Parameters
 

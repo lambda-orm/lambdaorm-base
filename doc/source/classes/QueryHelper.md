@@ -6,7 +6,7 @@
 
 # Class: QueryHelper
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L22)
+Defined in: [src/lib/shared/infrastructure/helper.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L22)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:22](https://github.com/lamb
 
 > **new QueryHelper**(`str`): `QueryHelper`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L24)
+Defined in: [src/lib/shared/infrastructure/helper.ts:24](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L24)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:24](https://github.com/lamb
 
 > **arrayToList**(`array`, `timeZone`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L34)
+Defined in: [src/lib/shared/infrastructure/helper.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L34)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:34](https://github.com/lamb
 
 > **bufferToString**(`buffer`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L68)
+Defined in: [src/lib/shared/infrastructure/helper.ts:68](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L68)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:68](https://github.com/lamb
 
 > **dateFormat**(`value`, `format`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L46)
+Defined in: [src/lib/shared/infrastructure/helper.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L46)
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:46](https://github.com/lamb
 
 > **dateToString**(`date`, `timeZone`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L42)
+Defined in: [src/lib/shared/infrastructure/helper.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L42)
 
 #### Parameters
 
@@ -116,7 +116,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:42](https://github.com/lamb
 
 > **escape**(`name`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L30)
+Defined in: [src/lib/shared/infrastructure/helper.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L30)
 
 #### Parameters
 
@@ -134,7 +134,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:30](https://github.com/lamb
 
 > **escapeId**(`name`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L26)
+Defined in: [src/lib/shared/infrastructure/helper.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L26)
 
 #### Parameters
 
@@ -152,7 +152,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:26](https://github.com/lamb
 
 > **format**(`sql`, `values`, `stringifyObjects`, `timeZone`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L38)
+Defined in: [src/lib/shared/infrastructure/helper.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L38)
 
 #### Parameters
 
@@ -182,7 +182,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:38](https://github.com/lamb
 
 > **getInfo**(`action`, `entity`, `type?`): [`SentenceInfo`](../interfaces/SentenceInfo.md)
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:184](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L184)
+Defined in: [src/lib/shared/infrastructure/helper.ts:184](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L184)
 
 #### Parameters
 
@@ -208,7 +208,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:184](https://github.com/lam
 
 > **getSentenceCategory**(`action`): [`SentenceCategory`](../enumerations/SentenceCategory.md)
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L129)
+Defined in: [src/lib/shared/infrastructure/helper.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L129)
 
 #### Parameters
 
@@ -226,7 +226,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:129](https://github.com/lam
 
 > **getSentenceType**(`action`): [`SentenceType`](../enumerations/SentenceType.md)
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L82)
+Defined in: [src/lib/shared/infrastructure/helper.ts:82](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L82)
 
 #### Parameters
 
@@ -244,7 +244,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:82](https://github.com/lamb
 
 > **raw**(`sql`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L72)
+Defined in: [src/lib/shared/infrastructure/helper.ts:72](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L72)
 
 #### Parameters
 
@@ -262,7 +262,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:72](https://github.com/lamb
 
 > **transformParameter**(`name`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L76)
+Defined in: [src/lib/shared/infrastructure/helper.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L76)
 
 #### Parameters
 

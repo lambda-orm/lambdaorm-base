@@ -6,7 +6,7 @@
 
 # Class: SchemaStateBuilder
 
-Defined in: [src/lib/schema/infrastructure/stateBuilder.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/infrastructure/stateBuilder.ts#L7)
+Defined in: [src/lib/schema/infrastructure/stateBuilder.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/infrastructure/stateBuilder.ts#L7)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/infrastructure/stateBuilder.ts:7](https://github.com
 
 > **new SchemaStateBuilder**(`exp`, `facade`, `helper`): `SchemaStateBuilder`
 
-Defined in: [src/lib/schema/infrastructure/stateBuilder.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/infrastructure/stateBuilder.ts#L9)
+Defined in: [src/lib/schema/infrastructure/stateBuilder.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/infrastructure/stateBuilder.ts#L9)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [src/lib/schema/infrastructure/stateBuilder.ts:9](https://github.com
 
 > **build**(): [`SchemaState`](SchemaState.md)
 
-Defined in: [src/lib/schema/infrastructure/stateBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/infrastructure/stateBuilder.ts#L15)
+Defined in: [src/lib/schema/infrastructure/stateBuilder.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/infrastructure/stateBuilder.ts#L15)
 
 #### Returns
 

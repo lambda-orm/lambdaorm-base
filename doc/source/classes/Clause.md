@@ -6,7 +6,7 @@
 
 # Class: Clause
 
-Defined in: [src/lib/sentence/domain/sentence.ts:51](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L51)
+Defined in: [src/lib/sentence/domain/sentence.ts:51](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L51)
 
 ## Extends
 
@@ -36,7 +36,7 @@ Defined in: [src/lib/sentence/domain/sentence.ts:51](https://github.com/lambda-o
 
 > **new Clause**(`pos`, `name`, `children`, `entity`, `alias`): `Clause`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L54)
+Defined in: [src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L54)
 
 #### Parameters
 
@@ -74,7 +74,7 @@ Defined in: [src/lib/sentence/domain/sentence.ts:54](https://github.com/lambda-o
 
 > **alias**: `string`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L52)
+Defined in: [src/lib/sentence/domain/sentence.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L52)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:44
 
 > **entity**: `string`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L53)
+Defined in: [src/lib/sentence/domain/sentence.ts:53](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L53)
 
 ***
 

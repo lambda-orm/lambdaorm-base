@@ -6,7 +6,7 @@
 
 # Class: UUIDWrapper
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:201](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L201)
+Defined in: [src/lib/shared/infrastructure/helper.ts:201](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L201)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:201](https://github.com/lam
 
 > **empty**(): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:210](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L210)
+Defined in: [src/lib/shared/infrastructure/helper.ts:210](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L210)
 
 #### Returns
 
@@ -36,7 +36,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:210](https://github.com/lam
 
 > **fromString**(`text`, `namespace?`): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:214](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L214)
+Defined in: [src/lib/shared/infrastructure/helper.ts:214](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L214)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:214](https://github.com/lam
 
 > **isUuid**(`id`): `boolean`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:206](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L206)
+Defined in: [src/lib/shared/infrastructure/helper.ts:206](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L206)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:206](https://github.com/lam
 
 > **jsonSchema**(): `any`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:218](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L218)
+Defined in: [src/lib/shared/infrastructure/helper.ts:218](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L218)
 
 #### Returns
 
@@ -88,7 +88,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:218](https://github.com/lam
 
 > **v4**(): `string`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:202](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L202)
+Defined in: [src/lib/shared/infrastructure/helper.ts:202](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L202)
 
 #### Returns
 

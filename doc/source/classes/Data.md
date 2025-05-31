@@ -6,7 +6,7 @@
 
 # Class: Data
 
-Defined in: [src/lib/query/domain/data.ts:1](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L1)
+Defined in: [src/lib/query/domain/data.ts:1](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L1)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/query/domain/data.ts:1](https://github.com/lambda-orm/lambd
 
 > **new Data**(`data`, `parent?`): `Data`
 
-Defined in: [src/lib/query/domain/data.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L4)
+Defined in: [src/lib/query/domain/data.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L4)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [src/lib/query/domain/data.ts:4](https://github.com/lambda-orm/lambd
 
 > **data**: `any`
 
-Defined in: [src/lib/query/domain/data.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L2)
+Defined in: [src/lib/query/domain/data.ts:2](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L2)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [src/lib/query/domain/data.ts:2](https://github.com/lambda-orm/lambd
 
 > **parent**: `any`
 
-Defined in: [src/lib/query/domain/data.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L3)
+Defined in: [src/lib/query/domain/data.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L3)
 
 ## Methods
 
@@ -52,7 +52,7 @@ Defined in: [src/lib/query/domain/data.ts:3](https://github.com/lambda-orm/lambd
 
 > **clone**(): `Data`
 
-Defined in: [src/lib/query/domain/data.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L13)
+Defined in: [src/lib/query/domain/data.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L13)
 
 #### Returns
 
@@ -64,7 +64,7 @@ Defined in: [src/lib/query/domain/data.ts:13](https://github.com/lambda-orm/lamb
 
 > **contains**(`name`): `boolean`
 
-Defined in: [src/lib/query/domain/data.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L25)
+Defined in: [src/lib/query/domain/data.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L25)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [src/lib/query/domain/data.ts:25](https://github.com/lambda-orm/lamb
 
 > **get**(`name`): `any`
 
-Defined in: [src/lib/query/domain/data.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L35)
+Defined in: [src/lib/query/domain/data.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L35)
 
 #### Parameters
 
@@ -100,7 +100,7 @@ Defined in: [src/lib/query/domain/data.ts:35](https://github.com/lambda-orm/lamb
 
 > **getData**(`variable`): `any`
 
-Defined in: [src/lib/query/domain/data.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L19)
+Defined in: [src/lib/query/domain/data.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L19)
 
 #### Parameters
 
@@ -118,7 +118,7 @@ Defined in: [src/lib/query/domain/data.ts:19](https://github.com/lambda-orm/lamb
 
 > **init**(`name`, `value`): `void`
 
-Defined in: [src/lib/query/domain/data.ts:56](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L56)
+Defined in: [src/lib/query/domain/data.ts:56](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L56)
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: [src/lib/query/domain/data.ts:56](https://github.com/lambda-orm/lamb
 
 > **newData**(): `Data`
 
-Defined in: [src/lib/query/domain/data.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L9)
+Defined in: [src/lib/query/domain/data.ts:9](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L9)
 
 #### Returns
 
@@ -152,7 +152,7 @@ Defined in: [src/lib/query/domain/data.ts:9](https://github.com/lambda-orm/lambd
 
 > **set**(`name`, `value`): `void`
 
-Defined in: [src/lib/query/domain/data.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/query/domain/data.ts#L46)
+Defined in: [src/lib/query/domain/data.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/query/domain/data.ts#L46)
 
 #### Parameters
 

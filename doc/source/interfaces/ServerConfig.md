@@ -6,7 +6,7 @@
 
 # Interface: ServerConfig
 
-Defined in: [src/lib/schema/domain/schema.ts:165](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L165)
+Defined in: [src/lib/schema/domain/schema.ts:165](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L165)
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: [src/lib/schema/domain/schema.ts:165](https://github.com/lambda-orm/
 
 > **url**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:166](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L166)
+Defined in: [src/lib/schema/domain/schema.ts:166](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L166)

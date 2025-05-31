@@ -6,7 +6,7 @@
 
 # Interface: MetadataConstraint
 
-Defined in: [src/lib/sentence/domain/metadata.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/metadata.ts#L16)
+Defined in: [src/lib/sentence/domain/metadata.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/metadata.ts#L16)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/sentence/domain/metadata.ts:16](https://github.com/lambda-o
 
 > `optional` **children**: `MetadataConstraint`[]
 
-Defined in: [src/lib/sentence/domain/metadata.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/metadata.ts#L19)
+Defined in: [src/lib/sentence/domain/metadata.ts:19](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/metadata.ts#L19)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/sentence/domain/metadata.ts:19](https://github.com/lambda-o
 
 > **constraints**: [`Constraint`](Constraint.md)[]
 
-Defined in: [src/lib/sentence/domain/metadata.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/metadata.ts#L18)
+Defined in: [src/lib/sentence/domain/metadata.ts:18](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/metadata.ts#L18)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [src/lib/sentence/domain/metadata.ts:18](https://github.com/lambda-o
 
 > **entity**: `string`
 
-Defined in: [src/lib/sentence/domain/metadata.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/metadata.ts#L17)
+Defined in: [src/lib/sentence/domain/metadata.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/metadata.ts#L17)

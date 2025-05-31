@@ -6,7 +6,7 @@
 
 # Interface: Relation
 
-Defined in: [src/lib/schema/domain/schema.ts:40](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L40)
+Defined in: [src/lib/schema/domain/schema.ts:40](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L40)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:40](https://github.com/lambda-orm/l
 
 > `optional` **composite**: `boolean`
 
-Defined in: [src/lib/schema/domain/schema.ts:43](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L43)
+Defined in: [src/lib/schema/domain/schema.ts:43](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L43)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/schema.ts:43](https://github.com/lambda-orm/l
 
 > **entity**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:45](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L45)
+Defined in: [src/lib/schema/domain/schema.ts:45](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L45)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/schema/domain/schema.ts:45](https://github.com/lambda-orm/l
 
 > **from**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L44)
+Defined in: [src/lib/schema/domain/schema.ts:44](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L44)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/lib/schema/domain/schema.ts:44](https://github.com/lambda-orm/l
 
 > **name**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:41](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L41)
+Defined in: [src/lib/schema/domain/schema.ts:41](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L41)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/lib/schema/domain/schema.ts:41](https://github.com/lambda-orm/l
 
 > `optional` **target**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:48](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L48)
+Defined in: [src/lib/schema/domain/schema.ts:48](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L48)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [src/lib/schema/domain/schema.ts:48](https://github.com/lambda-orm/l
 
 > **to**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L46)
+Defined in: [src/lib/schema/domain/schema.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L46)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [src/lib/schema/domain/schema.ts:46](https://github.com/lambda-orm/l
 
 > **type**: [`RelationType`](../enumerations/RelationType.md)
 
-Defined in: [src/lib/schema/domain/schema.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L42)
+Defined in: [src/lib/schema/domain/schema.ts:42](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L42)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [src/lib/schema/domain/schema.ts:42](https://github.com/lambda-orm/l
 
 > `optional` **weak**: `boolean`
 
-Defined in: [src/lib/schema/domain/schema.ts:47](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L47)
+Defined in: [src/lib/schema/domain/schema.ts:47](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L47)

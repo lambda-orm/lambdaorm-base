@@ -6,7 +6,7 @@
 
 # Interface: Mapping
 
-Defined in: [src/lib/schema/domain/schema.ts:105](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L105)
+Defined in: [src/lib/schema/domain/schema.ts:105](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L105)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:105](https://github.com/lambda-orm/
 
 > `optional` **entities**: [`EntityMapping`](EntityMapping.md)[]
 
-Defined in: [src/lib/schema/domain/schema.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L109)
+Defined in: [src/lib/schema/domain/schema.ts:109](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L109)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/schema.ts:109](https://github.com/lambda-orm/
 
 > `optional` **extends**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:106](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L106)
+Defined in: [src/lib/schema/domain/schema.ts:106](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L106)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/schema/domain/schema.ts:106](https://github.com/lambda-orm/
 
 > `optional` **format**: [`FormatMapping`](FormatMapping.md)
 
-Defined in: [src/lib/schema/domain/schema.ts:110](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L110)
+Defined in: [src/lib/schema/domain/schema.ts:110](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L110)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/lib/schema/domain/schema.ts:110](https://github.com/lambda-orm/
 
 > `optional` **mapping**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:107](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L107)
+Defined in: [src/lib/schema/domain/schema.ts:107](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L107)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [src/lib/schema/domain/schema.ts:107](https://github.com/lambda-orm/
 
 > **name**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:108](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L108)
+Defined in: [src/lib/schema/domain/schema.ts:108](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L108)

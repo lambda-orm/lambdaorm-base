@@ -6,7 +6,7 @@
 
 # Interface: PropertyMapping
 
-Defined in: [src/lib/schema/domain/schema.ts:87](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L87)
+Defined in: [src/lib/schema/domain/schema.ts:87](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L87)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/lib/schema/domain/schema.ts:87](https://github.com/lambda-orm/l
 
 > `optional` **autoIncrement**: `boolean`
 
-Defined in: [src/lib/schema/domain/schema.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L30)
+Defined in: [src/lib/schema/domain/schema.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L30)
 
 #### Inherited from
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/schema/domain/schema.ts:30](https://github.com/lambda-orm/l
 
 > `optional` **dbType**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:90](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L90)
+Defined in: [src/lib/schema/domain/schema.ts:90](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L90)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/lib/schema/domain/schema.ts:90](https://github.com/lambda-orm/l
 
 > `optional` **default**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L34)
+Defined in: [src/lib/schema/domain/schema.ts:34](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L34)
 
 #### Inherited from
 
@@ -50,7 +50,7 @@ Defined in: [src/lib/schema/domain/schema.ts:34](https://github.com/lambda-orm/l
 
 > `optional` **enum**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L37)
+Defined in: [src/lib/schema/domain/schema.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L37)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [src/lib/schema/domain/schema.ts:37](https://github.com/lambda-orm/l
 
 > `optional` **key**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L38)
+Defined in: [src/lib/schema/domain/schema.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L38)
 
 #### Inherited from
 
@@ -74,7 +74,7 @@ Defined in: [src/lib/schema/domain/schema.ts:38](https://github.com/lambda-orm/l
 
 > `optional` **length**: `number`
 
-Defined in: [src/lib/schema/domain/schema.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L27)
+Defined in: [src/lib/schema/domain/schema.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L27)
 
 #### Inherited from
 
@@ -86,7 +86,7 @@ Defined in: [src/lib/schema/domain/schema.ts:27](https://github.com/lambda-orm/l
 
 > **mapping**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:88](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L88)
+Defined in: [src/lib/schema/domain/schema.ts:88](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L88)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [src/lib/schema/domain/schema.ts:88](https://github.com/lambda-orm/l
 
 > **name**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L25)
+Defined in: [src/lib/schema/domain/schema.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L25)
 
 #### Inherited from
 
@@ -106,7 +106,7 @@ Defined in: [src/lib/schema/domain/schema.ts:25](https://github.com/lambda-orm/l
 
 > `optional` **primaryKey**: `boolean`
 
-Defined in: [src/lib/schema/domain/schema.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L29)
+Defined in: [src/lib/schema/domain/schema.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L29)
 
 #### Inherited from
 
@@ -118,7 +118,7 @@ Defined in: [src/lib/schema/domain/schema.ts:29](https://github.com/lambda-orm/l
 
 > `optional` **readExp**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L32)
+Defined in: [src/lib/schema/domain/schema.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L32)
 
 #### Inherited from
 
@@ -130,7 +130,7 @@ Defined in: [src/lib/schema/domain/schema.ts:32](https://github.com/lambda-orm/l
 
 > `optional` **readMappingExp**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:89](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L89)
+Defined in: [src/lib/schema/domain/schema.ts:89](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L89)
 
 ***
 
@@ -138,7 +138,7 @@ Defined in: [src/lib/schema/domain/schema.ts:89](https://github.com/lambda-orm/l
 
 > `optional` **readValue**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L35)
+Defined in: [src/lib/schema/domain/schema.ts:35](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L35)
 
 #### Inherited from
 
@@ -150,7 +150,7 @@ Defined in: [src/lib/schema/domain/schema.ts:35](https://github.com/lambda-orm/l
 
 > `optional` **required**: `boolean`
 
-Defined in: [src/lib/schema/domain/schema.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L28)
+Defined in: [src/lib/schema/domain/schema.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L28)
 
 #### Inherited from
 
@@ -162,7 +162,7 @@ Defined in: [src/lib/schema/domain/schema.ts:28](https://github.com/lambda-orm/l
 
 > `optional` **type**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L26)
+Defined in: [src/lib/schema/domain/schema.ts:26](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L26)
 
 #### Inherited from
 
@@ -174,7 +174,7 @@ Defined in: [src/lib/schema/domain/schema.ts:26](https://github.com/lambda-orm/l
 
 > `optional` **view**: `boolean`
 
-Defined in: [src/lib/schema/domain/schema.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L31)
+Defined in: [src/lib/schema/domain/schema.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L31)
 
 #### Inherited from
 
@@ -186,7 +186,7 @@ Defined in: [src/lib/schema/domain/schema.ts:31](https://github.com/lambda-orm/l
 
 > `optional` **writeExp**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L33)
+Defined in: [src/lib/schema/domain/schema.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L33)
 
 #### Inherited from
 
@@ -198,7 +198,7 @@ Defined in: [src/lib/schema/domain/schema.ts:33](https://github.com/lambda-orm/l
 
 > `optional` **writeValue**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L36)
+Defined in: [src/lib/schema/domain/schema.ts:36](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L36)
 
 #### Inherited from
 

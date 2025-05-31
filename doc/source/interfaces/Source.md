@@ -6,7 +6,7 @@
 
 # Interface: Source
 
-Defined in: [src/lib/schema/domain/schema.ts:127](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L127)
+Defined in: [src/lib/schema/domain/schema.ts:127](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L127)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:127](https://github.com/lambda-orm/
 
 > **connection**: `any`
 
-Defined in: [src/lib/schema/domain/schema.ts:131](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L131)
+Defined in: [src/lib/schema/domain/schema.ts:131](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L131)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/schema.ts:131](https://github.com/lambda-orm/
 
 > **dialect**: [`Dialect`](../enumerations/Dialect.md)
 
-Defined in: [src/lib/schema/domain/schema.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L129)
+Defined in: [src/lib/schema/domain/schema.ts:129](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L129)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/schema/domain/schema.ts:129](https://github.com/lambda-orm/
 
 > **mapping**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:130](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L130)
+Defined in: [src/lib/schema/domain/schema.ts:130](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L130)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [src/lib/schema/domain/schema.ts:130](https://github.com/lambda-orm/
 
 > **name**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:128](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L128)
+Defined in: [src/lib/schema/domain/schema.ts:128](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L128)

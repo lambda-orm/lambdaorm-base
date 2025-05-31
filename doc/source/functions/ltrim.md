@@ -8,7 +8,7 @@
 
 > **ltrim**(`value`): `string`
 
-Defined in: [src/lib/repository/domain/queryable.ts:347](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L347)
+Defined in: [src/lib/repository/domain/queryable.ts:347](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L347)
 
 Remove leading chars
 

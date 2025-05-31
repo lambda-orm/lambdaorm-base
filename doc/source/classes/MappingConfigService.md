@@ -6,7 +6,7 @@
 
 # Class: MappingConfigService
 
-Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingConfigService.ts#L4)
+Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingConfigService.ts#L4)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:
 
 > **new MappingConfigService**(`mapping`, `enums`): `MappingConfigService`
 
-Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingConfigService.ts#L7)
+Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingConfigService.ts#L7)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:
 
 > **enums**: [`Enum`](../interfaces/Enum.md)[]
 
-Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingConfigService.ts#L6)
+Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:6](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingConfigService.ts#L6)
 
 #### Overrides
 
@@ -58,7 +58,7 @@ Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:
 
 > **get** **entities**(): [`EntityMapping`](../interfaces/EntityMapping.md)[]
 
-Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingConfigService.ts#L29)
+Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingConfigService.ts#L29)
 
 ##### Returns
 
@@ -76,7 +76,7 @@ Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:
 
 > **get** **format**(): `undefined` \| [`FormatMapping`](../interfaces/FormatMapping.md)
 
-Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingConfigService.ts#L17)
+Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:17](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingConfigService.ts#L17)
 
 ##### Returns
 
@@ -90,7 +90,7 @@ Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:
 
 > **get** **name**(): `string`
 
-Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingConfigService.ts#L13)
+Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:13](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingConfigService.ts#L13)
 
 ##### Returns
 
@@ -102,7 +102,7 @@ Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:
 
 > **entityMapping**(`entityName`): `undefined` \| `string`
 
-Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingConfigService.ts#L33)
+Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:33](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingConfigService.ts#L33)
 
 #### Parameters
 
@@ -120,7 +120,7 @@ Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:
 
 > **existsProperty**(`entityName`, `name`): `boolean`
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L38)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:38](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L38)
 
 #### Parameters
 
@@ -146,7 +146,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **get**(): [`Mapping`](../interfaces/Mapping.md)
 
-Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingConfigService.ts#L21)
+Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:21](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingConfigService.ts#L21)
 
 #### Returns
 
@@ -158,7 +158,7 @@ Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:
 
 > **getAutoIncrement**(`entityName`): `undefined` \| [`PropertyMapping`](../interfaces/PropertyMapping.md)
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L57)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:57](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L57)
 
 #### Parameters
 
@@ -180,7 +180,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **getEntity**(`name`): `undefined` \| [`EntityMapping`](../interfaces/EntityMapping.md)
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L11)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L11)
 
 #### Parameters
 
@@ -202,7 +202,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **getEnum**(`name`): `undefined` \| [`Enum`](../interfaces/Enum.md)
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L23)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:23](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L23)
 
 #### Parameters
 
@@ -224,7 +224,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **getFieldIds**(`entityName`): `undefined` \| [`PropertyMapping`](../interfaces/PropertyMapping.md)[]
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L65)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:65](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L65)
 
 #### Parameters
 
@@ -246,7 +246,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **getForcedEntity**(`name`): [`EntityMapping`](../interfaces/EntityMapping.md)
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L15)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L15)
 
 #### Parameters
 
@@ -268,7 +268,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **getProperty**(`entityName`, `name`): [`PropertyMapping`](../interfaces/PropertyMapping.md)
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:45](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L45)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:45](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L45)
 
 #### Parameters
 
@@ -294,7 +294,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **getRelation**(`entity`, `relation`): [`RelationInfo`](../interfaces/RelationInfo.md)
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:284](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L284)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:284](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L284)
 
 #### Parameters
 
@@ -320,7 +320,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **isChild**(`entityName`): `boolean`
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L27)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L27)
 
 #### Parameters
 
@@ -342,7 +342,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **listEntities**(): `string`[]
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L76)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:76](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L76)
 
 #### Returns
 
@@ -358,7 +358,7 @@ Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.
 
 > **set**(`value`): `void`
 
-Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingConfigService.ts#L25)
+Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:25](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingConfigService.ts#L25)
 
 #### Parameters
 
@@ -376,7 +376,7 @@ Defined in: [src/lib/schema/application/services/config/mappingConfigService.ts:
 
 > **sortByDependencies**(`entities`): `string`[]
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:139](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L139)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:139](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L139)
 
 Sort a list of entities according to their dependencies
 
@@ -404,7 +404,7 @@ returns the sorted entities
 
 > **sortByRelations**(`mainEntities`, `allEntities`): `string`[]
 
-Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L85)
+Defined in: [src/lib/schema/application/services/config/domainConfigServiceBase.ts:85](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/domainConfigServiceBase.ts#L85)
 
 Sort a list of entities according to their relationships
 

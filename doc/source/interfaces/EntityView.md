@@ -6,7 +6,7 @@
 
 # Interface: EntityView
 
-Defined in: [src/lib/schema/domain/schema.ts:118](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L118)
+Defined in: [src/lib/schema/domain/schema.ts:118](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L118)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:118](https://github.com/lambda-orm/
 
 > `optional` **exclude**: `boolean`
 
-Defined in: [src/lib/schema/domain/schema.ts:120](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L120)
+Defined in: [src/lib/schema/domain/schema.ts:120](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L120)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/schema.ts:120](https://github.com/lambda-orm/
 
 > **name**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:119](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L119)
+Defined in: [src/lib/schema/domain/schema.ts:119](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L119)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [src/lib/schema/domain/schema.ts:119](https://github.com/lambda-orm/
 
 > **properties**: [`PropertyView`](PropertyView.md)[]
 
-Defined in: [src/lib/schema/domain/schema.ts:121](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L121)
+Defined in: [src/lib/schema/domain/schema.ts:121](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L121)

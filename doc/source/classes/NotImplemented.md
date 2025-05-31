@@ -6,7 +6,7 @@
 
 # Class: NotImplemented
 
-Defined in: [src/lib/shared/domain/error.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/domain/error.ts#L15)
+Defined in: [src/lib/shared/domain/error.ts:15](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/domain/error.ts#L15)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/lib/shared/domain/error.ts:15](https://github.com/lambda-orm/la
 
 > **new NotImplemented**(`message`): `NotImplemented`
 
-Defined in: [src/lib/shared/domain/error.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/domain/error.ts#L16)
+Defined in: [src/lib/shared/domain/error.ts:16](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/domain/error.ts#L16)
 
 #### Parameters
 

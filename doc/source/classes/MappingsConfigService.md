@@ -6,7 +6,7 @@
 
 # Class: MappingsConfigService
 
-Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingsConfigService.ts#L4)
+Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingsConfigService.ts#L4)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts
 
 > **new MappingsConfigService**(): `MappingsConfigService`
 
-Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingsConfigService.ts#L7)
+Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingsConfigService.ts#L7)
 
 #### Returns
 
@@ -26,7 +26,7 @@ Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts
 
 > **mappings**: [`Mapping`](../interfaces/Mapping.md)[]
 
-Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingsConfigService.ts#L5)
+Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingsConfigService.ts#L5)
 
 ## Methods
 
@@ -34,7 +34,7 @@ Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts
 
 > **delete**(`name`): `void`
 
-Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingsConfigService.ts#L22)
+Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingsConfigService.ts#L22)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts
 
 > **get**(`name`): [`Mapping`](../interfaces/Mapping.md)
 
-Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingsConfigService.ts#L29)
+Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingsConfigService.ts#L29)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts
 
 > **getInstance**(`name`): [`MappingConfigService`](MappingConfigService.md)
 
-Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingsConfigService.ts#L37)
+Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:37](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingsConfigService.ts#L37)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts
 
 > **load**(`value`): `void`
 
-Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/mappingsConfigService.ts#L11)
+Defined in: [src/lib/schema/application/services/config/mappingsConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/mappingsConfigService.ts#L11)
 
 #### Parameters
 

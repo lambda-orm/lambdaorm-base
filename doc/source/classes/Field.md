@@ -6,7 +6,7 @@
 
 # Class: Field
 
-Defined in: [src/lib/sentence/domain/sentence.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L27)
+Defined in: [src/lib/sentence/domain/sentence.ts:27](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L27)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/lib/sentence/domain/sentence.ts:27](https://github.com/lambda-o
 
 > **new Field**(`pos`, `entity`, `name`, `returnType?`, `alias?`, `isRoot?`): `Field`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L32)
+Defined in: [src/lib/sentence/domain/sentence.ts:32](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L32)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [src/lib/sentence/domain/sentence.ts:32](https://github.com/lambda-o
 
 > `optional` **alias**: `string`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L29)
+Defined in: [src/lib/sentence/domain/sentence.ts:29](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L29)
 
 ***
 
@@ -80,7 +80,7 @@ Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:44
 
 > **entity**: `string`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L28)
+Defined in: [src/lib/sentence/domain/sentence.ts:28](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L28)
 
 ***
 
@@ -112,7 +112,7 @@ Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:48
 
 > `optional` **isRoot**: `boolean`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L30)
+Defined in: [src/lib/sentence/domain/sentence.ts:30](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L30)
 
 ***
 
@@ -156,7 +156,7 @@ Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:41
 
 > `optional` **prefix**: `string`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L31)
+Defined in: [src/lib/sentence/domain/sentence.ts:31](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L31)
 
 ***
 
@@ -188,7 +188,7 @@ Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:43
 
 > **clone**(): `Field`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L46)
+Defined in: [src/lib/sentence/domain/sentence.ts:46](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L46)
 
 #### Returns
 
@@ -244,7 +244,7 @@ Defined in: node\_modules/3xpr/shared/domain/operand.d.ts:51
 
 > **fieldName**(): `any`
 
-Defined in: [src/lib/sentence/domain/sentence.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/sentence/domain/sentence.ts#L39)
+Defined in: [src/lib/sentence/domain/sentence.ts:39](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/sentence/domain/sentence.ts#L39)
 
 #### Returns
 

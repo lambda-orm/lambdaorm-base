@@ -6,7 +6,7 @@
 
 # Interface: RelationMapClauses\<T\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:238](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L238)
+Defined in: [src/lib/repository/domain/queryable.ts:238](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L238)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:238](https://github.com/lamb
 
 > **filter**(`predicate`, `thisArg?`): [`FilterClauses`](../classes/FilterClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:242](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L242)
+Defined in: [src/lib/repository/domain/queryable.ts:242](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L242)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:242](https://github.com/lamb
 
 > **include**(`predicate`, `thisArg?`): [`IncludeClauses`](../classes/IncludeClauses.md)\<`T`\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:244](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L244)
+Defined in: [src/lib/repository/domain/queryable.ts:244](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L244)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:244](https://github.com/lamb
 
 > **sort**(`predicate`, ...`args`): `void`
 
-Defined in: [src/lib/repository/domain/queryable.ts:240](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L240)
+Defined in: [src/lib/repository/domain/queryable.ts:240](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L240)
 
 #### Parameters
 

@@ -6,7 +6,7 @@
 
 # Interface: ModifyFilterClauses\<T\>
 
-Defined in: [src/lib/repository/domain/queryable.ts:218](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L218)
+Defined in: [src/lib/repository/domain/queryable.ts:218](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L218)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [src/lib/repository/domain/queryable.ts:218](https://github.com/lamb
 
 > **include**(`predicate`, `thisArg?`): `void`
 
-Defined in: [src/lib/repository/domain/queryable.ts:220](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/repository/domain/queryable.ts#L220)
+Defined in: [src/lib/repository/domain/queryable.ts:220](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/repository/domain/queryable.ts#L220)
 
 #### Parameters
 

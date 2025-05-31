@@ -6,7 +6,7 @@
 
 # Interface: Dependent
 
-Defined in: [src/lib/schema/domain/schema.ts:50](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L50)
+Defined in: [src/lib/schema/domain/schema.ts:50](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L50)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:50](https://github.com/lambda-orm/l
 
 > **entity**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:51](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L51)
+Defined in: [src/lib/schema/domain/schema.ts:51](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L51)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [src/lib/schema/domain/schema.ts:51](https://github.com/lambda-orm/l
 
 > **relation**: [`Relation`](Relation.md)
 
-Defined in: [src/lib/schema/domain/schema.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L52)
+Defined in: [src/lib/schema/domain/schema.ts:52](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L52)

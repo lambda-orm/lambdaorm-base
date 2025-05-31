@@ -6,7 +6,7 @@
 
 # Class: OrmBaseH3lp
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:223](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L223)
+Defined in: [src/lib/shared/infrastructure/helper.ts:223](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L223)
 
 ## Extends
 
@@ -18,7 +18,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:223](https://github.com/lam
 
 > **new OrmBaseH3lp**(`h3lp`, `logger`): `OrmBaseH3lp`
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L228)
+Defined in: [src/lib/shared/infrastructure/helper.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L228)
 
 #### Parameters
 
@@ -92,7 +92,7 @@ Defined in: node\_modules/h3lp/application/h3lp.d.ts:6
 
 > `readonly` **logger**: [`Logger`](Logger.md)
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L228)
+Defined in: [src/lib/shared/infrastructure/helper.ts:228](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L228)
 
 ***
 
@@ -124,7 +124,7 @@ Defined in: node\_modules/3xpr/shared/infrastructure/helper.d.ts:6
 
 > **query**: [`QueryHelper`](QueryHelper.md)
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:226](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L226)
+Defined in: [src/lib/shared/infrastructure/helper.ts:226](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L226)
 
 ***
 
@@ -132,7 +132,7 @@ Defined in: [src/lib/shared/infrastructure/helper.ts:226](https://github.com/lam
 
 > **schema**: [`SchemaHelper`](SchemaHelper.md)
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:224](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L224)
+Defined in: [src/lib/shared/infrastructure/helper.ts:224](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L224)
 
 ***
 
@@ -176,7 +176,7 @@ Defined in: node\_modules/h3lp/application/h3lp.d.ts:3
 
 > **uuid**: [`UUIDWrapper`](UUIDWrapper.md)
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:227](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L227)
+Defined in: [src/lib/shared/infrastructure/helper.ts:227](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L227)
 
 ***
 
@@ -196,4 +196,4 @@ Defined in: node\_modules/h3lp/application/h3lp.d.ts:4
 
 > **yaml**: [`YamlWrapper`](YamlWrapper.md)
 
-Defined in: [src/lib/shared/infrastructure/helper.ts:225](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/shared/infrastructure/helper.ts#L225)
+Defined in: [src/lib/shared/infrastructure/helper.ts:225](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/shared/infrastructure/helper.ts#L225)

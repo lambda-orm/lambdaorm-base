@@ -6,7 +6,7 @@
 
 # Class: DataSourceConfigService
 
-Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/dataSourceConfigService.ts#L3)
+Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:3](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/dataSourceConfigService.ts#L3)
 
 ## Constructors
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.
 
 > **new DataSourceConfigService**(): `DataSourceConfigService`
 
-Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/dataSourceConfigService.ts#L7)
+Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:7](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/dataSourceConfigService.ts#L7)
 
 #### Returns
 
@@ -26,7 +26,7 @@ Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.
 
 > `optional` **default**: `string`
 
-Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/dataSourceConfigService.ts#L5)
+Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:5](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/dataSourceConfigService.ts#L5)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.
 
 > **sources**: [`Source`](../interfaces/Source.md)[]
 
-Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/dataSourceConfigService.ts#L4)
+Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:4](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/dataSourceConfigService.ts#L4)
 
 ## Methods
 
@@ -42,7 +42,7 @@ Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.
 
 > **get**(`name?`): [`Source`](../interfaces/Source.md)
 
-Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/dataSourceConfigService.ts#L22)
+Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:22](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/dataSourceConfigService.ts#L22)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.
 
 > **load**(`value`): `void`
 
-Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/application/services/config/dataSourceConfigService.ts#L11)
+Defined in: [src/lib/schema/application/services/config/dataSourceConfigService.ts:11](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/application/services/config/dataSourceConfigService.ts#L11)
 
 #### Parameters
 

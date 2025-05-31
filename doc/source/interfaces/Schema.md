@@ -6,7 +6,7 @@
 
 # Interface: Schema
 
-Defined in: [src/lib/schema/domain/schema.ts:182](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L182)
+Defined in: [src/lib/schema/domain/schema.ts:182](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L182)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/lib/schema/domain/schema.ts:182](https://github.com/lambda-orm/
 
 > `optional` **application**: [`ApplicationSchema`](ApplicationSchema.md)
 
-Defined in: [src/lib/schema/domain/schema.ts:186](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L186)
+Defined in: [src/lib/schema/domain/schema.ts:186](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L186)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/lib/schema/domain/schema.ts:186](https://github.com/lambda-orm/
 
 > **domain**: [`DomainSchema`](DomainSchema.md)
 
-Defined in: [src/lib/schema/domain/schema.ts:184](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L184)
+Defined in: [src/lib/schema/domain/schema.ts:184](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L184)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/lib/schema/domain/schema.ts:184](https://github.com/lambda-orm/
 
 > `optional` **infrastructure**: [`InfrastructureSchema`](InfrastructureSchema.md)
 
-Defined in: [src/lib/schema/domain/schema.ts:185](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L185)
+Defined in: [src/lib/schema/domain/schema.ts:185](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L185)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [src/lib/schema/domain/schema.ts:185](https://github.com/lambda-orm/
 
 > **version**: `string`
 
-Defined in: [src/lib/schema/domain/schema.ts:183](https://github.com/lambda-orm/lambdaorm-base/blob/5f10bdc7d0f008296efbcbe89bc2bf1ed03aaaef/src/lib/schema/domain/schema.ts#L183)
+Defined in: [src/lib/schema/domain/schema.ts:183](https://github.com/lambda-orm/lambdaorm-base/blob/54d568062b637a6aed5442a048b140146d1f573b/src/lib/schema/domain/schema.ts#L183)
